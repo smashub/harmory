@@ -295,6 +295,8 @@ def main():
                         help='Number of workers for stats computation.')
     parser.add_argument('--compression', action='store', type=int, default=1,
                         help='Compression rate for saving the stats file.')
+    parser.add_argument('--debug', action='store_true',
+                        help='Whether to run in debug mode: slow and logging.')
 
     args = parser.parse_args()
     if args.out_dir is not None:  # sanity check and default init
@@ -313,9 +315,16 @@ def main():
         # Now we should be loading the config file, or config name for SEG
         config = ConfigFactory.default_config()  # FIXME XXX TODO
         print(f"Harmonic structure analysis started, this may take a while!")
-        Parallel(n_jobs=args.n_workers)(delayed(create_segmentation)\
-            (jam, config=config, out_dir=args.out_dir)\
-                for jam in tqdm(jams_paths))
+        if not args.debug and args.n_workers == 1:
+            Parallel(n_jobs=args.n_workers)(delayed(create_segmentation)\
+                (jam, config=config, out_dir=args.out_dir)\
+                    for jam in tqdm(jams_paths))
+        else:  # this will run in debug mode, with sequential processing
+            for jam in tqdm(jams_paths):
+                try:
+                    create_segmentation(jam, config=config, out_dir=args.out_dir)
+                except Exception as e:
+                    print(f"Error at {jam} -- {e}")
 
 
     elif args.cmd == "similarities":
@@ -324,6 +333,8 @@ def main():
         raise NotImplementedError()
     else:  # trivially, args.cmd == "network"
         raise NotImplementedError()
+    
+    print("DONE!")
 
 
 if __name__ == "__main__":
