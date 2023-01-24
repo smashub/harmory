@@ -111,3 +111,8 @@ def strip_extension(fname:str, all=False):
     Strip (all, or the main) extension(s) from a given file name.
     """
     return fname.split(".")[0] if all else os.path.splitext(fname)[0]
+
+
+def get_filename(fpath: str, strip_ext=False):
+    fname = os.path.basename(fpath)
+    return fname if not strip_ext else strip_extension(fname)
