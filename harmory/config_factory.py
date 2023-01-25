@@ -11,7 +11,10 @@ default_config = {
     "var_kernel": constants.VAR_KERNEL,
     "tpst_type": "offset",
     "pdetection_method": "msaf",
-    "pdetection_params": dict(median_len=24, sigma=2)
+    "pdetection_params": dict(median_len=24, sigma=2),
+    "resampling_size": constants.RESAMPLING_SIZE,
+    "num_searches": constants.N_SEARCHES,
+    "dist_threshold": constants.DIST_THRESHOLD,
 }
 
 

@@ -11,14 +11,16 @@ from collections import OrderedDict
 
 import jams
 import numpy as np
+import pandas as pd
 from tqdm import tqdm
 from joblib import Parallel, delayed
 
 import segmentation as seg
+from similarity import find_similarities
 from config_factory import ConfigFactory
 from data import create_chord_sequence, postprocess_chords
 from tonalspace import TpsOffsetTimeSeries, TpsProfileTimeSeries
-from utils import get_files, get_filename
+from utils import get_files, get_filename, set_logger
 
 logger = logging.getLogger("harmory.create")
 
@@ -290,8 +292,29 @@ def load_structures(structures_dir):
 
     print(f"Found {len(structures_map)} harmonic structures")
     return structures_map
-    structure_ids = np.array(list(structures_map.keys()))  # indirect map for indices
-    X_data = [tpst.time_series for tpst in structures_map.values()]
+
+
+def create_similarities(structures_dir, config, out_dir, n_jobs=1):
+    """
+    Find similarities between harmonic patterns as time series data. As output,
+    the following data structures will be saved to disk:
+    - `hfinder.pkl`, holding a checkpoint of the model used for search;
+    - `similarities.csv`, a pandas edgelist with similarity relationships;
+    - `pattern2id.pkl`, a mapping from pattern indexes to segment IDs.
+    """
+    hstructures = load_structures(structures_dir)
+    simi_matches, hfinder = find_similarities(
+        hstructures, n_jobs=n_jobs,
+        resampling_size=config["resampling_size"],
+        num_searches=config["num_searches"],
+        dist_threshold=config["dist_threshold"])
+    # Preparing data structures to save all the output to disk
+    simi_matches_df = pd.DataFrame(simi_matches)  # pandas edgelist
+    hstructures_map = {index: id for index, id in enumerate(hstructures.keys())}
+    hfinder.dump_search_model(os.path.join(out_dir, "hfinder.pkl"))
+    simi_matches_df.to_csv(os.path.join(out_dir, "similarities.csv"), index=False)
+    with open(os.path.join(out_dir, "pattern2id.pkl"), 'wb') as handle:
+        pickle.dump(hstructures_map, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 def main():
@@ -324,12 +347,16 @@ def main():
     parser.add_argument('--debug', action='store_true',
                         help='Whether to run in debug mode: slow and logging.')
 
+    set_logger("harmory")
     args = parser.parse_args()
     if args.out_dir is not None:  # sanity check and default init
         if not os.path.exists(args.out_dir):
             raise ValueError(f"Directory {args.out_dir} does not exist!")
     else:  # using the same directory of the input dataset
         args.out_dir = os.path.dirname(args.dataset)
+
+    # Now we should be loading the config file, or config name for SEG/SIM
+    config = ConfigFactory.default_config()  # FIXME XXX TODO
 
     if args.cmd == "segment":
         print(f"SEGMENT: Segmenting chord sequences into harmonic structures")
@@ -338,8 +365,6 @@ def main():
             choco_ids = f.read().splitlines()
         print(f"Expected {len(choco_ids)} in {args.data}")
         jams_paths = [os.path.join(args.data, id) for id in choco_ids]
-        # Now we should be loading the config file, or config name for SEG
-        config = ConfigFactory.default_config()  # FIXME XXX TODO
         print(f"Harmonic structure analysis started, this may take a while!")
         if not args.debug and args.n_workers == 1:
             Parallel(n_jobs=args.n_workers)(delayed(create_segmentation)\
@@ -352,11 +377,12 @@ def main():
                 except Exception as e:
                     print(f"Error at {jam} -- {e}")
 
-
     elif args.cmd == "similarities":
         print(f"SIMILARITIES: Extracting harmonic similarities in {args.data}")
-        # First read/load the joblib file containing the JAMS stats
-        raise NotImplementedError()
+        create_similarities(args.data, config=config,
+            out_dir=args.out_dir, n_jobs=args.n_workers)
+
+
     else:  # trivially, args.cmd == "network"
         raise NotImplementedError()
     

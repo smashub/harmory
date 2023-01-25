@@ -43,6 +43,19 @@ class HarmonicPatternFinder:
         self._model.fit(dataset)
         self._dataset = dataset
 
+    def dump_search_model(self, fpath):
+        """
+        Save a model checkpoint to disk.
+        
+        Parameters
+        ----------
+        fpath : str
+            Path where the checkpoint will be saved.
+
+        """
+        self._model.to_pickle(fpath)
+        logger.info(f"Model successfully written at {fpath}")
+
     def find_similar_patterns(self, query_ts, dist_threshold=None):
         """
         Find harmonic patterns whose distance is below a given threshold.
@@ -108,7 +121,39 @@ class HarmonicPatternFinder:
 
 def find_similarities(structure_map, resampling_size, num_searches,
     dist_threshold, metric="dtw", n_jobs=1):
+    """
+    Find similarity relationships between harmonic patterns in the given dataset
+    of structures. Here is where we go from segments to patterns.
 
+    Parameters
+    ----------
+    structure_map : OrderedDict()
+        A dictionary holding a mapping from harmonic structure identifiers (e.g.
+        `isophonics_0_3`) and the associated TPS time series. 
+    resampling_size : int
+        The size to which the harmonic time series will be resampled. This needs
+        to be expressed according to the sampling rate of the original data. For
+        example, a sample rate of 1 and a `resampling-size` of 20 will resample
+        all time series to 20 seconds.
+    num_searches : int
+        Number of items to search in the dataset, corrisponding to the `k` of
+        the metric-based KNeighbors that will be used.
+    dist_threshold : float
+        The maximum tolerated distance to consider 2 patterns as similar; this
+        will be used to establish a similarity relationship between patterns.
+    metric : str, optional
+        The name of the metric to use for comparing time series.
+    n_jobs : int, optional
+        Number of threads for parallel execution; -1 to use all the available.
+
+    Returns
+    -------
+    hs_simirels : list[dict]
+        A list of dictionaries, where each of them encodes a similarity relation.
+    hfinder : HarmonicPatternFinder
+        The harmonic pattern finder, holding the dataset and used for search.
+
+    """
     # structure_ids = np.array(list(structure_map.keys()))  # index-to-ID
     X_data = [tpst.time_series for tpst in structure_map.values()]
     # Computing the average duration of harmonic structures
