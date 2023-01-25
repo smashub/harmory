@@ -7,17 +7,18 @@ import os
 import pickle
 import logging
 import argparse
+from collections import OrderedDict
 
 import jams
+import numpy as np
 from tqdm import tqdm
 from joblib import Parallel, delayed
-from tslearn.preprocessing import TimeSeriesResampler
-from tslearn.neighbors import KNeighborsTimeSeries
 
 import segmentation as seg
 from config_factory import ConfigFactory
 from data import create_chord_sequence, postprocess_chords
 from tonalspace import TpsOffsetTimeSeries, TpsProfileTimeSeries
+from utils import get_files, get_filename
 
 logger = logging.getLogger("harmory.create")
 
@@ -251,66 +252,6 @@ class HarmonicSegmentation:
         return self.segment_harmonic_print()
 
 
-class HarmonicPatternFinder:
-
-    def __init__(self, model_ckpt=None):
-        if model_ckpt is not None:  # model checkpoint available
-            self._model = KNeighborsTimeSeries.from_pickle(model_ckpt)
-
-    def create_model(self, dataset, num_searches, metric="dtw", n_jobs=1):
-        """
-        Create and fit a metric-parameterised kNN for time series
-
-        Parameters
-        ----------
-        dataset : np.ndarray
-            The array containing the preprocessed time series.
-        num_searches : int
-            The number of values to return for each search (k).
-        metric : str
-            The name of the metric to consider for comparing time series.
-        n_jobs : int, optional
-            The number of thread that will be used for the search.
-
-        """
-        self._model = KNeighborsTimeSeries(
-            n_neighbors=num_searches,
-            metric=metric, n_jobs=n_jobs)
-        self._model.fit(dataset)
-
-
-    def find_similar_patterns(self, query, dist_threshold=None):
-        """
-        Find harmonic patterns whose distance is below a given threshold.
-
-        Parameters
-        ----------
-        query : np.ndarray
-            A time series that will be used as search query.
-        dist_threshold : float
-            The maximum distance to retain time series as similar.
-
-        Returns
-        -------
-        n_simi_ids : list
-            A list of time series indexes ordered by shortest distance. E.g. the
-            first element `n_simi_dtw[0]` holds the index of the time series
-            with the shortest distance from the query, if passing threshold.
-        n_simi_dtw : list
-            The corresponding list of distances associated to the time series
-            indexed by `n_simi_ids`.
-
-        """
-        # TODO Check shape of query time series: may need to be stretched
-        n_simi_dtw, n_simi_ids = self._model.kneighbors(
-            X=[query], return_distance=True)
-        # Flatten out the returned arrays: safe for 1 query
-        n_simi_dtw, n_simi_ids = n_simi_dtw.ravel(), n_simi_ids.ravel()
-        # Discard time series that do not meet the distance threshold
-        mask = n_simi_dtw <= dist_threshold
-        return list(n_simi_ids[mask]), list(n_simi_dtw[mask])
-
-
 def create_segmentation(jams_path, config, out_dir):
 
     hprint = HarmonicPrint(jams_path,
@@ -327,6 +268,30 @@ def create_segmentation(jams_path, config, out_dir):
 
     segmenter.dump_harmonic_segments(out_dir)
 
+
+def load_structures(structures_dir):
+    """
+    Read all harmonic structures previously dumped in separate files and merge
+    them in a dictionary indexed by ChoCo/song ID and segment index.
+    """
+    structures_map = OrderedDict()
+    structures_pkls = get_files(structures_dir, "pickle", full_path=True)
+    print(f"Found {len(structures_pkls)} dumps in {structures_dir}")
+
+    for structure_pkl in tqdm(structures_pkls):
+        # Retrieve ChoCo ID from file name and read all structures
+        choco_id = get_filename(structure_pkl, strip_ext=True)
+        with open(structure_pkl, 'rb') as handle:
+            hstructures = pickle.load(handle)
+        # Adding the harmonic structure to the main map
+        for i, hstructure in enumerate(hstructures):
+            hstructure_id = f"{choco_id}_{i}"
+            structures_map[hstructure_id] = hstructure
+
+    print(f"Found {len(structures_map)} harmonic structures")
+    return structures_map
+    structure_ids = np.array(list(structures_map.keys()))  # indirect map for indices
+    X_data = [tpst.time_series for tpst in structures_map.values()]
 
 
 def main():
