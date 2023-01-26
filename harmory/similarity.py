@@ -14,12 +14,16 @@ logger = logging.getLogger("harmory.similarity")
 
 class HarmonicPatternFinder:
 
-    def __init__(self, model_ckpt=None, dataset=None):
+    def __init__(self, model_ckpt=None):
         if model_ckpt is not None:  # model checkpoint available
             self._model = KNeighborsTimeSeries.from_pickle(model_ckpt)
+            self._dataset = self.get_pattern_dataset()  # to simplify search
         else:  # remind that a model needs to be created if not provided
             logger.warn("No model checkpoint provided, please create one")
-        self._dataset = dataset  # holds the dataset for search using ckpt
+
+    def get_pattern_dataset(self):
+        data = self._model._get_model_params()['_ts_fit']
+        return np.reshape(data, (data.shape[0], -1))
 
     def create_model(self, dataset, num_searches, metric="dtw", n_jobs=1):
         """
@@ -41,7 +45,7 @@ class HarmonicPatternFinder:
             n_neighbors=num_searches,
             metric=metric, n_jobs=n_jobs)
         self._model.fit(dataset)
-        self._dataset = dataset
+        self._dataset = self.get_pattern_dataset()
 
     def dump_search_model(self, fpath):
         """
@@ -156,11 +160,6 @@ def find_similarities(structure_map, resampling_size, num_searches,
     """
     # structure_ids = np.array(list(structure_map.keys()))  # index-to-ID
     X_data = [tpst.time_series for tpst in structure_map.values()]
-    # Computing the average duration of harmonic structures
-    hs_durations = [len(x) for x in X_data]
-    mu_dur, sigma_dur = np.mean(hs_durations), np.std(hs_durations)
-    logger.info(f"Avg. structure dur: {mu_dur:.2f} +/- {sigma_dur:.2f}")
-
     # Preprocessing of the TPS time series before fitting the model
     X_data = TimeSeriesResampler(sz=resampling_size).fit_transform(X_data)
     logger.debug(f"X_data shape after preprocessing {X_data.shape}")
