@@ -278,7 +278,7 @@ def load_structures(structures_dir):
     """
     structures_map = OrderedDict()
     structures_pkls = get_files(structures_dir, "pickle", full_path=True)
-    print(f"Found {len(structures_pkls)} dumps in {structures_dir}")
+    logger.info(f"Found {len(structures_pkls)} dumps in {structures_dir}")
 
     for structure_pkl in tqdm(structures_pkls):
         # Retrieve ChoCo ID from file name and read all structures
@@ -290,7 +290,7 @@ def load_structures(structures_dir):
             hstructure_id = f"{choco_id}_{i}"
             structures_map[hstructure_id] = hstructure
 
-    print(f"Found {len(structures_map)} harmonic structures")
+    logger.info(f"Found {len(structures_map)} harmonic structures")
     return structures_map
 
 
