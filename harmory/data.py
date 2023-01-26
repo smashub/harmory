@@ -317,7 +317,7 @@ def convert_harte_bass(harte_chord: str ) -> str:
     """
     if '?' in harte_chord:
         return 'N'
-    if '/' in harte_chord:
+    if '/' in harte_chord and not harte_chord[-1].isdigit():
         base_chord, bass = harte_chord.split('/')
         if ':' not in base_chord:
             base_chord = base_chord + ':maj'
@@ -331,5 +331,5 @@ def convert_harte_bass(harte_chord: str ) -> str:
 
 if __name__ == '__main__':
     # test utilities
-    harte_chord = postprocess_chords(["C#:7/Db", "Gbb:maj", "N"])
+    harte_chord = postprocess_chords(["C#:7/Db", "Gbb:maj", "N", "G:maj/3"])
     print(harte_chord)
