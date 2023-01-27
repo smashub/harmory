@@ -7,6 +7,7 @@ import argparse
 import logging
 import os
 import pickle
+import sys
 from collections import OrderedDict
 from pathlib import Path
 
@@ -14,6 +15,8 @@ import jams
 import pandas as pd
 from joblib import Parallel, delayed
 from tqdm import tqdm
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import segmentation as seg
 from config_factory import ConfigFactory
