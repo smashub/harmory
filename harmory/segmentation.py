@@ -1,6 +1,6 @@
 """
 Harmonic Structure Analysis via cofnitive and musicologically-plausible self
-simil matrices (SSM) defined from the Tonal Pitch Space (TPS).
+similarity matrices (SSM) defined from the Tonal Pitch Space (TPS).
 
 Notes: XXX this will be moved to a separate [library currently in preparation].
 """
@@ -38,7 +38,7 @@ def compute_sm_dot(X, Y):
 def create_chord_ssm(chords: list[str], keys: list[str],
                      normalisation=True, as_distance=False, symmetric=True):
     """
-    Creation of the self-simil matrix from chord-key annotations. This
+    Creation of the self-similarity matrix from chord-key annotations. This
     implementation performs pairwise chord comparisons using the Tonal Pitch
     Step Distance between (chord, key) pairs. Complexity is thus quadratic in
     the sequence length, and computation is already optimised to avoid repeated
@@ -54,7 +54,7 @@ def create_chord_ssm(chords: list[str], keys: list[str],
     normalisation : bool
         Whether the matrix should be normalised w.r.t. the TPSD range.
     as_distance : bool
-        Wheteher to use distances or simil values for the scores.
+        Wheteher to use distances or similarity values for the scores.
     symmetric : bool
         Whether forcing the TPSD to return symmetric values; otherwise, for
         some chord pairs s(i, j) != s(j, i) due to the original TPSD.
@@ -62,7 +62,7 @@ def create_chord_ssm(chords: list[str], keys: list[str],
     Returns
     -------
     ssm : np.array
-        A 2-dimensional array containing the self-simil matrix. Note, that
+        A 2-dimensional array containing the self-similarity matrix. Note, that
         the returned SSM needs to be expanded to take durations into account --
         unless this has already been done (`chords` and `keys` contain quantised
         steps).
@@ -118,12 +118,12 @@ def create_chord_ssm(chords: list[str], keys: list[str],
 
 def expand_ssm(ssm: np.array, times: list):
     """
-    Expand a symbolic self-simil matrix.
+    Expand a symbolic self-similarity matrix.
 
     Parameters
     ----------
     ssm : np.array
-        A 2-dimensional array encoding the original self-simil matrix.
+        A 2-dimensional array encoding the original self-similarity matrix.
     times : list
         List of quantised observation onsets, including the end frame. Each
         element corresponds to the time of a row/column in the SSM.
@@ -131,7 +131,7 @@ def expand_ssm(ssm: np.array, times: list):
     Returns
     -------
     ssm_full : np.array
-        The self-simil matrix expanded according to the quantisation.
+        The self-similarity matrix expanded according to the quantisation. 
  
     """
     if ssm.shape[0] != len(times) - 1:
@@ -149,7 +149,7 @@ def expand_ssm(ssm: np.array, times: list):
         # Broadcasting within the anchor before
         for infill, sim in zip(windows, anchor):
             ssm_full[window[0]][infill[0]:infill[1]] = sim
-        # Fixing simil to 1 for the repeated entries
+        # Fixing similarity to 1 for the repeated entries
         ssm_full[window[0]][window[0]:window[1]] = 1
         # Broadcasting the anchor vector to the repeated entries
         ssm_full[window[0]:window[1]] = ssm_full[window[0]] 
@@ -253,7 +253,7 @@ def compute_novelty_sm(S, kernel=None, L=10, var=0.5, exclude=False):
     Parameters
     ----------
     S : np.ndarray
-        The simil matrix that will be processed for novelty.
+        The similarity matrix that will be processed for novelty.
     kernel : np.ndarray
         A kernel to convolute on the SM (if `None`, it will be created).
     L : int
@@ -264,7 +264,7 @@ def compute_novelty_sm(S, kernel=None, L=10, var=0.5, exclude=False):
     exclude : bool
         Whether to set the first L and last L values of the novelty function to
         zero, in order to account for the kernel size at the extremes. This
-        simply corresponds to padding the simil matrix.
+        simply corresponds to padding the similarity matrix.
 
     Returns
     -------

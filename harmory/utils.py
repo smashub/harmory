@@ -58,17 +58,16 @@ def is_dir(parser, f_arg):
     return f_arg
 
 
-def set_logger(log_name, log_console=True, log_dir=None):
-    
-    logger_master = logging.getLogger(log_name)
-    logger_master.setLevel(logging.DEBUG)
+def set_logger(log_name, level=logging.DEBUG, log_console=True, log_dir=None):
 
+    logger_master = logging.getLogger(log_name)
+    logger_master.setLevel(level)
     formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
     if log_console:
         ch = logging.StreamHandler()
-        ch.setLevel(logging.INFO)
+        ch.setLevel(level)
         ch.setFormatter(formatter)
         logger_master.addHandler(ch)
 

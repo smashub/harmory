@@ -62,7 +62,6 @@ def serialise_jams(jams_object, namespace, annotator=0, lablike=False,
     """
     ns_annotations = [ann for ann in jams_object.annotations
                       if ann.namespace == namespace]  # exact match
-    assert len(ns_annotations) > 0, f"No annotations found for {namespace}"
     ns_annotations = ns_annotations[annotator]  # if more than 1
     observations = [[obs.time, obs.duration, obs.value] \
                     for obs in ns_annotations]
@@ -136,9 +135,9 @@ def tabularise_annotations(chord_annotations, key_annotations, *other):
         # Get the current chord and key for in-filling the template frame
         cnt_chord, chord = get_frame_element(frame, cnt_chord, chord_iterator)
         cnt_key, key = get_frame_element(frame, cnt_key, key_iterator)
-        logger.info(f"Frame {i} {frame}: key {cnt_key}\tchord {cnt_chord}")
+        logger.debug(f"Frame {i} {frame}: key {cnt_key}\tchord {cnt_chord}")
         tabular_annotation[i] = frame + [chord, key]
-        logger.info(f"Tabular {i}: {tabular_annotation[i]}")
+        logger.debug(f"Tabular {i}: {tabular_annotation[i]}")
 
     return tabular_annotation
 
@@ -176,8 +175,12 @@ def create_chord_sequence(jam: jams.JAMS, quantisation_unit: float, shift=True,
         of a new chord is the end of the previous!
 
     """
+    # Chords are always assumed to be present in a given JAMS
     chords = serialise_jams(jam, namespace=chord_namespace,
                             lablike=True, merging_delta=5e-1)
+    if key_namespace not in [a.namespace for a in jam.annotations]:
+        logger.warn("No key annotation in the given JAMS! Using estimation.")
+        insert_estimated_key(jam, chords)  # XXX simple method for now
     keys = serialise_jams(jam, namespace=key_namespace, lablike=True,
                           merging_delta=5e-1, force_merging=True,
                           force_merging_delta=3)
@@ -202,6 +205,29 @@ def create_chord_sequence(jam: jams.JAMS, quantisation_unit: float, shift=True,
     keys = list(map(lambda x: x[3], table))
 
     return chords, keys, times
+
+
+def insert_estimated_key(jams_object, chords):
+    """
+    A simple histogram-based method for global key estimation from a JAMS chord
+    annotation. Intuitively, the chord that spans the longest time span is used
+    as a candidate global key. This methods modifies the JAMS object in-place.
+    """
+    chordset_duration = {}
+    for chord_occurrence in chords:
+        chord_figure = chord_occurrence[2]  # e.g. E:min
+        current_chordur = chordset_duration.get(chord_figure, 0)
+        chordset_duration[chord_figure] =  \
+            current_chordur + (chord_occurrence[1] - chord_occurrence[0])
+
+    if "N" in chordset_duration:
+        chordset_duration.pop("N")  # we do not want to use N as key
+    expected_gkey = max(chordset_duration, key=chordset_duration.get)
+    expected_end, expected_start = chords[-1][1], chords[0][0]
+
+    jams_object.annotations.append(jams.Annotation(
+        namespace="key_mode", data=[jams.Observation(
+            expected_start, expected_end, expected_gkey, confidence=.5)]))
 
 
 def postprocess_chords(chords, rename_dict={"X": "N"}, strip_bass=False):
