@@ -4,6 +4,7 @@ Functions for experimenting with simil measures for chord progressions.
 import logging
 import os
 from pathlib import Path
+from typing import List, Tuple, Any
 
 import joblib
 
@@ -54,7 +55,8 @@ def process_dataset(dataset_path: str | Path,
 
 def get_permutations(time_series: dict | str | Path,
                      save: bool = False,
-                     output_path: str | Path = None) -> list[tuple[dict, dict]]:
+                     output_path: str | Path = None) -> list[
+                                                        tuple[tuple, tuple]]:
     """
     Get all the possible permutations of the time series
     Parameters
@@ -81,7 +83,7 @@ def get_permutations(time_series: dict | str | Path,
     for k, v in time_series.items():
         for k2, v2 in time_series.items():
             if k != k2:
-                permutations.append(({k: v}, {k2: v2}))
+                permutations.append(((k, v), (k2, v2)))
 
     if save:
         assert output_path is not None, "Please provide an output path"
