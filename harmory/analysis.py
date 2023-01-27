@@ -64,7 +64,7 @@ def find_pattern_groups(simi_relations, all_pattern_ids):
     Parameters
     ----------
     simi_relations : pd.DataFrame
-        The pandas `DataFrame` listing all the similarity relationships betweem
+        The pandas `DataFrame` listing all the simil relationships betweem
         patterns (with distinction between `similar` and `same` types).
     all_pattern_ids : list or nd.array
         A list, or array, containing the IDs of all patterns that were found.
@@ -79,7 +79,7 @@ def find_pattern_groups(simi_relations, all_pattern_ids):
         The IDs of those patterns that are never found repeated nor similar.
 
     """
-    # Used patterns are those patterns with at least 1 similarity relationship
+    # Used patterns are those patterns with at least 1 simil relationship
     used_patterns = list(set(simi_relations["source"].unique())\
         .union(set(simi_relations["target"].unique())))
     # A pattern family wrap a group of patterns which are considered the same
@@ -108,7 +108,7 @@ def get_patterns_in_neighbourood(pattern_id, simi_relations, include_same=True):
 
 def compute_similarity_statistics(simi_relations_df, pattern_ids):
     """
-    Computes a set of descriptors from the similarity relations found, which are
+    Computes a set of descriptors from the simil relations found, which are
     returned in a single dictionary indexed by metric name.
     """
     simi_relations = simi_relations_df[simi_relations_df["type"]=="sim"]

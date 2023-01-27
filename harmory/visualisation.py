@@ -395,7 +395,7 @@ def plot_matrix(X, x_sr=1, y_sr=1, x_coeff=None, y_coeff=None, ax=None,
     xlabel='Time (s)', ylabel='Frequency (Hz)', xlim=None, ylim=None, clim=None,
     dpi=72, figsize=(6, 3), cbar=False, cbar_aspect=20.0, cbar_label='', **kwargs):
     """
-    Plot a feature matrix (e.g spectrogram, tempogram) or a similarity matrix.
+    Plot a feature matrix (e.g spectrogram, tempogram) or a simil matrix.
 
     Parameters
     ----------
@@ -503,7 +503,7 @@ def plot_feature_ssm(X, sr_X, S, sr_S, ann, duration, colour_dict=None,
     label='Time (s)', time=True, figsize=(5, 6), fontsize=10,
     clim_X=None, clim=None, tick_boundaries=False):
     """
-    Plot the similarity matrix (SM) alongside the corresponding feature
+    Plot the simil matrix (SM) alongside the corresponding feature
     representation and the given annotations.
 
     Parameters
@@ -514,9 +514,9 @@ def plot_feature_ssm(X, sr_X, S, sr_S, ann, duration, colour_dict=None,
     sr_X : int
         Sample rate to consider for the given signal/feature X.
     S : np.array
-        The similarity matrix to display, given as a 2D numpy array.
+        The simil matrix to display, given as a 2D numpy array.
     sr_S : int
-        Sample rate of the given similarity matrix.
+        Sample rate of the given simil matrix.
     ann : list
         List of segment annotations, in the form (... ... label).
     duration : float
@@ -561,7 +561,7 @@ def plot_feature_ssm(X, sr_X, S, sr_S, ann, duration, colour_dict=None,
                 clim=clim_X, xlabel='', ylabel='')
 
     ax[0, 0].axis('off')  # deactivate empty axes area (top-left)
-    # Now time to plot the actual similarity matrix at the centre + cmap?
+    # Now time to plot the actual simil matrix at the centre + cmap?
     plot_matrix(S, x_sr=sr_S, y_sr=sr_S, ax=[ax[1, 1], ax[1, 2]], cmap=cmap,
                 clim=clim, xlabel='', ylabel='', cbar=True)
     # Finally, plot the segment annotations alongside the SM and drop empty axes

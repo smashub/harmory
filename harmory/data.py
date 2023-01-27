@@ -62,6 +62,7 @@ def serialise_jams(jams_object, namespace, annotator=0, lablike=False,
     """
     ns_annotations = [ann for ann in jams_object.annotations
                       if ann.namespace == namespace]  # exact match
+    assert len(ns_annotations) > 0, f"No annotations found for {namespace}"
     ns_annotations = ns_annotations[annotator]  # if more than 1
     observations = [[obs.time, obs.duration, obs.value] \
                     for obs in ns_annotations]
