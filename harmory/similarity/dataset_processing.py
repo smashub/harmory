@@ -4,7 +4,6 @@ Functions for experimenting with simil measures for chord progressions.
 import logging
 import os
 from pathlib import Path
-from typing import List, Tuple, Any
 
 import joblib
 
@@ -17,6 +16,7 @@ logger = logging.getLogger('harmory.simil')
 # from tpsd.tpsd_comparison import TpsdComparison
 
 def process_dataset(dataset_path: str | Path,
+                    tpst_type: str = 'offset',
                     save: bool = False) -> dict[
     str, HarmonicPrint.tps_timeseries]:
     """
@@ -25,6 +25,8 @@ def process_dataset(dataset_path: str | Path,
     ----------
     dataset_path : str|Path
         Path to the dataset, either as a string or as a Path object
+    tpst_type : str, default='offset'
+        The type of time series to use, either 'offset' or 'profile'
     save : bool, default=False
         Whether to save the results in a pickle file
 
@@ -40,7 +42,10 @@ def process_dataset(dataset_path: str | Path,
     files = [f for f in dataset_path.iterdir() if f.is_file()]
     for file in files:
         logger.debug(f'Processing {file}...')
-        sequence = HarmonicPrint(str(file), sr=1, chord_namespace='chord_harte')
+        sequence = HarmonicPrint(str(file),
+                                 sr=1,
+                                 chord_namespace='chord_harte',
+                                 tpst_type=tpst_type)
         title = sequence.metadata['title']
         title = title.strip()
         time_series[title] = sequence.tps_timeseries
@@ -49,14 +54,14 @@ def process_dataset(dataset_path: str | Path,
         # create a folder in the parent directory of dataset_path
         ts_path = dataset_path.parent / (dataset_path.name + '-timeseries')
         os.mkdir(ts_path)
-        joblib.dump(time_series, ts_path / 'timeseries.pkl')
+        joblib.dump(time_series, ts_path / f'timeseries_{tpst_type}.pkl')
     return time_series
 
 
 def get_permutations(time_series: dict | str | Path,
                      save: bool = False,
                      output_path: str | Path = None) -> list[
-                                                        tuple[tuple, tuple]]:
+    tuple[tuple, tuple]]:
     """
     Get all the possible permutations of the time series
     Parameters
