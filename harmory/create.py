@@ -3,21 +3,22 @@ Main entry point for recreating the Harmonic Memory from scratch, or extend the
 memory with new harmonic progressions or patterns manually provided as inputs.
 
 """
+import argparse
+import logging
 import os
 import pickle
-import logging
-import argparse
 from collections import OrderedDict
+from pathlib import Path
 
 import jams
 import pandas as pd
-from tqdm import tqdm
 from joblib import Parallel, delayed
+from tqdm import tqdm
 
 import segmentation as seg
-from search import find_similarities
 from config_factory import ConfigFactory
 from data import create_chord_sequence, postprocess_chords
+from search import find_similarities
 from tonalspace import TpsOffsetTimeSeries, TpsProfileTimeSeries
 from utils import get_files, get_filename, set_logger, create_dir
 
@@ -30,7 +31,11 @@ class HarmonicPrint:
 
     TODO: imo it should contain both the time series.
     """
-    def __init__(self, jams_path, sr, tpst_type="offset") -> None:
+
+    def __init__(self, jams_path: str | Path, sr: int,
+                 tpst_type: str = "offset",
+                 chord_namespace: str = "chord",
+                 key_namespace: str = "key_mode") -> None:
         """
         Harmonic sequence encoder from a JAMS file and symbolic sample rate.
         """
@@ -43,11 +48,16 @@ class HarmonicPrint:
         self._tpst_type = tpst_type
         # Sanity checks on the JAMS file: chord and key annotations expected
         if len(jams_object.annotations.search(namespace="chord")) == 0:
-            raise ValueError("No chord annotation in JAMS file!")            
+            raise ValueError("No chord annotation in JAMS file!")
+        if len(jams_object.annotations.search(namespace="key")) == 0:
+            raise ValueError("No key annotation in JAMS file!")
         self.metadata = jams_object.file_metadata  # just keep meta?
         # Extracting, processing, and aligning chords, keys, and times
-        chords, self._keys, self._times  = \
-            create_chord_sequence(jams_object, 1/sr, shift=True)
+        chords, self._keys, self._times = \
+            create_chord_sequence(jams_object, 1 / sr,
+                                  shift=True,
+                                  chord_namespace=chord_namespace,
+                                  key_namespace=key_namespace)
         self._chords = postprocess_chords(chords=chords)
         # Class object that will be created on demand
         self._chord_ssm = None
@@ -80,7 +90,7 @@ class HarmonicPrint:
         if self._tps_timeseries is not None:
             return self._tps_timeseries
         # Computing the TPS time series and updating class objects
-        ts_class = TpsOffsetTimeSeries if self._tpst_type=="offset" \
+        ts_class = TpsOffsetTimeSeries if self._tpst_type == "offset" \
             else TpsProfileTimeSeries  # parameterise time series type
         self._tps_timeseries = ts_class(
             self._chords, self._keys, self._times,
@@ -97,7 +107,8 @@ class HarmonicSegmentation:
     """
     A stateful class for harmonic segmentation, holding results incrementally.
     """
-    def __init__(self, harmonic_print:HarmonicPrint) -> None:
+
+    def __init__(self, harmonic_print: HarmonicPrint) -> None:
         """
         Create a segmentation instance for harmonic structure analysis.
         """
@@ -106,7 +117,7 @@ class HarmonicSegmentation:
         self._current_novelty = None
         self._current_l_kernel = None
         self._current_var_kernel = None
-        # Peak detection algorithm and parameters
+        #  Peak detection algorithm and parameters
         self._pdetection_method = None
         self._pdetection_params = None
         self._current_peaks = None
@@ -119,7 +130,7 @@ class HarmonicSegmentation:
         self._current_pdout = None
         self._harmonic_structures = None
 
-    def compute_novelty_curve(self, l:int, var:float, exclude_extremes=True):
+    def compute_novelty_curve(self, l: int, var: float, exclude_extremes=True):
         """
         Computes a novelty curve on the harmonic SSM through correlation of
         a Gaussian kernel, of size l*sr and variance `var`, along the main
@@ -139,21 +150,21 @@ class HarmonicSegmentation:
 
         """
         if self._current_novelty is not None and \
-            self._current_l_kernel == l and self._current_var_kernel == var:
-            return self._current_novelty  # use cached version
+                self._current_l_kernel == l and self._current_var_kernel == var:
+            return self._current_novelty  #  use cached version
         # Flush current segmentation results, as not consistent anymore
         self._flush_segmentation()
         # Cache any changed parameter for novelty detection
         self._current_l_kernel, self._current_var_kernel = l, var
 
-        sl = l * self.hprint.sr  # from seconds to samples
+        sl = l * self.hprint.sr  #  from seconds to samples
         hssm = self.hprint.chord_ssm  # triggers computation 1st time
         self._current_novelty = seg.compute_novelty_sm(
             hssm, L=sl, var=var, exclude=exclude_extremes)
 
         return self._current_novelty
 
-    def detect_peaks(self, pdetection_method:str, **pdetection_args):
+    def detect_peaks(self, pdetection_method: str, **pdetection_args):
         """
         Performs peak detection on the previously computed novelty curve, using
         the chosen algorithm for peak picking and method-specific parameters.
@@ -184,9 +195,9 @@ class HarmonicSegmentation:
         
         """
         if self._current_peaks is not None and \
-            self._pdetection_method == pdetection_method and \
+                self._pdetection_method == pdetection_method and \
                 self._pdetection_params == pdetection_args:
-                return self._current_peaks  # use cached version
+            return self._current_peaks  #  use cached version
 
         if self._current_novelty is None:  # illegal state change
             raise IllegalSegmentationStateException("Compute novelty first!")
@@ -219,11 +230,11 @@ class HarmonicSegmentation:
 
         """
         if self._harmonic_structures is not None:
-            return self._harmonic_structures  # use cached version
+            return self._harmonic_structures  #  use cached version
         if self._current_peaks is None:  # illegal state change
             raise IllegalSegmentationStateException("Detect peaks first!")
         # Splitting the original time series of the harmonic print
-        self._harmonic_structures = self.hprint.tps_timeseries.\
+        self._harmonic_structures = self.hprint.tps_timeseries. \
             segment_from_times(self._current_peaks)
         return self._harmonic_structures
 
@@ -241,7 +252,7 @@ class HarmonicSegmentation:
         with open(fpath, 'wb') as handle:
             pickle.dump(self._harmonic_structures, handle,
                         protocol=pickle.HIGHEST_PROTOCOL)
-    
+
     def run(self, l_kernel, var_kernel, pdetection_method, **pdetection_args):
         """
         Performs all the steps above for harmonic structure analysis.
@@ -252,9 +263,8 @@ class HarmonicSegmentation:
 
 
 def create_segmentation(jams_path, config, out_dir):
-
     hprint = HarmonicPrint(jams_path,
-        sr=config["sr"], tpst_type=config["tpst_type"])
+                           sr=config["sr"], tpst_type=config["tpst_type"])
     hprint.chord_ssm  # this will init internal structures
     hprint._tps_timeseries  # this will init internal structures
     segmenter = HarmonicSegmentation(hprint)
@@ -309,7 +319,8 @@ def create_similarities(structures_dir, config, out_dir, n_jobs=1):
     simi_matches_df = pd.DataFrame(simi_matches)  # pandas edgelist
     hstructures_map = {index: id for index, id in enumerate(hstructures.keys())}
     hfinder.dump_search_model(os.path.join(out_dir, "hfinder.pkl"))
-    simi_matches_df.to_csv(os.path.join(out_dir, "similarities.csv"), index=False)
+    simi_matches_df.to_csv(os.path.join(out_dir, "similarities.csv"),
+                           index=False)
     with open(os.path.join(out_dir, "pattern2id.pkl"), 'wb') as handle:
         pickle.dump(hstructures_map, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
@@ -328,7 +339,7 @@ def main():
     parser.add_argument('data', type=str,
                         help='Directory where JAMS files, pickles, or any dump'
                              ' will be read for further processing.')
-    
+
     parser.add_argument('--selection', type=str,
                         help='A txt file with ChoCo IDs for song selection.')
 
@@ -367,26 +378,28 @@ def main():
         jams_paths = [os.path.join(args.data, id) for id in choco_ids]
         print(f"Harmonic structure analysis started, this may take a while!")
         if not args.debug and args.n_workers > 1:
-            Parallel(n_jobs=args.n_workers)(delayed(create_segmentation)\
-                (jam, config=config, out_dir=args.out_dir)\
-                    for jam in tqdm(jams_paths))
+            Parallel(n_jobs=args.n_workers)(delayed(create_segmentation) \
+                                                (jam, config=config,
+                                                 out_dir=args.out_dir) \
+                                            for jam in tqdm(jams_paths))
         else:  # this will run in debug mode, with sequential processing
             print("Running in debug mode: sequential processing in place.")
             for jam in tqdm(jams_paths):
                 try:
-                    create_segmentation(jam, config=config, out_dir=args.out_dir)
+                    create_segmentation(jam, config=config,
+                                        out_dir=args.out_dir)
                 except Exception as e:
                     print(f"Error at {jam} -- {e}")
 
     elif args.cmd == "similarities":
         print(f"SIMILARITIES: Extracting harmonic similarities in {args.data}")
         create_similarities(args.data, config=config,
-            out_dir=args.out_dir, n_jobs=args.n_workers)
+                            out_dir=args.out_dir, n_jobs=args.n_workers)
 
 
     else:  # trivially, args.cmd == "network"
         raise NotImplementedError()
-    
+
     print("DONE!")
 
 
