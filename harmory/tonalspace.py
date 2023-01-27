@@ -56,7 +56,9 @@ class TpsComparator:
 
 
 class TpsTimeSeries:
-
+    """
+    Abstract class for harmonic patterns expressed as TPS-based time series.
+    """
     def __init__(self, chords, keys, times, sr=1, tpsd_cache=None) -> None:
         # Some sanity checks to make sure that annotations are consistent
         self.durations = np.array(times[1:]) - np.array(times[:-1])
@@ -68,7 +70,10 @@ class TpsTimeSeries:
         self.keys = keys
         self.times = times
         # Data structures that will be created and made available
-        self._time_series = None
+        self._time_series = self._compute_time_series()
+
+    def _compute_time_series(self):  # real classes should override this
+        return NotImplementedError("You should redefine this method")
 
     @property
     def time_series(self) -> np.ndarray:
@@ -136,7 +141,8 @@ class TpsTimeSeries:
             new_chos = tmp_chords[split_indxs[i-1]:split_indxs[i]]
             new_keys = tmp_keys[split_indxs[i-1]:split_indxs[i]]
             new_ttts = self.time_series[split_times[i-1]:split_times[i]]
-
+            logger.debug(f"Segmented ts [{split_indxs[i-1]}:{split_indxs[i]}]\n"
+                         f"T: {new_tims}\nC: {new_chos}\nK: {new_keys}")
             new_tpstimeseries = self.__class__(
                 chords=new_chos, keys=new_keys, times=new_tims,
                 tpsd_cache=self.tps_comparator._tpsd_cache)
@@ -152,10 +158,10 @@ class TpsOffsetTimeSeries(TpsTimeSeries):
     represents the TPS distance of the current chord with respect to the
     previous one in time (depending on the quantisation/sampling level).
     """
-    @property
-    def time_series(self) -> np.ndarray:
+    # overrides
+    def _compute_time_series(self) -> np.ndarray:
         super()  # this will return the cached version, if previously computed
-        # Adding a fake chord:key pair for simplifying the loop below 
+        # Adding a fake chord:key pair for simplifying the loop below
         chords = [self.keys[0]] + self.chords
         keys = [self.keys[0]] + self.keys
         tps_offsets = []  # incrementally holds chord offset distances
@@ -176,8 +182,8 @@ class TpsProfileTimeSeries(TpsTimeSeries):
     is computed against the global key of the piece. The latter, is assumed to
     be found as the first key in the annotation provided at construction time.
     """
-    @property
-    def time_series(self) -> np.ndarray:
+    # overrides
+    def _compute_time_series(self) -> np.ndarray:
         super()  # this will return the cached version, if previously computed
         global_key = self.keys[0]  # first key assumed to be the global one
         tps_profile = []  # incrementally holds TPS profile step by step

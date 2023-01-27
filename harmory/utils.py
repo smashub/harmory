@@ -15,6 +15,14 @@ def flatten(t):
     return [item for sublist in t for item in sublist]
 
 
+def dicted_renaming(item: str, renaming_dict: dict):
+    """Renames an arbitrary string based on a mapping."""
+    new_item = item
+    for to_rename, replacement in renaming_dict.items():
+        new_item = new_item.replace(to_rename, replacement)
+    return new_item
+
+
 def to_freq(cnt:Counter, occurrences=None):
     """From counter int values to relative counts as dict (frequencies)."""
     occurrences = sum(cnt.values()) if occurrences is None else occurrences

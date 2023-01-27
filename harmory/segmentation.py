@@ -93,8 +93,7 @@ def create_chord_ssm(chords: list[str], keys: list[str],
         chord_i, key_i = chords[i], keys[i]
         for j in range(i+1, len(chords)): # look ahead
             chord_j, key_j = chords[j], keys[j]
-            # print(f"d({chord_i} in {key_i},"
-            #       f"  {chord_j} in {key_j})")
+            # logger.debug(f"TPSD distance d({i},{j})")
             tpsd_ij = tps_comparator.tpsd_lookup(
                 chord_a=chord_i, key_a=key_i,
                 chord_b=chord_j, key_b=key_j)
