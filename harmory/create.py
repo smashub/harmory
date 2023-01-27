@@ -20,7 +20,7 @@ from similarity import find_similarities
 from config_factory import ConfigFactory
 from data import create_chord_sequence, postprocess_chords
 from tonalspace import TpsOffsetTimeSeries, TpsProfileTimeSeries
-from utils import get_files, get_filename, set_logger
+from utils import get_files, get_filename, set_logger, create_dir
 
 logger = logging.getLogger("harmory.create")
 
@@ -351,7 +351,8 @@ def main():
     args = parser.parse_args()
     if args.out_dir is not None:  # sanity check and default init
         if not os.path.exists(args.out_dir):
-            raise ValueError(f"Directory {args.out_dir} does not exist!")
+            print(f"Creating new output directory: {args.out_dir}")
+            args.out_dir = create_dir(args.out_dir)
     else:  # using the same directory of the input dataset
         args.out_dir = os.path.dirname(args.dataset)
 
