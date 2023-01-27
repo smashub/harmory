@@ -2,10 +2,13 @@
 Data manipulations functions.
 
 """
+import re
 import logging
 
 import jams
 from music21 import interval, note
+
+from utils import dicted_renaming
 
 logger = logging.getLogger("harmory.data")
 
@@ -187,6 +190,8 @@ def create_chord_sequence(jam: jams.JAMS, quantisation_unit: float, shift=True,
                           force_merging_delta=3)
 
     table = tabularise_annotations(chords, keys)
+    if table[-1][2].strip() == "":  # FIXME Patches tabularise_annotations
+        table[-1][2] = "N"
     # Removing trailing no-chord observations from the sequence
     while table[0][2] == "N":  # remove all leading silences
         table.pop(0)
@@ -223,12 +228,41 @@ def insert_estimated_key(jams_object, chords):
 
     if "N" in chordset_duration:
         chordset_duration.pop("N")  # we do not want to use N as key
-    expected_gkey = max(chordset_duration, key=chordset_duration.get)
+    main_chord = max(chordset_duration, key=chordset_duration.get)
     expected_end, expected_start = chords[-1][1], chords[0][0]
+    # From chord figure in Harte, to a simple key derived from it
+    key_consts = re.search(r"^N|([A-G][b#]?)(:(maj|min))?", main_chord)
+    expected_gkey = key_consts.group(1) if key_consts.group(2) is None \
+        else key_consts.group(1) + key_consts.group(2)
 
     jams_object.annotations.append(jams.Annotation(
         namespace="key_mode", data=[jams.Observation(
             expected_start, expected_end, expected_gkey, confidence=.5)]))
+
+
+def postprocess_keys(keys, rename_mode={"major":"maj", "minor":"min"}):
+    """
+    Post-processing operations for key sequences.
+
+    Parameters
+    ----------
+    keys : list of str
+        The list of key to process.
+    rename_mode : dict
+        A mapping from modes (e.g. 'major') to `key_value` modes (e.g. 'maj').
+    
+    Returns
+    -------
+    new_keys : list
+        The new key sequence resulting from the required operations.
+
+    """
+    new_keys = []
+    for key in keys:
+        # Apply postprocessing operation in cascade
+        new_key = dicted_renaming(key, rename_mode)
+        new_keys.append(new_key)
+    return new_keys
 
 
 def postprocess_chords(chords, rename_dict={"X": "N"}, strip_bass=False):
@@ -243,7 +277,7 @@ def postprocess_chords(chords, rename_dict={"X": "N"}, strip_bass=False):
         A dictionary for renaming chord figures in Harte.
     strip_bass : bool, optional
         Whether to strip the inversion from the chord.
-    
+
     Returns
     -------
     new_chords : list
