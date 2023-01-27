@@ -1,15 +1,19 @@
 """
-Functions for experimenting with similarity measures for chord progressions.
+Functions for experimenting with simil measures for chord progressions.
 """
 import logging
 from pathlib import Path
 
-import jams
+import sys
+import os
 
-from harmory.data import create_chord_sequence
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', '..')))
+
+from harmory.create import HarmonicPrint
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger('harmory.similarity')
+logger = logging.getLogger('harmory.simil')
 
 
 # from tpsd.tpsd_comparison import TpsdComparison
@@ -32,11 +36,11 @@ def process_dataset(dataset_path: str | Path) -> None:
     # read all files in the dataset
     files = [f for f in dataset_path.iterdir() if f.is_file()]
     for file in files:
-        logger.info(f'Processing {file}...')
-        jam = jams.load(str(file), validate=False, strict=False)
-        chords, keys, durations = create_chord_sequence(jam,
-                                                        quantisation_unit=1)
-        print(chords)
+        logger.debug(f'Processing {file}...')
+        sequence = HarmonicPrint(str(file), sr=1, chord_namespace='chord_harte')
+        title = sequence.metadata['title']
+        title = title.strip()
+        print(title)
 
 
 if __name__ == '__main__':
