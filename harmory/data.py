@@ -268,7 +268,8 @@ def convert_bass_note(bass_note: note.Note,
     root_note.octave = 5
     mode = 'simpleName' if simple is True else 'name'
     computed_interval = getattr(interval.Interval(bass_note, root_note), mode)
-    return convert_intervals(computed_interval).replace('b2', 'b9').replace('2', '9')
+    return convert_intervals(computed_interval).replace('b2', 'b9').replace('2',
+                                                                            '9')
 
 
 def convert_intervals(m21_interval: str) -> str:
@@ -300,7 +301,7 @@ def convert_intervals(m21_interval: str) -> str:
     return translation
 
 
-def convert_harte_bass(harte_chord: str ) -> str:
+def convert_harte_bass(harte_chord: str) -> str:
     """
     Utility function that converts a Harte chord with a wrong annotated bass
     (note instead of interval) to the correct one.
