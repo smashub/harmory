@@ -1,13 +1,15 @@
 """
-
+Utility functions for computing similarity between time series.
+The functions in this module are of two main types:
+1. TPSD based similarity functions
+2. DTW based similarity functions
 """
 import joblib
 import numpy as np
-
-from harmory.similarity.dataset_processing import process_dataset
-
 from tslearn.metrics import dtw
 from tslearn.preprocessing import TimeSeriesResampler
+
+from harmory.similarity.dataset_processing import process_dataset
 
 
 def minimum_area(longest_sequence, shortest_sequence) -> float:
@@ -65,6 +67,7 @@ def tpsd_similarity(timeseries_data: np.ndarray) -> list[tuple]:
         results.append((key1, key2, similarity))
     return results
 
+
 def dtw_similarity(timeseries_data: np.ndarray,
                    stretch: bool = False) -> list[tuple]:
     """
@@ -90,11 +93,9 @@ def dtw_similarity(timeseries_data: np.ndarray,
                                                            ts1.time_series)
         if stretch:
             shortest = TimeSeriesResampler(sz=len(longest)).fit_transform(
-                shortest)
-        print(len(longest), len(shortest))
+                shortest)[0]
         similarity = dtw(longest, shortest)
         results.append((key1, key2, similarity))
-        print(shortest)
     return results
 
 
@@ -103,4 +104,4 @@ if __name__ == '__main__':
     ts = process_dataset('../../exps/datasets/cover-song-data-jams', save=False)
     permutations = joblib.load(
         '../../exps/datasets/cover-song-data-jams-timeseries/permutations.pkl')
-    abc = dtw_similarity(permutations, stretch=False)
+    abc = dtw_similarity(permutations, stretch=True)
