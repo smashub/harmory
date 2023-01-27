@@ -213,6 +213,51 @@ def create_chord_sequence(jam: jams.JAMS, quantisation_unit: float, shift=True,
     return chords, keys, times
 
 
+def key_to_chord(key: str):
+    """
+    Generate a simplified chord that represents the tonal centre expressed by
+    the given key. This is necessary when computing the TPS profile, a step
+    function where the distance of each chord in the progression is computed
+    w.r.t. the tonal centre (indicated by the global key).
+
+    Parameters
+    ----------
+    key : str
+        A key, optionally specified along with a mode (e.g. C:min).
+
+    Returns
+    -------
+    inferred_chord : str
+        The simplified chord that was inferred from the given key.
+
+    """
+    raise NotImplementedError()
+
+
+def simplify_harmonic_element(harmo: str):
+    """
+    Generate a key or chord that simplify the given harmonic element. Although
+    the input may be complex, the simplified output that will be inferred by
+    this function will only take into account the root and the maj|min quality.
+
+    Parameters
+    ----------
+    harmo : str
+        A chord figure or a key expressed in Harte notation.
+
+    Returns
+    -------
+    simplification : str
+        The simplified key or chord that was inferred from the input.
+
+    """
+    # From chord figure in Harte, to a simple key derived from it
+    harmo_search = re.search(r"^N|([A-G][b#]?)(:(maj|min))?", harmo)
+    simplification = harmo_search.group(1) if harmo_search.group(2) is None \
+        else harmo_search.group(1) + harmo_search.group(2)
+    return simplification
+
+
 def insert_estimated_key(jams_object, chords):
     """
     A simple histogram-based method for global key estimation from a JAMS chord
@@ -229,11 +274,8 @@ def insert_estimated_key(jams_object, chords):
     if "N" in chordset_duration:
         chordset_duration.pop("N")  # we do not want to use N as key
     main_chord = max(chordset_duration, key=chordset_duration.get)
-    expected_end, expected_start = chords[-1][1], chords[0][0]
-    # From chord figure in Harte, to a simple key derived from it
-    key_consts = re.search(r"^N|([A-G][b#]?)(:(maj|min))?", main_chord)
-    expected_gkey = key_consts.group(1) if key_consts.group(2) is None \
-        else key_consts.group(1) + key_consts.group(2)
+    expected_gkey = simplify_harmonic_element(main_chord)
+    expected_end, expected_start = chords[-1][1], chords[0][0]    
 
     jams_object.annotations.append(jams.Annotation(
         namespace="key_mode", data=[jams.Observation(

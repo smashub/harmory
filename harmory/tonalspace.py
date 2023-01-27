@@ -13,6 +13,8 @@ from copy import deepcopy
 import matplotlib.pyplot as plt
 import numpy as np
 
+from data import simplify_harmonic_element
+
 sys.path.append("../../TPSD/")  # FIXME after stable version of package
 from tpsd.tps_comparison import TpsComparison  #FIXME (see above)
 
@@ -161,8 +163,8 @@ class TpsOffsetTimeSeries(TpsTimeSeries):
     # overrides
     def _compute_time_series(self) -> np.ndarray:
         super()  # this will return the cached version, if previously computed
-        # Adding a fake chord:key pair for simplifying the loop below
-        chords = [self.keys[0]] + self.chords
+        # Adding a priming chord:key pair for simplifying the loop below
+        chords = [simplify_harmonic_element(self.keys[0])] + self.chords
         keys = [self.keys[0]] + self.keys
         tps_offsets = []  # incrementally holds chord offset distances
         for i in range(1, len(chords)):
@@ -172,7 +174,7 @@ class TpsOffsetTimeSeries(TpsTimeSeries):
                 chord_b=chords[i-1], key_b=keys[i-1])
             tps_offsets = tps_offsets + [offset]*self.durations[i-1]
 
-        self._time_series = np.array(tps_offsets)
+        self._time_series = np.array(tps_offsets)  # update cache
         return self._time_series
 
 
@@ -186,13 +188,14 @@ class TpsProfileTimeSeries(TpsTimeSeries):
     def _compute_time_series(self) -> np.ndarray:
         super()  # this will return the cached version, if previously computed
         global_key = self.keys[0]  # first key assumed to be the global one
+        global_chord = simplify_harmonic_element(global_key)
         tps_profile = []  # incrementally holds TPS profile step by step
         for i in range(len(self.chords)):
             # Compute the TPS distance w.r.t. the global key
             hvar = self.tps_comparator.tpsd_lookup(
                 chord_a=self.chords[i], key_a=self.keys[i],
-                chord_b=global_key, key_b=global_key)
+                chord_b=global_chord, key_b=global_key)
             tps_profile = tps_profile + [hvar]*self.durations[i]
 
-        self._time_series = np.array(tps_profile)
+        self._time_series = np.array(tps_profile)  # update cache
         return self._time_series
