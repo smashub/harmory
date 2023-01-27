@@ -5,8 +5,9 @@ Core functionalities for similarity and search on harmonic structures.
 import logging
 
 import numpy as np
-from tslearn.neighbors import KNeighborsTimeSeries
+
 from tslearn.preprocessing import TimeSeriesResampler
+from tslearn.neighbors import KNeighborsTimeSeries
 
 logger = logging.getLogger("harmory.similarity")
 
@@ -16,7 +17,7 @@ class HarmonicPatternFinder:
     def __init__(self, model_ckpt=None):
         if model_ckpt is not None:  # model checkpoint available
             self._model = KNeighborsTimeSeries.from_pickle(model_ckpt)
-            self._dataset = self.get_pattern_dataset()  #  to simplify search
+            self._dataset = self.get_pattern_dataset()  # to simplify search
         else:  # remind that a model needs to be created if not provided
             logger.warn("No model checkpoint provided, please create one")
 
@@ -49,7 +50,7 @@ class HarmonicPatternFinder:
     def dump_search_model(self, fpath):
         """
         Save a model checkpoint to disk.
-
+        
         Parameters
         ----------
         fpath : str
@@ -86,7 +87,7 @@ class HarmonicPatternFinder:
             X=[query_ts], return_distance=True)
         # Flatten out the returned arrays: safe for 1 query
         n_simi_dtw, n_simi_ids = n_simi_dtw.ravel(), n_simi_ids.ravel()
-        #  Discard time series that do not meet the distance threshold
+        # Discard time series that do not meet the distance threshold
         mask = n_simi_dtw <= dist_threshold
         return list(n_simi_ids[mask]), list(n_simi_dtw[mask])
 
@@ -114,16 +115,16 @@ class HarmonicPatternFinder:
         query_ts = self._dataset[query_indx]  # time series
         simi_indxs, simi_dists = self.find_similar_patterns(
             query_ts, dist_threshold=dist_threshold)
-        if query_indx in simi_indxs:  # remove the trivial identity match
-            trivial_match_idx = simi_indxs.index(query_indx)
-            simi_indxs.pop(trivial_match_idx)
-            simi_dists.pop(trivial_match_idx)
-        # logger.error(f"{query_indx}: {simi_indxs}  {simi_dists}")
+        if query_indx in simi_indxs: # remove the trivial identity match
+                trivial_match_idx = simi_indxs.index(query_indx)
+                simi_indxs.pop(trivial_match_idx)
+                simi_dists.pop(trivial_match_idx)
+        # logger.error(f"{query_indx}: {simi_indxs}  {simi_dists}")        
         return simi_indxs, simi_dists
 
 
 def find_similarities(structure_map, resampling_size, num_searches,
-                      dist_threshold, metric="dtw", n_jobs=1):
+    dist_threshold, metric="dtw", n_jobs=1):
     """
     Find similarity relationships between harmonic patterns in the given dataset
     of structures. Here is where we go from segments to patterns.
@@ -132,7 +133,7 @@ def find_similarities(structure_map, resampling_size, num_searches,
     ----------
     structure_map : OrderedDict()
         A dictionary holding a mapping from harmonic structure identifiers (e.g.
-        `isophonics_0_3`) and the associated TPS time series.
+        `isophonics_0_3`) and the associated TPS time series. 
     resampling_size : int
         The size to which the harmonic time series will be resampled. This needs
         to be expressed according to the sampling rate of the original data. For
@@ -169,7 +170,7 @@ def find_similarities(structure_map, resampling_size, num_searches,
 
     hs_simirels, num_processed = [], 0
     ts_simicomp_pool = list(range(len(structure_map)))
-    while (len(ts_simicomp_pool) > 0):
+    while(len(ts_simicomp_pool) > 0):
         if num_processed % 50 == 0:
             logger.info(f"Processed patterns: {num_processed}")
         current_ts_index = ts_simicomp_pool.pop()  # get next pattern to process
@@ -180,14 +181,14 @@ def find_similarities(structure_map, resampling_size, num_searches,
             query_indx=current_ts_index, dist_threshold=dist_threshold)
         # simi_ids = structure_ids[simi_indxs]  # from indexes to IDs
         for match_id, match_dist in zip(simi_indxs, simi_dists):
-            relation_type = "sim"  # assumed similar as it passed filtration
+            relation_type = "sim" # assumed similar as it passed filtration
             if match_dist == 0:  # un-pool identical patterns (distance 0)
                 if match_id in ts_simicomp_pool:
                     ts_simicomp_pool.remove(match_id)  # no need to check this
                 relation_type = "same"  # declare same pattern for 0 distance
             hs_simirels.append(
                 {"source": current_ts_index, "target": match_id,
-                 "distance": round(match_dist, 2), "type": relation_type})
+                "distance": round(match_dist, 2), "type": relation_type})
         num_processed += 1  # update counter for logging
 
     return hs_simirels, hfinder
