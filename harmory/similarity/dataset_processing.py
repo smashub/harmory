@@ -7,6 +7,7 @@ from pathlib import Path
 
 import joblib
 import numpy as np
+from itertools import combinations
 
 from harmory.create import HarmonicPrint
 
@@ -85,11 +86,10 @@ def get_permutations(time_series: list | str | Path,
     if isinstance(time_series, Path):
         time_series = joblib.load(time_series)
 
-    permutations = []
-    for (k, v) in time_series:
-        for (k2, v2) in time_series:
-            if k != k2:
-                permutations.append(((k, v), (k2, v2)))
+    permutations = list(combinations(time_series, 2))
+    # for (k, v) in time_series:
+    #     for (k2, v2) in time_series:
+    #         permutations.append(((k, v), (k2, v2)))
 
     if save:
         assert output_path is not None, "Please provide an output path"

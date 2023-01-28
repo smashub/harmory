@@ -8,8 +8,6 @@ import joblib
 import pandas as pd
 from jellyfish import jaro_similarity
 
-from harmory.similarity.dataset_processing import process_dataset
-
 
 def get_covers(dataset: list, string_match_threshold: float = .98) -> dict:
     """
@@ -41,7 +39,8 @@ def get_covers(dataset: list, string_match_threshold: float = .98) -> dict:
 
 def covers_ranking(results: list[tuple]) -> dict[Any, Any]:
     """
-    Evaluate the results of a similarity measure using standard evaluation metrics
+    Evaluate the results of a similarity measure using standard evaluation
+    metrics
     Parameters
     ----------
     results : list[tuple]
@@ -58,9 +57,10 @@ def covers_ranking(results: list[tuple]) -> dict[Any, Any]:
         else:
             weighted_results.append([*res, False])
 
-    df = pd.DataFrame(weighted_results, columns=['title1', 'title2', 'tpsd_distance',
-                                        'distance_alert'])
-    print(df.head())
+    df = pd.DataFrame(weighted_results,
+                      columns=['title1', 'title2', 'tpsd_distance',
+                               'distance_alert'])
+
     ranking = {}
     for track in df['title1'].unique():
         if df[(df['title1'] == track) & (df['distance_alert'] == True)].shape[
@@ -69,11 +69,11 @@ def covers_ranking(results: list[tuple]) -> dict[Any, Any]:
             df_track = df_track.sort_values(by=['tpsd_distance'],
                                             ascending=True)
             ranking[track] = df_track['title2'].tolist()
-    print(ranking)
+
     return ranking
 
 
-def evaluate(covers_dict: dict, covers_ranking: dict) -> tuple[dict, dict]:
+def evaluate(covers_dict: dict, covers_ranking: dict) -> tuple[float, float]:
     """
     Evaluates the covers ranking
     :param covers_dict: the dictionary with the covers' titles
@@ -94,7 +94,8 @@ def evaluate(covers_dict: dict, covers_ranking: dict) -> tuple[dict, dict]:
                 [x for x in covers_ranking[track][:class_size_second] if
                  jaro_similarity(x, track) >= .98]) / class_size
 
-    return first_tier, second_tier
+    return sum(first_tier.values()) / len(first_tier), sum(
+        second_tier.values()) / len(second_tier)
 
 
 if __name__ == '__main__':
