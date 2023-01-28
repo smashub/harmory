@@ -1,0 +1,54 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "Chordify",
+          "email": "casd@chordify.net"
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Chordify Annotator Subjectivity Dataset",
+        "annotation_tools": "https://chordify.net/",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "expert_human"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 212.397981859,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": 212.397981859
+    }
+  ],
+  "file_metadata": {
+    "title": "Hair",
+    "artist": "",
+    "release": "",
+    "duration": 213.0,
+    "identifiers": {
+      "youtube": "https://www.youtube.com/watch?v=x3qhle8Oy9s",
+      "dataid_billboard": 770
+    },
+    "jams_version": "0.3.0"
+  },
+  "sandbox": {
+    "type": "audio",
+    "genre": "",
+    "composers": [],
+    "performers": [
+      "The Cowsills"
+    ],
+    "release_year": null,
+    "track_number": null
+  }
+}

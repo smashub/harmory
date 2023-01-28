@@ -1,0 +1,60 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "Chordify",
+          "email": "casd@chordify.net"
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Chordify Annotator Subjectivity Dataset",
+        "annotation_tools": "https://chordify.net/",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "expert_human"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 231.969365079,
+          "value": "Bb",
+          "confidence": 1.0
+        },
+        {
+          "time": 231.969365079,
+          "duration": 40.569138322000015,
+          "value": "Cb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": 272.538503401
+    }
+  ],
+  "file_metadata": {
+    "title": "Where The Streets Have No Name",
+    "artist": "",
+    "release": "",
+    "duration": 265.4,
+    "identifiers": {
+      "youtube": "https://www.youtube.com/watch?v=Jt2j79pca7c",
+      "dataid_billboard": 382
+    },
+    "jams_version": "0.3.0"
+  },
+  "sandbox": {
+    "type": "audio",
+    "genre": "",
+    "composers": [],
+    "performers": [
+      "Pet Shop Boys"
+    ],
+    "release_year": null,
+    "track_number": null
+  }
+}

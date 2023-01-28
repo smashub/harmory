@@ -1,0 +1,54 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "Chordify",
+          "email": "casd@chordify.net"
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Chordify Annotator Subjectivity Dataset",
+        "annotation_tools": "https://chordify.net/",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "expert_human"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 253.236734693,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": 253.236734693
+    }
+  ],
+  "file_metadata": {
+    "title": "Sunshine Of Your Love",
+    "artist": "",
+    "release": "",
+    "duration": 245.40001,
+    "identifiers": {
+      "youtube": "https://www.youtube.com/watch?v=zt51rITH3EA",
+      "dataid_billboard": 114
+    },
+    "jams_version": "0.3.0"
+  },
+  "sandbox": {
+    "type": "audio",
+    "genre": "",
+    "composers": [],
+    "performers": [
+      "Cream"
+    ],
+    "release_year": null,
+    "track_number": null
+  }
+}
