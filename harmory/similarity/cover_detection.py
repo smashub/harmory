@@ -131,7 +131,7 @@ class CoverSongDetection:
         return evaluate(covers, ranking)
 
 
-def save_results(results: list[tuple], output_path: str) -> None:
+def save_results(results: list[list], output_path: str) -> None:
     """
     Saves the results of the cover song detection process.
     :param results: the results of the cover song detection process
@@ -141,11 +141,9 @@ def save_results(results: list[tuple], output_path: str) -> None:
     :return: None
     :rtype: None
     """
-    df = pd.DataFrame(results)
-    df.transpose()
-    df.columns = ['dataset', 'distance_type', 'tps_mode',
-                  'stretch' 'first_tier', 'second_tier']
-    df.to_csv(os.path.join(output_path, 'results.csv'), index=False)
+    results = pd.DataFrame(results, columns=['dataset', 'distance', 'tps_mode',
+                                             'stretch', 'first_tier', 'second_tier'])
+    results.to_csv(f'{output_path}/results.csv', index=False)
 
 
 def main():
@@ -185,20 +183,22 @@ def main():
 
 
 if __name__ == '__main__':
-    csd = CoverSongDetection('../../exps/datasets/cover-song-data-jams',
-                             n_jobs=1)
-    evaluations = []
-    for experiment in EXPERIMENTS:
-        csd.preprocess(experiment)
-        csd.compute_similarity()
-        evaluation = csd.evaluate()
-        distance, tps_mode, stretch = experiment if len(experiment) == 3 \
-            else experiment + (None,)
-        evaluations.append(['biab_jams',
-                            distance,
-                            tps_mode,
-                            stretch,
-                            evaluation[0],
-                            evaluation[1]])
-    print(evaluations)
+    # csd = CoverSongDetection('../../exps/datasets/cover-song-data-jams',
+    #                          n_jobs=1)
+    # evaluations = []
+    # for experiment in EXPERIMENTS:
+    #     csd.preprocess(experiment)
+    #     csd.compute_similarity()
+    #     evaluation = csd.evaluate()
+    #     distance, tps_mode, stretch = experiment if len(experiment) == 3 \
+    #         else experiment + (None,)
+    #     evaluations.append(['biab_jams',
+    #                         distance,
+    #                         tps_mode,
+    #                         stretch,
+    #                         evaluation[0],
+    #                         evaluation[1]])
+    # print(evaluations)
+    # save_results(evaluations, '../../exps/results/')
+    evaluations = [['biab_jams', 'tpsd', 'offset', None, 0.46861471861471865, 0.553896103896104], ['biab_jams', 'tpsd', 'profile', None, 0.6082251082251082, 0.6935064935064935], ['biab_jams', 'dtw', 'offset', 'stretch', 0.282034632034632, 0.3296536796536797], ['biab_jams', 'dtw', 'profile', 'stretch', 0.3495670995670995, 0.3991341991341991], ['biab_jams', 'dtw', 'offset', 'no-stretch', 0.4075757575757576, 0.48852813852813853], ['biab_jams', 'dtw', 'profile', 'no-stretch', 0.4242424242424242, 0.503030303030303]]
     save_results(evaluations, '../../exps/results/')
