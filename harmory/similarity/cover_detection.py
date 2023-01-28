@@ -22,7 +22,27 @@ EXPERIMENTS = [('tpsd', 'offset'),
                ('dtw', 'offset', 'stretch'),
                ('dtw', 'profile', 'stretch'),
                ('dtw', 'offset', 'no-stretch'),
-               ('dtw', 'profile', 'no-stretch')]
+               ('dtw', 'profile', 'no-stretch'),
+               ('ctw', 'offset', 'stretch'),
+               ('ctw', 'profile', 'stretch'),
+               ('ctw', 'offset', 'no-stretch'),
+               ('ctw', 'profile', 'no-stretch'),
+               ('dtw', 'offset', 'stretch', 'sakoe_chiba'),
+               ('dtw', 'offset', 'stretch', 'itakura'),
+               ('dtw', 'profile', 'stretch', 'sakoe_chiba'),
+               ('dtw', 'profile', 'stretch', 'itakura'),
+               ('dtw', 'offset', 'no-stretch', 'sakoe_chiba'),
+               ('dtw', 'offset', 'no-stretch', 'itakura'),
+               ('dtw', 'profile', 'no-stretch', 'sakoe_chiba'),
+               ('dtw', 'profile', 'no-stretch', 'itakura'),
+               ('ctw', 'offset', 'stretch', 'sakoe_chiba'),
+               ('ctw', 'offset', 'stretch', 'itakura'),
+               ('ctw', 'profile', 'stretch', 'sakoe_chiba'),
+               ('ctw', 'profile', 'stretch', 'itakura'),
+               ('ctw', 'offset', 'no-stretch', 'sakoe_chiba'),
+               ('ctw', 'offset', 'no-stretch', 'itakura'),
+               ('ctw', 'profile', 'no-stretch', 'sakoe_chiba'),
+               ('ctw', 'profile', 'no-stretch', 'itakura'),]
 
 
 class CoverSongDetection:
@@ -48,6 +68,7 @@ class CoverSongDetection:
         self._mode = None
         self._stretch = None
         self._similarity = None
+        self._constraint = None
 
     def preprocess(self, experiment: tuple) -> None:
         """
@@ -63,9 +84,16 @@ class CoverSongDetection:
             self._experiment, self._mode, self._stretch = experiment
             assert self._stretch in ['stretch', 'no-stretch'], \
                 f'Invalid stretch mode: {self._stretch}'
-            self._stretch = True if self._stretch == 'stretch' else False
+        elif len(experiment) == 4:
+            self._experiment, self._mode, self._stretch, self._constraint = experiment
+            assert self._stretch in ['stretch', 'no-stretch'], \
+                f'Invalid stretch mode: {self._stretch}'
+            assert self._constraint in ['sakoe_chiba', 'itakura'], \
+                f'Invalid constraint: {self._constraint}'
         else:
             raise ValueError('Invalid experiment')
+
+        self._stretch = True if self._stretch == 'stretch' else False
 
         logging.info(f'Preprocessing {self._dataset_name} '
                      f'using {experiment} and {self._mode} mode')
@@ -96,7 +124,7 @@ class CoverSongDetection:
         """
         assert self._experiment is not None, 'Experiment not set'
         assert self._mode is not None, 'Mode not set'
-        if self._experiment == 'dtw':
+        if self._experiment == 'dtw' or self._experiment == 'ctw':
             assert self._stretch is not None, 'Stretch not set'
 
         logger.info(f'Computing similarity for {self._dataset_name} using '
@@ -107,8 +135,11 @@ class CoverSongDetection:
 
         if self._experiment == 'tpsd':
             similarity = tpsd_similarity(combinations)
-        elif self._experiment == 'dtw':
-            similarity = dtw_similarity(combinations, stretch=self._stretch)
+        elif self._experiment == 'dtw' or self._experiment == 'ctw':
+            similarity = dtw_similarity(combinations,
+                                        stretch=self._stretch,
+                                        constraint=self._constraint,
+                                        dtw_type=self._experiment)
         else:
             raise ValueError(f'Invalid experiment: {self._experiment}')
 
@@ -141,9 +172,11 @@ def save_results(results: list[list], output_path: str) -> None:
     :return: None
     :rtype: None
     """
-    results = pd.DataFrame(results, columns=['dataset', 'distance', 'tps_mode',
-                                             'stretch', 'first_tier', 'second_tier'])
-    results.to_csv(f'{output_path}/results.csv', index=False)
+    results = pd.DataFrame(results, columns=['dataset', 'distance',
+                                             'tps_mode', 'stretch',
+                                             'cinstraint', 'first_tier',
+                                             'second_tier'])
+    results.to_csv(output_path, index=False)
 
 
 def main():
@@ -169,36 +202,50 @@ def main():
         csd.preprocess(experiment)
         csd.compute_similarity()
         evaluation = csd.evaluate()
-        distance, tps_mode, stretch = experiment if len(experiment) == 3 \
-            else experiment + (None,)
-        evaluations.append((args.dataset_path.split('/')[-1],
+        if len(experiment) == 2:
+            distance, tps_mode = experiment
+            stretch = None
+            constraint = None
+        elif len(experiment) == 3:
+            distance, tps_mode, stretch = experiment
+            constraint = None
+        elif len(experiment) == 4:
+            distance, tps_mode, stretch, constraint = experiment
+        evaluations.append([(args.dataset_path.split('/')[-1],
                             distance,
                             tps_mode,
                             stretch,
+                            constraint,
                             evaluation[0],
-                            evaluation[1]))
-        save_results(evaluations, args.output_path)
+                            evaluation[1])])
+    save_results(evaluations, args.output_path)
 
     return evaluations
 
 
 if __name__ == '__main__':
-    # csd = CoverSongDetection('../../exps/datasets/cover-song-data-jams',
-    #                          n_jobs=1)
-    # evaluations = []
-    # for experiment in EXPERIMENTS:
-    #     csd.preprocess(experiment)
-    #     csd.compute_similarity()
-    #     evaluation = csd.evaluate()
-    #     distance, tps_mode, stretch = experiment if len(experiment) == 3 \
-    #         else experiment + (None,)
-    #     evaluations.append(['biab_jams',
-    #                         distance,
-    #                         tps_mode,
-    #                         stretch,
-    #                         evaluation[0],
-    #                         evaluation[1]])
-    # print(evaluations)
-    # save_results(evaluations, '../../exps/results/')
-    evaluations = [['biab_jams', 'tpsd', 'offset', None, 0.46861471861471865, 0.553896103896104], ['biab_jams', 'tpsd', 'profile', None, 0.6082251082251082, 0.6935064935064935], ['biab_jams', 'dtw', 'offset', 'stretch', 0.282034632034632, 0.3296536796536797], ['biab_jams', 'dtw', 'profile', 'stretch', 0.3495670995670995, 0.3991341991341991], ['biab_jams', 'dtw', 'offset', 'no-stretch', 0.4075757575757576, 0.48852813852813853], ['biab_jams', 'dtw', 'profile', 'no-stretch', 0.4242424242424242, 0.503030303030303]]
-    save_results(evaluations, '../../exps/results/')
+    csd = CoverSongDetection('../../exps/datasets/cover-song-data-jams',
+                             n_jobs=1)
+    evaluations = []
+    for experiment in EXPERIMENTS:
+        csd.preprocess(experiment)
+        csd.compute_similarity()
+        evaluation = csd.evaluate()
+        if len(experiment) == 2:
+            distance, tps_mode = experiment
+            stretch = None
+            constraint = None
+        elif len(experiment) == 3:
+            distance, tps_mode, stretch = experiment
+            constraint = None
+        elif len(experiment) == 4:
+            distance, tps_mode, stretch, constraint = experiment
+        evaluations.append(['biab_jams',
+                            distance,
+                            tps_mode,
+                            stretch,
+                            constraint,
+                            evaluation[0],
+                            evaluation[1]])
+    print(evaluations)
+    save_results(evaluations, '../../exps/results/results_biab_jams_hyperparameter.csv')

@@ -87,9 +87,6 @@ def get_permutations(time_series: list | str | Path,
         time_series = joblib.load(time_series)
 
     permutations = list(combinations(time_series, 2))
-    # for (k, v) in time_series:
-    #     for (k2, v2) in time_series:
-    #         permutations.append(((k, v), (k2, v2)))
 
     if save:
         assert output_path is not None, "Please provide an output path"

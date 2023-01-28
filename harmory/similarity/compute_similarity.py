@@ -6,10 +6,11 @@ The functions in this module are of two main types:
 """
 import joblib
 import numpy as np
-from tslearn.metrics import dtw
+from tslearn.metrics import dtw, ctw
 from tslearn.preprocessing import TimeSeriesResampler
 
-from harmory.similarity.dataset_processing import process_dataset
+from harmory.similarity.dataset_processing import process_dataset, \
+    get_permutations
 
 
 def minimum_area(longest_sequence, shortest_sequence) -> float:
@@ -67,11 +68,19 @@ def tpsd_similarity(timeseries_data: np.ndarray) -> list[tuple]:
 
 
 def dtw_similarity(timeseries_data: np.ndarray,
-                   stretch: bool = False) -> list[tuple]:
+                   dtw_type: str = 'dtw',
+                   stretch: bool = False,
+                   constraint: str = None,
+                   sakoe_chiba_radius: int = None,
+                   itakura_max_slope: int = None) -> list[tuple]:
     """
     Compute the similarity between two time series using the DTW method
     Parameters
     ----------
+    itakura_max_slope
+    sakoe_chiba_radius
+    constraint
+    dtw_type
     timeseries_data : np.ndarray
         Array containing the time series data to be compared
     stretch : bool, optional
@@ -92,7 +101,17 @@ def dtw_similarity(timeseries_data: np.ndarray,
         if stretch:
             shortest = TimeSeriesResampler(sz=len(longest)).fit_transform(
                 shortest)[0]
-        similarity = dtw(longest, shortest)
+        assert dtw_type in ['dtw', 'ctw'], 'Invalid dtw type!'
+        if dtw_type == 'dtw':
+            similarity = dtw(longest, shortest,
+                             global_constraint=constraint,
+                             sakoe_chiba_radius=sakoe_chiba_radius,
+                             itakura_max_slope=itakura_max_slope)
+        if dtw_type == 'ctw':
+            similarity = ctw(longest, shortest,
+                             global_constraint=constraint,
+                             sakoe_chiba_radius=sakoe_chiba_radius,
+                             itakura_max_slope=itakura_max_slope)
         results.append((key1, key2, similarity))
     return results
 
@@ -100,6 +119,5 @@ def dtw_similarity(timeseries_data: np.ndarray,
 if __name__ == '__main__':
     # import exps/datasets/cover-song-detection-jams-timeseries/timeseries.pkl
     ts = process_dataset('../../exps/datasets/cover-song-data-jams', save=False)
-    permutations = joblib.load(
-        '../../exps/datasets/cover-song-data-jams-timeseries/permutations.pkl')
+    permutations = get_permutations(ts)
     abc = dtw_similarity(permutations, stretch=True)
