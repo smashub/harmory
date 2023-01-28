@@ -58,18 +58,19 @@ def covers_ranking(results: list[tuple]) -> dict[Any, Any]:
         else:
             weighted_results.append([*res, False])
 
-    df = pd.DataFrame(results, columns=['track1', 'track2', 'distance',
+    df = pd.DataFrame(weighted_results, columns=['title1', 'title2', 'tpsd_distance',
                                         'distance_alert'])
-
-    results = {}
+    print(df.head())
+    ranking = {}
     for track in df['title1'].unique():
         if df[(df['title1'] == track) & (df['distance_alert'] == True)].shape[
                                                                         0] != 0:
             df_track = df[df['title1'] == track]
             df_track = df_track.sort_values(by=['tpsd_distance'],
                                             ascending=True)
-            results[track] = df_track['title2'].tolist()
-    return results
+            ranking[track] = df_track['title2'].tolist()
+    print(ranking)
+    return ranking
 
 
 def evaluate(covers_dict: dict, covers_ranking: dict) -> tuple[dict, dict]:

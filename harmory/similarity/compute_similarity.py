@@ -58,8 +58,6 @@ def tpsd_similarity(timeseries_data: np.ndarray) -> list[tuple]:
     results = []
     for pair in timeseries_data:
         (key1, ts1), (key2, ts2) = pair
-        print(ts1.time_series)
-        print(ts2.time_series)
         longest, shortest = (ts1.time_series, ts2.time_series) if len(
             ts1.time_series) >= len(ts2.time_series) else (ts2.time_series,
                                                            ts1.time_series)

@@ -62,7 +62,7 @@ def process_dataset(dataset_path: str | Path,
 def get_permutations(time_series: list | str | Path,
                      save: bool = False,
                      output_path: str | Path = None) -> list[
-    tuple[tuple, tuple]]:
+                                                        tuple[tuple, tuple]]:
     """
     Get all the possible permutations of the time series
     Parameters
