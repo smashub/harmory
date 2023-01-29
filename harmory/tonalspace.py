@@ -33,7 +33,7 @@ class TpsComparator:
 
     def _tps_distance(self, chord_a, key_a, chord_b, key_b):
         # Check if any corner case with silence is found before TPSD
-        if chord_a == "N" or chord_b == "N":
+        if chord_a == "N" or chord_b == "N" or chord_a == "" or chord_b == "":
             if chord_a != chord_b: return 13  # silence vs chord 
             else: return 0  # both silence has minimum distance
         # No corner cases now, we can safely compute the TPSD

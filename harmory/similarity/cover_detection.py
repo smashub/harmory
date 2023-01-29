@@ -26,23 +26,7 @@ EXPERIMENTS = [('tpsd', 'offset'),
                ('ctw', 'offset', 'stretch'),
                ('ctw', 'profile', 'stretch'),
                ('ctw', 'offset', 'no-stretch'),
-               ('ctw', 'profile', 'no-stretch'),
-               ('dtw', 'offset', 'stretch', 'sakoe_chiba'),
-               ('dtw', 'offset', 'stretch', 'itakura'),
-               ('dtw', 'profile', 'stretch', 'sakoe_chiba'),
-               ('dtw', 'profile', 'stretch', 'itakura'),
-               ('dtw', 'offset', 'no-stretch', 'sakoe_chiba'),
-               ('dtw', 'offset', 'no-stretch', 'itakura'),
-               ('dtw', 'profile', 'no-stretch', 'sakoe_chiba'),
-               ('dtw', 'profile', 'no-stretch', 'itakura'),
-               ('ctw', 'offset', 'stretch', 'sakoe_chiba'),
-               ('ctw', 'offset', 'stretch', 'itakura'),
-               ('ctw', 'profile', 'stretch', 'sakoe_chiba'),
-               ('ctw', 'profile', 'stretch', 'itakura'),
-               ('ctw', 'offset', 'no-stretch', 'sakoe_chiba'),
-               ('ctw', 'offset', 'no-stretch', 'itakura'),
-               ('ctw', 'profile', 'no-stretch', 'sakoe_chiba'),
-               ('ctw', 'profile', 'no-stretch', 'itakura'),]
+               ('ctw', 'profile', 'no-stretch'),]
 
 
 class CoverSongDetection:
@@ -156,6 +140,7 @@ class CoverSongDetection:
 
         time_series = self._cache[f'{self._dataset_name}_{self._mode}']
         covers = get_covers(time_series)
+        print(covers)
 
         ranking = covers_ranking(self._similarity)
 
@@ -224,12 +209,12 @@ def main():
 
 
 if __name__ == '__main__':
-    csd = CoverSongDetection('../../exps/datasets/cover-song-data-jams',
+    csd = CoverSongDetection('../../exps/datasets/merge',
                              n_jobs=1)
     evaluations = []
     for experiment in EXPERIMENTS:
         csd.preprocess(experiment)
-        csd.compute_similarity()
+        similarity = csd.compute_similarity()
         evaluation = csd.evaluate()
         if len(experiment) == 2:
             distance, tps_mode = experiment
@@ -240,7 +225,7 @@ if __name__ == '__main__':
             constraint = None
         elif len(experiment) == 4:
             distance, tps_mode, stretch, constraint = experiment
-        evaluations.append(['biab_jams',
+        evaluations.append(['merge',
                             distance,
                             tps_mode,
                             stretch,
@@ -248,4 +233,4 @@ if __name__ == '__main__':
                             evaluation[0],
                             evaluation[1]])
     print(evaluations)
-    save_results(evaluations, '../../exps/results/results_biab_jams_hyperparameter.csv')
+    save_results(evaluations, '../../exps/results/results_merge.csv')
