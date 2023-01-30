@@ -3,10 +3,13 @@ Classes and methods for harmonic segmentation.
 
 """
 import os
+import copy
 import pickle
 import logging
 
 import jams
+import stumpy
+import numpy as np
 
 import segmentation as seg
 from tonalspace import TpsOffsetTimeSeries, TpsProfileTimeSeries
@@ -276,3 +279,180 @@ class NoveltyBasedHarmonicSegmentation(HarmonicSegmentation):
         self.detect_peaks(pdetection_method, **pdetection_args)
         logger.debug(f"Detected peaks at: {self._current_bdect}")
         return self.segment_harmonic_print()
+
+
+class TimeSeriesHarmonicSegmentation(HarmonicSegmentation):
+    """
+    A simple harmonic segmentation wrapper for a simple 1-step function.
+    """
+    def __init__(self, harmonic_print: HarmonicPrint, seg_fn) -> None:
+        super().__init__(harmonic_print)
+        self.segmentation_fn = seg_fn
+
+    def detect_boundaries(self, **pdetection_args):
+        """Apply time series segmentation function using given parameters."""
+        self._current_bdect, self._current_bdout = self.segmentation_fn(
+            self.hprint.tps_timeseries.time_series, **pdetection_args)
+
+    def run(self, **pdetection_args):
+        """Perform time series semantic segmentation and return segments."""
+        self.detect_boundaries(**pdetection_args)
+        logger.debug(f"Detected boundaries at: {self._current_bdect}")
+        return self.segment_harmonic_print()
+
+# ############################################################################ #
+# Segmentation baselines as functions
+# ############################################################################ #
+
+def split_at_regular_times(time_series, n_regions=2, region_size=None):
+    """Return peaks at regular times, using a fixed region size."""
+    if n_regions and region_size:
+        raise ValueError("Can only specify either number or size of regions!")
+    if region_size is None:
+        assert n_regions is not None and n_regions > 1
+        region_size = int(len(time_series) / n_regions)
+
+    return np.arange(0 , len(time_series), region_size)[1:-1], None
+
+
+def split_around_regular_times(time_series, n_regions=2, region_size=None, std=None):
+    """Return peaks by sampling from a Gaussian centered at regular times."""
+    mu_times, _ = split_at_regular_times(
+        time_series, n_regions=n_regions, region_size=region_size)
+    std = (mu_times[1] - mu_times[0]) / 2 if std is None else std
+    return [int(np.random.normal(loc=time, scale=std)) for time in mu_times], _
+
+
+def split_at_random_times(time_series, n_regions=2):
+    """Return peaks at random times withing the given sequence."""
+    dur_left = len(time_series) - 1
+    current_peaks = [0]
+
+    for i in range(n_regions-1):
+        next_dur = np.random.randint(current_peaks[0]+1, dur_left)
+        current_peaks.append(current_peaks[-1]+next_dur)
+        dur_left = dur_left - next_dur
+
+    return current_peaks[1:], None
+
+
+def fluss_split(time_series, m, L, n_regions, normalise=True, exc_factor=3):
+    """
+    Split a time series using the FLUSS algorithm for semantic segmentation.
+
+    Parameters
+    ----------
+    time_series : np.array
+        The time series to segment.
+    m : int
+        The window size for the computation of the matrix profile.
+    L : int
+        The subsequence length that is set roughly to be one period length. This
+        is likely to be the same value as the window size, m, used to compute
+        the matrix profile and matrix profile index but it can be different
+        since this is only used to manage edge effects and has no bearing on any
+        of the IAC or CAC core calculations.
+    n_regions : int
+        the number of regimes, n_regimes, to search for (at least 2).
+    normalise: bool
+        When set to True, this z-normalizes subsequences prior to computing
+        distances. Otherwise, this function gets re-routed to its complementary
+        non-normalized equivalent in `stumpy`.
+    exc_factor : int
+        The multiplying factor for the regime exclusion zone. This will nullify
+        the beginning and end of the arc curve. Anywhere between 1-5 is
+        reasonable according to the paper).
+
+    """
+    logger.debug("Computing Matrix Profile")
+    mp = stumpy.stump(time_series, m=m, normalize=normalise)
+    logger.debug("Starting FLUSS segmentation")
+    cac, regime_locations = stumpy.fluss(mp[:, 1],
+        L=L, n_regimes=n_regions, excl_factor=exc_factor)
+
+    return sorted(regime_locations), cac
+
+
+def _rea(cac, n_regimes, L, excl_factor=3):
+    """
+    Find the location of the regimes using the regime extracting algorithm (REA)
+    Taken from https://github.com/TDAmeritrade/stumpy/blob/main/stumpy/floss.py
+
+    Parameters
+    ----------
+    cac : numpy.ndarray
+        The corrected arc curve
+    n_regimes : int
+        The number of regimes to search for. This is one more than the
+        number of regime changes as denoted in the original paper.
+    L : int
+        The subsequence length that is set roughly to be one period length.
+        This is likely to be the same value as the window size, `m`, used
+        to compute the matrix profile and matrix profile index but it can
+        be different since this is only used to manage edge effects
+        and has no bearing on any of the IAC or CAC core calculations.
+    excl_factor : int, default 5
+        The multiplying factor for the regime exclusion zone
+    
+    Returns
+    -------
+    regime_locs : numpy.ndarray
+        The locations of the regimes
+    Notes
+    -----
+    DOI: 10.1109/ICDM.2017.21
+    <https://www.cs.ucr.edu/~eamonn/Segmentation_ICDM.pdf>`__
+    
+    """
+    regime_locs = np.empty(n_regimes - 1, dtype=np.int64)
+    tmp_cac = copy.deepcopy(cac)
+    for i in range(n_regimes - 1):
+        regime_locs[i] = np.argmin(tmp_cac)
+        excl_start = max(regime_locs[i] - excl_factor * L, 0)
+        excl_stop = min(regime_locs[i] + excl_factor * L, cac.shape[0])
+        tmp_cac[excl_start:excl_stop] = 1.0
+
+    return regime_locs
+
+
+def floss_split(time_series, m, L, n_regions, normalise=True, exc_factor=1):
+    """
+    Split a time series using the FLOSS algorithm for semantic segmentation.
+
+    stumpy.floss(mp, T, m, L, excl_factor=5, 
+
+    Parameters
+    ----------
+    time_series : np.array
+        The time series to segment.
+    m : int
+        The window size for the computation of the matrix profile.
+    L : int
+        The subsequence length that is set roughly to be one period length. This
+        is likely to be the same value as the window size, m, used to compute
+        the matrix profile and matrix profile index but it can be different
+        since this is only used to manage edge effects and has no bearing on any
+        of the IAC or CAC core calculations.
+    n_regions : int
+        the number of regimes, n_regimes, to search for (at least 2).
+    normalise: bool
+        When set to True, this z-normalizes subsequences prior to computing
+        distances. Otherwise, this function gets re-routed to its complementary
+        non-normalized equivalent in `stumpy`.
+    exc_factor : int
+        The multiplying factor for the regime exclusion zone. This will nullify
+        the beginning and end of the arc curve. Anywhere between 1-5 is
+        reasonable according to the paper).
+
+    """
+    logger.debug("Computing Matrix Profile")
+    mp = stumpy.stump(time_series, m=m, normalize=normalise)
+    logger.debug("Starting FLOSS segmentation")
+    floss_stream = stumpy.floss(
+        mp, time_series, m=m,
+        L=L, excl_factor=exc_factor)
+    regime_locations = _rea(
+        floss_stream.cac_1d_, n_regimes=n_regions,
+        L=L, excl_factor=exc_factor)
+
+    return sorted(regime_locations), floss_stream.cac_1d_
