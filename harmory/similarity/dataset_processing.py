@@ -46,14 +46,23 @@ def process_dataset(dataset_path: str | Path,
         try:
             sequence = HarmonicPrint(str(file),
                                      sr=1,
-                                     chord_namespace='chord',
+                                     chord_namespace='chord_harte',
                                      tpst_type=tpst_type)
             title = sequence.metadata['title']
             title = title.strip()
-            time_series.append((title, sequence.tps_timeseries))
-        except Exception as e:
-            logger.error(f'Error while processing {file}: {e}')
-            continue
+            time_series.append((str(i) + '$' + title, sequence.tps_timeseries))
+        except Exception:
+            try:
+                sequence = HarmonicPrint(str(file),
+                                         sr=1,
+                                         chord_namespace='chord',
+                                         tpst_type=tpst_type)
+                title = sequence.metadata['title']
+                title = title.strip()
+                time_series.append((str(i) + '$' + title, sequence.tps_timeseries))
+            except Exception as e:
+                logger.error(f'Error while processing {file}: {e}')
+                continue
 
     if save:
         # create a folder in the parent directory of dataset_path

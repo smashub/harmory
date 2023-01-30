@@ -36,6 +36,8 @@ class TpsComparator:
         if chord_a == "N" or chord_b == "N" or chord_a == "" or chord_b == "":
             if chord_a != chord_b: return 13  # silence vs chord 
             else: return 0  # both silence has minimum distance
+        if key_a == "N" or key_b == "N" or key_a == "" or key_b == "":
+            if key_a != key_b: return 13
         # No corner cases now, we can safely compute the TPSD
         tpsd_ij = TpsComparison(chord_a=chord_a, key_a=key_a,
                                 chord_b=chord_b, key_b=key_b)
