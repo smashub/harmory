@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 from harmory.similarity.compute_similarity import tpsd_similarity, \
-    dtw_similarity
+    dtw_similarity, longest_common_substring, soft_dtw_similarity
 from harmory.similarity.dataset_processing import process_dataset, \
     get_permutations
 from harmory.similarity.evaluation import get_covers, covers_ranking, \
@@ -23,10 +23,17 @@ EXPERIMENTS = [('tpsd', 'offset'),
                ('dtw', 'profile', 'stretch'),
                ('dtw', 'offset', 'no-stretch'),
                ('dtw', 'profile', 'no-stretch'),
-               ('ctw', 'offset', 'stretch'),
-               ('ctw', 'profile', 'stretch'),
-               ('ctw', 'offset', 'no-stretch'),
-               ('ctw', 'profile', 'no-stretch'),]
+               ('dtw', 'offset', 'stretch', 'sakoe_chiba'),
+               ('dtw', 'profile', 'stretch', 'sakoe_chiba'),
+               ('dtw', 'offset', 'stretch', 'itakura'),
+               ('dtw', 'profile', 'stretch', 'itakura'),
+               ('dtw', 'offset', 'no-stretch', 'sakoe_chiba'),
+               ('dtw', 'profile', 'no-stretch', 'sakoe_chiba'),
+               ('dtw', 'offset', 'no-stretch', 'itakura'),
+               ('dtw', 'profile', 'no-stretch', 'itakura'),
+               ('lcss', 'offset', 'no-stretch', 'sakoe_chiba'),
+               ('sdtw', 'offset', 'stretch', 'sakoe_chiba'),
+               ('sdtw', 'profile', 'stretch', 'sakoe_chiba')]
 
 
 class CoverSongDetection:
@@ -62,11 +69,10 @@ class CoverSongDetection:
 
         logger.info(f'Preprocessing {self._dataset_name} ')
 
-        if len(experiment) == 2:
-            self._experiment, self._mode = experiment
-        elif len(experiment) == 3:
+        self._experiment, self._mode = experiment[:2]
+        if len(experiment) == 3:
             self._experiment, self._mode, self._stretch = experiment
-            assert self._stretch in ['stretch', 'no-stretch'], \
+            assert self._stretch in ['stretch', 'no-stretch', None], \
                 f'Invalid stretch mode: {self._stretch}'
         elif len(experiment) == 4:
             self._experiment, self._mode, self._stretch, self._constraint = experiment
@@ -123,7 +129,18 @@ class CoverSongDetection:
             similarity = dtw_similarity(combinations,
                                         stretch=self._stretch,
                                         constraint=self._constraint,
-                                        dtw_type=self._experiment)
+                                        dtw_type=self._experiment,
+                                        sakoe_chiba_radius=5,
+                                        itakura_max_slope=5)
+        elif self._experiment == 'lcss':
+            similarity = longest_common_substring(combinations,
+                                                  constraint=self._constraint,
+                                                  sakoe_chiba_radius=5,
+                                                  itakura_max_slope=5)
+        elif self._experiment == 'sdtw':
+            similarity = soft_dtw_similarity(combinations,
+                                             stretch=self._stretch,
+                                             gamma=1)
         else:
             raise ValueError(f'Invalid experiment: {self._experiment}')
 
@@ -140,7 +157,6 @@ class CoverSongDetection:
 
         time_series = self._cache[f'{self._dataset_name}_{self._mode}']
         covers = get_covers(time_series)
-        print(covers)
 
         ranking = covers_ranking(self._similarity)
 
@@ -209,10 +225,10 @@ def main():
 
 
 if __name__ == '__main__':
-    csd = CoverSongDetection('../../exps/datasets/merge',
+    csd = CoverSongDetection('../../exps/datasets/cover-song-data-jams',
                              n_jobs=1)
     evaluations = []
-    for experiment in EXPERIMENTS:
+    for experiment in EXPERIMENTS[-1:]:
         csd.preprocess(experiment)
         similarity = csd.compute_similarity()
         evaluation = csd.evaluate()
@@ -225,7 +241,7 @@ if __name__ == '__main__':
             constraint = None
         elif len(experiment) == 4:
             distance, tps_mode, stretch, constraint = experiment
-        evaluations.append(['merge',
+        evaluations.append(['biab',
                             distance,
                             tps_mode,
                             stretch,
@@ -233,4 +249,4 @@ if __name__ == '__main__':
                             evaluation[0],
                             evaluation[1]])
     print(evaluations)
-    save_results(evaluations, '../../exps/results/results_merge.csv')
+    # save_results(evaluations, '../../exps/results/results_merge_all_2.csv')

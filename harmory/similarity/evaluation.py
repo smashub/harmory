@@ -2,6 +2,7 @@
 Utility functions for evaluating similarity measures.
 The functions in this module are the same as those in the TPSD paper.
 """
+import json
 from typing import Any
 
 import joblib
@@ -27,12 +28,15 @@ def get_covers(dataset: list, string_match_threshold: float = .98) -> dict:
     titles = [x[0] for x in dataset]
     for track in titles:
         cover = [t for t in titles if
-                 jaro_similarity(track, t) >= string_match_threshold]
+                 jaro_similarity(track.split('$')[-1],
+                                 t.split('$')[-1]) >= string_match_threshold]
         if len(cover) > 1 and all(
-                [jaro_similarity(track, t) < string_match_threshold for t in
+                [jaro_similarity(track.split('$')[-1],
+                                 t.split('$')[-1]) < string_match_threshold for
+                 t in
                  covers.keys()]):
             covers[track] = cover
-    # joblib.dump(covers, 'covers.pkl')
+    json.dump(covers, open('covers.json', 'w'), indent=4)
     return {k: v for k, v in
             sorted(covers.items(), key=lambda item: item[1], reverse=True)}
 
@@ -52,24 +56,25 @@ def covers_ranking(results: list[tuple]) -> dict[Any, Any]:
     """
     weighted_results = []
     for res in results:
-        if jaro_similarity(res[0], res[1]) >= .98:
-            weighted_results.append([*res, True])
+        if jaro_similarity(res[0].split('$')[-1], res[1].split('$')[-1]) >= .98:
+            if res[0] != res[1]:
+                weighted_results.append([*res, True])
         else:
             weighted_results.append([*res, False])
 
     df = pd.DataFrame(weighted_results,
                       columns=['title1', 'title2', 'tpsd_distance',
                                'distance_alert'])
-
+    df.to_csv('tabular_ranking.csv', index=False)
     ranking = {}
     for track in df['title1'].unique():
         if df[(df['title1'] == track) & (df['distance_alert'] == True)].shape[
-                                                                        0] != 0:
+            0] != 0:
             df_track = df[df['title1'] == track]
             df_track = df_track.sort_values(by=['tpsd_distance'],
                                             ascending=True)
             ranking[track] = df_track['title2'].tolist()
-
+    json.dump(ranking, open('ranking.json', 'w'), indent=4)
     return ranking
 
 
@@ -85,14 +90,14 @@ def evaluate(covers_dict: dict, covers_ranking: dict) -> tuple[float, float]:
     first_tier, second_tier = {}, {}
     for track in covers_dict.keys():
         class_size = len(covers_dict[track]) - 1
-        class_size_second = 2 * class_size - 1
+        class_size_second = 2 * len(covers_dict[track]) - 1
         if track in covers_ranking.keys():
             first_tier[track] = len(
-                [x for x in covers_ranking[track][:class_size] if
-                 jaro_similarity(x, track) >= .98]) / class_size
+                [x for x in covers_ranking[track][:class_size] if x in
+                 list(covers_dict[track])]) / class_size
             second_tier[track] = len(
-                [x for x in covers_ranking[track][:class_size_second] if
-                 jaro_similarity(x, track) >= .98]) / class_size
+                [x for x in covers_ranking[track][:class_size_second] if x in
+                 list(covers_dict[track])]) / class_size
 
     return sum(first_tier.values()) / len(first_tier), sum(
         second_tier.values()) / len(second_tier)
