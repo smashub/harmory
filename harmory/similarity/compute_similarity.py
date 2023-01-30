@@ -59,10 +59,10 @@ def tpsd_similarity(timeseries_data: np.ndarray) -> list[tuple]:
     results = []
     for pair in timeseries_data:
         (key1, ts1), (key2, ts2) = pair
-        longest, shortest = (ts1.time_series, ts2.time_series) if len(
-            ts1.time_series) >= len(ts2.time_series) else (ts2.time_series,
-                                                           ts1.time_series)
-        similarity = minimum_area(list(longest), list(shortest))
+        # transform to lists
+        ts1, ts2 = list(ts1.time_series), list(ts2.time_series)
+        longest, shortest = (ts1, ts2) if len(ts1) >= len(ts2) else (ts2, ts1)
+        similarity = minimum_area(longest, shortest)
         results.append((key1, key2, similarity))
     return results
 
@@ -73,7 +73,7 @@ def dtw_similarity(timeseries_data: np.ndarray,
                    constraint: str = None,
                    sakoe_chiba_radius: int = None,
                    itakura_max_slope: int = None,
-                   normalize: bool = True) -> list[tuple]:
+                   normalize: bool = False) -> list[tuple]:
     """
     Compute the similarity between two time series using the DTW method
     Parameters

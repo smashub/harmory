@@ -3,7 +3,6 @@ Script to detect cover songs in a dataset of songs.
 """
 import argparse
 import logging
-import os
 
 import numpy as np
 import pandas as pd
@@ -29,11 +28,15 @@ EXPERIMENTS = [('tpsd', 'offset'),
                ('dtw', 'profile', 'stretch', 'itakura'),
                ('dtw', 'offset', 'no-stretch', 'sakoe_chiba'),
                ('dtw', 'profile', 'no-stretch', 'sakoe_chiba'),
-               ('dtw', 'offset', 'no-stretch', 'itakura'),
-               ('dtw', 'profile', 'no-stretch', 'itakura'),
-               ('lcss', 'offset', 'no-stretch', 'sakoe_chiba'),
+               ('dtw', 'offset', 'stretch', 'sakoe_chiba', 'normalize'),
+               ('dtw', 'profile', 'stretch', 'sakoe_chiba', 'normalize'),
+               ('lcss', 'offset', None, 'sakoe_chiba'),
+               ('lcss', 'offset', None, 'itakura'),
+               ('sdtw', 'offset', 'stretch'),
+               ('sdtw', 'profile', 'stretch'),
                ('sdtw', 'offset', 'stretch', 'sakoe_chiba'),
-               ('sdtw', 'profile', 'stretch', 'sakoe_chiba')]
+               ('sdtw', 'profile', 'stretch', 'sakoe_chiba'),
+               ('sdtw', 'profile', 'no-stretch', 'sakoe_chiba'),]
 
 
 class CoverSongDetection:
@@ -60,6 +63,9 @@ class CoverSongDetection:
         self._stretch = None
         self._similarity = None
         self._constraint = None
+        self._normalize = None
+        self._sakoe_chiba_band = None
+        self._itakura_max_slope = None
 
     def preprocess(self, experiment: tuple) -> None:
         """
@@ -76,13 +82,16 @@ class CoverSongDetection:
                 f'Invalid stretch mode: {self._stretch}'
         elif len(experiment) == 4:
             self._experiment, self._mode, self._stretch, self._constraint = experiment
-            assert self._stretch in ['stretch', 'no-stretch'], \
+            assert self._stretch in ['stretch', 'no-stretch', None], \
                 f'Invalid stretch mode: {self._stretch}'
             assert self._constraint in ['sakoe_chiba', 'itakura'], \
                 f'Invalid constraint: {self._constraint}'
-        else:
-            raise ValueError('Invalid experiment')
+            self._sakoe_chiba_band = 5 if self._constraint == 'sakoe_chiba' else None
+            self._itakura_max_slope = 3 if self._constraint == 'itakura' else None
+        elif len(experiment) == 5:
+            self._experiment, self._mode, self._stretch, self._constraint, self._normalize = experiment
 
+        self._normalize = True if self._normalize == 'normalize' else False
         self._stretch = True if self._stretch == 'stretch' else False
 
         logging.info(f'Preprocessing {self._dataset_name} '
@@ -130,17 +139,19 @@ class CoverSongDetection:
                                         stretch=self._stretch,
                                         constraint=self._constraint,
                                         dtw_type=self._experiment,
-                                        sakoe_chiba_radius=5,
-                                        itakura_max_slope=5)
+                                        sakoe_chiba_radius=self._sakoe_chiba_band,
+                                        itakura_max_slope=self._itakura_max_slope,
+                                        normalize=self._normalize)
         elif self._experiment == 'lcss':
             similarity = longest_common_substring(combinations,
                                                   constraint=self._constraint,
-                                                  sakoe_chiba_radius=5,
-                                                  itakura_max_slope=5)
+                                                  sakoe_chiba_radius=self._sakoe_chiba_band,
+                                                  itakura_max_slope=self._itakura_max_slope, )
         elif self._experiment == 'sdtw':
             similarity = soft_dtw_similarity(combinations,
                                              stretch=self._stretch,
-                                             gamma=1)
+                                             gamma=1,
+                                             normalize=self._normalize)
         else:
             raise ValueError(f'Invalid experiment: {self._experiment}')
 
@@ -213,40 +224,63 @@ def main():
         elif len(experiment) == 4:
             distance, tps_mode, stretch, constraint = experiment
         evaluations.append([(args.dataset_path.split('/')[-1],
-                            distance,
-                            tps_mode,
-                            stretch,
-                            constraint,
-                            evaluation[0],
-                            evaluation[1])])
+                             distance,
+                             tps_mode,
+                             stretch,
+                             constraint,
+                             evaluation[0],
+                             evaluation[1])])
     save_results(evaluations, args.output_path)
 
     return evaluations
 
 
 if __name__ == '__main__':
-    csd = CoverSongDetection('../../exps/datasets/cover-song-data-jams',
+    csd = CoverSongDetection('../../exps/datasets/merge',
                              n_jobs=1)
     evaluations = []
-    for experiment in EXPERIMENTS[-1:]:
+    for experiment in EXPERIMENTS[14:]:
         csd.preprocess(experiment)
         similarity = csd.compute_similarity()
         evaluation = csd.evaluate()
+        stretch, constraint, normalize = None, None, False
+        print(evaluation)
         if len(experiment) == 2:
             distance, tps_mode = experiment
-            stretch = None
-            constraint = None
         elif len(experiment) == 3:
             distance, tps_mode, stretch = experiment
-            constraint = None
         elif len(experiment) == 4:
             distance, tps_mode, stretch, constraint = experiment
-        evaluations.append(['biab',
+        elif len(experiment) == 5:
+            distance, tps_mode, stretch, constraint, normalize = experiment
+        evaluations.append(['merge',
                             distance,
                             tps_mode,
                             stretch,
                             constraint,
+                            normalize,
                             evaluation[0],
                             evaluation[1]])
     print(evaluations)
-    # save_results(evaluations, '../../exps/results/results_merge_all_2.csv')
+    save_results(evaluations, '../../exps/results/results_merge_final.csv')
+
+# (0.13713369963369962, 0.23778998778998778)
+# (0.7866300366300364, 0.829594017094017)
+# (0.7714438339438338, 0.8165445665445664)
+# (0.6287393162393162, 0.6891025641025641)
+# (0.4791666666666667, 0.5438034188034188)
+# (0.71741452991453, 0.7820512820512819)
+# (0.6752136752136753, 0.753205128205128)
+# (0.7738095238095237, 0.8386752136752136)
+# (0.7217643467643465, 0.7914377289377288)
+# (0.6602564102564104, 0.7222222222222223)
+# (0.5678418803418804, 0.6436965811965809)
+# (0.7126068376068376, 0.778846153846154)
+# (0.6575854700854701, 0.7628205128205128)
+##
+# (0.13072344322344323, 0.23084554334554339)
+# (0.13713369963369962, 0.23778998778998778)
+# (0.6672008547008547, 0.7740384615384613)
+# (0.7302350427350429, 0.8103632478632478)
+# (0.6672008547008547, 0.7740384615384613)
+#

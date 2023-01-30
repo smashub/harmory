@@ -2,7 +2,6 @@
 Utility functions for evaluating similarity measures.
 The functions in this module are the same as those in the TPSD paper.
 """
-import json
 from typing import Any
 
 import joblib
@@ -36,7 +35,6 @@ def get_covers(dataset: list, string_match_threshold: float = .98) -> dict:
                  t in
                  covers.keys()]):
             covers[track] = cover
-    json.dump(covers, open('covers.json', 'w'), indent=4)
     return {k: v for k, v in
             sorted(covers.items(), key=lambda item: item[1], reverse=True)}
 
@@ -65,7 +63,6 @@ def covers_ranking(results: list[tuple]) -> dict[Any, Any]:
     df = pd.DataFrame(weighted_results,
                       columns=['title1', 'title2', 'tpsd_distance',
                                'distance_alert'])
-    df.to_csv('tabular_ranking.csv', index=False)
     ranking = {}
     for track in df['title1'].unique():
         if df[(df['title1'] == track) & (df['distance_alert'] == True)].shape[
@@ -74,7 +71,6 @@ def covers_ranking(results: list[tuple]) -> dict[Any, Any]:
             df_track = df_track.sort_values(by=['tpsd_distance'],
                                             ascending=True)
             ranking[track] = df_track['title2'].tolist()
-    json.dump(ranking, open('ranking.json', 'w'), indent=4)
     return ranking
 
 
