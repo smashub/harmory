@@ -296,8 +296,9 @@ class TimeSeriesHarmonicSegmentation(HarmonicSegmentation):
 
     def run(self, **pdetection_args):
         """Perform time series semantic segmentation and return segments."""
+        self._flush_segmentation()
         self.detect_boundaries(**pdetection_args)
-        logger.debug(f"Detected boundaries at: {self._current_bdect}")
+        logger.info(f"Detected boundaries at: {self._current_bdect}")
         return self.segment_harmonic_print()
 
 # ############################################################################ #
@@ -310,33 +311,35 @@ def split_at_regular_times(time_series, n_regions=2, region_size=None):
         raise ValueError("Can only specify either number or size of regions!")
     if region_size is None:
         assert n_regions is not None and n_regions > 1
-        region_size = int(len(time_series) / n_regions)
+        region_size = len(time_series) / n_regions
 
-    return np.arange(0 , len(time_series), region_size)[1:-1], None
+    split_idxs = np.arange(0, len(time_series), region_size)[1:]
+    return [int(i) for i in split_idxs], None
 
 
 def split_around_regular_times(time_series, n_regions=2, region_size=None, std=None):
     """Return peaks by sampling from a Gaussian centered at regular times."""
     mu_times, _ = split_at_regular_times(
         time_series, n_regions=n_regions, region_size=region_size)
-    std = (mu_times[1] - mu_times[0]) / 2 if std is None else std
-    return [int(np.random.normal(loc=time, scale=std)) for time in mu_times], _
+    std = mu_times[0] / 3 if std is None else std  # 95% in 1/3 the duration
+    split_idxs = [np.abs(int(np.random.normal(t, scale=std))) for t in mu_times]
+    split_idxs[-1] = min(split_idxs[-1], len(time_series))
+    assert 0 not in split_idxs, "Illegal split"
+    return split_idxs, _
 
 
 def split_at_random_times(time_series, n_regions=2):
     """Return peaks at random times withing the given sequence."""
-    dur_left = len(time_series) - 1
-    current_peaks = [0]
+    split_idxs = list(np.random.choice(
+        len(time_series)-1, size=n_regions-1, replace=False))
+    while 0 in split_idxs:  # avoid illegal indexes
+        replacement = np.random.randint(1, len(time_series)-1)
+        split_idxs[split_idxs.index(0)] = replacement
 
-    for i in range(n_regions-1):
-        next_dur = np.random.randint(current_peaks[0]+1, dur_left)
-        current_peaks.append(current_peaks[-1]+next_dur)
-        dur_left = dur_left - next_dur
-
-    return current_peaks[1:], None
+    return sorted(split_idxs), None
 
 
-def fluss_split(time_series, m, L, n_regions, normalise=True, exc_factor=3):
+def fluss_split(time_series, m, n_regions, L=None, normalise=True, exc_factor=3):
     """
     Split a time series using the FLUSS algorithm for semantic segmentation.
 
@@ -364,13 +367,17 @@ def fluss_split(time_series, m, L, n_regions, normalise=True, exc_factor=3):
         reasonable according to the paper).
 
     """
-    logger.debug("Computing Matrix Profile")
+    L = m if L is None else L
+    logger.info(f"Computing Matrix Profile for m = {m}")
     mp = stumpy.stump(time_series, m=m, normalize=normalise)
-    logger.debug("Starting FLUSS segmentation")
+    logger.info(f"Starting FLUSS segmentation for {n_regions} regions")
     cac, regime_locations = stumpy.fluss(mp[:, 1],
         L=L, n_regimes=n_regions, excl_factor=exc_factor)
-
-    return sorted(regime_locations), cac
+    regime_locations = sorted(regime_locations)
+    if 0 in regime_locations:  # trivial segmentation index
+        logger.warn(f"FLUSS detected {regime_locations.count(0)} null splits")
+        regime_locations = [i for i in regime_locations if i!=0]  # remove 0s
+    return regime_locations, cac
 
 
 def _rea(cac, n_regimes, L, excl_factor=3):
@@ -415,7 +422,7 @@ def _rea(cac, n_regimes, L, excl_factor=3):
     return regime_locs
 
 
-def floss_split(time_series, m, L, n_regions, normalise=True, exc_factor=1):
+def floss_split(time_series, m, n_regions, L=None, normalise=True, exc_factor=1):
     """
     Split a time series using the FLOSS algorithm for semantic segmentation.
 
@@ -445,6 +452,7 @@ def floss_split(time_series, m, L, n_regions, normalise=True, exc_factor=1):
         reasonable according to the paper).
 
     """
+    L = m if L is None else L
     logger.debug("Computing Matrix Profile")
     mp = stumpy.stump(time_series, m=m, normalize=normalise)
     logger.debug("Starting FLOSS segmentation")
@@ -456,3 +464,12 @@ def floss_split(time_series, m, L, n_regions, normalise=True, exc_factor=1):
         L=L, excl_factor=exc_factor)
 
     return sorted(regime_locations), floss_stream.cac_1d_
+
+
+SEGMENTATION_BASELINE_FNS = {
+    "random_split": split_at_random_times,
+    "uniform_split": split_at_regular_times,
+    "quasirandom_split": split_around_regular_times,
+    "fluss_segmentation": fluss_split,
+    # "floss_segmentation": floss_split,
+}
