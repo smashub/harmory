@@ -1,0 +1,193 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 6.620689655172415,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.620689655172415,
+          "duration": 13.24137931034483,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.24137931034483,
+          "duration": 19.86206896551724,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.86206896551724,
+          "duration": 21.517241379310345,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.517241379310345,
+          "duration": 22.344827586206897,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.344827586206897,
+          "duration": 23.17241379310345,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.17241379310345,
+          "duration": 24.82758620689655,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.82758620689655,
+          "duration": 25.655172413793107,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.655172413793107,
+          "duration": 26.48275862068966,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.48275862068966,
+          "duration": 33.10344827586207,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.10344827586207,
+          "duration": 39.72413793103448,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.72413793103448,
+          "duration": 41.37931034482759,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.37931034482759,
+          "duration": 43.03448275862069,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.03448275862069,
+          "duration": 45.51724137931035,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.51724137931035,
+          "duration": 46.3448275862069,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.3448275862069,
+          "duration": 48.0,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.6551724137931,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.6551724137931,
+          "duration": 50.48275862068966,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.48275862068966,
+          "duration": 51.31034482758621,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.31034482758621,
+          "duration": 52.96551724137932,
+          "value": "Ab:maj6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 685.2413793103448,
+          "value": "Ab",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Dig",
+    "artist": "",
+    "release": "",
+    "duration": 685,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

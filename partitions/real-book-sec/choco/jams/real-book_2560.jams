@@ -1,0 +1,229 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 5.818181818181818,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.818181818181818,
+          "duration": 8.727272727272727,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.727272727272727,
+          "duration": 11.636363636363637,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.636363636363637,
+          "duration": 14.545454545454543,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.545454545454543,
+          "duration": 16.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 18.90909090909091,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.90909090909091,
+          "duration": 20.363636363636363,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.363636363636363,
+          "duration": 23.272727272727277,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.272727272727277,
+          "duration": 26.181818181818183,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.181818181818183,
+          "duration": 27.63636363636364,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.63636363636364,
+          "duration": 30.545454545454547,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.545454545454547,
+          "duration": 33.45454545454545,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.45454545454545,
+          "duration": 36.36363636363637,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.36363636363637,
+          "duration": 39.27272727272727,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.27272727272727,
+          "duration": 42.18181818181818,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.18181818181818,
+          "duration": 45.09090909090909,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.09090909090909,
+          "duration": 48.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.45454545454545,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.45454545454545,
+          "duration": 51.63636363636363,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.63636363636363,
+          "duration": 52.36363636363637,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.36363636363637,
+          "duration": 53.81818181818182,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.81818181818182,
+          "duration": 55.27272727272727,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.27272727272727,
+          "duration": 58.18181818181818,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.18181818181818,
+          "duration": 61.09090909090909,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.09090909090909,
+          "duration": 62.54545454545455,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.54545454545455,
+          "duration": 64.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 956.3636363636364,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Scrub Me Mama With A Boogie Beat",
+    "artist": "",
+    "release": "",
+    "duration": 956,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

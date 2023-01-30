@@ -1,0 +1,231 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.8571428571428571,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.8571428571428571,
+          "duration": 1.7142857142857142,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7142857142857142,
+          "duration": 2.571428571428571,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.571428571428571,
+          "duration": 3.4285714285714284,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.4285714285714284,
+          "duration": 4.285714285714286,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.285714285714286,
+          "duration": 5.142857142857142,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.142857142857142,
+          "duration": 6.0,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.0,
+          "duration": 6.857142857142857,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 13.714285714285714,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.714285714285714,
+          "duration": 20.57142857142857,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.57142857142857,
+          "duration": 27.428571428571427,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.428571428571427,
+          "duration": 29.142857142857142,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.142857142857142,
+          "duration": 30.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 30.85714285714285,
+          "value": "A:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.85714285714285,
+          "duration": 31.71428571428571,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.71428571428571,
+          "duration": 32.57142857142857,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.57142857142857,
+          "duration": 33.42857142857142,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.42857142857142,
+          "duration": 34.285714285714285,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.285714285714285,
+          "duration": 41.14285714285714,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.14285714285714,
+          "duration": 48.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 51.42857142857142,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.42857142857142,
+          "duration": 53.14285714285714,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.14285714285714,
+          "duration": 54.85714285714285,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.85714285714285,
+          "duration": 56.57142857142857,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.57142857142857,
+          "duration": 58.285714285714285,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.285714285714285,
+          "duration": 65.14285714285714,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 743.1428571428572,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Rose Of The Rio Grande",
+    "artist": [
+      "Harry Warren"
+    ],
+    "release": "",
+    "duration": 743,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

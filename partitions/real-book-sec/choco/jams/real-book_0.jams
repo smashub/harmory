@@ -1,0 +1,211 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.6666666666666665,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "duration": 5.333333333333333,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.333333333333333,
+          "duration": 6.666666666666667,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.666666666666667,
+          "duration": 8.0,
+          "value": "B:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 9.333333333333334,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.333333333333334,
+          "duration": 10.666666666666666,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 13.333333333333334,
+          "value": "Bb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.333333333333334,
+          "duration": 16.0,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.333333333333332,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.333333333333332,
+          "duration": 18.666666666666668,
+          "value": "Eb:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.666666666666668,
+          "duration": 21.33333333333333,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 24.0,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.666666666666668,
+          "value": "Gb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 29.33333333333333,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.33333333333333,
+          "duration": 32.0,
+          "value": "Bb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 33.333333333333336,
+          "value": "Db:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.333333333333336,
+          "duration": 34.666666666666664,
+          "value": "Db:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.666666666666664,
+          "duration": 36.0,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 37.333333333333336,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 38.66666666666666,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.66666666666666,
+          "duration": 40.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 42.0,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.0,
+          "duration": 42.66666666666666,
+          "value": "Eb:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 545.9999999999999,
+          "value": "Ab",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Just A Gigolo",
+    "artist": "",
+    "release": "",
+    "duration": 545,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

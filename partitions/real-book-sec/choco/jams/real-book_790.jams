@@ -1,0 +1,325 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.090909090909091,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.090909090909091,
+          "duration": 3.272727272727273,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.272727272727273,
+          "duration": 4.363636363636364,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.363636363636364,
+          "duration": 5.454545454545455,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.454545454545455,
+          "duration": 7.636363636363637,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.636363636363637,
+          "duration": 8.727272727272728,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.727272727272728,
+          "duration": 9.818181818181818,
+          "value": "Eb:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.818181818181818,
+          "duration": 12.0,
+          "value": "Eb:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 13.090909090909092,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.090909090909092,
+          "duration": 15.272727272727272,
+          "value": "F#:min/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.272727272727272,
+          "duration": 17.454545454545457,
+          "value": "C#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.454545454545457,
+          "duration": 19.63636363636364,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.63636363636364,
+          "duration": 21.81818181818182,
+          "value": "B:min/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.81818181818182,
+          "duration": 30.545454545454547,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.545454545454547,
+          "duration": 34.909090909090914,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.909090909090914,
+          "duration": 39.27272727272727,
+          "value": "B:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.27272727272727,
+          "duration": 43.63636363636364,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.63636363636364,
+          "duration": 45.81818181818182,
+          "value": "F#:min/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.81818181818182,
+          "duration": 48.0,
+          "value": "C#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 50.18181818181819,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.18181818181819,
+          "duration": 52.36363636363637,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.36363636363637,
+          "duration": 56.72727272727273,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.72727272727273,
+          "duration": 61.09090909090909,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.09090909090909,
+          "duration": 65.45454545454545,
+          "value": "G:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.45454545454545,
+          "duration": 67.63636363636364,
+          "value": "C#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.63636363636364,
+          "duration": 69.81818181818183,
+          "value": "C#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.81818181818183,
+          "duration": 72.0,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.0,
+          "duration": 74.18181818181819,
+          "value": "B:min/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.18181818181819,
+          "duration": 82.9090909090909,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 82.9090909090909,
+          "duration": 87.27272727272728,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 87.27272727272728,
+          "duration": 91.63636363636364,
+          "value": "B:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 91.63636363636364,
+          "duration": 96.0,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 96.0,
+          "duration": 98.1818181818182,
+          "value": "F#:min/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 98.1818181818182,
+          "duration": 100.36363636363636,
+          "value": "C#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 100.36363636363636,
+          "duration": 104.72727272727272,
+          "value": "F#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 104.72727272727272,
+          "duration": 105.81818181818184,
+          "value": "B:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 105.81818181818184,
+          "duration": 108.0,
+          "value": "B:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 108.0,
+          "duration": 109.0909090909091,
+          "value": "B:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 109.0909090909091,
+          "duration": 110.1818181818182,
+          "value": "G:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 110.1818181818182,
+          "duration": 111.27272727272728,
+          "value": "G:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 111.27272727272728,
+          "duration": 113.45454545454544,
+          "value": "C#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 113.45454545454544,
+          "duration": 117.81818181818184,
+          "value": "F#:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2388.0000000000005,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Speak Softly Love",
+    "artist": "",
+    "release": "",
+    "duration": 2388,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

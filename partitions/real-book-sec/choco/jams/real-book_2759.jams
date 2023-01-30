@@ -1,0 +1,163 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.170731707317073,
+          "value": "Bb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.170731707317073,
+          "duration": 2.341463414634146,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.341463414634146,
+          "duration": 4.682926829268293,
+          "value": "Bb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.682926829268293,
+          "duration": 5.853658536585366,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.853658536585366,
+          "duration": 7.024390243902439,
+          "value": "E:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.024390243902439,
+          "duration": 7.609756097560976,
+          "value": "Bb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.609756097560976,
+          "duration": 8.195121951219512,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.195121951219512,
+          "duration": 8.78048780487805,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.78048780487805,
+          "duration": 9.365853658536588,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.365853658536588,
+          "duration": 10.53658536585366,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.53658536585366,
+          "duration": 11.707317073170731,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.707317073170731,
+          "duration": 12.292682926829269,
+          "value": "Bb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.292682926829269,
+          "duration": 12.878048780487806,
+          "value": "G:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.878048780487806,
+          "duration": 13.463414634146345,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.463414634146345,
+          "duration": 14.048780487804878,
+          "value": "F:maj(b7,9,11,13)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 129.95121951219514,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Blues Walk",
+    "artist": "",
+    "release": "",
+    "duration": 129,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

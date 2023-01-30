@@ -1,0 +1,213 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 8.0,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 12.0,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 25.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.0,
+          "duration": 26.0,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.0,
+          "duration": 28.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.0,
+          "duration": 32.0,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 40.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 42.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.0,
+          "duration": 44.0,
+          "value": "C:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.0,
+          "duration": 48.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 52.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.0,
+          "duration": 54.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.0,
+          "duration": 55.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.0,
+          "duration": 56.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.0,
+          "duration": 60.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 62.5,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.5,
+          "duration": 64.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.0,
+          "duration": 66.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.0,
+          "duration": 67.0,
+          "value": "A:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.0,
+          "duration": 68.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.0,
+          "duration": 73.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 73.0,
+          "duration": 74.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.0,
+          "duration": 80.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1136.5,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "I Love Paris",
+    "artist": [
+      "Cole Porter"
+    ],
+    "release": "",
+    "duration": 1136,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

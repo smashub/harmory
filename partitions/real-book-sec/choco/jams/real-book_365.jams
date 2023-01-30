@@ -1,0 +1,183 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.5,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.5,
+          "duration": 3.0,
+          "value": "Ab:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.0,
+          "duration": 6.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.0,
+          "duration": 9.0,
+          "value": "Ab:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.0,
+          "duration": 12.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 13.5,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.5,
+          "duration": 15.0,
+          "value": "Ab:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.0,
+          "duration": 16.5,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.5,
+          "duration": 18.0,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.0,
+          "duration": 19.5,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.5,
+          "duration": 21.0,
+          "value": "Ab:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.0,
+          "duration": 24.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 27.0,
+          "value": "Ab:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.0,
+          "duration": 30.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 31.5,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.5,
+          "duration": 33.0,
+          "value": "Ab:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.0,
+          "duration": 34.5,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.5,
+          "duration": 36.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 351.0,
+          "value": "Eb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Bessie's Blues",
+    "artist": [
+      "John Coltrane"
+    ],
+    "release": "",
+    "duration": 351,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

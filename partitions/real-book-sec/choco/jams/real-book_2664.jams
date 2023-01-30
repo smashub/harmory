@@ -1,0 +1,151 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.181818181818182,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.181818181818182,
+          "duration": 4.363636363636364,
+          "value": "C:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.363636363636364,
+          "duration": 7.636363636363637,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.636363636363637,
+          "duration": 8.727272727272728,
+          "value": "G:7(s5,*5,b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.727272727272728,
+          "duration": 13.090909090909092,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.090909090909092,
+          "duration": 15.272727272727272,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.272727272727272,
+          "duration": 17.454545454545457,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.454545454545457,
+          "duration": 19.63636363636364,
+          "value": "A:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.63636363636364,
+          "duration": 21.81818181818182,
+          "value": "D:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.81818181818182,
+          "duration": 22.90909090909091,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.90909090909091,
+          "duration": 24.0,
+          "value": "E:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 25.090909090909093,
+          "value": "Eb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.090909090909093,
+          "duration": 26.181818181818183,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 208.36363636363637,
+          "value": "Cm",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Interplay",
+    "artist": "",
+    "release": "",
+    "duration": 208,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

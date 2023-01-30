@@ -1,0 +1,163 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.0,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.0,
+          "duration": 2.0,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.0,
+          "duration": 3.0,
+          "value": "D:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.0,
+          "duration": 4.0,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.0,
+          "duration": 8.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 16.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.0,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.0,
+          "duration": 18.0,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.0,
+          "duration": 19.5,
+          "value": "D:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.5,
+          "duration": 20.0,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.0,
+          "duration": 22.0,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.0,
+          "duration": 24.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.0,
+          "duration": 28.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.0,
+          "duration": 32.0,
+          "value": "D:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 240.5,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Harper Valley P",
+    "artist": "",
+    "release": "",
+    "duration": 240,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

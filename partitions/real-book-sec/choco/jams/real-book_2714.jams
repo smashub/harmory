@@ -1,0 +1,217 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.6,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.6,
+          "duration": 3.2,
+          "value": "B:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.2,
+          "duration": 4.8,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.8,
+          "duration": 6.4,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.4,
+          "duration": 12.8,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.8,
+          "duration": 19.2,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 25.6,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.6,
+          "duration": 28.8,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 32.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 33.6,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.6,
+          "duration": 35.2,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.2,
+          "duration": 38.4,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 40.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 41.6,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.6,
+          "duration": 42.4,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.4,
+          "duration": 43.2,
+          "value": "Bb:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.2,
+          "duration": 44.0,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.0,
+          "duration": 44.8,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.8,
+          "duration": 46.4,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.4,
+          "duration": 48.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 51.2,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.2,
+          "duration": 52.8,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.8,
+          "duration": 54.4,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.4,
+          "duration": 57.6,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 808.0,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "That Da-Da Strain",
+    "artist": "",
+    "release": "",
+    "duration": 808,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4.465116279069767,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.465116279069767,
+          "duration": 6.697674418604651,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.697674418604651,
+          "duration": 7.255813953488372,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.255813953488372,
+          "duration": 7.813953488372093,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.813953488372093,
+          "duration": 8.930232558139535,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.930232558139535,
+          "duration": 13.3953488372093,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.3953488372093,
+          "duration": 15.627906976744184,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.627906976744184,
+          "duration": 16.186046511627907,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.186046511627907,
+          "duration": 16.744186046511626,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.744186046511626,
+          "duration": 17.86046511627907,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.86046511627907,
+          "duration": 18.97674418604651,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.97674418604651,
+          "duration": 20.093023255813957,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.093023255813957,
+          "duration": 22.32558139534884,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.32558139534884,
+          "duration": 24.55813953488372,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.55813953488372,
+          "duration": 25.67441860465116,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.67441860465116,
+          "duration": 26.790697674418603,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.790697674418603,
+          "duration": 31.25581395348837,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.25581395348837,
+          "duration": 33.48837209302325,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.48837209302325,
+          "duration": 34.04651162790697,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.04651162790697,
+          "duration": 34.604651162790695,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.604651162790695,
+          "duration": 35.72093023255814,
+          "value": "F:maj6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 422.5116279069767,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Ah-Leu-Cha",
+    "artist": "",
+    "release": "",
+    "duration": 422,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

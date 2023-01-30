@@ -1,0 +1,169 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.0,
+          "duration": 8.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 10.666666666666666,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 17.333333333333332,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.333333333333332,
+          "duration": 18.666666666666668,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.666666666666668,
+          "duration": 24.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.666666666666668,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 29.33333333333333,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.33333333333333,
+          "duration": 33.333333333333336,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.333333333333336,
+          "duration": 34.666666666666664,
+          "value": "C#:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.666666666666664,
+          "duration": 36.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 36.66666666666666,
+          "value": "C:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.66666666666666,
+          "duration": 37.333333333333336,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 38.66666666666666,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.66666666666666,
+          "duration": 40.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 42.66666666666666,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 438.0,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Sugar Lips",
+    "artist": "",
+    "release": "",
+    "duration": 438,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 16.271186440677965,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.271186440677965,
+          "duration": 24.40677966101695,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.40677966101695,
+          "duration": 32.54237288135593,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.54237288135593,
+          "duration": 36.61016949152543,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.61016949152543,
+          "duration": 40.67796610169492,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.67796610169492,
+          "duration": 48.8135593220339,
+          "value": "C:min7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 199.3220338983051,
+          "value": "Cm",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Footprints",
+    "artist": [
+      "Wayne Shorter"
+    ],
+    "release": "",
+    "duration": 199,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

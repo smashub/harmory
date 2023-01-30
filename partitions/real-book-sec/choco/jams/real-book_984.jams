@@ -1,0 +1,211 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3.3103448275862077,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.3103448275862077,
+          "duration": 6.620689655172415,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.620689655172415,
+          "duration": 9.93103448275862,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.93103448275862,
+          "duration": 11.586206896551724,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.586206896551724,
+          "duration": 13.24137931034483,
+          "value": "D:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.24137931034483,
+          "duration": 16.551724137931036,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.551724137931036,
+          "duration": 19.86206896551724,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.86206896551724,
+          "duration": 23.17241379310345,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.17241379310345,
+          "duration": 24.82758620689655,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.82758620689655,
+          "duration": 26.48275862068966,
+          "value": "D:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.48275862068966,
+          "duration": 29.379310344827587,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.379310344827587,
+          "duration": 29.793103448275865,
+          "value": "E:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.793103448275865,
+          "duration": 33.10344827586207,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.10344827586207,
+          "duration": 36.0,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 36.41379310344828,
+          "value": "E:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.41379310344828,
+          "duration": 37.24137931034483,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.24137931034483,
+          "duration": 38.06896551724138,
+          "value": "D#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.06896551724138,
+          "duration": 38.896551724137936,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.896551724137936,
+          "duration": 39.72413793103448,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.72413793103448,
+          "duration": 43.03448275862069,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.03448275862069,
+          "duration": 46.3448275862069,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.3448275862069,
+          "duration": 49.6551724137931,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.6551724137931,
+          "duration": 52.96551724137932,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 666.2068965517241,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Poinciana",
+    "artist": "",
+    "release": "",
+    "duration": 666,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

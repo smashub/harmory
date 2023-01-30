@@ -1,0 +1,157 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.1428571428571428,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.1428571428571428,
+          "duration": 2.2857142857142856,
+          "value": "C:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.2857142857142856,
+          "duration": 4.571428571428571,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.571428571428571,
+          "duration": 5.714285714285714,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.714285714285714,
+          "duration": 6.857142857142857,
+          "value": "C:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 9.142857142857142,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.142857142857142,
+          "duration": 11.428571428571429,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.428571428571429,
+          "duration": 13.714285714285714,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.714285714285714,
+          "duration": 14.857142857142858,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.857142857142858,
+          "duration": 16.0,
+          "value": "C:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 18.285714285714285,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.285714285714285,
+          "duration": 20.571428571428573,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.571428571428573,
+          "duration": 22.857142857142858,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.857142857142858,
+          "duration": 27.428571428571427,
+          "value": "C:maj6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 174.85714285714283,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Things Ain't What They Used To Be",
+    "artist": "",
+    "release": "",
+    "duration": 174,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

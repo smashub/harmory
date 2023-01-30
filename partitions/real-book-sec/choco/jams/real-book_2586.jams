@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.5945945945945943,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5945945945945943,
+          "duration": 3.243243243243243,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.243243243243243,
+          "duration": 3.891891891891892,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.891891891891892,
+          "duration": 7.783783783783783,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.783783783783783,
+          "duration": 9.08108108108108,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.08108108108108,
+          "duration": 10.378378378378375,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.378378378378375,
+          "duration": 11.675675675675675,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.675675675675675,
+          "duration": 12.972972972972972,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.972972972972972,
+          "duration": 14.27027027027027,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.27027027027027,
+          "duration": 15.567567567567568,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.567567567567568,
+          "duration": 18.16216216216216,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.16216216216216,
+          "duration": 23.35135135135135,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.35135135135135,
+          "duration": 25.945945945945944,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.945945945945944,
+          "duration": 28.54054054054054,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.54054054054054,
+          "duration": 29.837837837837835,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.837837837837835,
+          "duration": 31.135135135135133,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.135135135135133,
+          "duration": 33.729729729729726,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.729729729729726,
+          "duration": 35.027027027027025,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.027027027027025,
+          "duration": 36.32432432432432,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.32432432432432,
+          "duration": 38.91891891891892,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.91891891891892,
+          "duration": 41.51351351351351,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 433.9459459459459,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Drink Up Thy Zider",
+    "artist": "",
+    "release": "",
+    "duration": 433,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

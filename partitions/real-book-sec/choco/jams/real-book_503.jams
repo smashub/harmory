@@ -1,0 +1,159 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.979591836734694,
+          "value": "Gb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.979591836734694,
+          "duration": 1.959183673469388,
+          "value": "B:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.959183673469388,
+          "duration": 3.918367346938776,
+          "value": "Gb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.918367346938776,
+          "duration": 5.877551020408164,
+          "value": "B:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.877551020408164,
+          "duration": 7.836734693877552,
+          "value": "Gb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.836734693877552,
+          "duration": 9.79591836734694,
+          "value": "Db:7(b5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.79591836734694,
+          "duration": 11.755102040816327,
+          "value": "Gb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.755102040816327,
+          "duration": 12.734693877551022,
+          "value": "Gb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.734693877551022,
+          "duration": 13.714285714285715,
+          "value": "B:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.714285714285715,
+          "duration": 15.673469387755103,
+          "value": "Gb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.673469387755103,
+          "duration": 17.63265306122449,
+          "value": "B:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.63265306122449,
+          "duration": 19.59183673469388,
+          "value": "Gb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.59183673469388,
+          "duration": 21.551020408163268,
+          "value": "Db:7(b5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.551020408163268,
+          "duration": 23.51020408163265,
+          "value": "Gb:9",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 166.53061224489798,
+          "value": "Gb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Blue Dots",
+    "artist": [
+      "Paul Quinnicette"
+    ],
+    "release": "",
+    "duration": 166,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

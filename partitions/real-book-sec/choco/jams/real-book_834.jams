@@ -1,0 +1,235 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 7.68,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.68,
+          "duration": 11.52,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.52,
+          "duration": 15.36,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.36,
+          "duration": 17.279999999999998,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.279999999999998,
+          "duration": 19.2,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 23.04,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.04,
+          "duration": 26.88,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.88,
+          "duration": 30.72,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.72,
+          "duration": 32.64,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.64,
+          "duration": 34.08,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.08,
+          "duration": 34.559999999999995,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.559999999999995,
+          "duration": 36.48,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.48,
+          "duration": 38.4,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 40.32,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.32,
+          "duration": 42.24,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.24,
+          "duration": 46.08,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.08,
+          "duration": 48.0,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.92,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.92,
+          "duration": 53.76,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.76,
+          "duration": 55.67999999999999,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.67999999999999,
+          "duration": 57.6,
+          "value": "F:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.6,
+          "duration": 61.44,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.44,
+          "duration": 63.35999999999999,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 63.35999999999999,
+          "duration": 65.28,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.28,
+          "duration": 67.19999999999999,
+          "value": "Ab:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.19999999999999,
+          "duration": 69.11999999999999,
+          "value": "Db:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.11999999999999,
+          "duration": 76.8,
+          "value": "A:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1124.6399999999996,
+          "value": "A",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Popsicle Toes",
+    "artist": "",
+    "release": "",
+    "duration": 1124,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

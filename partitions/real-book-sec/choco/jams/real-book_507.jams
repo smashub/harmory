@@ -1,0 +1,139 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.7142857142857142,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7142857142857142,
+          "duration": 12.0,
+          "value": "F:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 15.428571428571429,
+          "value": "C:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.428571428571429,
+          "duration": 18.857142857142858,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.857142857142858,
+          "duration": 21.428571428571427,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.428571428571427,
+          "duration": 22.285714285714285,
+          "value": "B:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.285714285714285,
+          "duration": 23.142857142857142,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.142857142857142,
+          "duration": 24.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 24.85714285714285,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.85714285714285,
+          "duration": 25.71428571428571,
+          "value": "C:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.71428571428571,
+          "duration": 27.428571428571427,
+          "value": "F:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 216.85714285714286,
+          "value": "F",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "It's A Matter Of Pride",
+    "artist": "",
+    "release": "",
+    "duration": 216,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

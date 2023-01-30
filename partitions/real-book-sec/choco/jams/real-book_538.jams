@@ -1,0 +1,289 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.4,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4,
+          "duration": 4.8,
+          "value": "D:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.8,
+          "duration": 7.199999999999999,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.199999999999999,
+          "duration": 9.6,
+          "value": "D:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 12.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 14.4,
+          "value": "D:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.4,
+          "duration": 16.8,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.8,
+          "duration": 19.2,
+          "value": "D:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 21.6,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.6,
+          "duration": 24.0,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 28.8,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 31.2,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.2,
+          "duration": 33.6,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.6,
+          "duration": 38.4,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 40.8,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.8,
+          "duration": 43.2,
+          "value": "A:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.2,
+          "duration": 46.8,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.8,
+          "duration": 48.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 50.4,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.4,
+          "duration": 52.8,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.8,
+          "duration": 55.2,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.2,
+          "duration": 57.6,
+          "value": "D:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.6,
+          "duration": 60.0,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 62.4,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.4,
+          "duration": 66.0,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.0,
+          "duration": 67.2,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.2,
+          "duration": 69.6,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.6,
+          "duration": 72.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.0,
+          "duration": 73.2,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 73.2,
+          "duration": 74.39999999999999,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.39999999999999,
+          "duration": 75.6,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 75.6,
+          "duration": 76.8,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 76.8,
+          "duration": 79.2,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 79.2,
+          "duration": 81.6,
+          "value": "D:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 81.6,
+          "duration": 85.2,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 85.2,
+          "duration": 86.39999999999999,
+          "value": "D:7(s5,*5)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1688.4,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Indian Summer",
+    "artist": "",
+    "release": "",
+    "duration": 1688,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4.363636363636364,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.363636363636364,
+          "duration": 6.545454545454546,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.545454545454546,
+          "duration": 8.727272727272728,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.727272727272728,
+          "duration": 13.090909090909092,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.090909090909092,
+          "duration": 14.181818181818182,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.181818181818182,
+          "duration": 15.272727272727272,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.272727272727272,
+          "duration": 17.454545454545457,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.454545454545457,
+          "duration": 21.81818181818182,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.81818181818182,
+          "duration": 24.0,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.181818181818183,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.181818181818183,
+          "duration": 30.545454545454547,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.545454545454547,
+          "duration": 34.909090909090914,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.909090909090914,
+          "duration": 37.09090909090909,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.09090909090909,
+          "duration": 39.27272727272727,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.27272727272727,
+          "duration": 41.45454545454545,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.45454545454545,
+          "duration": 43.63636363636364,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.63636363636364,
+          "duration": 48.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 50.18181818181819,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.18181818181819,
+          "duration": 51.27272727272727,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.27272727272727,
+          "duration": 52.36363636363637,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.36363636363637,
+          "duration": 54.54545454545455,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.54545454545455,
+          "duration": 56.72727272727273,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.72727272727273,
+          "duration": 58.909090909090914,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.909090909090914,
+          "duration": 61.09090909090909,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.09090909090909,
+          "duration": 65.45454545454545,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.45454545454545,
+          "duration": 69.81818181818183,
+          "value": "D:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 946.909090909091,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Citadel Waltz",
+    "artist": "",
+    "release": "",
+    "duration": 946,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

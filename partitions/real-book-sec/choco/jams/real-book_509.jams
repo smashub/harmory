@@ -1,0 +1,247 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.4,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4,
+          "duration": 4.8,
+          "value": "Bb:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.8,
+          "duration": 7.199999999999999,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.199999999999999,
+          "duration": 9.6,
+          "value": "Bb:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 12.0,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 14.4,
+          "value": "Bb:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.4,
+          "duration": 16.8,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.8,
+          "duration": 19.2,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 21.6,
+          "value": "D:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.6,
+          "duration": 24.0,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.4,
+          "value": "D:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.4,
+          "duration": 28.8,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 31.2,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.2,
+          "duration": 33.6,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.6,
+          "duration": 38.4,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 42.0,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.0,
+          "duration": 43.2,
+          "value": "Bb:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.2,
+          "duration": 48.0,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 52.8,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.8,
+          "duration": 55.2,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.2,
+          "duration": 57.6,
+          "value": "F:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.6,
+          "duration": 61.2,
+          "value": "Bb:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.2,
+          "duration": 62.4,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.4,
+          "duration": 64.8,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.8,
+          "duration": 66.0,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.0,
+          "duration": 67.2,
+          "value": "Bb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.2,
+          "duration": 69.6,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.6,
+          "duration": 72.0,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.0,
+          "duration": 240.0,
+          "value": "F:maj6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1292.4,
+          "value": "F",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "When I Grow To Old To Dream",
+    "artist": "",
+    "release": "",
+    "duration": 1292,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

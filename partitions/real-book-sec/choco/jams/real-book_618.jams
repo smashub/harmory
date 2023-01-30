@@ -1,0 +1,235 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.0,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.0,
+          "duration": 2.6666666666666665,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "duration": 5.333333333333333,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.333333333333333,
+          "duration": 8.0,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 9.333333333333334,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.333333333333334,
+          "duration": 10.0,
+          "value": "Bb:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.0,
+          "duration": 10.666666666666666,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 12.666666666666666,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.666666666666666,
+          "duration": 13.333333333333334,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.333333333333334,
+          "duration": 15.333333333333334,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.333333333333334,
+          "duration": 15.666666666666666,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.666666666666666,
+          "duration": 16.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 18.666666666666668,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.666666666666668,
+          "duration": 21.33333333333333,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 23.33333333333333,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.33333333333333,
+          "duration": 24.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.666666666666668,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 29.33333333333333,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.33333333333333,
+          "duration": 32.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 34.666666666666664,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.666666666666664,
+          "duration": 36.0,
+          "value": "Bb:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 37.333333333333336,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 38.66666666666666,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.66666666666666,
+          "duration": 39.333333333333336,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.333333333333336,
+          "duration": 40.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 42.0,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.0,
+          "duration": 42.66666666666666,
+          "value": "F:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 606.9999999999999,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "It's A Long Way To Tipperary",
+    "artist": "",
+    "release": "",
+    "duration": 606,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

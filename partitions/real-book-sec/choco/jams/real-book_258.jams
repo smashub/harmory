@@ -1,0 +1,229 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.4,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4,
+          "duration": 4.8,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.8,
+          "duration": 7.199999999999999,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.199999999999999,
+          "duration": 9.6,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 12.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 14.4,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.4,
+          "duration": 15.6,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.6,
+          "duration": 16.8,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.8,
+          "duration": 18.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.0,
+          "duration": 19.2,
+          "value": "F:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 21.6,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.6,
+          "duration": 24.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.4,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.4,
+          "duration": 27.0,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.0,
+          "duration": 27.6,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.6,
+          "duration": 28.8,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 30.0,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 31.2,
+          "value": "Eb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.2,
+          "duration": 32.4,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.4,
+          "duration": 33.6,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.6,
+          "duration": 34.8,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.8,
+          "duration": 36.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 36.6,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.6,
+          "duration": 37.2,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.2,
+          "duration": 37.8,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.8,
+          "duration": 38.4,
+          "value": "F:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 623.4,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Who's Sorry Now",
+    "artist": "",
+    "release": "",
+    "duration": 623,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

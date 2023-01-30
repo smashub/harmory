@@ -1,0 +1,145 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4.2105263157894735,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.2105263157894735,
+          "duration": 8.421052631578947,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.421052631578947,
+          "duration": 16.842105263157894,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.842105263157894,
+          "duration": 25.26315789473684,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.26315789473684,
+          "duration": 33.68421052631579,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.68421052631579,
+          "duration": 37.89473684210527,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.89473684210527,
+          "duration": 40.0,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 42.10526315789474,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.10526315789474,
+          "duration": 44.21052631578947,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.21052631578947,
+          "duration": 46.31578947368421,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.31578947368421,
+          "duration": 48.42105263157895,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.42105263157895,
+          "duration": 50.526315789473685,
+          "value": "A:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 397.89473684210526,
+          "value": "Dm",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Going Back Home",
+    "artist": "",
+    "release": "",
+    "duration": 397,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

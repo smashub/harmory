@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.48,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.48,
+          "duration": 0.96,
+          "value": "Db:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.96,
+          "duration": 1.44,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.44,
+          "duration": 1.92,
+          "value": "G:maj(b7,b9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.92,
+          "duration": 2.4,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4,
+          "duration": 2.88,
+          "value": "A:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.88,
+          "duration": 3.36,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.36,
+          "duration": 3.84,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.84,
+          "duration": 7.68,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.68,
+          "duration": 11.52,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.52,
+          "duration": 15.36,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.36,
+          "duration": 19.2,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 21.12,
+          "value": "C:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.12,
+          "duration": 23.04,
+          "value": "C:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.04,
+          "duration": 23.52,
+          "value": "C:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.52,
+          "duration": 24.0,
+          "value": "B:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 24.96,
+          "value": "Bb:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.96,
+          "duration": 25.92,
+          "value": "Ab:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.92,
+          "duration": 26.88,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.88,
+          "duration": 30.72,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.72,
+          "duration": 34.559999999999995,
+          "value": "C:maj6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 305.76000000000005,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Air Mail Special",
+    "artist": "",
+    "release": "",
+    "duration": 305,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

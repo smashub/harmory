@@ -1,0 +1,355 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.92,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.92,
+          "duration": 3.84,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.84,
+          "duration": 5.76,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.76,
+          "duration": 7.68,
+          "value": "A:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.68,
+          "duration": 9.6,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 11.52,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.52,
+          "duration": 13.44,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.44,
+          "duration": 15.36,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.36,
+          "duration": 18.24,
+          "value": "D:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.24,
+          "duration": 19.2,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 21.12,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.12,
+          "duration": 22.08,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.08,
+          "duration": 23.04,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.04,
+          "duration": 24.96,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.96,
+          "duration": 26.88,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.88,
+          "duration": 28.8,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 29.76,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.76,
+          "duration": 30.72,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.72,
+          "duration": 33.599999999999994,
+          "value": "D:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.599999999999994,
+          "duration": 34.559999999999995,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.559999999999995,
+          "duration": 36.48,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.48,
+          "duration": 37.44,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.44,
+          "duration": 38.4,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 40.32,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.32,
+          "duration": 42.24,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.24,
+          "duration": 44.16,
+          "value": "E:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.16,
+          "duration": 45.12,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.12,
+          "duration": 46.08,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.08,
+          "duration": 48.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.92,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.92,
+          "duration": 51.84,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.84,
+          "duration": 53.76,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.76,
+          "duration": 55.67999999999999,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.67999999999999,
+          "duration": 57.6,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.6,
+          "duration": 58.56,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.56,
+          "duration": 59.52,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 59.52,
+          "duration": 61.44,
+          "value": "D:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.44,
+          "duration": 64.32,
+          "value": "D:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.32,
+          "duration": 65.28,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.28,
+          "duration": 67.19999999999999,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.19999999999999,
+          "duration": 68.16,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.16,
+          "duration": 69.11999999999999,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.11999999999999,
+          "duration": 71.03999999999999,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 71.03999999999999,
+          "duration": 72.96,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.96,
+          "duration": 74.88,
+          "value": "E:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.88,
+          "duration": 75.83999999999999,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 75.83999999999999,
+          "duration": 76.8,
+          "value": "D:maj7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1914.2399999999998,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Autumn Midnight",
+    "artist": "",
+    "release": "",
+    "duration": 1914,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

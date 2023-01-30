@@ -1,0 +1,117 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 5.538461538461539,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.538461538461539,
+          "duration": 7.384615384615385,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.384615384615385,
+          "duration": 11.076923076923078,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.076923076923078,
+          "duration": 14.76923076923077,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.76923076923077,
+          "duration": 16.615384615384617,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.615384615384617,
+          "duration": 18.461538461538463,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.461538461538463,
+          "duration": 22.15384615384616,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 96.00000000000001,
+          "value": "Ab",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "3 J's Blues",
+    "artist": [
+      "Jimmy Hamilton"
+    ],
+    "release": "",
+    "duration": 96,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

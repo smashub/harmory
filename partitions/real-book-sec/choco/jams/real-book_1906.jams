@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.8,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.8,
+          "duration": 1.6,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.6,
+          "duration": 2.4,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4,
+          "duration": 3.2,
+          "value": "Eb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.2,
+          "duration": 5.6,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.6,
+          "duration": 6.4,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.4,
+          "duration": 8.0,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 9.6,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 12.8,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.8,
+          "duration": 13.6,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.6,
+          "duration": 14.4,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.4,
+          "duration": 16.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.6,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.6,
+          "duration": 18.4,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.4,
+          "duration": 19.2,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 20.8,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.8,
+          "duration": 22.4,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.4,
+          "duration": 24.0,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 24.8,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.8,
+          "duration": 25.6,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.6,
+          "duration": 28.8,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 296.00000000000006,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Nellie Dean",
+    "artist": "",
+    "release": "",
+    "duration": 296,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

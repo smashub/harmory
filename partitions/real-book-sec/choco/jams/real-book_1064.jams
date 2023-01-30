@@ -1,0 +1,217 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.2857142857142856,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.2857142857142856,
+          "duration": 4.571428571428571,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.571428571428571,
+          "duration": 6.857142857142857,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 9.142857142857142,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.142857142857142,
+          "duration": 11.428571428571429,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.428571428571429,
+          "duration": 13.714285714285714,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.714285714285714,
+          "duration": 17.142857142857142,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.142857142857142,
+          "duration": 17.714285714285715,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.714285714285715,
+          "duration": 18.0,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.0,
+          "duration": 18.285714285714285,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.285714285714285,
+          "duration": 20.571428571428573,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.571428571428573,
+          "duration": 22.857142857142858,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.857142857142858,
+          "duration": 25.142857142857142,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.142857142857142,
+          "duration": 26.857142857142858,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.857142857142858,
+          "duration": 27.142857142857142,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.142857142857142,
+          "duration": 27.428571428571427,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.428571428571427,
+          "duration": 29.714285714285715,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.714285714285715,
+          "duration": 32.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 34.285714285714285,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.285714285714285,
+          "duration": 36.57142857142857,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.57142857142857,
+          "duration": 37.71428571428572,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.71428571428572,
+          "duration": 38.285714285714285,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.285714285714285,
+          "duration": 38.57142857142857,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.57142857142857,
+          "duration": 41.142857142857146,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 557.4285714285714,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Buck Fever Rag",
+    "artist": "",
+    "release": "",
+    "duration": 557,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

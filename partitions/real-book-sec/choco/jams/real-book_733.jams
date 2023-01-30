@@ -1,0 +1,247 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.4,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4,
+          "duration": 4.8,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.8,
+          "duration": 7.199999999999999,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.199999999999999,
+          "duration": 9.6,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 12.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 16.8,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.8,
+          "duration": 19.2,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 24.0,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.4,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.4,
+          "duration": 28.8,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 31.2,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.2,
+          "duration": 36.0,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 38.4,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 40.8,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.8,
+          "duration": 43.2,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.2,
+          "duration": 45.6,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.6,
+          "duration": 48.0,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 50.4,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.4,
+          "duration": 52.8,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.8,
+          "duration": 55.2,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.2,
+          "duration": 57.6,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.6,
+          "duration": 60.0,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 62.4,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.4,
+          "duration": 64.8,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.8,
+          "duration": 67.2,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.2,
+          "duration": 69.6,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.6,
+          "duration": 72.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.0,
+          "duration": 74.39999999999999,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.39999999999999,
+          "duration": 76.8,
+          "value": "A:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1197.6000000000001,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Bubuy Bulan",
+    "artist": "",
+    "release": "",
+    "duration": 1197,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

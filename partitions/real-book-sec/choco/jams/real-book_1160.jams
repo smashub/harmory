@@ -1,0 +1,169 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.666666666666666,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 16.0,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 21.33333333333333,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 26.666666666666668,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 32.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 32.666666666666664,
+          "value": "D:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.666666666666664,
+          "duration": 33.333333333333336,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.333333333333336,
+          "duration": 34.666666666666664,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.666666666666664,
+          "duration": 36.0,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 37.333333333333336,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 38.66666666666666,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.66666666666666,
+          "duration": 40.0,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 42.66666666666666,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.66666666666666,
+          "duration": 53.333333333333336,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.333333333333336,
+          "duration": 66.66666666666667,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.66666666666667,
+          "duration": 69.33333333333333,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 591.3333333333333,
+          "value": "A",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Captain Bacardi",
+    "artist": "",
+    "release": "",
+    "duration": 591,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

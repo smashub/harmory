@@ -1,0 +1,493 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.2,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.2,
+          "duration": 1.7999999999999998,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7999999999999998,
+          "duration": 2.4,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4,
+          "duration": 6.0,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.0,
+          "duration": 7.199999999999999,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.199999999999999,
+          "duration": 8.4,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.4,
+          "duration": 9.6,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 10.8,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.8,
+          "duration": 11.4,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.4,
+          "duration": 12.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 16.8,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.8,
+          "duration": 19.2,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 20.4,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.4,
+          "duration": 21.6,
+          "value": "A:min(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.6,
+          "duration": 22.8,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.8,
+          "duration": 24.0,
+          "value": "A:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 25.2,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.2,
+          "duration": 26.4,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.4,
+          "duration": 30.0,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 31.2,
+          "value": "F:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.2,
+          "duration": 32.4,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.4,
+          "duration": 33.6,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.6,
+          "duration": 34.8,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.8,
+          "duration": 35.4,
+          "value": "F:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.4,
+          "duration": 36.0,
+          "value": "E:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 37.2,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.2,
+          "duration": 38.4,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 39.6,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.6,
+          "duration": 40.2,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.2,
+          "duration": 40.8,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.8,
+          "duration": 44.4,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.4,
+          "duration": 45.6,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.6,
+          "duration": 46.8,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.8,
+          "duration": 48.0,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.2,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.2,
+          "duration": 49.8,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.8,
+          "duration": 50.4,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.4,
+          "duration": 54.0,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.0,
+          "duration": 55.2,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.2,
+          "duration": 56.4,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.4,
+          "duration": 57.6,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.6,
+          "duration": 58.8,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.8,
+          "duration": 60.0,
+          "value": "A:min(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 61.2,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.2,
+          "duration": 62.4,
+          "value": "A:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.4,
+          "duration": 63.6,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 63.6,
+          "duration": 64.8,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.8,
+          "duration": 68.39999999999999,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.39999999999999,
+          "duration": 69.6,
+          "value": "F:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.6,
+          "duration": 70.8,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.8,
+          "duration": 72.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.0,
+          "duration": 73.2,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 73.2,
+          "duration": 73.8,
+          "value": "F:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 73.8,
+          "duration": 74.39999999999999,
+          "value": "E:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.39999999999999,
+          "duration": 75.6,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 75.6,
+          "duration": 76.8,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 76.8,
+          "duration": 78.0,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 78.0,
+          "duration": 78.6,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 78.6,
+          "duration": 79.2,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 79.2,
+          "duration": 82.8,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 82.8,
+          "duration": 84.0,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 84.0,
+          "duration": 85.2,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 85.2,
+          "duration": 86.39999999999999,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 86.39999999999999,
+          "duration": 87.6,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 87.6,
+          "duration": 88.2,
+          "value": "A:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 88.2,
+          "duration": 88.8,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 88.8,
+          "duration": 92.4,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 92.4,
+          "duration": 93.6,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 93.6,
+          "duration": 94.8,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 94.8,
+          "duration": 96.0,
+          "value": "A:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3475.2,
+          "value": "A",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "April In Portugal",
+    "artist": "",
+    "release": "",
+    "duration": 3475,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

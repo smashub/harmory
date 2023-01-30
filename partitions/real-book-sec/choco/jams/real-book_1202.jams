@@ -1,0 +1,315 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.5,
+          "value": "D:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.5,
+          "duration": 3.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.0,
+          "duration": 4.5,
+          "value": "Ab:7(s11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.5,
+          "duration": 6.0,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.0,
+          "duration": 6.75,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.75,
+          "duration": 7.5,
+          "value": "A:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.5,
+          "duration": 8.25,
+          "value": "D:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.25,
+          "duration": 9.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.0,
+          "duration": 10.5,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.5,
+          "duration": 12.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 13.5,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.5,
+          "duration": 14.25,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.25,
+          "duration": 16.5,
+          "value": "A:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.5,
+          "duration": 18.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.0,
+          "duration": 19.5,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.5,
+          "duration": 21.0,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.0,
+          "duration": 22.5,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.5,
+          "duration": 24.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 25.5,
+          "value": "D:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.5,
+          "duration": 27.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.0,
+          "duration": 28.5,
+          "value": "Ab:7(s11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.5,
+          "duration": 30.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 30.75,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.75,
+          "duration": 31.5,
+          "value": "A:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.5,
+          "duration": 32.25,
+          "value": "D:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.25,
+          "duration": 33.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.0,
+          "duration": 34.5,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.5,
+          "duration": 36.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 37.5,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.5,
+          "duration": 38.25,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.25,
+          "duration": 40.5,
+          "value": "A:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.5,
+          "duration": 42.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.0,
+          "duration": 43.5,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.5,
+          "duration": 45.0,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.0,
+          "duration": 46.5,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.5,
+          "duration": 48.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.5,
+          "value": "D:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.5,
+          "duration": 51.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.0,
+          "duration": 52.5,
+          "value": "Ab:7(s11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.5,
+          "duration": 54.0,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1075.5,
+          "value": "Cm",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Sugar",
+    "artist": [
+      "Stanley Turrentine"
+    ],
+    "release": "",
+    "duration": 1075,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

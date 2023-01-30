@@ -1,0 +1,217 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.2903225806451613,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.2903225806451613,
+          "duration": 1.9354838709677415,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.9354838709677415,
+          "duration": 2.5806451612903225,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5806451612903225,
+          "duration": 5.161290322580645,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.161290322580645,
+          "duration": 7.741935483870967,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.741935483870967,
+          "duration": 8.387096774193548,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.387096774193548,
+          "duration": 9.032258064516128,
+          "value": "Db:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.032258064516128,
+          "duration": 9.67741935483871,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.67741935483871,
+          "duration": 10.32258064516129,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.32258064516129,
+          "duration": 11.612903225806452,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.612903225806452,
+          "duration": 12.258064516129032,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.258064516129032,
+          "duration": 12.903225806451612,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.903225806451612,
+          "duration": 15.483870967741934,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.483870967741934,
+          "duration": 16.774193548387096,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.774193548387096,
+          "duration": 18.064516129032256,
+          "value": "E:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.064516129032256,
+          "duration": 18.70967741935484,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.70967741935484,
+          "duration": 19.35483870967742,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.35483870967742,
+          "duration": 20.64516129032258,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.64516129032258,
+          "duration": 21.93548387096774,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.93548387096774,
+          "duration": 23.225806451612904,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.225806451612904,
+          "duration": 23.870967741935484,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.870967741935484,
+          "duration": 24.516129032258064,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.516129032258064,
+          "duration": 25.161290322580644,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.161290322580644,
+          "duration": 25.806451612903224,
+          "value": "F:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 346.4516129032258,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Darktown Strutter's Ball",
+    "artist": "",
+    "release": "",
+    "duration": 346,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

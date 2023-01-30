@@ -1,0 +1,127 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 9.6,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 12.8,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.8,
+          "duration": 19.2,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 25.6,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.6,
+          "duration": 32.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 33.6,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.6,
+          "duration": 35.2,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.2,
+          "duration": 36.8,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.8,
+          "duration": 38.4,
+          "value": "G:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 243.20000000000002,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Sarotoga Swing",
+    "artist": "",
+    "release": "",
+    "duration": 243,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}
