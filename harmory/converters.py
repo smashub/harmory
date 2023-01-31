@@ -107,4 +107,6 @@ def save_known_sequences(sequences_path: Union[str, pathlib.Path],
         data = list(known_sequences_ts.values())
     elif save_mode == dict:
         data = known_sequences_ts
-    joblib.dump(data, output_path)
+
+    with open(output_path, "wb") as handle:
+        joblib.dump(data, handle)
