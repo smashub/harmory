@@ -4,15 +4,20 @@ XXX Taken from `validation/transform_sequences.py` for refactoring.
 
 """
 import pathlib
+import logging
 from typing import Union
+from collections import Counter
 
 import joblib
+import numpy as np
 
 from tonalspace import TpsOffsetTimeSeries, TpsProfileTimeSeries
 
+logger = logging.getLogger("harmory.converters")
+
 
 def convert_sequences(sequences_path: Union[str, pathlib.Path],
-                      tpst_type: str = "offset") -> dict[
+                      tpst_type: str = "offset", bundle=False) -> dict[
     str, Union[TpsOffsetTimeSeries, TpsProfileTimeSeries]]:
     """
     Convert known sequences into time series.
@@ -23,6 +28,9 @@ def convert_sequences(sequences_path: Union[str, pathlib.Path],
         Path to the directory containing the sequences
     tpst_type : str
         Type of time series to create. Either "offset" or "profile"
+    bundle : bool
+        Whether sequences should be boundled in a dictionary indexed by sequence
+        length (e.g. dict[4] for all sequences of length 4).
 
     Returns
     -------
@@ -36,21 +44,33 @@ def convert_sequences(sequences_path: Union[str, pathlib.Path],
     assert tpst_type in ["offset",
                          "profile"], f"Unknown time series type {tpst_type}"
 
-    known_sequences = joblib.load(sequences_path)
+    with open(sequences_path, "rb") as handle:
+        known_sequences = joblib.load(handle)
     ts_class = TpsOffsetTimeSeries if tpst_type == "offset" \
         else TpsProfileTimeSeries
 
-    known_sequences_ts = {}
+    known_sequences_ts, chord_lens = {}, []
     for sequence_label, (chords, durations, keys) in known_sequences.items():
-        durations = [float(x.replace('*', '1')) for x in
-                     durations[:len(chords)]]
-        durations = durations + [durations[0]]
+        if len(chords) == 1:  # check if there is a trivial pattern
+            continue  # skip chord 1-gram from TPS projection
+        durations = [int(x.replace('*', '1')) for x in durations[:len(chords)]]
+        times = np.cumsum([0] + durations)  # from durations to times
         keys = keys[:len(chords)]
-        print(f"Chords: {chords}\nKeys: {keys}\nDur: {durations}")
-        assert len(chords) == len(keys) == len(durations) - 1
-        known_sequences_ts[sequence_label] = ts_class(chords=chords,
-                                                      times=durations,
-                                                      keys=keys)
+        # logger.info(f"Chords: {chords}\nKeys: {keys}\nDur: {durations}")
+        assert len(chords) == len(keys) == len(times) - 1
+        known_sequences_ts[sequence_label] = \
+            ts_class(chords=chords, times=times, keys=keys)
+        chord_lens.append(len(chords))  # for stats
+
+    chord_lens_cnt = Counter(chord_lens)
+    logger.info(f"Chord length histogram: {chord_lens_cnt}")
+    if bundle:  # splitting sequences into separate dict entries
+        known_sequences_perlen = {l: {} for l in list(chord_lens_cnt.keys())}
+        for name, tps_timeseries in known_sequences_ts.items():
+            num_chords = len(tps_timeseries.chords)
+            # logger.info(f"Inserting {name} in {ts_len}")
+            known_sequences_perlen[num_chords][name] = tps_timeseries
+        known_sequences_ts = known_sequences_perlen
 
     return known_sequences_ts
 

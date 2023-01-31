@@ -172,6 +172,7 @@ class TpsOffsetTimeSeries(TpsTimeSeries):
             offset = self.tps_comparator.tpsd_lookup(
                 chord_a=chords[i], key_a=keys[i],
                 chord_b=chords[i-1], key_b=keys[i-1])
+            # logger.debug(f"TPS Offset {offset} for dur {self.durations[i-1]}")
             tps_offsets = tps_offsets + [offset]*self.durations[i-1]
 
         self._time_series = np.array(tps_offsets)  # update cache
