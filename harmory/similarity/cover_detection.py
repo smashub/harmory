@@ -36,7 +36,8 @@ EXPERIMENTS = [('tpsd', 'offset'),
                ('sdtw', 'profile', 'stretch'),
                ('sdtw', 'offset', 'stretch', 'sakoe_chiba'),
                ('sdtw', 'profile', 'stretch', 'sakoe_chiba'),
-               ('sdtw', 'profile', 'no-stretch', 'sakoe_chiba'),]
+               ('sdtw', 'offset', 'no-stretch', 'sakoe_chiba'),
+               ('sdtw', 'offset', 'stretch', 'itakura'), ]
 
 
 class CoverSongDetection:
@@ -186,9 +187,10 @@ def save_results(results: list[list], output_path: str) -> None:
     """
     results = pd.DataFrame(results, columns=['dataset', 'distance',
                                              'tps_mode', 'stretch',
-                                             'cinstraint', 'first_tier',
-                                             'second_tier'])
+                                             'constraint', 'normalize',
+                                             'first_tier', 'second_tier'])
     results.to_csv(output_path, index=False)
+    results.to_latex(output_path.replace('.csv', '.tex'), index=False)
 
 
 def main():
@@ -239,7 +241,7 @@ if __name__ == '__main__':
     csd = CoverSongDetection('../../exps/datasets/merge',
                              n_jobs=1)
     evaluations = []
-    for experiment in EXPERIMENTS[14:]:
+    for experiment in EXPERIMENTS:
         csd.preprocess(experiment)
         similarity = csd.compute_similarity()
         evaluation = csd.evaluate()
