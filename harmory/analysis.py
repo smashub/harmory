@@ -6,15 +6,19 @@ Utilities to compute statistical properties from structures and similarities.
 # Average number of same nodes?
 # Proportion of unique patterns that do not appear anywhere else
 import logging
+from typing import Union
 
+import joblib
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
+from joblib import Parallel, delayed
 
 from tslearn.preprocessing import TimeSeriesResampler
 from tslearn.neighbors import KNeighborsTimeSeries
 
 from search import HarmonicPatternFinder
+from harmseg import load_structures_nested
 
 logger = logging.getLogger("harmory.analysis")
 
@@ -163,15 +167,20 @@ def compute_similarity_statistics(simi_relations_df, pattern_ids):
     }
 
 
-def create_timeseries_dataset(tpstimeseries_dict: dict, resampling_size: int):
-    # structure_ids = np.array(list(structure_map.keys()))  # index-to-ID
-    X_data = [tpst.time_series for tpst in tpstimeseries_dict.values()]
+def create_timeseries_dataset(tpstimeseries, resampling_size: int):
+    if isinstance(tpstimeseries, dict):
+        tpstimeseries = list(tpstimeseries.values())
+    X_data = [tpst.time_series for tpst in tpstimeseries]
+    # TODO Standardisation of time series should happen here
     # Preprocessing of the TPS time series before fitting the model
     X_data = TimeSeriesResampler(sz=resampling_size).fit_transform(X_data)
     logger.debug(f"X_data shape after preprocessing: {X_data.shape}")
+    return X_data
 
 
 class PatternValidationFinder(HarmonicPatternFinder):
+
+    #  self._resampling_size
 
     def create_model(self, dataset: str, resampling_size: int, num_tophits: int,
                      metric_name="dtw", metric_params=None, n_jobs=1):
@@ -196,7 +205,7 @@ class PatternValidationFinder(HarmonicPatternFinder):
 
         Notes
         -----
-        (*) Parameterise the standardisation/normalisation of time series
+        (*) TODO Parameterise the standardisation/normalisation of time series
 
         """
         # From a dataset of TpsTimeSeries to a general time series dataset.
@@ -206,20 +215,139 @@ class PatternValidationFinder(HarmonicPatternFinder):
         self._model = KNeighborsTimeSeries(
             n_neighbors=num_tophits, n_jobs=n_jobs,
             metric=metric_name, metric_params=metric_params)
-        self._model.fit(dataset)
+        self._model.fit(khpatterns)
         self._dataset = khpatterns
+        self._resampling_size = resampling_size
 
-    def check_pattern_presence(self, patterns):
-        pass
+    def check_pattern_presence(self, query_patterns):
         # Perform kNN search using patterns as query against khpatterns
-        n_simi_dtw, n_simi_ids = self._model.kneighbors(
-            X=[patterns], return_distance=True)
-        # Returng the max for each vector distance; saving (khpattern_i, dist)
+        pattern_dataset = create_timeseries_dataset(
+            query_patterns, self._resampling_size)
+        n_simi_dist, n_simi_ids = self._model.kneighbors(
+            X=pattern_dataset, return_distance=True)
+        # Return the min for each vector distance; saving (khpattern_i, dist)
+        # To generate: a list of tuples containing the ID of the closest known
+        # harmonic pattern and the corresponding distance for each query.
+        return (n_simi_dist, n_simi_ids) if n_simi_dist.shape[1] > 1 \
+            else (n_simi_dist.ravel(), n_simi_ids.ravel())
 
-        # Return a list of tuples containing the ID of the closest known harmonic
-        # pattern and the corresponding distance for each query pattern.
 
-        # TODO Check shape of query time series: may need to be stretched
-        
-        
-        return list(n_simi_ids[mask]), list(n_simi_dtw[mask])
+def find_known_patterns(segments, track_id, hp_validator):
+    """
+    Use the the given PatternValidationFinder to retrieve ID and distance of
+    the most similar known pattern handled by the finder -- for each segemnt.
+    """
+    validation_records = []
+    # Retrieve the best match/pattern for each segmented structure
+    top_dists, top_ids = hp_validator.check_pattern_presence(segments)
+    for i, (top_dist, top_id) in enumerate(zip(top_dists, top_ids)):
+        validation_records.append([track_id, i, top_dist, top_id])
+    # Some syntactic sugar here: saving min and mean for each segment
+    validation_records.append([track_id, -1, np.min(top_dists),
+                            top_ids[np.argmin(top_dists)]])
+    validation_records.append([track_id, -2, np.mean(top_dists),
+                            len(set(top_ids))])
+    # Track-specific validation results
+    return validation_records
+
+
+def measure_segmentation_coverage(
+    structures_dir: str, known_patterns: Union[str, dict], resampling_size: int, 
+    split=None, metric_name="dtw", metric_params=None, n_jobs=1):
+    """
+    Evaluates a harmonic segmentation against a collection of known patterns.
+
+    Parameters
+    ----------
+    structures_dir : str
+        Path to the directory with the output of the harmonic segmnentation.
+    known_patterns : Union[str, dict]
+        Path to the dump containing the TpsTimeSeries of known patterns. A
+        dictionary containing the latter, indexed by name, can also be provided.
+    resampling_size : int
+        The size of time series for enabling time invariant pattern search.
+    split : _type_, optional
+        Name of the split with the known patterns to use in this experiment. It
+        may correspond, for instance, to the length of known harmonic patterns.
+    metric_name : str, optional
+        Name of the distance metric used to compare time series with each other.
+    metric_params : dict, optional
+        Parameters of the metric specified before; use defaults otherwise.
+    n_jobs : int, optional
+        Number of threads for parallel exection; use -1 for all.
+
+    Returns
+    -------
+    validation_df : pd.DataFrame
+        A pandas Dataframe containg the pattern coverage, per segment. It also
+        contains aggregated statistics, distinguished by -1 (min) and -2 (mean).
+    
+    """
+    if isinstance(known_patterns, str):
+        with open(known_patterns, "rb") as handle:
+            known_patterns = joblib.load(handle)
+    if split is not None:  # use only a partition/split of all patterns
+        if split not in set(known_patterns.keys()):  # check split name
+            raise ValueError(f"Split {split} is not a valid key!")
+        logger.info(f"Using known patterns of length {split}) --- "
+                    f"Found {len(known_patterns[split])} patterns.")
+        known_patterns = known_patterns[split]
+
+    # Create the pattern validator for known patterns
+    hp_validator = PatternValidationFinder()
+    hp_validator.create_model(known_patterns, resampling_size, num_tophits=1, 
+        metric_name=metric_name, metric_params=metric_params, n_jobs=n_jobs)
+
+    hstructures_per_track = load_structures_nested(structures_dir)
+    logger.info(f"Loaded {len(hstructures_per_track)} segmentations")
+    # FIXME Each segmentation is managed by an available thread here
+    # Parallel support does not work here yet, probably for parallel access
+    # validation_records =  Parallel(n_jobs=n_jobs)(delayed(find_known_patterns)\
+    #             (segments, track_id, hp_validator) for track_id, segments \
+    #                 in tqdm(hstructures_per_track.items()))
+    validation_records = []
+    for track_id, segments in tqdm(hstructures_per_track.items()):
+        validation_records += find_known_patterns(
+            segments, track_id, hp_validator)
+
+    validation_df = pd.DataFrame(validation_records,
+        columns=["choco_id", "segment", "top_dist", "top_pattern"])
+    validation_df['top_pattern'] = validation_df['top_pattern'].astype('int')
+    if split is not None:  # append extra column for split name
+        validation_df["split"] = split
+
+    return validation_df
+
+
+def measure_segmentation_coverage_per_split(
+    structures_dir: str, known_patterns: Union[str, dict], resampling_size: int, 
+    exclude_splits=[2], metric_name="dtw", metric_params=None, n_jobs=1,
+    parallelise_splits=False):
+    """
+    Computes patterns coverage of segments for all splits. For more info, see
+    `measure_segmentation_coverage`.
+    """
+    with open(known_patterns, "rb") as handle:
+        known_patterns = joblib.load(handle)
+    splits = list(known_patterns.keys())
+    if exclude_splits is not None:  # remove unwanted splits
+        splits = [s for s in splits if s not in exclude_splits]
+
+    logger.info(f"Running coverage evaluation for {splits} splits")
+    if not parallelise_splits:  # sequential version: better to debug
+        validation_dfs = []
+        for split in splits:  # process each split, then merge
+            validation_dfs.append(measure_segmentation_coverage(
+                split=split,
+                structures_dir=structures_dir,
+                known_patterns=known_patterns,
+                resampling_size=resampling_size,
+                metric_name=metric_name,
+                metric_params=metric_params,
+                n_jobs=n_jobs))
+    else:  # Running parallel version across splits
+        raise NotImplementedError()
+
+    final_validation_df = pd.concat(validation_dfs)
+    final_validation_df.reset_index(drop=True, inplace=True)
+    return final_validation_df

@@ -7,7 +7,6 @@ import os
 import pickle
 import logging
 import argparse
-from collections import OrderedDict
 
 import jams
 import pandas as pd
@@ -17,7 +16,7 @@ from joblib import Parallel, delayed
 from config import ConfigFactory
 from search import find_similarities
 from harmseg import HarmonicPrint, NoveltyBasedHarmonicSegmentation
-from utils import get_files, get_filename, set_logger, create_dir
+from utils import set_logger, create_dir
 
 logger = logging.getLogger("harmory.create")
 
@@ -36,29 +35,6 @@ def create_segmentation(jams_path, config, out_dir):
         **config["pdetection_params"])
 
     segmenter.dump_harmonic_segments(out_dir)
-
-
-def load_structures(structures_dir):
-    """
-    Read all harmonic structures previously dumped in separate files and merge
-    them in a dictionary indexed by ChoCo/song ID and segment index.
-    """
-    structures_map = OrderedDict()
-    structures_pkls = get_files(structures_dir, "pkl", full_path=True)
-    logger.info(f"Found {len(structures_pkls)} dumps in {structures_dir}")
-
-    for structure_pkl in tqdm(structures_pkls):
-        # Retrieve ChoCo ID from file name and read all structures
-        choco_id = get_filename(structure_pkl, strip_ext=True)
-        with open(structure_pkl, 'rb') as handle:
-            hstructures = pickle.load(handle)
-        # Adding the harmonic structure to the main map
-        for i, hstructure in enumerate(hstructures):
-            hstructure_id = f"{choco_id}_{i}"
-            structures_map[hstructure_id] = hstructure
-
-    logger.info(f"Found {len(structures_map)} harmonic structures")
-    return structures_map
 
 
 def create_similarities(structures_dir, config, out_dir, n_jobs=1):

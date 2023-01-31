@@ -54,9 +54,9 @@ def segmentation_baselines(jams_path, baseline_grid, config, out_dir):
         segmenter_fn = hseg.SEGMENTATION_BASELINE_FNS.get(baseline)
         segmenter = hseg.TimeSeriesHarmonicSegmentation(hprint, segmenter_fn)
         baseline_outdir = os.path.join(out_dir, baseline)
-
+        # From a baseline GRID to all possible parameter sets drawn from it 
         segmenter_grid = generate_grid_instances(baseline_grid[baseline])
-        for param_set in segmenter_grid:  # perform grid search
+        for param_set in segmenter_grid:  # perform grid search and dump
             segmenter.run(**param_set)
             segmenter.dump_harmonic_segments(
                 os.path.join(baseline_outdir, paramset_to_str(param_set)))
