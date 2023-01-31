@@ -15,7 +15,7 @@ from utils import create_dir, set_logger
 logger = logging.getLogger("harmory.baselines")
 
 N_REGIONS_GRID = [6, 7, 8, 9, 10]
-MPROFILE_GRID = [6, 7, 8]
+MPROFILE_GRID = [6, 8]
 
 
 BASELINE_PARAM_GRID = {
@@ -120,8 +120,12 @@ def main():
     jams_paths = [os.path.join(args.data, id) for id in choco_ids]
     print(f"Grid search is starting, this may take a while!")
 
-    for jams_path in tqdm(jams_paths[:10]):
-        segmentation_baselines(jams_path, baseline_grid, config, args.out_dir)
+    for jams_path in tqdm(jams_paths):
+        try:
+            segmentation_baselines(jams_path, baseline_grid, config, args.out_dir)
+        except Exception as e:
+                    print(f"Error at {jams_path} -- {e}")
+
 
     # if not args.debug and args.n_workers > 1:
     #     Parallel(n_jobs=args.n_workers)(delayed(create_segmentation)\

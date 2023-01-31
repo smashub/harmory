@@ -5,7 +5,9 @@ Utilities to compute statistical properties from structures and similarities.
 # Average distance in the neighbour per structure/node
 # Average number of same nodes?
 # Proportion of unique patterns that do not appear anywhere else
+import os
 import logging
+import argparse
 from typing import Union
 
 import joblib
@@ -19,6 +21,7 @@ from tslearn.neighbors import KNeighborsTimeSeries
 
 from search import HarmonicPatternFinder
 from harmseg import load_structures_nested
+from utils import set_logger, get_directories, create_dir
 
 logger = logging.getLogger("harmory.analysis")
 
@@ -289,7 +292,7 @@ def measure_segmentation_coverage(
     if split is not None:  # use only a partition/split of all patterns
         if split not in set(known_patterns.keys()):  # check split name
             raise ValueError(f"Split {split} is not a valid key!")
-        logger.info(f"Using known patterns of length {split}) --- "
+        logger.info(f"Using known patterns of length {split} --- "
                     f"Found {len(known_patterns[split])} patterns.")
         known_patterns = known_patterns[split]
 
@@ -351,3 +354,110 @@ def measure_segmentation_coverage_per_split(
     final_validation_df = pd.concat(validation_dfs)
     final_validation_df.reset_index(drop=True, inplace=True)
     return final_validation_df
+
+
+def summarise_segmentation_coverage_per_split(validation_df: pd.DataFrame):
+    """
+    Aggregate validation results with respect to different splits.
+    """
+    min_agg_df = validation_df[validation_df["segment"]==-1]
+    mean_agg_df = validation_df[validation_df["segment"]==-2]
+    min_agg_df = min_agg_df[["top_dist", "split"]]
+    mean_agg_df = mean_agg_df[["top_dist", "split"]]
+    # Aggregating results per split, using sequence-wise results
+    mean_agg_mean_df = mean_agg_df.groupby("split").mean()
+    mean_agg_std_df = mean_agg_df.groupby("split").std()
+    min_agg_mean_df = min_agg_df.groupby("split").mean()
+    min_agg_std_df = min_agg_df.groupby("split").std()
+    # Merging all the result sets within the same dataframe
+    merged_agg_df = pd.concat([
+        mean_agg_mean_df, mean_agg_std_df,
+        min_agg_mean_df, min_agg_std_df], axis=1)
+    merged_agg_df.columns = ["mean_mean_dist", "std_mean_dist", 
+                            "mean_min_dist", "std_min_dist"]
+    merged_agg_df.reset_index(inplace=True)  # keep index column
+    return merged_agg_df
+
+
+def measure_segmentation_coverage_from_grid(grid_dir, known_patterns,
+    resampling_size, metric_name="dtw", metric_params=None, n_jobs=1):
+
+    method = os.path.basename(grid_dir)
+    configuration_names = get_directories(grid_dir)
+    logger.info(f"Found {len(configuration_names)} runs for {method}")
+    grid_validation_dfs = []
+    for configuration_str in tqdm(configuration_names):
+        # Retrieving the actual path of this run, with structures inside
+        run_dir = os.path.join(grid_dir, configuration_str)
+        # Measuing coverage of known patterns for all possible lengths
+        validation_df = measure_segmentation_coverage_per_split(
+            run_dir, known_patterns=known_patterns,
+            metric_name=metric_name, metric_params=metric_params,
+            resampling_size=resampling_size, exclude_splits=[2], n_jobs=n_jobs)
+        # Save evaluation results, aggregate per split, append name of paramset
+        validation_df.to_csv(os.path.join(run_dir, "coverage.csv"), index=False)
+        validation_df = summarise_segmentation_coverage_per_split(validation_df)
+        validation_df["params"] = configuration_str
+        grid_validation_dfs.append(validation_df)
+    # Time to combine all results in a single dataframe
+    grid_validation_dfs = pd.concat(grid_validation_dfs)
+    grid_validation_dfs.reset_index(drop=True, inplace=True)
+    grid_validation_dfs["method"] = method
+    # Saving to disk and bye bye
+    out_fname = os.path.join(grid_dir, "coverage_all.csv")
+    logger.info(f"Writing final grid results for {method} at: {out_fname}")
+    grid_validation_dfs.to_csv(out_fname, index=False)
+
+
+def main():
+
+    COMMANDS = ["similarities", "segmentation"]
+
+    parser = argparse.ArgumentParser(
+        description="Analysis of Harmory segmentation and similarities.")
+    parser.add_argument('cmd', type=str, choices=COMMANDS,
+                        help=f"Either {', '.join(COMMANDS)}.")
+
+    parser.add_argument('data', type=str,
+                        help='Directory with segmentations, or similarities.')
+
+    parser.add_argument('--known_patterns', type=str,
+                        help='Path to the pickle file with known patterns.')
+    parser.add_argument('--out_dir', type=str,
+                        help='Directory where all output will be saved.')
+    parser.add_argument('--metric_name', type=str, default="dtw",
+                        help='Name of the distance metric for time series.')
+    parser.add_argument('--n_workers', action='store', type=int, default=1,
+                        help='Number of workers for stats computation.')
+    parser.add_argument('--resampling_size', action='store', type=int, default=30,
+                        help='Size of time series after resampling for comp.')
+    parser.add_argument('--debug', action='store_true',
+                        help='Whether to run in debug mode: slow and logging.')
+    parser.add_argument('--log_level', action='store', default=logging.INFO,
+                        help='Whether to run in debug mode: slow and logging.')
+
+    args = parser.parse_args()
+    set_logger("harmory", args.log_level)
+
+    if args.out_dir is None:
+        args.out_dir = args.data
+    create_dir(args.out_dir)
+
+    if args.cmd == "segmentation":
+        print(f"SEGMENT: Segmenting chord sequences into harmonic structures")
+        measure_segmentation_coverage_from_grid(
+            grid_dir=args.data,
+            known_patterns=args.known_patterns,
+            resampling_size=args.resampling_size,
+            metric_name=args.metric_name,
+            metric_params=None,  # TODO
+            n_jobs=args.n_workers)
+
+    else:  # trivially, args.cmd == "similarities"
+        raise NotImplementedError()
+
+    print("DONE!")
+
+
+if __name__ == "__main__":
+    main()

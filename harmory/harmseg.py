@@ -502,7 +502,7 @@ def load_structures_nested(structures_dir):
     structures_pkls = get_files(structures_dir, "pkl", full_path=True)
     logger.info(f"Found {len(structures_pkls)} dumps in {structures_dir}")
 
-    for structure_pkl in tqdm(structures_pkls):
+    for structure_pkl in structures_pkls:
         # Retrieve ChoCo ID from file name and read all structures
         choco_id = get_filename(structure_pkl, strip_ext=True)
         with open(structure_pkl, 'rb') as handle:

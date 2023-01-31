@@ -15,7 +15,7 @@ from joblib import Parallel, delayed
 
 from config import ConfigFactory
 from search import find_similarities
-from harmseg import HarmonicPrint, NoveltyBasedHarmonicSegmentation
+from harmseg import HarmonicPrint, NoveltyBasedHarmonicSegmentation, load_structures  # noqa
 from utils import set_logger, create_dir
 
 logger = logging.getLogger("harmory.create")
