@@ -1,0 +1,121 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 8.727272727272728,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.727272727272728,
+          "duration": 13.090909090909092,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.090909090909092,
+          "duration": 17.454545454545457,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.454545454545457,
+          "duration": 19.63636363636364,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.63636363636364,
+          "duration": 21.81818181818182,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.81818181818182,
+          "duration": 24.0,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.181818181818183,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.181818181818183,
+          "duration": 34.909090909090914,
+          "value": "A:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 165.81818181818184,
+          "value": "A",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Blues In A",
+    "artist": "",
+    "release": "",
+    "duration": 165,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

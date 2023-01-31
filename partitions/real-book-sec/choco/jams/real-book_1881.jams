@@ -1,0 +1,211 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 12.923076923076923,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.923076923076923,
+          "duration": 13.846153846153848,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.846153846153848,
+          "duration": 16.615384615384617,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.615384615384617,
+          "duration": 29.53846153846154,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.53846153846154,
+          "duration": 31.384615384615387,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.384615384615387,
+          "duration": 33.23076923076923,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.23076923076923,
+          "duration": 51.69230769230769,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.69230769230769,
+          "duration": 53.53846153846154,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.53846153846154,
+          "duration": 55.38461538461539,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.38461538461539,
+          "duration": 68.3076923076923,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.3076923076923,
+          "duration": 79.38461538461539,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 79.38461538461539,
+          "duration": 86.76923076923077,
+          "value": "B:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 86.76923076923077,
+          "duration": 99.6923076923077,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 99.6923076923077,
+          "duration": 101.53846153846156,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 101.53846153846156,
+          "duration": 114.46153846153848,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 114.46153846153848,
+          "duration": 125.53846153846156,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 125.53846153846156,
+          "duration": 132.92307692307693,
+          "value": "B:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 132.92307692307693,
+          "duration": 145.84615384615387,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 145.84615384615387,
+          "duration": 147.6923076923077,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 147.6923076923077,
+          "duration": 151.3846153846154,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 151.3846153846154,
+          "duration": 152.30769230769232,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 152.30769230769232,
+          "duration": 153.23076923076923,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 153.23076923076923,
+          "duration": 156.92307692307693,
+          "value": "A:sus4(b7)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2014.1538461538464,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Beyond The Sea",
+    "artist": "",
+    "release": "",
+    "duration": 2014,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

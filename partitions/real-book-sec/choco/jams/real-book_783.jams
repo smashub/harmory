@@ -1,0 +1,171 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4.161849710982659,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.161849710982659,
+          "duration": 5.549132947976879,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.549132947976879,
+          "duration": 8.323699421965317,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.323699421965317,
+          "duration": 10.404624277456648,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.404624277456648,
+          "duration": 11.098265895953755,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.098265895953755,
+          "duration": 12.485549132947977,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.485549132947977,
+          "duration": 13.872832369942197,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.872832369942197,
+          "duration": 16.647398843930635,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.647398843930635,
+          "duration": 20.809248554913296,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.809248554913296,
+          "duration": 22.196531791907518,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.196531791907518,
+          "duration": 24.971098265895957,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.971098265895957,
+          "duration": 27.052023121387283,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.052023121387283,
+          "duration": 27.745664739884397,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.745664739884397,
+          "duration": 29.13294797687861,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.13294797687861,
+          "duration": 30.520231213872837,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.520231213872837,
+          "duration": 33.29479768786127,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 298.26589595375725,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Blues In The Closet",
+    "artist": [
+      "Oscar Pettiford"
+    ],
+    "release": "",
+    "duration": 298,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

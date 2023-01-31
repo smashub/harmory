@@ -1,0 +1,115 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.6666666666666665,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "duration": 5.333333333333333,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.333333333333333,
+          "duration": 8.0,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 10.666666666666666,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 12.0,
+          "value": "B:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 13.333333333333334,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.333333333333334,
+          "duration": 16.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 68.0,
+          "value": "E",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Bug's Boogie",
+    "artist": "",
+    "release": "",
+    "duration": 68,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

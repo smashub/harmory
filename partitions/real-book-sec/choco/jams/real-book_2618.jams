@@ -1,0 +1,229 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 21.33333333333333,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 24.0,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.666666666666668,
+          "value": "D:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 28.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.0,
+          "duration": 28.666666666666668,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.666666666666668,
+          "duration": 29.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.0,
+          "duration": 32.0,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 53.333333333333336,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.333333333333336,
+          "duration": 56.0,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.0,
+          "duration": 58.66666666666666,
+          "value": "D:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.66666666666666,
+          "duration": 60.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 60.66666666666666,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.66666666666666,
+          "duration": 61.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.0,
+          "duration": 64.0,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.0,
+          "duration": 64.66666666666667,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.66666666666667,
+          "duration": 65.0,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.0,
+          "duration": 66.66666666666667,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.66666666666667,
+          "duration": 67.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.0,
+          "duration": 69.33333333333333,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.33333333333333,
+          "duration": 69.66666666666667,
+          "value": "C:min/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.66666666666667,
+          "duration": 70.33333333333333,
+          "value": "C:min/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.33333333333333,
+          "duration": 70.66666666666667,
+          "value": "C:min/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.66666666666667,
+          "duration": 72.0,
+          "value": "C:min/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.0,
+          "duration": 74.66666666666667,
+          "value": "D:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.66666666666667,
+          "duration": 77.33333333333333,
+          "value": "D:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 77.33333333333333,
+          "duration": 120.0,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1490.6666666666665,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Brownout",
+    "artist": "",
+    "release": "",
+    "duration": 1490,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

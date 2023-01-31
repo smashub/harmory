@@ -1,0 +1,241 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3.3103448275862077,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.3103448275862077,
+          "duration": 5.793103448275862,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.793103448275862,
+          "duration": 6.620689655172415,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.620689655172415,
+          "duration": 9.93103448275862,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.93103448275862,
+          "duration": 11.586206896551724,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.586206896551724,
+          "duration": 13.24137931034483,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.24137931034483,
+          "duration": 16.551724137931036,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.551724137931036,
+          "duration": 19.86206896551724,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.86206896551724,
+          "duration": 23.17241379310345,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.17241379310345,
+          "duration": 24.82758620689655,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.82758620689655,
+          "duration": 26.48275862068966,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.48275862068966,
+          "duration": 29.793103448275865,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.793103448275865,
+          "duration": 33.10344827586207,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.10344827586207,
+          "duration": 36.41379310344828,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.41379310344828,
+          "duration": 39.72413793103448,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.72413793103448,
+          "duration": 43.03448275862069,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.03448275862069,
+          "duration": 46.3448275862069,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.3448275862069,
+          "duration": 49.6551724137931,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.6551724137931,
+          "duration": 52.96551724137932,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.96551724137932,
+          "duration": 54.62068965517242,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.62068965517242,
+          "duration": 56.27586206896552,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.27586206896552,
+          "duration": 57.93103448275863,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.93103448275863,
+          "duration": 59.58620689655173,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 59.58620689655173,
+          "duration": 61.24137931034483,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.24137931034483,
+          "duration": 62.896551724137936,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.896551724137936,
+          "duration": 64.55172413793103,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.55172413793103,
+          "duration": 66.20689655172414,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.20689655172414,
+          "duration": 72.82758620689656,
+          "value": "D:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1048.5517241379312,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "The Oak Tree",
+    "artist": "",
+    "release": "",
+    "duration": 1048,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

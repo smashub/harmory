@@ -1,0 +1,223 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 5.217391304347826,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.217391304347826,
+          "duration": 8.347826086956522,
+          "value": "A:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.347826086956522,
+          "duration": 12.52173913043478,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.52173913043478,
+          "duration": 16.695652173913043,
+          "value": "A:maj/b2",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.695652173913043,
+          "duration": 17.73913043478261,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.73913043478261,
+          "duration": 18.78260869565217,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.78260869565217,
+          "duration": 19.82608695652174,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.82608695652174,
+          "duration": 20.869565217391305,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.869565217391305,
+          "duration": 25.043478260869563,
+          "value": "D:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.043478260869563,
+          "duration": 27.130434782608692,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.130434782608692,
+          "duration": 29.217391304347824,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.217391304347824,
+          "duration": 33.391304347826086,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.391304347826086,
+          "duration": 35.47826086956522,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.47826086956522,
+          "duration": 37.56521739130434,
+          "value": "Bb:maj/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.56521739130434,
+          "duration": 39.65217391304348,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.65217391304348,
+          "duration": 41.73913043478261,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.73913043478261,
+          "duration": 42.78260869565217,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.78260869565217,
+          "duration": 43.826086956521735,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.826086956521735,
+          "duration": 44.869565217391305,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.869565217391305,
+          "duration": 45.91304347826087,
+          "value": "Bb:maj/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.91304347826087,
+          "duration": 48.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 50.086956521739125,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.086956521739125,
+          "duration": 52.17391304347826,
+          "value": "E:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.17391304347826,
+          "duration": 54.26086956521739,
+          "value": "Eb:hdim/b5",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.26086956521739,
+          "duration": 58.43478260869565,
+          "value": "D:(1,4)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 829.5652173913043,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "April Joy",
+    "artist": "",
+    "release": "",
+    "duration": 829,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

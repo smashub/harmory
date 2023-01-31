@@ -1,0 +1,127 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.7142857142857142,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7142857142857142,
+          "duration": 3.4285714285714284,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.4285714285714284,
+          "duration": 5.142857142857142,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.142857142857142,
+          "duration": 6.857142857142857,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 8.571428571428571,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.571428571428571,
+          "duration": 10.285714285714285,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.285714285714285,
+          "duration": 15.428571428571429,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.428571428571429,
+          "duration": 17.142857142857142,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.142857142857142,
+          "duration": 20.57142857142857,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 89.14285714285714,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Chilly Winds",
+    "artist": "",
+    "release": "",
+    "duration": 89,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

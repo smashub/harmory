@@ -1,0 +1,117 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 16.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 24.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 32.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 36.0,
+          "value": "D:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 38.0,
+          "value": "Eb:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.0,
+          "duration": 40.0,
+          "value": "D:7(s9,b13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 48.0,
+          "value": "G:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 234.0,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "All Blues [3-4]",
+    "artist": [
+      "Miles Davis"
+    ],
+    "release": "",
+    "duration": 234,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

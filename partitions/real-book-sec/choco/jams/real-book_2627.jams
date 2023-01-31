@@ -1,0 +1,175 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.2631578947368425,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.2631578947368425,
+          "duration": 6.315789473684211,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.315789473684211,
+          "duration": 10.105263157894738,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.105263157894738,
+          "duration": 11.36842105263158,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.36842105263158,
+          "duration": 15.157894736842106,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.157894736842106,
+          "duration": 16.42105263157895,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.42105263157895,
+          "duration": 17.05263157894737,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.05263157894737,
+          "duration": 17.68421052631579,
+          "value": "G#:(1,5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.68421052631579,
+          "duration": 21.473684210526315,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.473684210526315,
+          "duration": 26.526315789473685,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.526315789473685,
+          "duration": 30.31578947368421,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.31578947368421,
+          "duration": 31.57894736842105,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.57894736842105,
+          "duration": 35.36842105263158,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.36842105263158,
+          "duration": 36.631578947368425,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.631578947368425,
+          "duration": 37.89473684210527,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.89473684210527,
+          "duration": 39.15789473684211,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.15789473684211,
+          "duration": 45.47368421052632,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 399.7894736842106,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "My Happiness",
+    "artist": "",
+    "release": "",
+    "duration": 399,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

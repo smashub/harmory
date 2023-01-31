@@ -1,0 +1,123 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3.692307692307693,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.692307692307693,
+          "duration": 7.384615384615385,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.384615384615385,
+          "duration": 11.076923076923078,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.076923076923078,
+          "duration": 14.76923076923077,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.76923076923077,
+          "duration": 22.15384615384616,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.15384615384616,
+          "duration": 24.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 25.846153846153847,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.846153846153847,
+          "duration": 29.53846153846154,
+          "value": "C:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 138.46153846153848,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Sweet Georgia Bright",
+    "artist": [
+      "Charles Lloyd"
+    ],
+    "release": "",
+    "duration": 138,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

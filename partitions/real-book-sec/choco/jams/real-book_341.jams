@@ -1,0 +1,183 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.5,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.5,
+          "duration": 3.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.0,
+          "duration": 6.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.0,
+          "duration": 7.5,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.5,
+          "duration": 8.25,
+          "value": "C:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.25,
+          "duration": 9.0,
+          "value": "Bb:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.0,
+          "duration": 9.75,
+          "value": "G#:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.75,
+          "duration": 10.5,
+          "value": "F#:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.5,
+          "duration": 12.0,
+          "value": "E:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 18.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.0,
+          "duration": 21.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.0,
+          "duration": 24.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 27.0,
+          "value": "Ab:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.0,
+          "duration": 30.0,
+          "value": "G:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 33.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.0,
+          "duration": 33.75,
+          "value": "F#:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.75,
+          "duration": 34.5,
+          "value": "G#:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.5,
+          "duration": 36.0,
+          "value": "Bb:sus4",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 324.75,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Blues On The Corner",
+    "artist": [
+      "Mccoy Tyner"
+    ],
+    "release": "",
+    "duration": 324,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

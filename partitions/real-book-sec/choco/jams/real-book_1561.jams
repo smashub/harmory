@@ -1,0 +1,229 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.8461538461538465,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.8461538461538465,
+          "duration": 3.692307692307693,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.692307692307693,
+          "duration": 5.538461538461539,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.538461538461539,
+          "duration": 6.461538461538462,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.461538461538462,
+          "duration": 7.384615384615385,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.384615384615385,
+          "duration": 9.230769230769232,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.230769230769232,
+          "duration": 11.076923076923078,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.076923076923078,
+          "duration": 12.923076923076923,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.923076923076923,
+          "duration": 13.846153846153848,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.846153846153848,
+          "duration": 14.76923076923077,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.76923076923077,
+          "duration": 15.692307692307692,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.692307692307692,
+          "duration": 16.615384615384617,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.615384615384617,
+          "duration": 17.53846153846154,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.53846153846154,
+          "duration": 18.461538461538463,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.461538461538463,
+          "duration": 19.384615384615387,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.384615384615387,
+          "duration": 20.30769230769231,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.30769230769231,
+          "duration": 21.230769230769237,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.230769230769237,
+          "duration": 22.15384615384616,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.15384615384616,
+          "duration": 23.07692307692308,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.07692307692308,
+          "duration": 24.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 24.923076923076923,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.923076923076923,
+          "duration": 25.846153846153847,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.846153846153847,
+          "duration": 26.76923076923077,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.76923076923077,
+          "duration": 27.692307692307693,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.692307692307693,
+          "duration": 28.615384615384617,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.615384615384617,
+          "duration": 29.53846153846154,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 448.6153846153847,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Brosna Slide",
+    "artist": "",
+    "release": "",
+    "duration": 448,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

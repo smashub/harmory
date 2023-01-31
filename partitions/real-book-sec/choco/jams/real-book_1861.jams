@@ -1,0 +1,196 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.6551724137931036,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.6551724137931036,
+          "duration": 3.3103448275862077,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.3103448275862077,
+          "duration": 4.965517241379311,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.965517241379311,
+          "duration": 6.620689655172415,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.620689655172415,
+          "duration": 8.275862068965518,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.275862068965518,
+          "duration": 9.93103448275862,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.93103448275862,
+          "duration": 10.758620689655173,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.758620689655173,
+          "duration": 11.586206896551724,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.586206896551724,
+          "duration": 13.24137931034483,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.24137931034483,
+          "duration": 14.896551724137932,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.896551724137932,
+          "duration": 16.551724137931036,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.551724137931036,
+          "duration": 18.20689655172414,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.20689655172414,
+          "duration": 19.86206896551724,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.86206896551724,
+          "duration": 20.689655172413797,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.689655172413797,
+          "duration": 21.517241379310345,
+          "value": "C:maj6/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.517241379310345,
+          "duration": 22.344827586206897,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.344827586206897,
+          "duration": 23.17241379310345,
+          "value": "F#:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.17241379310345,
+          "duration": 24.0,
+          "value": "C:maj6/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 24.82758620689655,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.82758620689655,
+          "duration": 26.48275862068966,
+          "value": "C:maj6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 302.89655172413796,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Glow Worm",
+    "artist": [
+      "Paul Linck",
+      "Johnny Mercer"
+    ],
+    "release": "",
+    "duration": 302,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.7142857142857142,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7142857142857142,
+          "duration": 3.4285714285714284,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.4285714285714284,
+          "duration": 5.142857142857142,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.142857142857142,
+          "duration": 6.857142857142857,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 8.571428571428571,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.571428571428571,
+          "duration": 10.285714285714285,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.285714285714285,
+          "duration": 12.0,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 12.857142857142856,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.857142857142856,
+          "duration": 13.714285714285714,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.714285714285714,
+          "duration": 15.428571428571429,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.428571428571429,
+          "duration": 16.285714285714285,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.285714285714285,
+          "duration": 17.142857142857142,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.142857142857142,
+          "duration": 18.857142857142858,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.857142857142858,
+          "duration": 19.71428571428571,
+          "value": "Ab:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.71428571428571,
+          "duration": 20.57142857142857,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.57142857142857,
+          "duration": 22.285714285714285,
+          "value": "Gb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.285714285714285,
+          "duration": 23.142857142857142,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.142857142857142,
+          "duration": 24.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 25.285714285714285,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.285714285714285,
+          "duration": 25.71428571428571,
+          "value": "E:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.71428571428571,
+          "duration": 27.428571428571427,
+          "value": "E:7(s9)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 330.42857142857144,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Recorda-Me",
+    "artist": [
+      "Joe Henderson"
+    ],
+    "release": "",
+    "duration": 330,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,15 @@
+dataset,distance,tps_mode,stretch,cinstraint,first_tier,second_tier
+merge,tpsd,offset,,,0.590029761904762,0.7061011904761904
+merge,tpsd,profile,,,0.6227678571428571,0.8325892857142857
+merge,dtw,offset,stretch,,0.9791666666666666,1.0
+merge,dtw,profile,stretch,,0.9947916666666666,1.0
+merge,dtw,offset,no-stretch,,0.9895833333333334,1.0
+merge,dtw,profile,no-stretch,,1.0,1.0
+merge,dtw,offset,stretch,sakoe_chiba,0.9315476190476191,0.96875
+merge,dtw,profile,stretch,sakoe_chiba,0.9583333333333334,0.96875
+merge,dtw,offset,stretch,itakura,0.9947916666666666,1.0
+merge,dtw,profile,stretch,itakura,1.0,1.0
+merge,dtw,offset,no-stretch,sakoe_chiba,0.921875,0.953125
+merge,dtw,profile,no-stretch,sakoe_chiba,0.9166666666666666,0.953125
+merge,dtw,offset,no-stretch,itakura,1.0,1.0
+merge,dtw,profile,no-stretch,itakura,1.0,1.0

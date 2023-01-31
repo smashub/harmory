@@ -1,0 +1,217 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4.235294117647059,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.235294117647059,
+          "duration": 5.647058823529411,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.647058823529411,
+          "duration": 9.88235294117647,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.88235294117647,
+          "duration": 11.294117647058822,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.294117647058822,
+          "duration": 15.529411764705882,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.529411764705882,
+          "duration": 16.941176470588236,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.941176470588236,
+          "duration": 21.176470588235293,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.176470588235293,
+          "duration": 21.88235294117647,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.88235294117647,
+          "duration": 22.588235294117645,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.588235294117645,
+          "duration": 25.41176470588235,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.41176470588235,
+          "duration": 28.235294117647054,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.235294117647054,
+          "duration": 29.64705882352941,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.64705882352941,
+          "duration": 31.058823529411764,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.058823529411764,
+          "duration": 31.76470588235294,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.76470588235294,
+          "duration": 32.47058823529412,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.47058823529412,
+          "duration": 33.17647058823529,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.17647058823529,
+          "duration": 33.88235294117647,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.88235294117647,
+          "duration": 36.70588235294117,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.70588235294117,
+          "duration": 39.52941176470588,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.52941176470588,
+          "duration": 40.94117647058823,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.94117647058823,
+          "duration": 42.35294117647059,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.35294117647059,
+          "duration": 43.41176470588235,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.41176470588235,
+          "duration": 43.76470588235294,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.76470588235294,
+          "duration": 48.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 669.5294117647059,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "I Wanna Be Like You",
+    "artist": "",
+    "release": "",
+    "duration": 669,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

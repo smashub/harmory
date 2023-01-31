@@ -1,0 +1,217 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.5263157894736845,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5263157894736845,
+          "duration": 5.052631578947369,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.052631578947369,
+          "duration": 7.578947368421053,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.578947368421053,
+          "duration": 8.842105263157896,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.842105263157896,
+          "duration": 9.473684210526317,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.473684210526317,
+          "duration": 10.105263157894738,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.105263157894738,
+          "duration": 12.63157894736842,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.63157894736842,
+          "duration": 15.157894736842106,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.157894736842106,
+          "duration": 17.68421052631579,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.68421052631579,
+          "duration": 18.947368421052637,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.947368421052637,
+          "duration": 19.57894736842105,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.57894736842105,
+          "duration": 20.21052631578948,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.21052631578948,
+          "duration": 22.73684210526316,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.73684210526316,
+          "duration": 25.26315789473684,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.26315789473684,
+          "duration": 26.526315789473685,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.526315789473685,
+          "duration": 29.05263157894737,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.05263157894737,
+          "duration": 29.68421052631579,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.68421052631579,
+          "duration": 30.31578947368421,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.31578947368421,
+          "duration": 32.8421052631579,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.8421052631579,
+          "duration": 35.36842105263158,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.36842105263158,
+          "duration": 36.631578947368425,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.631578947368425,
+          "duration": 39.15789473684211,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.15789473684211,
+          "duration": 39.78947368421053,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.78947368421053,
+          "duration": 40.42105263157895,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 535.5789473684212,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Billy In The Lowground",
+    "artist": "",
+    "release": "",
+    "duration": 535,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 6.889952153110047,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.889952153110047,
+          "duration": 9.186602870813395,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.186602870813395,
+          "duration": 13.779904306220097,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.779904306220097,
+          "duration": 16.076555023923444,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.076555023923444,
+          "duration": 17.22488038277512,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.22488038277512,
+          "duration": 18.373205741626798,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.373205741626798,
+          "duration": 25.26315789473684,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.26315789473684,
+          "duration": 26.41148325358852,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.41148325358852,
+          "duration": 27.55980861244019,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.55980861244019,
+          "duration": 29.85645933014354,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.85645933014354,
+          "duration": 31.004784688995212,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.004784688995212,
+          "duration": 32.15311004784689,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.15311004784689,
+          "duration": 33.301435406698566,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.301435406698566,
+          "duration": 34.44976076555024,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.44976076555024,
+          "duration": 35.59808612440192,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.59808612440192,
+          "duration": 36.74641148325359,
+          "value": "Bb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.74641148325359,
+          "duration": 40.19138755980861,
+          "value": "F:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 434.066985645933,
+          "value": "F",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "It's 3 O'clock In The Morning",
+    "artist": "",
+    "release": "",
+    "duration": 434,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

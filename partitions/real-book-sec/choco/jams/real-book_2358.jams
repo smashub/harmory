@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 5.818181818181818,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.818181818181818,
+          "duration": 11.636363636363637,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.636363636363637,
+          "duration": 14.545454545454543,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.545454545454543,
+          "duration": 17.454545454545453,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.454545454545453,
+          "duration": 18.90909090909091,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.90909090909091,
+          "duration": 20.363636363636363,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.363636363636363,
+          "duration": 24.727272727272727,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.727272727272727,
+          "duration": 26.181818181818183,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.181818181818183,
+          "duration": 27.63636363636364,
+          "value": "F#:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.63636363636364,
+          "duration": 29.09090909090909,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.09090909090909,
+          "duration": 32.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 34.90909090909091,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.90909090909091,
+          "duration": 36.36363636363637,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.36363636363637,
+          "duration": 37.81818181818182,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.81818181818182,
+          "duration": 43.63636363636363,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.63636363636363,
+          "duration": 46.54545454545455,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.54545454545455,
+          "duration": 49.45454545454545,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.45454545454545,
+          "duration": 52.36363636363637,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.36363636363637,
+          "duration": 53.81818181818182,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.81818181818182,
+          "duration": 55.27272727272727,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.27272727272727,
+          "duration": 59.63636363636363,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 698.1818181818181,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Pig Foot Pete",
+    "artist": "",
+    "release": "",
+    "duration": 698,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

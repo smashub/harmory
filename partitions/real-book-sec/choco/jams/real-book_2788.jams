@@ -1,0 +1,145 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 6.857142857142857,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 8.571428571428571,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.571428571428571,
+          "duration": 12.0,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 15.428571428571429,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.428571428571429,
+          "duration": 17.142857142857142,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.142857142857142,
+          "duration": 18.857142857142858,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.857142857142858,
+          "duration": 29.142857142857142,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.142857142857142,
+          "duration": 32.57142857142857,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.57142857142857,
+          "duration": 36.0,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 37.71428571428572,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.71428571428572,
+          "duration": 39.42857142857142,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.42857142857142,
+          "duration": 56.57142857142857,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 310.2857142857143,
+          "value": "Eb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Steak Face Blues",
+    "artist": "",
+    "release": "",
+    "duration": 310,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.4615384615384617,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4615384615384617,
+          "duration": 4.923076923076923,
+          "value": "D:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.923076923076923,
+          "duration": 7.384615384615385,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.384615384615385,
+          "duration": 9.846153846153848,
+          "value": "Bb:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.846153846153848,
+          "duration": 12.307692307692308,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.307692307692308,
+          "duration": 14.76923076923077,
+          "value": "D:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.76923076923077,
+          "duration": 17.23076923076923,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.23076923076923,
+          "duration": 19.692307692307693,
+          "value": "D:min6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 88.61538461538461,
+          "value": "Dm",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Dark Eyes",
+    "artist": "",
+    "release": "",
+    "duration": 88,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

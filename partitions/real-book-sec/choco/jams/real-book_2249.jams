@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.7777777777777777,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7777777777777777,
+          "duration": 3.555555555555556,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.555555555555556,
+          "duration": 5.333333333333333,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.333333333333333,
+          "duration": 7.111111111111111,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.111111111111111,
+          "duration": 8.88888888888889,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.88888888888889,
+          "duration": 10.666666666666666,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 12.444444444444445,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.444444444444445,
+          "duration": 14.22222222222222,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.22222222222222,
+          "duration": 16.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.77777777777778,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.77777777777778,
+          "duration": 19.55555555555556,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.55555555555556,
+          "duration": 21.33333333333333,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 23.11111111111111,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.11111111111111,
+          "duration": 24.88888888888889,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.88888888888889,
+          "duration": 28.444444444444443,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.444444444444443,
+          "duration": 32.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 35.55555555555556,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.55555555555556,
+          "duration": 37.333333333333336,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 39.11111111111112,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.11111111111112,
+          "duration": 40.888888888888886,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.888888888888886,
+          "duration": 42.66666666666666,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 442.66666666666663,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "You Fret Too Much",
+    "artist": "",
+    "release": "",
+    "duration": 442,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

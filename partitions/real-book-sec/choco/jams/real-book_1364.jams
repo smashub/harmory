@@ -1,0 +1,225 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 28.235294117647054,
+          "value": "D:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.235294117647054,
+          "duration": 42.35294117647059,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.35294117647059,
+          "duration": 56.47058823529412,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.47058823529412,
+          "duration": 70.58823529411765,
+          "value": "F#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.58823529411765,
+          "duration": 84.70588235294117,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 84.70588235294117,
+          "duration": 98.82352941176472,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 98.82352941176472,
+          "duration": 112.94117647058825,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 112.94117647058825,
+          "duration": 127.05882352941175,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 127.05882352941175,
+          "duration": 141.1764705882353,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 141.1764705882353,
+          "duration": 155.29411764705884,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 155.29411764705884,
+          "duration": 169.41176470588235,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 169.41176470588235,
+          "duration": 183.52941176470588,
+          "value": "D:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 183.52941176470588,
+          "duration": 197.64705882352945,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 197.64705882352945,
+          "duration": 211.76470588235296,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 211.76470588235296,
+          "duration": 225.8823529411765,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 225.8823529411765,
+          "duration": 240.0,
+          "value": "F#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 240.0,
+          "duration": 254.11764705882356,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 254.11764705882356,
+          "duration": 268.2352941176471,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 268.2352941176471,
+          "duration": 282.3529411764706,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 282.3529411764706,
+          "duration": 296.47058823529414,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 296.47058823529414,
+          "duration": 310.5882352941177,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 310.5882352941177,
+          "duration": 324.7058823529412,
+          "value": "G:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 324.7058823529412,
+          "duration": 331.7647058823529,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 331.7647058823529,
+          "duration": 335.29411764705884,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 335.29411764705884,
+          "duration": 338.8235294117647,
+          "value": "A:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4888.235294117647,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "My Sweet",
+    "artist": [
+      "Django Reinhardt"
+    ],
+    "release": "",
+    "duration": 4888,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

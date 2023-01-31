@@ -1,0 +1,127 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3.272727272727273,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.272727272727273,
+          "duration": 4.363636363636364,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.363636363636364,
+          "duration": 6.545454545454546,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.545454545454546,
+          "duration": 7.636363636363637,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.636363636363637,
+          "duration": 8.181818181818182,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.181818181818182,
+          "duration": 8.727272727272728,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.727272727272728,
+          "duration": 9.818181818181818,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.818181818181818,
+          "duration": 10.90909090909091,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.90909090909091,
+          "duration": 34.909090909090914,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 94.36363636363637,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Air Conditioning",
+    "artist": "",
+    "release": "",
+    "duration": 94,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

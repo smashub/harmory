@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.0,
+          "duration": 8.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 12.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 16.0,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 18.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.0,
+          "duration": 20.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.0,
+          "duration": 24.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 28.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.0,
+          "duration": 32.0,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 34.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.0,
+          "duration": 36.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 40.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 44.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.0,
+          "duration": 48.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 52.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.0,
+          "duration": 56.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.0,
+          "duration": 60.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 64.0,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.0,
+          "duration": 66.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.0,
+          "duration": 68.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.0,
+          "duration": 72.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 802.0,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "I'll Be Watching You",
+    "artist": "",
+    "release": "",
+    "duration": 802,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

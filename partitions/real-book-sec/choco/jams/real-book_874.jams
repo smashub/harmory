@@ -1,0 +1,325 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 30.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 60.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 90.0,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 90.0,
+          "duration": 120.0,
+          "value": "C:maj(b7,b9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 120.0,
+          "duration": 150.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 150.0,
+          "duration": 180.0,
+          "value": "C:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 180.0,
+          "duration": 210.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 210.0,
+          "duration": 240.0,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 240.0,
+          "duration": 300.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 300.0,
+          "duration": 330.0,
+          "value": "E:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 330.0,
+          "duration": 360.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 360.0,
+          "duration": 420.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 420.0,
+          "duration": 480.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 480.0,
+          "duration": 540.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 540.0,
+          "duration": 600.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 600.0,
+          "duration": 660.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 660.0,
+          "duration": 690.0,
+          "value": "E:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 690.0,
+          "duration": 720.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 720.0,
+          "duration": 780.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 780.0,
+          "duration": 810.0,
+          "value": "E:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 810.0,
+          "duration": 840.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 840.0,
+          "duration": 900.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 900.0,
+          "duration": 960.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 960.0,
+          "duration": 1020.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1020.0,
+          "duration": 1080.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1080.0,
+          "duration": 1200.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1200.0,
+          "duration": 1320.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1320.0,
+          "duration": 1440.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1440.0,
+          "duration": 1560.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1560.0,
+          "duration": 1620.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1620.0,
+          "duration": 1650.0,
+          "value": "E:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 1650.0,
+          "duration": 1680.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1680.0,
+          "duration": 1740.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1740.0,
+          "duration": 1770.0,
+          "value": "E:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 1770.0,
+          "duration": 1800.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1800.0,
+          "duration": 1860.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1860.0,
+          "duration": 1920.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1920.0,
+          "duration": 1980.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1980.0,
+          "duration": 2040.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2040.0,
+          "duration": 2100.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2100.0,
+          "duration": 2130.0,
+          "value": "E:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 2130.0,
+          "duration": 2160.0,
+          "value": "A:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 42540.0,
+          "value": "F",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "I've Found A New Baby",
+    "artist": "",
+    "release": "",
+    "duration": 42540,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

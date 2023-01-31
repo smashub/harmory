@@ -1,0 +1,115 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.105263157894738,
+          "value": "C:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.105263157894738,
+          "duration": 20.21052631578948,
+          "value": "C:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.21052631578948,
+          "duration": 25.26315789473684,
+          "value": "Ab:maj(b7,9,s11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.26315789473684,
+          "duration": 30.31578947368421,
+          "value": "C:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.31578947368421,
+          "duration": 32.8421052631579,
+          "value": "B:maj9(#11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.8421052631579,
+          "duration": 35.36842105263158,
+          "value": "A:maj9(#11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.36842105263158,
+          "duration": 40.42105263157895,
+          "value": "C:min9",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 194.5263157894737,
+          "value": "Cm",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Povo",
+    "artist": "",
+    "release": "",
+    "duration": 194,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

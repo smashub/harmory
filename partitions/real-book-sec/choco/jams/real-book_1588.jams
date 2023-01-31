@@ -1,0 +1,133 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.5263157894736845,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5263157894736845,
+          "duration": 5.052631578947369,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.052631578947369,
+          "duration": 10.105263157894738,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.105263157894738,
+          "duration": 15.157894736842106,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.157894736842106,
+          "duration": 20.21052631578948,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.21052631578948,
+          "duration": 22.73684210526316,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.73684210526316,
+          "duration": 25.26315789473684,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.26315789473684,
+          "duration": 28.42105263157895,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.42105263157895,
+          "duration": 29.05263157894737,
+          "value": "Ab:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.05263157894737,
+          "duration": 30.31578947368421,
+          "value": "G:9",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 188.84210526315792,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Ramblin' On My Mind",
+    "artist": "",
+    "release": "",
+    "duration": 188,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

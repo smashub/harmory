@@ -1,0 +1,15 @@
+dataset,distance,tps_mode,stretch,cinstraint,first_tier,second_tier
+biab_jams,tpsd,offset,,,0.4396103896103896,0.5045454545454545
+biab_jams,tpsd,profile,,,0.5554112554112555,0.603030303030303
+biab_jams,dtw,offset,stretch,,0.3201298701298701,0.4114718614718615
+biab_jams,dtw,profile,stretch,,0.3270562770562771,0.43744588744588747
+biab_jams,dtw,offset,no-stretch,,0.3974025974025974,0.47424242424242424
+biab_jams,dtw,profile,no-stretch,,0.4168831168831169,0.4623376623376624
+biab_jams,dtw,offset,stretch,sakoe_chiba,0.32445887445887445,0.4164502164502164
+biab_jams,dtw,profile,stretch,sakoe_chiba,0.3071428571428571,0.37207792207792206
+biab_jams,dtw,offset,stretch,itakura,0.3114718614718615,0.40238095238095234
+biab_jams,dtw,profile,stretch,itakura,0.27510822510822514,0.3400432900432901
+biab_jams,dtw,offset,no-stretch,sakoe_chiba,0.4114718614718615,0.4805194805194805
+biab_jams,dtw,profile,no-stretch,sakoe_chiba,0.4038961038961039,0.46991341991341995
+biab_jams,dtw,offset,no-stretch,itakura,0.38614718614718613,0.47705627705627707
+biab_jams,dtw,profile,no-stretch,itakura,0.3461038961038961,0.4038961038961039

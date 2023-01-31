@@ -1,0 +1,151 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.7142857142857142,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7142857142857142,
+          "duration": 3.4285714285714284,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.4285714285714284,
+          "duration": 5.142857142857142,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.142857142857142,
+          "duration": 6.857142857142857,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 8.571428571428571,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.571428571428571,
+          "duration": 10.285714285714285,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.285714285714285,
+          "duration": 12.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 13.714285714285714,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.714285714285714,
+          "duration": 15.428571428571429,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.428571428571429,
+          "duration": 17.142857142857142,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.142857142857142,
+          "duration": 18.857142857142858,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.857142857142858,
+          "duration": 19.71428571428571,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.71428571428571,
+          "duration": 20.57142857142857,
+          "value": "C:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 153.42857142857144,
+          "value": "F",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Take My Blues Away",
+    "artist": "",
+    "release": "",
+    "duration": 153,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

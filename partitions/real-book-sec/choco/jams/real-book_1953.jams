@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 60.0,
+          "value": "Eb:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 120.0,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 120.0,
+          "duration": 180.0,
+          "value": "Eb:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 180.0,
+          "duration": 240.0,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 240.0,
+          "duration": 480.0,
+          "value": "Ab:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 480.0,
+          "duration": 720.0,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 720.0,
+          "duration": 840.0,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 840.0,
+          "duration": 900.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 900.0,
+          "duration": 960.0,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 960.0,
+          "duration": 1080.0,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1080.0,
+          "duration": 1200.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1200.0,
+          "duration": 1440.0,
+          "value": "Ab:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 1440.0,
+          "duration": 1680.0,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1680.0,
+          "duration": 1740.0,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1740.0,
+          "duration": 1800.0,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1800.0,
+          "duration": 1920.0,
+          "value": "Bb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 1920.0,
+          "duration": 1980.0,
+          "value": "B:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 1980.0,
+          "duration": 2040.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2040.0,
+          "duration": 2100.0,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2100.0,
+          "duration": 2130.0,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2130.0,
+          "duration": 2160.0,
+          "value": "Eb:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 25770.0,
+          "value": "Ab",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Limehouse Blues",
+    "artist": "",
+    "release": "",
+    "duration": 25770,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

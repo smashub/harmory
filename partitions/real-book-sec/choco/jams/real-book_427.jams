@@ -1,0 +1,165 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3.130434782608696,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.130434782608696,
+          "duration": 4.173913043478261,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.173913043478261,
+          "duration": 6.260869565217391,
+          "value": "F:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.260869565217391,
+          "duration": 6.782608695652174,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.782608695652174,
+          "duration": 7.304347826086956,
+          "value": "D:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.304347826086956,
+          "duration": 7.826086956521739,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.826086956521739,
+          "duration": 8.347826086956522,
+          "value": "C:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.347826086956522,
+          "duration": 9.130434782608695,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.130434782608695,
+          "duration": 9.391304347826086,
+          "value": "Db:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.391304347826086,
+          "duration": 9.91304347826087,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.91304347826087,
+          "duration": 10.434782608695652,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.434782608695652,
+          "duration": 10.956521739130434,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.956521739130434,
+          "duration": 11.478260869565217,
+          "value": "F:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.478260869565217,
+          "duration": 12.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 12.52173913043478,
+          "value": "G:9",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 129.65217391304347,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Blues Clair",
+    "artist": [
+      "Django Reinhardt"
+    ],
+    "release": "",
+    "duration": 129,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

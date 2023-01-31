@@ -1,0 +1,157 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.8235294117647056,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.8235294117647056,
+          "duration": 5.647058823529411,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.647058823529411,
+          "duration": 11.294117647058822,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.294117647058822,
+          "duration": 16.941176470588236,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.941176470588236,
+          "duration": 22.588235294117645,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.588235294117645,
+          "duration": 25.41176470588235,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.41176470588235,
+          "duration": 28.235294117647054,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.235294117647054,
+          "duration": 33.88235294117647,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.88235294117647,
+          "duration": 45.17647058823529,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.17647058823529,
+          "duration": 50.8235294117647,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.8235294117647,
+          "duration": 56.47058823529412,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.47058823529412,
+          "duration": 59.29411764705882,
+          "value": "F:(1,5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 59.29411764705882,
+          "duration": 62.11764705882353,
+          "value": "E:(1,5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.11764705882353,
+          "duration": 67.76470588235294,
+          "value": "A:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 488.47058823529414,
+          "value": "Am",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Kansas City Dragin",
+    "artist": "",
+    "release": "",
+    "duration": 488,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

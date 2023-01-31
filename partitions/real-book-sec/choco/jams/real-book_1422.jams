@@ -1,0 +1,145 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3.2,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.2,
+          "duration": 6.4,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.4,
+          "duration": 9.6,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 12.8,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.8,
+          "duration": 16.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 19.2,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 22.4,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.4,
+          "duration": 25.6,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.6,
+          "duration": 28.8,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 32.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 35.2,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.2,
+          "duration": 38.4,
+          "value": "C:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 249.6,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Let The 4 Winds Blow",
+    "artist": "",
+    "release": "",
+    "duration": 249,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

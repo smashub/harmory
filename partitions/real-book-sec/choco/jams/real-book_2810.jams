@@ -1,0 +1,247 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 6.4,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.4,
+          "duration": 12.8,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.8,
+          "duration": 19.2,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 22.4,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.4,
+          "duration": 25.6,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.6,
+          "duration": 28.8,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 32.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 35.2,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.2,
+          "duration": 38.4,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 41.6,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.6,
+          "duration": 51.2,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.2,
+          "duration": 57.6,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.6,
+          "duration": 64.0,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.0,
+          "duration": 67.2,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.2,
+          "duration": 70.4,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.4,
+          "duration": 73.6,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 73.6,
+          "duration": 76.8,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 76.8,
+          "duration": 80.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 80.0,
+          "duration": 83.2,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 83.2,
+          "duration": 86.4,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 86.4,
+          "duration": 92.8,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 92.8,
+          "duration": 96.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 96.0,
+          "duration": 102.4,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 102.4,
+          "duration": 108.8,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 108.8,
+          "duration": 115.2,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 115.2,
+          "duration": 118.4,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 118.4,
+          "duration": 124.8,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 124.8,
+          "duration": 128.0,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 128.0,
+          "duration": 131.2,
+          "value": "B:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1990.4,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Cumberland Road",
+    "artist": "",
+    "release": "",
+    "duration": 1990,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

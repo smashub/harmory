@@ -1,0 +1,229 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.9375,
+          "value": "C#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.9375,
+          "duration": 1.875,
+          "value": "F#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.875,
+          "duration": 3.75,
+          "value": "G#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.75,
+          "duration": 5.625,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.625,
+          "duration": 7.03125,
+          "value": "C#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.03125,
+          "duration": 7.5,
+          "value": "G#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.5,
+          "duration": 8.4375,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.4375,
+          "duration": 9.375,
+          "value": "E:7/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.375,
+          "duration": 10.3125,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.3125,
+          "duration": 10.78125,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.78125,
+          "duration": 11.25,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.25,
+          "duration": 13.125,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.125,
+          "duration": 15.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.0,
+          "duration": 15.9375,
+          "value": "C#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.9375,
+          "duration": 16.875,
+          "value": "F#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.875,
+          "duration": 18.75,
+          "value": "G#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.75,
+          "duration": 20.625,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.625,
+          "duration": 22.03125,
+          "value": "C#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.03125,
+          "duration": 22.5,
+          "value": "G#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.5,
+          "duration": 23.4375,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.4375,
+          "duration": 24.375,
+          "value": "E:7/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.375,
+          "duration": 25.3125,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.3125,
+          "duration": 25.78125,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.78125,
+          "duration": 26.25,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.25,
+          "duration": 28.125,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.125,
+          "duration": 30.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 405.0,
+          "value": "C#m",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Moonchild",
+    "artist": "",
+    "release": "",
+    "duration": 405,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

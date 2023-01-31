@@ -1,0 +1,153 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 5.714285714285714,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.714285714285714,
+          "duration": 6.857142857142857,
+          "value": "C#:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 9.142857142857142,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.142857142857142,
+          "duration": 14.857142857142858,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.857142857142858,
+          "duration": 16.0,
+          "value": "C#:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 18.285714285714285,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.285714285714285,
+          "duration": 20.571428571428573,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.571428571428573,
+          "duration": 22.857142857142858,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.857142857142858,
+          "duration": 25.142857142857142,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.142857142857142,
+          "duration": 27.428571428571427,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.428571428571427,
+          "duration": 33.142857142857146,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.142857142857146,
+          "duration": 34.285714285714285,
+          "value": "C#:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.285714285714285,
+          "duration": 36.57142857142857,
+          "value": "C:maj7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 270.85714285714283,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Red Cross",
+    "artist": [
+      "Charlie Parker"
+    ],
+    "release": "",
+    "duration": 270,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

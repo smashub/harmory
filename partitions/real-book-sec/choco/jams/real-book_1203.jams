@@ -1,0 +1,205 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.8947368421052635,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.8947368421052635,
+          "duration": 2.5263157894736845,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5263157894736845,
+          "duration": 3.789473684210527,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.789473684210527,
+          "duration": 4.421052631578948,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.421052631578948,
+          "duration": 5.052631578947369,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.052631578947369,
+          "duration": 6.947368421052632,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.947368421052632,
+          "duration": 7.578947368421053,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.578947368421053,
+          "duration": 8.842105263157896,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.842105263157896,
+          "duration": 9.473684210526317,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.473684210526317,
+          "duration": 10.105263157894738,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.105263157894738,
+          "duration": 12.0,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 12.63157894736842,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.63157894736842,
+          "duration": 13.894736842105264,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.894736842105264,
+          "duration": 14.526315789473683,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.526315789473683,
+          "duration": 15.157894736842106,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.157894736842106,
+          "duration": 17.05263157894737,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.05263157894737,
+          "duration": 17.68421052631579,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.68421052631579,
+          "duration": 18.947368421052637,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.947368421052637,
+          "duration": 19.57894736842105,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.57894736842105,
+          "duration": 20.21052631578948,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.21052631578948,
+          "duration": 21.473684210526315,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.473684210526315,
+          "duration": 25.26315789473684,
+          "value": "D:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 269.05263157894734,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Mountain Road",
+    "artist": "",
+    "release": "",
+    "duration": 269,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

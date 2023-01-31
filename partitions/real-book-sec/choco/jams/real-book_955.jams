@@ -1,0 +1,259 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.96,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.96,
+          "duration": 1.92,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.92,
+          "duration": 3.84,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.84,
+          "duration": 4.8,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.8,
+          "duration": 5.76,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.76,
+          "duration": 6.72,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.72,
+          "duration": 7.68,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.68,
+          "duration": 8.639999999999999,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.639999999999999,
+          "duration": 9.6,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 15.36,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.36,
+          "duration": 17.279999999999998,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.279999999999998,
+          "duration": 18.24,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.24,
+          "duration": 19.2,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 20.16,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.16,
+          "duration": 21.12,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.12,
+          "duration": 21.6,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.6,
+          "duration": 22.08,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.08,
+          "duration": 22.56,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.56,
+          "duration": 23.04,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.04,
+          "duration": 24.0,
+          "value": "Bb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 24.96,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.96,
+          "duration": 25.92,
+          "value": "Bb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.92,
+          "duration": 26.88,
+          "value": "F:min7/4",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.88,
+          "duration": 27.84,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.84,
+          "duration": 28.8,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 29.76,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.76,
+          "duration": 30.72,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.72,
+          "duration": 31.68,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.68,
+          "duration": 32.64,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.64,
+          "duration": 33.599999999999994,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.599999999999994,
+          "duration": 38.4,
+          "value": "D:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 605.76,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "HUNTING",
+    "artist": "",
+    "release": "",
+    "duration": 605,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.2631578947368425,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.2631578947368425,
+          "duration": 2.5263157894736845,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5263157894736845,
+          "duration": 12.63157894736842,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.63157894736842,
+          "duration": 17.68421052631579,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.68421052631579,
+          "duration": 22.73684210526316,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.73684210526316,
+          "duration": 27.789473684210527,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.789473684210527,
+          "duration": 30.31578947368421,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.31578947368421,
+          "duration": 40.42105263157895,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 155.3684210526316,
+          "value": "Eb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "State Street Special",
+    "artist": [
+      "Jimmie Yancey"
+    ],
+    "release": "",
+    "duration": 155,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

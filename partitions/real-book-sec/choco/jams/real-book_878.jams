@@ -1,0 +1,301 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.6666666666666665,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "duration": 5.333333333333333,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.333333333333333,
+          "duration": 8.0,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 13.333333333333334,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.333333333333334,
+          "duration": 18.666666666666668,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.666666666666668,
+          "duration": 20.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.0,
+          "duration": 21.33333333333333,
+          "value": "Bb:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 22.666666666666668,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.666666666666668,
+          "duration": 24.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 29.33333333333333,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.33333333333333,
+          "duration": 34.666666666666664,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.666666666666664,
+          "duration": 37.333333333333336,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 40.0,
+          "value": "D:(1,5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 48.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 50.66666666666666,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.66666666666666,
+          "duration": 56.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.0,
+          "duration": 61.333333333333336,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.333333333333336,
+          "duration": 62.66666666666666,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.66666666666666,
+          "duration": 64.0,
+          "value": "Bb:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.0,
+          "duration": 66.66666666666667,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.66666666666667,
+          "duration": 72.0,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.0,
+          "duration": 77.33333333333333,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 77.33333333333333,
+          "duration": 78.66666666666667,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 78.66666666666667,
+          "duration": 80.0,
+          "value": "C:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 80.0,
+          "duration": 81.33333333333333,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 81.33333333333333,
+          "duration": 82.66666666666667,
+          "value": "D:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 82.66666666666667,
+          "duration": 84.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 84.0,
+          "duration": 85.33333333333333,
+          "value": "D:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 85.33333333333333,
+          "duration": 88.0,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 88.0,
+          "duration": 90.66666666666669,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 90.66666666666669,
+          "duration": 93.33333333333331,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 93.33333333333331,
+          "duration": 96.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 96.0,
+          "duration": 97.33333333333331,
+          "value": "E:aug",
+          "confidence": 1.0
+        },
+        {
+          "time": 97.33333333333331,
+          "duration": 98.66666666666669,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 98.66666666666669,
+          "duration": 101.33333333333331,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 101.33333333333331,
+          "duration": 102.66666666666669,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 102.66666666666669,
+          "duration": 104.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 104.0,
+          "duration": 112.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2312.0,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "If You Were The Only Girl  In The World",
+    "artist": "",
+    "release": "",
+    "duration": 2312,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

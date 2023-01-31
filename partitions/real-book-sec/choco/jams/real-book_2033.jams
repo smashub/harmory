@@ -1,0 +1,193 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.4615384615384617,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.4615384615384617,
+          "duration": 4.923076923076923,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.923076923076923,
+          "duration": 8.615384615384615,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.615384615384615,
+          "duration": 9.23076923076923,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.23076923076923,
+          "duration": 9.846153846153848,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.846153846153848,
+          "duration": 12.307692307692308,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.307692307692308,
+          "duration": 14.76923076923077,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.76923076923077,
+          "duration": 18.46153846153846,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.46153846153846,
+          "duration": 19.07692307692308,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.07692307692308,
+          "duration": 19.692307692307693,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.692307692307693,
+          "duration": 22.153846153846157,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.153846153846157,
+          "duration": 24.615384615384617,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.615384615384617,
+          "duration": 28.307692307692307,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.307692307692307,
+          "duration": 28.923076923076923,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.923076923076923,
+          "duration": 29.53846153846154,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.53846153846154,
+          "duration": 32.0,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 34.46153846153846,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.46153846153846,
+          "duration": 38.15384615384615,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.15384615384615,
+          "duration": 38.76923076923077,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.76923076923077,
+          "duration": 39.38461538461539,
+          "value": "A:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 435.6923076923076,
+          "value": "Am",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Old Copper Plate",
+    "artist": "",
+    "release": "",
+    "duration": 435,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.3333333333333333,
+          "value": "A:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.3333333333333333,
+          "duration": 2.6666666666666665,
+          "value": "F#:min9/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "duration": 5.333333333333333,
+          "value": "B:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.333333333333333,
+          "duration": 6.666666666666667,
+          "value": "B:min9/b3",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.666666666666667,
+          "duration": 8.0,
+          "value": "E:maj(b7,9,11,13)/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 9.333333333333334,
+          "value": "A:6(9)/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.333333333333334,
+          "duration": 10.0,
+          "value": "B:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.0,
+          "duration": 10.666666666666666,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 12.0,
+          "value": "A:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 13.333333333333334,
+          "value": "F#:min9/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.333333333333334,
+          "duration": 16.0,
+          "value": "B:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.333333333333332,
+          "value": "B:min9/b3",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.333333333333332,
+          "duration": 18.666666666666668,
+          "value": "E:maj(b7,9,11,13)/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.666666666666668,
+          "duration": 20.0,
+          "value": "A:6(9)/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.0,
+          "duration": 20.666666666666668,
+          "value": "B:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.666666666666668,
+          "duration": 21.33333333333333,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 22.666666666666668,
+          "value": "A:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.666666666666668,
+          "duration": 24.0,
+          "value": "F#:min9/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 26.666666666666668,
+          "value": "B:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 28.0,
+          "value": "B:min9/b3",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.0,
+          "duration": 29.33333333333333,
+          "value": "E:maj(b7,9,11,13)/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.33333333333333,
+          "duration": 30.666666666666668,
+          "value": "A:6(9)/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.666666666666668,
+          "duration": 32.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 33.333333333333336,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.333333333333336,
+          "duration": 37.333333333333336,
+          "value": "D:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 40.0,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 41.333333333333336,
+          "value": "B:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.333333333333336,
+          "duration": 42.0,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.0,
+          "duration": 42.66666666666666,
+          "value": "E:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.66666666666666,
+          "duration": 44.0,
+          "value": "A:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.0,
+          "duration": 45.333333333333336,
+          "value": "F#:min9/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.333333333333336,
+          "duration": 48.0,
+          "value": "B:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.333333333333336,
+          "value": "B:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.333333333333336,
+          "duration": 50.66666666666666,
+          "value": "E:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.66666666666666,
+          "duration": 53.333333333333336,
+          "value": "A:6(9)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 914.0,
+          "value": "A",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Take The 'a' Train",
+    "artist": "",
+    "release": "",
+    "duration": 914,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

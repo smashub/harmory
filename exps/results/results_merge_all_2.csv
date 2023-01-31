@@ -1,0 +1,7 @@
+dataset,distance,tps_mode,stretch,cinstraint,first_tier,second_tier
+merge,tpsd,offset,,,0.5795940170940171,0.6663614163614162
+merge,tpsd,profile,,,0.6881868131868132,0.801358363858364
+merge,dtw,offset,stretch,,0.6575854700854701,0.7628205128205128
+merge,dtw,profile,stretch,,0.7126068376068376,0.778846153846154
+merge,dtw,offset,no-stretch,,0.5678418803418804,0.6436965811965809
+merge,dtw,profile,no-stretch,,0.6602564102564104,0.7222222222222223

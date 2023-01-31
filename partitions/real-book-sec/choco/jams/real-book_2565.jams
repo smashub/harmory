@@ -1,0 +1,187 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.1111111111111112,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.1111111111111112,
+          "duration": 2.2222222222222223,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.2222222222222223,
+          "duration": 3.333333333333333,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.333333333333333,
+          "duration": 4.444444444444445,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.444444444444445,
+          "duration": 17.77777777777778,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.77777777777778,
+          "duration": 31.11111111111111,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.11111111111111,
+          "duration": 35.55555555555556,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.55555555555556,
+          "duration": 40.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 44.44444444444444,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.44444444444444,
+          "duration": 48.888888888888886,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.888888888888886,
+          "duration": 51.11111111111111,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.11111111111111,
+          "duration": 53.33333333333333,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.33333333333333,
+          "duration": 54.44444444444444,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.44444444444444,
+          "duration": 55.55555555555556,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.55555555555556,
+          "duration": 56.66666666666666,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.66666666666666,
+          "duration": 57.77777777777778,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.77777777777778,
+          "duration": 66.66666666666667,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.66666666666667,
+          "duration": 68.88888888888889,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.88888888888889,
+          "duration": 71.11111111111111,
+          "value": "G:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 764.4444444444445,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Strangers In The Night",
+    "artist": "",
+    "release": "",
+    "duration": 764,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

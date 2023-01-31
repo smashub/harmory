@@ -1,0 +1,121 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 6.620689655172415,
+          "value": "C#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.620689655172415,
+          "duration": 8.275862068965518,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.275862068965518,
+          "duration": 9.93103448275862,
+          "value": "A:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.93103448275862,
+          "duration": 13.24137931034483,
+          "value": "C#:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.24137931034483,
+          "duration": 14.896551724137932,
+          "value": "B:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.896551724137932,
+          "duration": 16.551724137931036,
+          "value": "A:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.551724137931036,
+          "duration": 18.20689655172414,
+          "value": "E:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.20689655172414,
+          "duration": 19.86206896551724,
+          "value": "C#:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 107.58620689655173,
+          "value": "Dm",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Mickey's Blues",
+    "artist": "",
+    "release": "",
+    "duration": 107,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

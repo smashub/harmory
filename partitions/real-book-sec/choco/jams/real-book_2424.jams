@@ -1,0 +1,153 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.696629213483146,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.696629213483146,
+          "duration": 4.044943820224719,
+          "value": "G:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.044943820224719,
+          "duration": 5.393258426966292,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.393258426966292,
+          "duration": 8.089887640449438,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.089887640449438,
+          "duration": 9.438202247191011,
+          "value": "C:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.438202247191011,
+          "duration": 10.786516853932584,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.786516853932584,
+          "duration": 16.179775280898877,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.179775280898877,
+          "duration": 21.573033707865168,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.573033707865168,
+          "duration": 22.92134831460674,
+          "value": "Ab:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.92134831460674,
+          "duration": 24.269662921348317,
+          "value": "Db:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.269662921348317,
+          "duration": 25.617977528089888,
+          "value": "G:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.617977528089888,
+          "duration": 26.96629213483146,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.96629213483146,
+          "duration": 32.359550561797754,
+          "value": "F:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 210.3370786516854,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Birk's Works",
+    "artist": [
+      "Dizzy Gillespie"
+    ],
+    "release": "",
+    "duration": 210,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}
