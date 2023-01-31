@@ -11,6 +11,11 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
+from tslearn.preprocessing import TimeSeriesResampler
+from tslearn.neighbors import KNeighborsTimeSeries
+
+from search import HarmonicPatternFinder
+
 logger = logging.getLogger("harmory.analysis")
 
 
@@ -156,3 +161,65 @@ def compute_similarity_statistics(simi_relations_df, pattern_ids):
         "pattern_avg_distance_all": pattern_avg_distance_all,
         "pattern_avg_distance_nosame": pattern_avg_distance_nosame,
     }
+
+
+def create_timeseries_dataset(tpstimeseries_dict: dict, resampling_size: int):
+    # structure_ids = np.array(list(structure_map.keys()))  # index-to-ID
+    X_data = [tpst.time_series for tpst in tpstimeseries_dict.values()]
+    # Preprocessing of the TPS time series before fitting the model
+    X_data = TimeSeriesResampler(sz=resampling_size).fit_transform(X_data)
+    logger.debug(f"X_data shape after preprocessing: {X_data.shape}")
+
+
+class PatternValidationFinder(HarmonicPatternFinder):
+
+    def create_model(self, dataset: str, resampling_size: int, num_tophits: int,
+                     metric_name="dtw", metric_params=None, n_jobs=1):
+        """
+        Create and fit a metric-parameterised kNN for time series.
+
+        Parameters
+        ----------
+        dataset : list
+            A list of `TpsTimeSeries` objects to create a time series dataset.
+        resampling_size : int
+            Length of the resulting time series after resampling operations.
+        num_tophits : int
+            The number of known harmonic patterns that will be returned after
+            the search as top hits for a query. If > 1, all hits are averaged.
+        metric_name : str
+            The name of the metric to consider for comparing time series.
+        metric_params : dict
+            A dictionary holding metric-specific parameters.
+        n_jobs : int, optional
+            The number of thread that will be used for the search.
+
+        Notes
+        -----
+        (*) Parameterise the standardisation/normalisation of time series
+
+        """
+        # From a dataset of TpsTimeSeries to a general time series dataset.
+        # This includes time stretching of time series to a common length.
+        khpatterns = create_timeseries_dataset(dataset, resampling_size)
+        # Creation of the model from the given parameters
+        self._model = KNeighborsTimeSeries(
+            n_neighbors=num_tophits, n_jobs=n_jobs,
+            metric=metric_name, metric_params=metric_params)
+        self._model.fit(dataset)
+        self._dataset = khpatterns
+
+    def check_pattern_presence(self, patterns):
+        pass
+        # Perform kNN search using patterns as query against khpatterns
+        n_simi_dtw, n_simi_ids = self._model.kneighbors(
+            X=[patterns], return_distance=True)
+        # Returng the max for each vector distance; saving (khpattern_i, dist)
+
+        # Return a list of tuples containing the ID of the closest known harmonic
+        # pattern and the corresponding distance for each query pattern.
+
+        # TODO Check shape of query time series: may need to be stretched
+        
+        
+        return list(n_simi_ids[mask]), list(n_simi_dtw[mask])

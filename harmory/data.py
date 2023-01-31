@@ -2,10 +2,14 @@
 Data manipulations functions.
 
 """
+import re
 import logging
 
 import jams
+import numpy as np
 from music21 import interval, note
+
+from utils import dicted_renaming
 
 logger = logging.getLogger("harmory.data")
 
@@ -81,7 +85,31 @@ def serialise_jams(jams_object, namespace, annotator=0, lablike=False,
     return observations
 
 
-def tabularise_annotations(chord_annotations, key_annotations, *other):
+def compensate_key_times(chord_times, key_times, max_offset):
+    """
+    Attempt to compensate the start and the end of a key annotation to match
+    those of a chord annotation. This is done if their temporal offset is below
+    a given threshold; an exception is raised otherwise.
+    """
+    if key_times[0] > chord_times[0]:
+        if np.abs(chord_times[0] - key_times[0]) <= max_offset:
+            key_times[0] = chord_times[0]  # first key moved earlier
+        else:  # difference too large to compensate offset
+            raise ValueError("First chord starts with no key")
+
+    if key_times[-1] < chord_times[-1]:
+        if np.abs(chord_times[-1] - key_times[-1]) <= max_offset:
+            key_times[-1] = chord_times[-1]  # last key held for longer
+        else:  # difference too large to compensate offset
+            raise ValueError("No key available for last chord")
+    elif key_times[-2] < chord_times[-1]:
+        key_times[-1] = chord_times[-1]  # safe to shorten last key
+
+    return key_times
+
+
+def tabularise_annotations(chord_annotations: list, key_annotations: list,
+                           max_key_offset: int):
     """
     Tabularise separate LAB-like annotations in a single list.
 
@@ -91,7 +119,11 @@ def tabularise_annotations(chord_annotations, key_annotations, *other):
         A list containing chord observations in LAB-like format.
     key_annotations : list
         A list containing key observations in LAB-like format.
-    
+    max_key_offset : int
+        The maximum number of quantisation units that is tolerated to align the
+        start and the end of a key annotation to a chord sequence. For instance,
+        this is needed when the first key starts after the first chord. 
+
     Returns
     -------
     tabular_annotation : list
@@ -102,7 +134,6 @@ def tabularise_annotations(chord_annotations, key_annotations, *other):
     (*) Generalise this to arbitrary lists of listed annotations.
 
     """
-
     def get_frame_element(frame, cnt_element, iterator):
         if frame[0] >= cnt_element[0]:  # frame follows current
             if frame[0] >= cnt_element[1]:  # frame does not meet current
@@ -122,6 +153,10 @@ def tabularise_annotations(chord_annotations, key_annotations, *other):
     # Extract and combine timings for annotation alignment
     chord_timings = flatten_annotation(chord_annotations)
     key_timings = flatten_annotation(key_annotations)
+    # Compensate start and end times of key annotations and update annotation
+    key_timings = compensate_key_times(chord_timings, key_timings, max_key_offset)
+    key_annotations[0][0], key_annotations[-1][1] = key_timings[0], key_timings[-1]
+    # Concatenate and sort the unique timings of both annotations
     timings = sorted(list(set(chord_timings).union(set(key_timings))))
     # Create a template for each window: implicit global padding
     tabular_annotation = [list(obs) for obs in zip(timings[:-1], timings[1:])]
@@ -186,12 +221,13 @@ def create_chord_sequence(jam: jams.JAMS, quantisation_unit: float, shift=True,
                           merging_delta=5e-1, force_merging=True,
                           force_merging_delta=3)
 
-    table = tabularise_annotations(chords, keys)
+    table = tabularise_annotations(chords, keys, max_key_offset=5)
     # Removing trailing no-chord observations from the sequence
     while table[0][2] == "N":  # remove all leading silences
         table.pop(0)
     while table[-1][2] == "N":  # remove all tailing silences
         table.pop(-1)
+
     # TODO Align key annotations based on delta-threshold: this should remove
     # bubbles with no key/chords and also reduce the size of the chord string;
     #  whenever a buble is found, a no-chord/sil observation N shall be inserted.
@@ -206,6 +242,51 @@ def create_chord_sequence(jam: jams.JAMS, quantisation_unit: float, shift=True,
     keys = list(map(lambda x: x[3], table))
 
     return chords, keys, times
+
+
+def key_to_chord(key: str):
+    """
+    Generate a simplified chord that represents the tonal centre expressed by
+    the given key. This is necessary when computing the TPS profile, a step
+    function where the distance of each chord in the progression is computed
+    w.r.t. the tonal centre (indicated by the global key).
+
+    Parameters
+    ----------
+    key : str
+        A key, optionally specified along with a mode (e.g. C:min).
+
+    Returns
+    -------
+    inferred_chord : str
+        The simplified chord that was inferred from the given key.
+
+    """
+    raise NotImplementedError()
+
+
+def simplify_harmonic_element(harmo: str):
+    """
+    Generate a key or chord that simplify the given harmonic element. Although
+    the input may be complex, the simplified output that will be inferred by
+    this function will only take into account the root and the maj|min quality.
+
+    Parameters
+    ----------
+    harmo : str
+        A chord figure or a key expressed in Harte notation.
+
+    Returns
+    -------
+    simplification : str
+        The simplified key or chord that was inferred from the input.
+
+    """
+    # From chord figure in Harte, to a simple key derived from it
+    harmo_search = re.search(r"^N|([A-G][b#]?)(:(maj|min))?", harmo)
+    simplification = harmo_search.group(1) if harmo_search.group(2) is None \
+        else harmo_search.group(1) + harmo_search.group(2)
+    return simplification
 
 
 def insert_estimated_key(jams_object, chords):
@@ -223,12 +304,38 @@ def insert_estimated_key(jams_object, chords):
 
     if "N" in chordset_duration:
         chordset_duration.pop("N")  # we do not want to use N as key
-    expected_gkey = max(chordset_duration, key=chordset_duration.get)
-    expected_end, expected_start = chords[-1][1], chords[0][0]
+    main_chord = max(chordset_duration, key=chordset_duration.get)
+    expected_gkey = simplify_harmonic_element(main_chord)
+    expected_end, expected_start = chords[-1][1], chords[0][0]    
 
     jams_object.annotations.append(jams.Annotation(
         namespace="key_mode", data=[jams.Observation(
             expected_start, expected_end, expected_gkey, confidence=.5)]))
+
+
+def postprocess_keys(keys, rename_mode={"major":"maj", "minor":"min"}):
+    """
+    Post-processing operations for key sequences.
+
+    Parameters
+    ----------
+    keys : list of str
+        The list of key to process.
+    rename_mode : dict
+        A mapping from modes (e.g. 'major') to `key_value` modes (e.g. 'maj').
+    
+    Returns
+    -------
+    new_keys : list
+        The new key sequence resulting from the required operations.
+
+    """
+    new_keys = []
+    for key in keys:
+        # Apply postprocessing operation in cascade
+        new_key = dicted_renaming(key, rename_mode)
+        new_keys.append(new_key)
+    return new_keys
 
 
 def postprocess_chords(chords, rename_dict={"X": "N"}, strip_bass=False):
@@ -243,7 +350,7 @@ def postprocess_chords(chords, rename_dict={"X": "N"}, strip_bass=False):
         A dictionary for renaming chord figures in Harte.
     strip_bass : bool, optional
         Whether to strip the inversion from the chord.
-    
+
     Returns
     -------
     new_chords : list
