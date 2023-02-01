@@ -20,9 +20,7 @@ class PreprocessTrack:
     """
 
     def __init__(self,
-                 file_path: str | Path,
-                 id_map_path: str | Path,
-                 similarity_path: str | Path):
+                 file_path: str | Path):
         """
         Constructor for PreprocessData class.
         Parameters
@@ -37,26 +35,13 @@ class PreprocessTrack:
         self._title = None
         if isinstance(file_path, str):
             file_path = Path(file_path)
-        if isinstance(id_map_path, str):
-            id_map_path = Path(id_map_path)
-        if isinstance(similarity_path, str):
-            similarity_path = Path(similarity_path)
         assert file_path.exists(), f"Path {file_path} does not exist"
         assert file_path.is_file(), f"Path {file_path} is not a file"
-        assert id_map_path.exists(), f"Path {id_map_path} does not exist"
-        assert id_map_path.is_file(), f"Path {id_map_path} is not a file"
-        assert similarity_path.exists(), f"Path {similarity_path} does not exist"
-        assert similarity_path.is_file(), f"Path {similarity_path} is not a file"
 
         self._file_path = file_path
-        self._id_map_path = id_map_path
         self._file_name = file_path.stem
-        self._similarity_path = similarity_path
 
         self.track_data = joblib.load(self._file_path)
-        id_map_data = joblib.load(self._id_map_path)
-        self.id_map_data = {v: k for k, v in id_map_data.items()}
-        self.similarity_data = pd.read_csv(self._similarity_path, sep=',')
 
     def get_metadata(self, metadata_file_path: str | Path) -> tuple:
         """
@@ -124,39 +109,6 @@ class PreprocessTrack:
             raise ValueError(f"Index {sequence_idx} out of range")
         return '_'.join(
             [str(x) for x in self.track_data[sequence_idx].time_series])
-
-    def match_identifier(self):
-        """
-        Match the track id to the track data.
-        Returns
-        -------
-
-        """
-        similarities = []
-        for idx, segment in enumerate(self.track_data):
-            # get the segments in the similarity file
-            assert f'{self._file_name}_{idx}' in self.id_map_data.keys(), \
-                f"Track id for {self._file_name}_{idx} not in map data"
-            segment_id = self.id_map_data[f'{self._file_name}_{idx}']
-            if segment_id in self.similarity_data['source'].values:
-                line = self.similarity_data.loc[
-                    (self.similarity_data['source'] == segment_id) & (
-                            self.similarity_data['type'] != 'same')]
-                sim = (line['target'], line['distance'])
-                if sim not in similarities:
-                    similarities.append(sim)
-            elif segment_id in self.similarity_data['target'].values:
-                # check if pointer is in target and the type is "same"
-                line = self.similarity_data.loc[
-                    (self.similarity_data['target'] == segment_id) & (
-                            self.similarity_data['type'] != 'same')]
-                sim = (line['source'], line['distance'])
-                if sim not in similarities:
-                    similarities.append(sim)
-            else:
-                pass
-
-        return similarities
 
 
 class PreprocessSimilarity:
@@ -234,15 +186,7 @@ class PreprocessSimilarity:
         list
             Time series of the segment
         """
-        assert pattern_id in self.id_map_data.keys(), \
-            f"Pattern id {pattern_id} not in map data"
-        file = self.id_map_data[pattern_id].split('_')
-        file_name, sequence_idx = '_'.join(file[:-1]), int(file[-1])
-        assert file_name in self._file_names, \
-            f"File name {file_name} not in file names"
-        track_data = joblib.load(self._dataset_path / f'{file_name}.pickle')
-
-        return '_'.join([str(x) for x in track_data[sequence_idx].time_series])
+        return '_'.join([str(x) for x in self.get_sequence(pattern_id)])
 
     def get_similarities(self, pattern_id: int) -> list[tuple[int, float]]:
         """
@@ -258,11 +202,11 @@ class PreprocessSimilarity:
         """
         assert pattern_id in self.id_map_data.keys(), \
             f"Pattern id {pattern_id} not in map data"
-        segment_id = self.id_map_data[pattern_id]
-        # take all the similarities where the source or the target is the segment id
         similarities = []
-        sources = self.similarity_data.loc[self.similarity_data['source'] == pattern_id]
-        targets = self.similarity_data.loc[self.similarity_data['target'] == pattern_id]
+        sources = self.similarity_data.loc[
+            self.similarity_data['source'] == pattern_id]
+        targets = self.similarity_data.loc[
+            self.similarity_data['target'] == pattern_id]
         filtered = pd.concat([sources, targets])
 
         for line in filtered.itertuples():
@@ -281,9 +225,7 @@ if __name__ == '__main__':
     # print(cde)
 
     pre = PreprocessTrack(
-        '../../data/structures/small-billboard/billboard_5.pickle',
-        '../../data/similarities/pattern2id.pkl',
-        '../../data/similarities/similarities.csv')
+        '../../data/structures/small-billboard/billboard_5.pickle')
     pre.get_metadata('../../data/metadata/meta.csv')
     print(pre.get_sequence_string(3))
 
