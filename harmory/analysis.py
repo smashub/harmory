@@ -19,6 +19,7 @@ from joblib import Parallel, delayed
 from tslearn.preprocessing import TimeSeriesResampler
 from tslearn.neighbors import KNeighborsTimeSeries
 
+import constants
 from search import HarmonicPatternFinder
 from harmseg import load_structures_nested
 from utils import set_logger, get_directories, create_dir
@@ -310,6 +311,7 @@ def measure_segmentation_coverage(
     #                 in tqdm(hstructures_per_track.items()))
     validation_records = []
     for track_id, segments in tqdm(hstructures_per_track.items()):
+        # logger.info(f"Validating segmentation for {track_id}")
         validation_records += find_known_patterns(
             segments, track_id, hp_validator)
 
@@ -340,14 +342,15 @@ def measure_segmentation_coverage_per_split(
     if not parallelise_splits:  # sequential version: better to debug
         validation_dfs = []
         for split in splits:  # process each split, then merge
-            validation_dfs.append(measure_segmentation_coverage(
+            segmentation_split_coverage = measure_segmentation_coverage(
                 split=split,
                 structures_dir=structures_dir,
                 known_patterns=known_patterns,
                 resampling_size=resampling_size,
                 metric_name=metric_name,
                 metric_params=metric_params,
-                n_jobs=n_jobs))
+                n_jobs=n_jobs)
+            validation_dfs.append(segmentation_split_coverage)
     else:  # Running parallel version across splits
         raise NotImplementedError()
 
@@ -381,12 +384,15 @@ def summarise_segmentation_coverage_per_split(validation_df: pd.DataFrame):
 
 def measure_segmentation_coverage_from_grid(grid_dir, known_patterns,
     resampling_size, metric_name="dtw", metric_params=None, n_jobs=1):
-
+    """
+    Evaluate a segmentation method run on a parameter grid (1 method, N runs).
+    """
     method = os.path.basename(grid_dir)
     configuration_names = get_directories(grid_dir)
     logger.info(f"Found {len(configuration_names)} runs for {method}")
     grid_validation_dfs = []
-    for configuration_str in tqdm(configuration_names):
+    for configuration_str in tqdm(configuration_names):  # loops over runs
+        logger.info(f"Evaluating {method} - {configuration_str}")
         # Retrieving the actual path of this run, with structures inside
         run_dir = os.path.join(grid_dir, configuration_str)
         # Measuing coverage of known patterns for all possible lengths
@@ -411,7 +417,7 @@ def measure_segmentation_coverage_from_grid(grid_dir, known_patterns,
 
 def main():
 
-    COMMANDS = ["similarities", "segmentation"]
+    COMMANDS = ["similarities", "segmentation", "segwrite"]
 
     parser = argparse.ArgumentParser(
         description="Analysis of Harmory segmentation and similarities.")
@@ -443,6 +449,9 @@ def main():
         args.out_dir = args.data
     create_dir(args.out_dir)
 
+    dtw_config = dict(global_constraint = constants.DTW_GLOBAL_CONSTRAINT,
+                      sakoe_chiba_radius = constants.DTW_SAKOE_RADIUS)
+
     if args.cmd == "segmentation":
         print(f"SEGMENT: Segmenting chord sequences into harmonic structures")
         measure_segmentation_coverage_from_grid(
@@ -450,8 +459,28 @@ def main():
             known_patterns=args.known_patterns,
             resampling_size=args.resampling_size,
             metric_name=args.metric_name,
-            metric_params=None,  # TODO
+            metric_params=dtw_config,
             n_jobs=args.n_workers)
+
+    elif args.cmd == "segwrite":
+        methods = get_directories(args.data)
+        print(f"SEGWRITE: Writing merged segementation results of: {methods}")
+
+        segmentation_res_df = []
+        for method in methods:  # attempt to retrieve all result sets
+            method_df_loc = os.path.join(args.data, method, "coverage_all.csv")
+            if os.path.isfile(method_df_loc):
+                logger.info(f"Reading results from {method_df_loc}")
+                segmentation_res_df.append(pd.read_csv(method_df_loc))
+        # Aggregation of results in a single dataframe
+        segmentation_res_df = pd.concat(segmentation_res_df)
+        segmentation_res_df.reset_index(drop=True, inplace=True)
+        # Ordering data for inspection and dumping results to disk
+        fname = os.path.join(args.out_dir, "tmp_sample_res.csv")
+        logger.info(f"Writing merged output in {fname}")
+        segmentation_res_df.sort_values(
+            ["split","mean_mean_dist", "mean_min_dist"])\
+                .to_csv(fname, index=None)
 
     else:  # trivially, args.cmd == "similarities"
         raise NotImplementedError()

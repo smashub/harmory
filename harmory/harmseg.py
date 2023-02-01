@@ -314,10 +314,9 @@ def split_at_regular_times(time_series, n_regions=2, region_size=None):
         raise ValueError("Can only specify either number or size of regions!")
     if region_size is None:
         assert n_regions is not None and n_regions > 1
-        region_size = len(time_series) / n_regions
-
-    split_idxs = np.arange(0, len(time_series), region_size)[1:]
-    return [int(i) for i in split_idxs], None
+        region_size = int(len(time_series) / n_regions)
+    split_idxs = [region_size*i for i in range(n_regions)][1:]
+    return split_idxs, None
 
 
 def split_around_regular_times(time_series, n_regions=2, region_size=None, std=None):

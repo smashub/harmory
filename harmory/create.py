@@ -64,7 +64,7 @@ def main():
     """
     TODO
     """
-    COMMANDS = ["segment", "similarities", "network"]
+    COMMANDS = ["segment", "similarities", "encode"]
 
     parser = argparse.ArgumentParser(
         description='Main runner for the creation of Harmory.')
@@ -130,9 +130,29 @@ def main():
             out_dir=args.out_dir, n_jobs=args.n_workers)
 
 
-    else:  # trivially, args.cmd == "network"
-        raise NotImplementedError()
-    
+    else:  # trivially, args.cmd == "encode"
+        print(f"ENCODING: Computind harmonic prints from {args.data}")
+        def check_harmonic_print(jams_path, config):
+            try:  # attempts to compute the harmonic print
+                hprint = HarmonicPrint(jams_path,
+                    sr=config["sr"], tpst_type=config["tpst_type"])
+                hprint.run()  # creates SSM and TPS time series
+            except Exception as e:  # but fails for logging purposes
+                    return jams_path
+            return None
+
+        with open(args.selection, "r") as f:
+            choco_ids = f.read().splitlines()
+        print(f"Expected {len(choco_ids)} in {args.data}")
+        jams_paths = [os.path.join(args.data, id) for id in choco_ids]
+        # Run encoding checks on selection
+        checks = Parallel(n_jobs=args.n_workers)(delayed(check_harmonic_print)\
+                         (jam, config=config) for jam in tqdm(jams_paths))
+
+        errors = [c for c in checks if c is not None]
+        print(f"Errors for {len(errors)} out of {len(jams_paths)}")
+        print(errors)
+
     print("DONE!")
 
 

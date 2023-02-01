@@ -324,7 +324,7 @@ def peak_picking_simple(x, threshold=None):
             if x[i] >= threshold:
                 peaks.append(i)
     peaks = np.array(peaks)
-    return peaks
+    return peaks, None
 
 
 def peak_picking_boeck(x, threshold=0.5, fps=100, include_scores=False, combine=False,
@@ -408,7 +408,7 @@ def peak_picking_boeck(x, threshold=0.5, fps=100, include_scores=False, combine=
             scores -= mov_avg[stamps]
         return stamps / float(fps), scores
     else:
-        return stamps / float(fps)
+        return stamps / float(fps), None
 
 
 def peak_picking_roeder(x, direction=None, abs_thresh=None, rel_thresh=None,
@@ -523,7 +523,7 @@ def peak_picking_roeder(x, direction=None, abs_thresh=None, rel_thresh=None,
                 descent = 0
         dyold = dy
     peaks = np.array(P)
-    return peaks
+    return peaks, None
 
 
 def peak_picking_msaf(x, median_len=16, offset_rel=0.05, sigma=4.0):

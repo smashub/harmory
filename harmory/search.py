@@ -19,7 +19,7 @@ class HarmonicPatternFinder:
             self._model = KNeighborsTimeSeries.from_pickle(model_ckpt)
             self._dataset = self.get_pattern_dataset()  # to simplify search
         else:  # remind that a model needs to be created if not provided
-            logger.warn("No model checkpoint provided, please create one")
+            pass #logger.warn("No model checkpoint provided, please create one")
 
     def get_pattern_dataset(self):
         data = self._model._get_model_params()['_ts_fit']
