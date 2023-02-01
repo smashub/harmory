@@ -2,8 +2,10 @@
 Script to detect cover songs in a dataset of songs.
 """
 import argparse
+import json
 import logging
 
+import joblib
 import numpy as np
 import pandas as pd
 
@@ -160,7 +162,7 @@ class CoverSongDetection:
 
         return self._similarity
 
-    def evaluate(self):
+    def evaluate(self, experiment_idx: int):
         """
         Evaluates the cover song detection process.
         """
@@ -171,6 +173,7 @@ class CoverSongDetection:
         covers = get_covers(time_series)
 
         ranking = covers_ranking(self._similarity)
+        joblib.dump(ranking, f'rankings/ranking_{experiment_idx}.pkl')
 
         return evaluate(covers, ranking)
 
@@ -241,10 +244,10 @@ if __name__ == '__main__':
     csd = CoverSongDetection('../../exps/datasets/merge',
                              n_jobs=1)
     evaluations = []
-    for experiment in EXPERIMENTS:
+    for idx, experiment in enumerate(EXPERIMENTS):
         csd.preprocess(experiment)
         similarity = csd.compute_similarity()
-        evaluation = csd.evaluate()
+        evaluation = csd.evaluate(idx)
         stretch, constraint, normalize = None, None, False
         print(evaluation)
         if len(experiment) == 2:
@@ -265,24 +268,3 @@ if __name__ == '__main__':
                             evaluation[1]])
     print(evaluations)
     save_results(evaluations, '../../exps/results/results_merge_final.csv')
-
-# (0.13713369963369962, 0.23778998778998778)
-# (0.7866300366300364, 0.829594017094017)
-# (0.7714438339438338, 0.8165445665445664)
-# (0.6287393162393162, 0.6891025641025641)
-# (0.4791666666666667, 0.5438034188034188)
-# (0.71741452991453, 0.7820512820512819)
-# (0.6752136752136753, 0.753205128205128)
-# (0.7738095238095237, 0.8386752136752136)
-# (0.7217643467643465, 0.7914377289377288)
-# (0.6602564102564104, 0.7222222222222223)
-# (0.5678418803418804, 0.6436965811965809)
-# (0.7126068376068376, 0.778846153846154)
-# (0.6575854700854701, 0.7628205128205128)
-##
-# (0.13072344322344323, 0.23084554334554339)
-# (0.13713369963369962, 0.23778998778998778)
-# (0.6672008547008547, 0.7740384615384613)
-# (0.7302350427350429, 0.8103632478632478)
-# (0.6672008547008547, 0.7740384615384613)
-#

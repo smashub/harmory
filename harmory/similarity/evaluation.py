@@ -65,8 +65,7 @@ def covers_ranking(results: list[tuple]) -> dict[Any, Any]:
                                'distance_alert'])
     ranking = {}
     for track in df['title1'].unique():
-        if df[(df['title1'] == track) & (df['distance_alert'] == True)].shape[
-            0] != 0:
+        if df[(df['title1'] == track) & (df['distance_alert'] == True)].shape[0] != 0:
             df_track = df[df['title1'] == track]
             df_track = df_track.sort_values(by=['tpsd_distance'],
                                             ascending=True)
