@@ -14,3 +14,4 @@ import pandas as pd
 import tqdm
 
 from collections import defaultdict
+from rdflib import Graph, Literal, Namespace, RDF, URIRef

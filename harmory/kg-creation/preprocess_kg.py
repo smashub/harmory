@@ -261,8 +261,14 @@ class PreprocessSimilarity:
         segment_id = self.id_map_data[pattern_id]
         # take all the similarities where the source or the target is the segment id
         similarities = []
-        if pattern_id in self.similarity_data.source:
-            print('source')
+        sources = self.similarity_data.loc[self.similarity_data['source'] == pattern_id]
+        targets = self.similarity_data.loc[self.similarity_data['target'] == pattern_id]
+        filtered = pd.concat([sources, targets])
+
+        for line in filtered.itertuples():
+            sim = (line.target, line.distance)
+            if sim not in similarities:
+                similarities.append(sim)
 
         return similarities
 
