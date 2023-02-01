@@ -5,9 +5,9 @@ creation of a knowledge graph (KG).
 import os
 import sys
 from pathlib import Path
+from typing import Any
 
 import joblib
-import numpy as np
 import pandas as pd
 
 sys.path.append(os.path.dirname(os.path.dirname('../../harmory')))
@@ -110,6 +110,38 @@ class PreprocessTrack:
         return '_'.join(
             [str(x) for x in self.track_data[sequence_idx].time_series])
 
+    def get_chords(self, sequence_idx: int) -> list:
+        """
+        Get the chords for a given track.
+        Parameters
+        ----------
+        sequence_idx : int
+            Index of the sequence
+        Returns
+        -------
+        list
+            List of chords
+        """
+        if sequence_idx < 0 or sequence_idx >= len(self.track_data):
+            raise ValueError(f"Index {sequence_idx} out of range")
+        return self.track_data[sequence_idx].chords
+
+    def get_durations(self, sequence_idx: int) -> list:
+        """
+        Get the durations for a given track.
+        Parameters
+        ----------
+        sequence_idx : int
+            Index of the sequence
+        Returns
+        -------
+        list
+            List of durations
+        """
+        if sequence_idx < 0 or sequence_idx >= len(self.track_data):
+            raise ValueError(f"Index {sequence_idx} out of range")
+        return self.track_data[sequence_idx].times
+
 
 class PreprocessSimilarity:
     """
@@ -152,7 +184,9 @@ class PreprocessSimilarity:
         self.similarity_data = pd.read_csv(self._similarity_path, sep=',')
         self._file_names = [x.stem for x in self._dataset_path.glob('*')]
 
-    def get_sequence(self, pattern_id: int) -> np.ndarray:
+        self._cache = {}
+
+    def get_sequence(self, pattern_id: int) -> Any | None:
         """
         Get the sequence of segments for a given track.
         Parameters
@@ -164,13 +198,16 @@ class PreprocessSimilarity:
         list
             Time series of the segment
         """
-        assert pattern_id in self.id_map_data.keys(), \
-            f"Pattern id {pattern_id} not in map data"
-        file = self.id_map_data[pattern_id].split('_')
-        file_name, sequence_idx = '_'.join(file[:-1]), int(file[-1])
-        assert file_name in self._file_names, \
-            f"File name {file_name} not in file names"
-        track_data = joblib.load(self._dataset_path / f'{file_name}.pickle')
+        try:
+            assert pattern_id in self.id_map_data.keys(), \
+                f"Pattern id {pattern_id} not in map data"
+            file = self.id_map_data[pattern_id].split('_')
+            file_name, sequence_idx = '_'.join(file[:-1]), int(file[-1])
+            assert file_name in self._file_names, \
+                f"File name {file_name} not in file names"
+            track_data = joblib.load(self._dataset_path / f'{file_name}.pickle')
+        except AssertionError:
+            return None
 
         return track_data[sequence_idx].time_series
 
@@ -186,9 +223,17 @@ class PreprocessSimilarity:
         list
             Time series of the segment
         """
-        return '_'.join([str(x) for x in self.get_sequence(pattern_id)])
+        if pattern_id in self._cache:
+            return self._cache[pattern_id]
 
-    def get_similarities(self, pattern_id: int) -> list[tuple[int, float]]:
+        sequence = self.get_sequence(pattern_id)
+        if sequence is None:
+            return None
+        pattern_string = '_'.join([str(x) for x in sequence])
+        self._cache[pattern_id] = pattern_string
+        return pattern_string
+
+    def get_similarities(self, pattern_id: int) -> list[tuple[str, float]]:
         """
         Get the similarities for a given track.
         Parameters
@@ -212,7 +257,7 @@ class PreprocessSimilarity:
         for line in filtered.itertuples():
             sim = (line.target, line.distance)
             if sim not in similarities:
-                similarities.append(sim)
+                similarities.append((self.get_sequence_string(sim[0]), sim[1]))
 
         return similarities
 
@@ -227,9 +272,12 @@ if __name__ == '__main__':
     pre = PreprocessTrack(
         '../../data/structures/small-billboard/billboard_5.pickle')
     pre.get_metadata('../../data/metadata/meta.csv')
+    print(len(pre.track_data))
     print(pre.get_sequence_string(3))
+    print(pre.get_chords(3))
+    print(pre.get_durations(3))
 
     sim = PreprocessSimilarity('../../data/structures/small-billboard',
                                '../../data/similarities/pattern2id.pkl',
                                '../../data/similarities/similarities.csv')
-    print(sim.get_similarities(1457))
+    # print(sim.get_similarities(1457))
