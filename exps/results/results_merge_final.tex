@@ -1,0 +1,28 @@
+\begin{tabular}{llllllrr}
+\toprule
+dataset & distance & tps\_mode &    stretch &  constraint & normalize &  first\_tier &  second\_tier \\
+\midrule
+  merge &     tpsd &   offset &       None &        None &     False &    0.579594 &     0.666361 \\
+  merge &     tpsd &  profile &       None &        None &     False &    0.688187 &     0.801358 \\
+  merge &      dtw &   offset &    stretch &        None &     False &    0.657585 &     0.762821 \\
+  merge &      dtw &  profile &    stretch &        None &     False &    0.712607 &     0.778846 \\
+  merge &      dtw &   offset & no-stretch &        None &     False &    0.567842 &     0.643697 \\
+  merge &      dtw &  profile & no-stretch &        None &     False &    0.660256 &     0.722222 \\
+  merge &      dtw &   offset &    stretch & sakoe\_chiba &     False &    0.721764 &     0.791438 \\
+  merge &      dtw &  profile &    stretch & sakoe\_chiba &     False &    0.773810 &     0.838675 \\
+  merge &      dtw &   offset &    stretch &     itakura &     False &    0.675214 &     0.753205 \\
+  merge &      dtw &  profile &    stretch &     itakura &     False &    0.717415 &     0.782051 \\
+  merge &      dtw &   offset & no-stretch & sakoe\_chiba &     False &    0.479167 &     0.543803 \\
+  merge &      dtw &  profile & no-stretch & sakoe\_chiba &     False &    0.628739 &     0.689103 \\
+  merge &      dtw &   offset &    stretch & sakoe\_chiba & normalize &    0.771444 &     0.816545 \\
+  merge &      dtw &  profile &    stretch & sakoe\_chiba & normalize &    0.786630 &     0.829594 \\
+  merge &     lcss &   offset &       None & sakoe\_chiba &     False &    0.137134 &     0.237790 \\
+  merge &     lcss &   offset &       None &     itakura &     False &    0.312271 &     0.407051 \\
+  merge &     sdtw &   offset &    stretch &        None &     False &    0.667201 &     0.774038 \\
+  merge &     sdtw &  profile &    stretch &        None &     False &    0.730235 &     0.810363 \\
+  merge &     sdtw &   offset &    stretch & sakoe\_chiba &     False &    0.667201 &     0.774038 \\
+  merge &     sdtw &  profile &    stretch & sakoe\_chiba &     False &    0.730235 &     0.810363 \\
+  merge &     sdtw &   offset & no-stretch & sakoe\_chiba &     False &    0.614850 &     0.697650 \\
+  merge &     sdtw &   offset &    stretch &     itakura &     False &    0.667201 &     0.774038 \\
+\bottomrule
+\end{tabular}
