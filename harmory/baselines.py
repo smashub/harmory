@@ -14,8 +14,8 @@ from utils import create_dir, set_logger
 
 logger = logging.getLogger("harmory.baselines")
 
-N_REGIONS_GRID = [6, 7, 8, 9, 10]
-MPROFILE_GRID = [6, 7, 8]
+N_REGIONS_GRID = [10, 11, 12, 13, 14]
+MPROFILE_GRID = [3]
 
 
 BASELINE_PARAM_GRID = {
@@ -54,9 +54,9 @@ def segmentation_baselines(jams_path, baseline_grid, config, out_dir):
         segmenter_fn = hseg.SEGMENTATION_BASELINE_FNS.get(baseline)
         segmenter = hseg.TimeSeriesHarmonicSegmentation(hprint, segmenter_fn)
         baseline_outdir = os.path.join(out_dir, baseline)
-
+        # From a baseline GRID to all possible parameter sets drawn from it 
         segmenter_grid = generate_grid_instances(baseline_grid[baseline])
-        for param_set in segmenter_grid:  # perform grid search
+        for param_set in segmenter_grid:  # perform grid search and dump
             segmenter.run(**param_set)
             segmenter.dump_harmonic_segments(
                 os.path.join(baseline_outdir, paramset_to_str(param_set)))
@@ -94,6 +94,8 @@ def main():
 
     parser.add_argument('--grid', type=list,
                         help='Configuration file with the hyperparameter set.')
+    parser.add_argument('--baselines', type=str, nargs="*",
+                        help='Name of the baseline for this experiment.')
 
     parser.add_argument('--out_dir', type=str,
                         help='Directory where all output will be saved.')
@@ -107,9 +109,10 @@ def main():
     args = parser.parse_args()
     set_logger("harmory", args.log_level)
     # Now we should be loading the config file, or config name for SEG/SIM
-    baseline_grid = BASELINE_PARAM_GRID
+    baseline_grid = BASELINE_PARAM_GRID if args.baselines is None else \
+        {n: g for n, g in BASELINE_PARAM_GRID.items() if n in args.baselines}
     config = ConfigFactory.default_config()  # FIXME XXX TODO
-
+    print(f"Grid search parameters: {baseline_grid}")
     create_baseline_setup(baseline_grid, args.out_dir)
 
     print(f"SEGMENTATION baseline runner")
@@ -120,8 +123,12 @@ def main():
     jams_paths = [os.path.join(args.data, id) for id in choco_ids]
     print(f"Grid search is starting, this may take a while!")
 
-    for jams_path in tqdm(jams_paths[:10]):
-        segmentation_baselines(jams_path, baseline_grid, config, args.out_dir)
+    for jams_path in tqdm(jams_paths):
+        try:
+            segmentation_baselines(jams_path, baseline_grid, config, args.out_dir)
+        except Exception as e:
+                    logger.error(f"Error at {jams_path} -- {e}")
+
 
     # if not args.debug and args.n_workers > 1:
     #     Parallel(n_jobs=args.n_workers)(delayed(create_segmentation)\

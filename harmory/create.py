@@ -8,8 +8,6 @@ import pickle
 import logging
 import argparse
 
-from collections import OrderedDict
-
 import jams
 import pandas as pd
 from tqdm import tqdm
@@ -18,8 +16,8 @@ from joblib import Parallel, delayed
 
 from config import ConfigFactory
 from search import find_similarities
-from harmseg import HarmonicPrint, NoveltyBasedHarmonicSegmentation
-from utils import get_files, get_filename, set_logger, create_dir
+from harmseg import HarmonicPrint, NoveltyBasedHarmonicSegmentation, load_structures  # noqa
+from utils import set_logger, create_dir
 
 logger = logging.getLogger("harmory.create")
 
@@ -38,29 +36,6 @@ def create_segmentation(jams_path, config, out_dir):
         **config["pdetection_params"])
 
     segmenter.dump_harmonic_segments(out_dir)
-
-
-def load_structures(structures_dir):
-    """
-    Read all harmonic structures previously dumped in separate files and merge
-    them in a dictionary indexed by ChoCo/song ID and segment index.
-    """
-    structures_map = OrderedDict()
-    structures_pkls = get_files(structures_dir, "pkl", full_path=True)
-    logger.info(f"Found {len(structures_pkls)} dumps in {structures_dir}")
-
-    for structure_pkl in tqdm(structures_pkls):
-        # Retrieve ChoCo ID from file name and read all structures
-        choco_id = get_filename(structure_pkl, strip_ext=True)
-        with open(structure_pkl, 'rb') as handle:
-            hstructures = pickle.load(handle)
-        # Adding the harmonic structure to the main map
-        for i, hstructure in enumerate(hstructures):
-            hstructure_id = f"{choco_id}_{i}"
-            structures_map[hstructure_id] = hstructure
-
-    logger.info(f"Found {len(structures_map)} harmonic structures")
-    return structures_map
 
 
 def create_similarities(structures_dir, config, out_dir, n_jobs=1):
@@ -90,7 +65,7 @@ def main():
     """
     TODO
     """
-    COMMANDS = ["segment", "similarities", "network"]
+    COMMANDS = ["segment", "similarities", "encode"]
 
     parser = argparse.ArgumentParser(
         description='Main runner for the creation of Harmory.')
@@ -156,9 +131,29 @@ def main():
             out_dir=args.out_dir, n_jobs=args.n_workers)
 
 
-    else:  # trivially, args.cmd == "network"
-        raise NotImplementedError()
-    
+    else:  # trivially, args.cmd == "encode"
+        print(f"ENCODING: Computind harmonic prints from {args.data}")
+        def check_harmonic_print(jams_path, config):
+            try:  # attempts to compute the harmonic print
+                hprint = HarmonicPrint(jams_path,
+                    sr=config["sr"], tpst_type=config["tpst_type"])
+                hprint.run()  # creates SSM and TPS time series
+            except Exception as e:  # but fails for logging purposes
+                    return jams_path
+            return None
+
+        with open(args.selection, "r") as f:
+            choco_ids = f.read().splitlines()
+        print(f"Expected {len(choco_ids)} in {args.data}")
+        jams_paths = [os.path.join(args.data, id) for id in choco_ids]
+        # Run encoding checks on selection
+        checks = Parallel(n_jobs=args.n_workers)(delayed(check_harmonic_print)\
+                         (jam, config=config) for jam in tqdm(jams_paths))
+
+        errors = [c for c in checks if c is not None]
+        print(f"Errors for {len(errors)} out of {len(jams_paths)}")
+        print(errors)
+
     print("DONE!")
 
 

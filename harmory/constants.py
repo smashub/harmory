@@ -18,6 +18,10 @@ RESAMPLING_SIZE = 30
 N_SEARCHES = 10
 DIST_THRESHOLD = 2.
 
+# DTW PARAMETERISATION (validated empirically)
+DTW_GLOBAL_CONSTRAINT = "sakoe_chiba"
+DTW_SAKOE_RADIUS = 5
+
 # ############################################################################ #
 # PARAMETER-WISE GRID for search
 # ############################################################################ #

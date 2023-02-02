@@ -6,14 +6,17 @@ import os
 import copy
 import pickle
 import logging
+from collections import OrderedDict
 
 import jams
 import stumpy
 import numpy as np
+from tqdm import tqdm
 
 import segmentation as seg
 from tonalspace import TpsOffsetTimeSeries, TpsProfileTimeSeries
 from data import create_chord_sequence, postprocess_chords, postprocess_keys
+from utils import get_files, get_filename
 
 logger = logging.getLogger("harmory.harmseg")
 
@@ -311,10 +314,9 @@ def split_at_regular_times(time_series, n_regions=2, region_size=None):
         raise ValueError("Can only specify either number or size of regions!")
     if region_size is None:
         assert n_regions is not None and n_regions > 1
-        region_size = len(time_series) / n_regions
-
-    split_idxs = np.arange(0, len(time_series), region_size)[1:]
-    return [int(i) for i in split_idxs], None
+        region_size = int(len(time_series) / n_regions)
+    split_idxs = [region_size*i for i in range(n_regions)][1:]
+    return split_idxs, None
 
 
 def split_around_regular_times(time_series, n_regions=2, region_size=None, std=None):
@@ -464,6 +466,49 @@ def floss_split(time_series, m, n_regions, L=None, normalise=True, exc_factor=1)
         L=L, excl_factor=exc_factor)
 
     return sorted(regime_locations), floss_stream.cac_1d_
+
+
+def load_structures(structures_dir):
+    """
+    Read all harmonic structures previously dumped in separate files and merge
+    them in a dictionary indexed by ChoCo/song ID and segment index.
+    """
+    structures_map = OrderedDict()
+    structures_pkls = get_files(structures_dir, "pkl", full_path=True)
+    logger.info(f"Found {len(structures_pkls)} dumps in {structures_dir}")
+
+    for structure_pkl in tqdm(structures_pkls):
+        # Retrieve ChoCo ID from file name and read all structures
+        choco_id = get_filename(structure_pkl, strip_ext=True)
+        with open(structure_pkl, 'rb') as handle:
+            hstructures = pickle.load(handle)
+        # Adding the harmonic structure to the main map
+        for i, hstructure in enumerate(hstructures):
+            hstructure_id = f"{choco_id}_{i}"
+            structures_map[hstructure_id] = hstructure
+
+    logger.info(f"Found {len(structures_map)} harmonic structures")
+    return structures_map
+
+
+def load_structures_nested(structures_dir):
+    """
+    Read all harmonic structures previously dumped in separate files and merge
+    them in a 2-level dictionary indexed by ChoCo/song ID. This mapping thus
+    allow to retrieve all structures for a given piece as a list.
+    """
+    structures_map = {}
+    structures_pkls = get_files(structures_dir, "pkl", full_path=True)
+    logger.info(f"Found {len(structures_pkls)} dumps in {structures_dir}")
+
+    for structure_pkl in structures_pkls:
+        # Retrieve ChoCo ID from file name and read all structures
+        choco_id = get_filename(structure_pkl, strip_ext=True)
+        with open(structure_pkl, 'rb') as handle:
+            hstructures = pickle.load(handle)
+        structures_map[choco_id] = hstructures
+
+    return structures_map
 
 
 SEGMENTATION_BASELINE_FNS = {
