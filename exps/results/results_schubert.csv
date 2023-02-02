@@ -1,0 +1,11 @@
+dataset,distance,tps_mode,stretch,cinstraint,first_tier,second_tier
+schubert_winterreise,tpsd,offset,,,0.9471726190476191,1.6830357142857144
+schubert_winterreise,tpsd,profile,,,0.90625,1.5907738095238095
+schubert_winterreise,dtw,offset,stretch,,1.0,1.8742559523809523
+schubert_winterreise,dtw,profile,stretch,,1.0,1.8742559523809523
+schubert_winterreise,dtw,offset,no-stretch,,1.0,1.8742559523809523
+schubert_winterreise,dtw,profile,no-stretch,,1.0,1.8742559523809523
+schubert_winterreise,ctw,offset,stretch,,1.0,1.8742559523809523
+schubert_winterreise,ctw,profile,stretch,,1.0,1.8742559523809523
+schubert_winterreise,ctw,offset,no-stretch,,1.0,1.8742559523809523
+schubert_winterreise,ctw,profile,no-stretch,,1.0,1.8742559523809523

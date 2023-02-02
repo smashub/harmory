@@ -1,0 +1,151 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 15.0,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.0,
+          "duration": 30.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 45.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.0,
+          "duration": 48.75,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.75,
+          "duration": 52.5,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.5,
+          "duration": 54.375,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.375,
+          "duration": 56.25,
+          "value": "F#:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.25,
+          "duration": 60.0,
+          "value": "C:7/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 75.0,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 75.0,
+          "duration": 90.0,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 90.0,
+          "duration": 105.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 105.0,
+          "duration": 112.5,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 112.5,
+          "duration": 120.0,
+          "value": "C:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 864.375,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Hello My Baby [Ragtime Gal]",
+    "artist": "",
+    "release": "",
+    "duration": 864,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

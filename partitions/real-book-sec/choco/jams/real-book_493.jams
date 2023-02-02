@@ -1,0 +1,145 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 6.9230769230769225,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.9230769230769225,
+          "duration": 16.153846153846153,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.153846153846153,
+          "duration": 18.46153846153846,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.46153846153846,
+          "duration": 25.384615384615383,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.384615384615383,
+          "duration": 27.69230769230769,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.69230769230769,
+          "duration": 28.846153846153847,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.846153846153847,
+          "duration": 30.0,
+          "value": "A:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 31.153846153846157,
+          "value": "Eb:maj/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.153846153846157,
+          "duration": 32.30769230769231,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.30769230769231,
+          "duration": 33.46153846153846,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.46153846153846,
+          "duration": 34.61538461538461,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.61538461538461,
+          "duration": 36.92307692307692,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 321.9230769230769,
+          "value": "Eb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "HOTTER~2",
+    "artist": "",
+    "release": "",
+    "duration": 321,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.92,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.92,
+          "duration": 3.84,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.84,
+          "duration": 5.76,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.76,
+          "duration": 7.68,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.68,
+          "duration": 9.6,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 11.52,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.52,
+          "duration": 13.44,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.44,
+          "duration": 17.279999999999998,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.279999999999998,
+          "duration": 21.12,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.12,
+          "duration": 23.04,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.04,
+          "duration": 24.96,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.96,
+          "duration": 26.88,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.88,
+          "duration": 28.8,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 30.72,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.72,
+          "duration": 32.64,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.64,
+          "duration": 34.559999999999995,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.559999999999995,
+          "duration": 36.48,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.48,
+          "duration": 38.4,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.4,
+          "duration": 42.24,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.24,
+          "duration": 46.08,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.08,
+          "duration": 48.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.92,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.92,
+          "duration": 51.84,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.84,
+          "duration": 53.76,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.76,
+          "duration": 55.67999999999999,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.67999999999999,
+          "duration": 57.6,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.6,
+          "duration": 59.52,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 59.52,
+          "duration": 61.44,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.44,
+          "duration": 65.28,
+          "value": "D:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 960.0,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "The Psychic",
+    "artist": "",
+    "release": "",
+    "duration": 960,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 4.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.0,
+          "duration": 8.0,
+          "value": "B:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.0,
+          "duration": 16.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 20.0,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.0,
+          "duration": 24.0,
+          "value": "B:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 32.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 36.0,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 40.0,
+          "value": "B:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 48.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 52.0,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.0,
+          "duration": 56.0,
+          "value": "B:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.0,
+          "duration": 56.5,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.5,
+          "duration": 57.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.0,
+          "duration": 57.5,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.5,
+          "duration": 58.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.0,
+          "duration": 58.5,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.5,
+          "duration": 64.0,
+          "value": "E:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 687.5,
+          "value": "E",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "I'm In Love Again",
+    "artist": [
+      "A"
+    ],
+    "release": "",
+    "duration": 687,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

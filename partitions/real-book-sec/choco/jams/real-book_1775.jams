@@ -1,0 +1,145 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 15.483870967741934,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.483870967741934,
+          "duration": 17.419354838709676,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.419354838709676,
+          "duration": 23.2258064516129,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.2258064516129,
+          "duration": 30.96774193548387,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.96774193548387,
+          "duration": 34.83870967741935,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.83870967741935,
+          "duration": 38.70967741935483,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.70967741935483,
+          "duration": 40.64516129032258,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.64516129032258,
+          "duration": 42.58064516129032,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.58064516129032,
+          "duration": 46.4516129032258,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.4516129032258,
+          "duration": 50.32258064516129,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.32258064516129,
+          "duration": 52.25806451612903,
+          "value": "F:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.25806451612903,
+          "duration": 54.19354838709677,
+          "value": "F:maj6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 447.0967741935483,
+          "value": "F",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "All Day Long",
+    "artist": "",
+    "release": "",
+    "duration": 447,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

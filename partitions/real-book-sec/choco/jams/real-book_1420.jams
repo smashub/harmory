@@ -1,0 +1,307 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 120.0,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 120.0,
+          "duration": 180.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 180.0,
+          "duration": 210.0,
+          "value": "Eb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 210.0,
+          "duration": 240.0,
+          "value": "Ab:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 240.0,
+          "duration": 300.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 300.0,
+          "duration": 360.0,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 360.0,
+          "duration": 420.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 420.0,
+          "duration": 450.0,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 450.0,
+          "duration": 480.0,
+          "value": "G:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 480.0,
+          "duration": 600.0,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 600.0,
+          "duration": 660.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 660.0,
+          "duration": 690.0,
+          "value": "Eb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 690.0,
+          "duration": 720.0,
+          "value": "Ab:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 720.0,
+          "duration": 780.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 780.0,
+          "duration": 840.0,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 840.0,
+          "duration": 900.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 900.0,
+          "duration": 960.0,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 960.0,
+          "duration": 1080.0,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1080.0,
+          "duration": 1200.0,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1200.0,
+          "duration": 1320.0,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1320.0,
+          "duration": 1350.0,
+          "value": "Bb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1350.0,
+          "duration": 1380.0,
+          "value": "A:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1380.0,
+          "duration": 1410.0,
+          "value": "Ab:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1410.0,
+          "duration": 1440.0,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1440.0,
+          "duration": 1470.0,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1470.0,
+          "duration": 1500.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1500.0,
+          "duration": 1530.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1530.0,
+          "duration": 1560.0,
+          "value": "Eb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1560.0,
+          "duration": 1590.0,
+          "value": "E:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1590.0,
+          "duration": 1620.0,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 1620.0,
+          "duration": 1650.0,
+          "value": "Eb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1650.0,
+          "duration": 1680.0,
+          "value": "Ab:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 1680.0,
+          "duration": 1740.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1740.0,
+          "duration": 1770.0,
+          "value": "Ab:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 1770.0,
+          "duration": 1800.0,
+          "value": "G:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 1800.0,
+          "duration": 1830.0,
+          "value": "C:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 1830.0,
+          "duration": 1860.0,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 1860.0,
+          "duration": 1890.0,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1890.0,
+          "duration": 1920.0,
+          "value": "Db:9",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 43500.0,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Three Little Words",
+    "artist": "",
+    "release": "",
+    "duration": 43500,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

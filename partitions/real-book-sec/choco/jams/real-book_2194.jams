@@ -1,0 +1,130 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.181818181818182,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.181818181818182,
+          "duration": 11.636363636363637,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.636363636363637,
+          "duration": 34.90909090909091,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.90909090909091,
+          "duration": 37.81818181818182,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.81818181818182,
+          "duration": 40.72727272727273,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.72727272727273,
+          "duration": 43.63636363636363,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.63636363636363,
+          "duration": 45.09090909090909,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.09090909090909,
+          "duration": 46.54545454545455,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.54545454545455,
+          "duration": 58.18181818181818,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 328.72727272727275,
+          "value": "Ab",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "7 Come 11",
+    "artist": [
+      "Benny Goodman",
+      "Charlie Christian"
+    ],
+    "release": "",
+    "duration": 328,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

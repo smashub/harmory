@@ -1,0 +1,193 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 9.6,
+          "value": "G:sus4(b7,9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.6,
+          "duration": 19.2,
+          "value": "G:sus4(b7,9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.2,
+          "duration": 20.4,
+          "value": "Eb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.4,
+          "duration": 21.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.0,
+          "duration": 21.6,
+          "value": "A:maj(b7,9,11,13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.6,
+          "duration": 22.8,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.8,
+          "duration": 24.0,
+          "value": "Ab:9(b5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 25.2,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.2,
+          "duration": 26.4,
+          "value": "F#:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.4,
+          "duration": 27.6,
+          "value": "B:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.6,
+          "duration": 28.8,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 30.0,
+          "value": "B:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 31.2,
+          "value": "B:min7/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.2,
+          "duration": 32.4,
+          "value": "Ab:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.4,
+          "duration": 33.0,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.0,
+          "duration": 33.6,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.6,
+          "duration": 34.8,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.8,
+          "duration": 36.0,
+          "value": "B:9(b5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.0,
+          "duration": 37.2,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.2,
+          "duration": 38.4,
+          "value": "A:aug(b7)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 553.1999999999999,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "You Get Su",
+    "artist": "",
+    "release": "",
+    "duration": 553,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

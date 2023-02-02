@@ -1,0 +1,367 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.5,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5,
+          "duration": 5.0,
+          "value": "A:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.0,
+          "duration": 7.5,
+          "value": "A:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.5,
+          "duration": 10.0,
+          "value": "D:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.0,
+          "duration": 11.25,
+          "value": "E:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.25,
+          "duration": 12.5,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.5,
+          "duration": 15.0,
+          "value": "A:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.0,
+          "duration": 17.5,
+          "value": "F#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.5,
+          "duration": 20.0,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.0,
+          "duration": 21.25,
+          "value": "D:maj/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.25,
+          "duration": 22.5,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.5,
+          "duration": 25.0,
+          "value": "A:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.0,
+          "duration": 27.5,
+          "value": "A:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.5,
+          "duration": 30.0,
+          "value": "D:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 32.5,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.5,
+          "duration": 35.0,
+          "value": "A:maj/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.0,
+          "duration": 36.25,
+          "value": "E:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.25,
+          "duration": 37.5,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.5,
+          "duration": 38.75,
+          "value": "A:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.75,
+          "duration": 40.0,
+          "value": "D:min6/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 41.25,
+          "value": "A:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.25,
+          "duration": 42.5,
+          "value": "A:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.5,
+          "duration": 45.0,
+          "value": "D:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.0,
+          "duration": 47.5,
+          "value": "E:7/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 47.5,
+          "duration": 48.75,
+          "value": "A:maj(2,*3)/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.75,
+          "duration": 50.0,
+          "value": "B:min(b7,9,11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.0,
+          "duration": 52.5,
+          "value": "A:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.5,
+          "duration": 55.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.0,
+          "duration": 56.25,
+          "value": "A:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.25,
+          "duration": 56.875,
+          "value": "A:sus4",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.875,
+          "duration": 57.5,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.5,
+          "duration": 60.0,
+          "value": "D:maj9",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 61.25,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.25,
+          "duration": 62.5,
+          "value": "G:7/b7",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.5,
+          "duration": 65.0,
+          "value": "A:maj(2,*3)/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.0,
+          "duration": 66.25,
+          "value": "E:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.25,
+          "duration": 66.875,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.875,
+          "duration": 67.5,
+          "value": "E:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.5,
+          "duration": 70.0,
+          "value": "A:maj(2,*3)/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.0,
+          "duration": 71.25,
+          "value": "D:min(b7,9,11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 71.25,
+          "duration": 72.5,
+          "value": "D:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.5,
+          "duration": 75.0,
+          "value": "A:maj(2,*3)/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 75.0,
+          "duration": 76.25,
+          "value": "E:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 76.25,
+          "duration": 77.5,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 77.5,
+          "duration": 80.0,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 80.0,
+          "duration": 82.5,
+          "value": "A:maj(2,*3)/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 82.5,
+          "duration": 85.0,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 85.0,
+          "duration": 87.5,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 87.5,
+          "duration": 90.0,
+          "value": "A:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2317.5,
+          "value": "A",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "I Wish I Knew",
+    "artist": "",
+    "release": "",
+    "duration": 2317,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

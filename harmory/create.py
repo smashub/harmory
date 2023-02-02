@@ -13,6 +13,7 @@ import pandas as pd
 from tqdm import tqdm
 from joblib import Parallel, delayed
 
+
 from config import ConfigFactory
 from search import find_similarities
 from harmseg import HarmonicPrint, NoveltyBasedHarmonicSegmentation, load_structures  # noqa

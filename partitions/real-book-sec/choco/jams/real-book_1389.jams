@@ -1,0 +1,211 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 8.275862068965518,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.275862068965518,
+          "duration": 9.93103448275862,
+          "value": "F#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.93103448275862,
+          "duration": 11.586206896551724,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.586206896551724,
+          "duration": 13.24137931034483,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.24137931034483,
+          "duration": 14.896551724137932,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.896551724137932,
+          "duration": 16.551724137931036,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.551724137931036,
+          "duration": 18.20689655172414,
+          "value": "F#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.20689655172414,
+          "duration": 19.86206896551724,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.86206896551724,
+          "duration": 23.17241379310345,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.17241379310345,
+          "duration": 26.48275862068966,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.48275862068966,
+          "duration": 28.13793103448276,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.13793103448276,
+          "duration": 34.758620689655174,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.758620689655174,
+          "duration": 36.41379310344828,
+          "value": "F#:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.41379310344828,
+          "duration": 38.06896551724138,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.06896551724138,
+          "duration": 39.72413793103448,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.72413793103448,
+          "duration": 41.37931034482759,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.37931034482759,
+          "duration": 43.03448275862069,
+          "value": "G:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.03448275862069,
+          "duration": 43.862068965517246,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.862068965517246,
+          "duration": 44.689655172413794,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.689655172413794,
+          "duration": 46.3448275862069,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.3448275862069,
+          "duration": 48.0,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.6551724137931,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.6551724137931,
+          "duration": 52.96551724137932,
+          "value": "D:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 709.2413793103449,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "If I Had My Life To Live Over",
+    "artist": "",
+    "release": "",
+    "duration": 709,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

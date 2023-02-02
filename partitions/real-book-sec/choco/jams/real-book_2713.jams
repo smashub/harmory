@@ -1,0 +1,121 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 7.111111111111111,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.111111111111111,
+          "duration": 10.666666666666666,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 12.444444444444445,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.444444444444445,
+          "duration": 13.333333333333334,
+          "value": "B:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.333333333333334,
+          "duration": 14.22222222222222,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.22222222222222,
+          "duration": 16.0,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.77777777777778,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.77777777777778,
+          "duration": 21.33333333333333,
+          "value": "G:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 112.88888888888887,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Sphere Of Influence",
+    "artist": "",
+    "release": "",
+    "duration": 112,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

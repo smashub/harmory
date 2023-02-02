@@ -1,0 +1,157 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.1214953271028036,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.1214953271028036,
+          "duration": 2.2429906542056077,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.2429906542056077,
+          "duration": 3.364485981308411,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.364485981308411,
+          "duration": 4.485981308411215,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.485981308411215,
+          "duration": 7.850467289719626,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.850467289719626,
+          "duration": 8.97196261682243,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.97196261682243,
+          "duration": 10.093457943925234,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.093457943925234,
+          "duration": 11.214953271028037,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.214953271028037,
+          "duration": 12.33644859813084,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.33644859813084,
+          "duration": 13.457943925233645,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.457943925233645,
+          "duration": 16.822429906542055,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.822429906542055,
+          "duration": 17.94392523364486,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.94392523364486,
+          "duration": 19.06542056074766,
+          "value": "E:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.06542056074766,
+          "duration": 21.30841121495327,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 150.2803738317757,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Any Old Iron",
+    "artist": "",
+    "release": "",
+    "duration": 150,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

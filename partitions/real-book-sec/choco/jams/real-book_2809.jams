@@ -1,0 +1,195 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 5.333333333333333,
+          "value": "G:sus4(b7,b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.333333333333333,
+          "duration": 10.666666666666666,
+          "value": "C:min(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 16.0,
+          "value": "G:sus4(b7,b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 21.33333333333333,
+          "value": "C:min(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 26.666666666666668,
+          "value": "C:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 28.0,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.0,
+          "duration": 29.33333333333333,
+          "value": "F:min(s5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.33333333333333,
+          "duration": 30.666666666666668,
+          "value": "F:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.666666666666668,
+          "duration": 32.0,
+          "value": "F:min(s5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 34.666666666666664,
+          "value": "D:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.666666666666664,
+          "duration": 37.333333333333336,
+          "value": "G:7(s9,s11,b13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 42.66666666666666,
+          "value": "C:min(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.66666666666666,
+          "duration": 45.333333333333336,
+          "value": "G:sus4(b7,b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.333333333333336,
+          "duration": 46.66666666666666,
+          "value": "F:sus4(b7,9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.66666666666666,
+          "duration": 48.0,
+          "value": "G:7(s9,s11,b13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 53.333333333333336,
+          "value": "C:min(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.333333333333336,
+          "duration": 56.0,
+          "value": "G:sus4(b7,b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.0,
+          "duration": 57.333333333333336,
+          "value": "F:sus4(b7,9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 57.333333333333336,
+          "duration": 58.66666666666666,
+          "value": "G:7(s9,s11,b13)",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.66666666666666,
+          "duration": 64.0,
+          "value": "C:min(7)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 744.0,
+          "value": "Eb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Les Grelots [The Sleighbells]",
+    "artist": [
+      "Michel Petrucciani"
+    ],
+    "release": "",
+    "duration": 744,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

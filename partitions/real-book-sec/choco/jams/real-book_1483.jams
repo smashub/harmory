@@ -1,0 +1,183 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 8.347826086956522,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.347826086956522,
+          "duration": 12.52173913043478,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.52173913043478,
+          "duration": 16.695652173913043,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.695652173913043,
+          "duration": 18.78260869565217,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.78260869565217,
+          "duration": 20.869565217391305,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.869565217391305,
+          "duration": 25.043478260869563,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.043478260869563,
+          "duration": 33.391304347826086,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.391304347826086,
+          "duration": 37.56521739130434,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.56521739130434,
+          "duration": 41.73913043478261,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.73913043478261,
+          "duration": 43.826086956521735,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.826086956521735,
+          "duration": 45.91304347826087,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.91304347826087,
+          "duration": 50.086956521739125,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.086956521739125,
+          "duration": 58.43478260869565,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.43478260869565,
+          "duration": 62.60869565217392,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 62.60869565217392,
+          "duration": 66.78260869565217,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.78260869565217,
+          "duration": 68.8695652173913,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.8695652173913,
+          "duration": 70.95652173913044,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.95652173913044,
+          "duration": 75.13043478260869,
+          "value": "A:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 757.5652173913043,
+          "value": "A",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Checkin' Up On My Baby",
+    "artist": [
+      "Sonny Boy Williamson"
+    ],
+    "release": "",
+    "duration": 757,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

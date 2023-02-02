@@ -1,0 +1,217 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.5945945945945943,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5945945945945943,
+          "duration": 5.189189189189189,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.189189189189189,
+          "duration": 7.783783783783783,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.783783783783783,
+          "duration": 10.378378378378375,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.378378378378375,
+          "duration": 12.972972972972972,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.972972972972972,
+          "duration": 15.567567567567568,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.567567567567568,
+          "duration": 18.16216216216216,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.16216216216216,
+          "duration": 18.81081081081081,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.81081081081081,
+          "duration": 19.45945945945946,
+          "value": "G:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.45945945945946,
+          "duration": 20.756756756756754,
+          "value": "G:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.756756756756754,
+          "duration": 23.35135135135135,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.35135135135135,
+          "duration": 25.945945945945944,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.945945945945944,
+          "duration": 28.54054054054054,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.54054054054054,
+          "duration": 31.135135135135133,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.135135135135133,
+          "duration": 33.729729729729726,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.729729729729726,
+          "duration": 36.32432432432432,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.32432432432432,
+          "duration": 38.91891891891892,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.91891891891892,
+          "duration": 39.567567567567565,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.567567567567565,
+          "duration": 40.21621621621622,
+          "value": "G:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.21621621621622,
+          "duration": 41.51351351351351,
+          "value": "G:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.51351351351351,
+          "duration": 44.108108108108105,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.108108108108105,
+          "duration": 46.7027027027027,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.7027027027027,
+          "duration": 49.2972972972973,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.2972972972973,
+          "duration": 51.89189189189189,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 662.9189189189187,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Abdul, The Bulbul Amir",
+    "artist": "",
+    "release": "",
+    "duration": 662,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

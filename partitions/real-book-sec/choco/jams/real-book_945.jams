@@ -1,0 +1,205 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.6551724137931036,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.6551724137931036,
+          "duration": 3.3103448275862077,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.3103448275862077,
+          "duration": 4.965517241379311,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.965517241379311,
+          "duration": 6.620689655172415,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.620689655172415,
+          "duration": 13.24137931034483,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.24137931034483,
+          "duration": 16.551724137931036,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.551724137931036,
+          "duration": 18.20689655172414,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.20689655172414,
+          "duration": 19.86206896551724,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.86206896551724,
+          "duration": 26.48275862068966,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.48275862068966,
+          "duration": 28.13793103448276,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.13793103448276,
+          "duration": 29.793103448275865,
+          "value": "D:7(s5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.793103448275865,
+          "duration": 33.10344827586207,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.10344827586207,
+          "duration": 41.37931034482759,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.37931034482759,
+          "duration": 43.03448275862069,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.03448275862069,
+          "duration": 46.3448275862069,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.3448275862069,
+          "duration": 48.0,
+          "value": "E:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.6551724137931,
+          "value": "F#:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.6551724137931,
+          "duration": 51.31034482758621,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.31034482758621,
+          "duration": 52.96551724137932,
+          "value": "E:7(s5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.96551724137932,
+          "duration": 54.62068965517242,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.62068965517242,
+          "duration": 56.27586206896552,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.27586206896552,
+          "duration": 59.58620689655173,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 705.1034482758622,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Kiss Me Again",
+    "artist": "",
+    "release": "",
+    "duration": 705,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

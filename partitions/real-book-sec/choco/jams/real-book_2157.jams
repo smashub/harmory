@@ -1,0 +1,475 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.7894736842105263,
+          "value": "Ab:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.7894736842105263,
+          "duration": 1.5789473684210529,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.5789473684210529,
+          "duration": 2.368421052631579,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.368421052631579,
+          "duration": 3.1578947368421053,
+          "value": "A:7(b5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.1578947368421053,
+          "duration": 4.736842105263158,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.736842105263158,
+          "duration": 6.315789473684211,
+          "value": "Ab:aug(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.315789473684211,
+          "duration": 9.473684210526317,
+          "value": "Ab:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.473684210526317,
+          "duration": 12.63157894736842,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.63157894736842,
+          "duration": 14.210526315789474,
+          "value": "Db:maj/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.210526315789474,
+          "duration": 15.0,
+          "value": "Db:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.0,
+          "duration": 15.789473684210527,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.789473684210527,
+          "duration": 17.36842105263158,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.36842105263158,
+          "duration": 18.947368421052637,
+          "value": "Gb:maj6/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.947368421052637,
+          "duration": 20.526315789473685,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.526315789473685,
+          "duration": 22.105263157894736,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.105263157894736,
+          "duration": 22.894736842105264,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.894736842105264,
+          "duration": 23.68421052631579,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.68421052631579,
+          "duration": 25.26315789473684,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.26315789473684,
+          "duration": 26.842105263157897,
+          "value": "G:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.842105263157897,
+          "duration": 28.42105263157895,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.42105263157895,
+          "duration": 31.57894736842105,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.57894736842105,
+          "duration": 34.73684210526316,
+          "value": "F:min(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.73684210526316,
+          "duration": 37.89473684210527,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.89473684210527,
+          "duration": 41.05263157894737,
+          "value": "F:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.05263157894737,
+          "duration": 43.42105263157895,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.42105263157895,
+          "duration": 44.21052631578947,
+          "value": "Db:maj7/7",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.21052631578947,
+          "duration": 45.0,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.0,
+          "duration": 45.78947368421053,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.78947368421053,
+          "duration": 47.36842105263158,
+          "value": "Db:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 47.36842105263158,
+          "duration": 50.526315789473685,
+          "value": "Gb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.526315789473685,
+          "duration": 51.31578947368421,
+          "value": "Eb:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.31578947368421,
+          "duration": 52.10526315789474,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.10526315789474,
+          "duration": 52.89473684210527,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.89473684210527,
+          "duration": 53.6842105263158,
+          "value": "A:7(b5,*5)",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.6842105263158,
+          "duration": 55.26315789473684,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.26315789473684,
+          "duration": 56.8421052631579,
+          "value": "Ab:aug(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 56.8421052631579,
+          "duration": 60.0,
+          "value": "Ab:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.0,
+          "duration": 63.15789473684211,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 63.15789473684211,
+          "duration": 64.73684210526316,
+          "value": "Db:maj/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.73684210526316,
+          "duration": 65.52631578947368,
+          "value": "Db:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.52631578947368,
+          "duration": 66.31578947368422,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 66.31578947368422,
+          "duration": 67.89473684210526,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 67.89473684210526,
+          "duration": 69.47368421052632,
+          "value": "Gb:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.47368421052632,
+          "duration": 71.05263157894737,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 71.05263157894737,
+          "duration": 72.63157894736842,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.63157894736842,
+          "duration": 73.42105263157895,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 73.42105263157895,
+          "duration": 74.21052631578948,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.21052631578948,
+          "duration": 75.78947368421053,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 75.78947368421053,
+          "duration": 77.36842105263159,
+          "value": "G:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 77.36842105263159,
+          "duration": 78.94736842105263,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 78.94736842105263,
+          "duration": 82.10526315789474,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 82.10526315789474,
+          "duration": 85.26315789473685,
+          "value": "F:min(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 85.26315789473685,
+          "duration": 88.42105263157895,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 88.42105263157895,
+          "duration": 91.57894736842104,
+          "value": "F:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 91.57894736842104,
+          "duration": 94.73684210526316,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 94.73684210526316,
+          "duration": 97.89473684210527,
+          "value": "Ab:maj(2,*3)",
+          "confidence": 1.0
+        },
+        {
+          "time": 97.89473684210527,
+          "duration": 99.47368421052632,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 99.47368421052632,
+          "duration": 101.05263157894736,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 101.05263157894736,
+          "duration": 103.42105263157896,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 103.42105263157896,
+          "duration": 104.21052631578948,
+          "value": "Db:maj7/7",
+          "confidence": 1.0
+        },
+        {
+          "time": 104.21052631578948,
+          "duration": 107.3684210526316,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 107.3684210526316,
+          "duration": 110.52631578947368,
+          "value": "Db:maj/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 110.52631578947368,
+          "duration": 113.6842105263158,
+          "value": "Ab:maj9",
+          "confidence": 1.0
+        },
+        {
+          "time": 113.6842105263158,
+          "duration": 116.8421052631579,
+          "value": "B:maj9",
+          "confidence": 1.0
+        },
+        {
+          "time": 116.8421052631579,
+          "duration": 120.0,
+          "value": "E:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 120.0,
+          "duration": 123.15789473684212,
+          "value": "A:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 123.15789473684212,
+          "duration": 132.63157894736844,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3788.684210526316,
+          "value": "Ab",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Didn't We",
+    "artist": "",
+    "release": "",
+    "duration": 3788,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

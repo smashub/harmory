@@ -1,0 +1,195 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.042553191489362,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.042553191489362,
+          "duration": 4.085106382978724,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.085106382978724,
+          "duration": 5.1063829787234045,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.1063829787234045,
+          "duration": 6.127659574468085,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.127659574468085,
+          "duration": 7.148936170212767,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.148936170212767,
+          "duration": 8.170212765957448,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.170212765957448,
+          "duration": 10.212765957446807,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.212765957446807,
+          "duration": 12.25531914893617,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.25531914893617,
+          "duration": 13.27659574468085,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.27659574468085,
+          "duration": 14.297872340425531,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.297872340425531,
+          "duration": 16.340425531914896,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.340425531914896,
+          "duration": 18.382978723404257,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.382978723404257,
+          "duration": 20.425531914893615,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.425531914893615,
+          "duration": 22.46808510638298,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.46808510638298,
+          "duration": 24.51063829787234,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.51063829787234,
+          "duration": 26.5531914893617,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.5531914893617,
+          "duration": 28.595744680851062,
+          "value": "Eb:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.595744680851062,
+          "duration": 29.617021276595747,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.617021276595747,
+          "duration": 30.638297872340427,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.638297872340427,
+          "duration": 32.68085106382979,
+          "value": "G:6(9)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 332.9361702127659,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Swinging With Django",
+    "artist": [
+      "Django Reinhardt"
+    ],
+    "release": "",
+    "duration": 332,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

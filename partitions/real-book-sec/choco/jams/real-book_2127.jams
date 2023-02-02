@@ -1,0 +1,280 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.5686274509803924,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.5686274509803924,
+          "duration": 3.1372549019607847,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.1372549019607847,
+          "duration": 4.705882352941177,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.705882352941177,
+          "duration": 6.274509803921569,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.274509803921569,
+          "duration": 7.843137254901961,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.843137254901961,
+          "duration": 9.411764705882351,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.411764705882351,
+          "duration": 12.54901960784314,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.54901960784314,
+          "duration": 14.11764705882353,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.11764705882353,
+          "duration": 15.686274509803924,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.686274509803924,
+          "duration": 17.254901960784316,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.254901960784316,
+          "duration": 18.823529411764707,
+          "value": "Eb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.823529411764707,
+          "duration": 20.3921568627451,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.3921568627451,
+          "duration": 21.96078431372549,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.96078431372549,
+          "duration": 23.529411764705884,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.529411764705884,
+          "duration": 24.31372549019608,
+          "value": "B:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.31372549019608,
+          "duration": 25.09803921568628,
+          "value": "E:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.09803921568628,
+          "duration": 26.666666666666668,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 28.23529411764706,
+          "value": "D:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.23529411764706,
+          "duration": 31.372549019607845,
+          "value": "G:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.372549019607845,
+          "duration": 32.94117647058824,
+          "value": "F#:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.94117647058824,
+          "duration": 34.50980392156863,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.50980392156863,
+          "duration": 36.07843137254902,
+          "value": "E:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.07843137254902,
+          "duration": 37.64705882352941,
+          "value": "C:aug(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.64705882352941,
+          "duration": 39.21568627450981,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.21568627450981,
+          "duration": 40.7843137254902,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.7843137254902,
+          "duration": 42.352941176470594,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.352941176470594,
+          "duration": 43.92156862745098,
+          "value": "Ab:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.92156862745098,
+          "duration": 45.490196078431374,
+          "value": "Db:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.490196078431374,
+          "duration": 47.05882352941177,
+          "value": "Gb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 47.05882352941177,
+          "duration": 48.62745098039216,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.62745098039216,
+          "duration": 50.19607843137256,
+          "value": "F:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.19607843137256,
+          "duration": 51.76470588235294,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.76470588235294,
+          "duration": 53.333333333333336,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.333333333333336,
+          "duration": 59.6078431372549,
+          "value": "Ab:maj6",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 976.470588235294,
+          "value": "Ab",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Prince Albert",
+    "artist": [
+      "Roach",
+      "Dorham"
+    ],
+    "release": "",
+    "duration": 976,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

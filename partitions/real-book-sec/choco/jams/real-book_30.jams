@@ -1,0 +1,175 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 10.105263157894738,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.105263157894738,
+          "duration": 15.157894736842106,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.157894736842106,
+          "duration": 20.21052631578948,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.21052631578948,
+          "duration": 22.73684210526316,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.73684210526316,
+          "duration": 25.26315789473684,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.26315789473684,
+          "duration": 30.31578947368421,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.31578947368421,
+          "duration": 40.42105263157895,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.42105263157895,
+          "duration": 45.47368421052632,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.47368421052632,
+          "duration": 50.526315789473685,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.526315789473685,
+          "duration": 53.05263157894737,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.05263157894737,
+          "duration": 55.578947368421055,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.578947368421055,
+          "duration": 60.631578947368425,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.631578947368425,
+          "duration": 63.15789473684211,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 63.15789473684211,
+          "duration": 65.6842105263158,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.6842105263158,
+          "duration": 68.21052631578948,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.21052631578948,
+          "duration": 70.73684210526316,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.73684210526316,
+          "duration": 75.78947368421053,
+          "value": "G:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 773.0526315789474,
+          "value": "G",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Kansas City Boogie",
+    "artist": "",
+    "release": "",
+    "duration": 773,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

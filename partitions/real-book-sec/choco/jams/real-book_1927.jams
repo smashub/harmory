@@ -1,0 +1,235 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.341463414634146,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.341463414634146,
+          "duration": 4.682926829268293,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.682926829268293,
+          "duration": 5.853658536585366,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.853658536585366,
+          "duration": 6.439024390243903,
+          "value": "Ab:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.439024390243903,
+          "duration": 7.024390243902439,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.024390243902439,
+          "duration": 8.195121951219512,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.195121951219512,
+          "duration": 9.365853658536588,
+          "value": "Db:maj7/b5",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.365853658536588,
+          "duration": 11.707317073170731,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.707317073170731,
+          "duration": 14.048780487804878,
+          "value": "D:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.048780487804878,
+          "duration": 15.219512195121952,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.219512195121952,
+          "duration": 15.804878048780488,
+          "value": "Ab:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.804878048780488,
+          "duration": 16.390243902439025,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.390243902439025,
+          "duration": 18.731707317073173,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.731707317073173,
+          "duration": 21.07317073170732,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.07317073170732,
+          "duration": 23.414634146341463,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.414634146341463,
+          "duration": 25.75609756097561,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.75609756097561,
+          "duration": 26.92682926829269,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.92682926829269,
+          "duration": 28.09756097560976,
+          "value": "C:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.09756097560976,
+          "duration": 29.26829268292683,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.26829268292683,
+          "duration": 30.439024390243905,
+          "value": "F:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.439024390243905,
+          "duration": 31.60975609756097,
+          "value": "C:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.60975609756097,
+          "duration": 32.78048780487805,
+          "value": "Eb:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.78048780487805,
+          "duration": 33.951219512195124,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.951219512195124,
+          "duration": 34.53658536585366,
+          "value": "Ab:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.53658536585366,
+          "duration": 35.1219512195122,
+          "value": "G:9",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.1219512195122,
+          "duration": 36.29268292682927,
+          "value": "C:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.29268292682927,
+          "duration": 37.463414634146346,
+          "value": "Db:maj7/b5",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 562.5365853658536,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Lucky Southern",
+    "artist": "",
+    "release": "",
+    "duration": 562,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

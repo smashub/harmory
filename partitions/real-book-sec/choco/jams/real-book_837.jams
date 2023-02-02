@@ -1,0 +1,217 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 3.5036496350364965,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.5036496350364965,
+          "duration": 5.255474452554745,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.255474452554745,
+          "duration": 10.51094890510949,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.51094890510949,
+          "duration": 11.386861313868614,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.386861313868614,
+          "duration": 12.262773722627738,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.262773722627738,
+          "duration": 14.014598540145986,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.014598540145986,
+          "duration": 17.51824817518248,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.51824817518248,
+          "duration": 19.27007299270073,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.27007299270073,
+          "duration": 24.52554744525548,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.52554744525548,
+          "duration": 25.4014598540146,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.4014598540146,
+          "duration": 26.277372262773724,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.277372262773724,
+          "duration": 28.02919708029197,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.02919708029197,
+          "duration": 31.532846715328468,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.532846715328468,
+          "duration": 32.408759124087595,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.408759124087595,
+          "duration": 33.28467153284672,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.28467153284672,
+          "duration": 35.03649635036496,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.03649635036496,
+          "duration": 38.54014598540146,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.54014598540146,
+          "duration": 42.04379562043796,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.04379562043796,
+          "duration": 45.54744525547446,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 45.54744525547446,
+          "duration": 47.29927007299271,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 47.29927007299271,
+          "duration": 52.55474452554745,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.55474452554745,
+          "duration": 53.43065693430657,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.43065693430657,
+          "duration": 54.306569343065696,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 54.306569343065696,
+          "duration": 56.05839416058394,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 720.0000000000001,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "If I Knew You Were Coming I'd Have Baked A Cake",
+    "artist": "",
+    "release": "",
+    "duration": 720,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

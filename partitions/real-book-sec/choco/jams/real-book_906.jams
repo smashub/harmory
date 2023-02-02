@@ -1,0 +1,241 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.5945945945945943,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.5945945945945943,
+          "duration": 7.783783783783783,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.783783783783783,
+          "duration": 12.972972972972972,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.972972972972972,
+          "duration": 14.27027027027027,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.27027027027027,
+          "duration": 16.864864864864863,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.864864864864863,
+          "duration": 18.16216216216216,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.16216216216216,
+          "duration": 20.756756756756754,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.756756756756754,
+          "duration": 23.35135135135135,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.35135135135135,
+          "duration": 25.945945945945944,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.945945945945944,
+          "duration": 28.54054054054054,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.54054054054054,
+          "duration": 31.135135135135133,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.135135135135133,
+          "duration": 33.729729729729726,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.729729729729726,
+          "duration": 36.32432432432432,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.32432432432432,
+          "duration": 38.91891891891892,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.91891891891892,
+          "duration": 41.51351351351351,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.51351351351351,
+          "duration": 49.2972972972973,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.2972972972973,
+          "duration": 50.59459459459459,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 50.59459459459459,
+          "duration": 51.89189189189189,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 51.89189189189189,
+          "duration": 59.67567567567567,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 59.67567567567567,
+          "duration": 68.75675675675676,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.75675675675676,
+          "duration": 70.05405405405405,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 70.05405405405405,
+          "duration": 73.94594594594594,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 73.94594594594594,
+          "duration": 75.24324324324324,
+          "value": "Bb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 75.24324324324324,
+          "duration": 76.54054054054053,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 76.54054054054053,
+          "duration": 77.83783783783784,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 77.83783783783784,
+          "duration": 79.13513513513513,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 79.13513513513513,
+          "duration": 80.43243243243244,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 80.43243243243244,
+          "duration": 83.02702702702702,
+          "value": "F:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1249.2972972972973,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Hiawatha Rag",
+    "artist": "",
+    "release": "",
+    "duration": 1249,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

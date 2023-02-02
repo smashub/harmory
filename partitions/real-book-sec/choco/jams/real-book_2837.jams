@@ -1,0 +1,189 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.8571428571428571,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.8571428571428571,
+          "duration": 1.2857142857142856,
+          "value": "A:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.2857142857142856,
+          "duration": 1.7142857142857142,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7142857142857142,
+          "duration": 2.571428571428571,
+          "value": "A:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.571428571428571,
+          "duration": 3.0,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.0,
+          "duration": 3.4285714285714284,
+          "value": "A:7(s9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.4285714285714284,
+          "duration": 6.857142857142857,
+          "value": "D:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 9.428571428571429,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.428571428571429,
+          "duration": 10.285714285714285,
+          "value": "Eb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.285714285714285,
+          "duration": 13.714285714285714,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.714285714285714,
+          "duration": 15.428571428571429,
+          "value": "F:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.428571428571429,
+          "duration": 17.142857142857142,
+          "value": "Eb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.142857142857142,
+          "duration": 20.57142857142857,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.57142857142857,
+          "duration": 24.0,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 27.428571428571427,
+          "value": "Eb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.428571428571427,
+          "duration": 30.85714285714285,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.85714285714285,
+          "duration": 32.57142857142857,
+          "value": "D:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.57142857142857,
+          "duration": 33.42857142857142,
+          "value": "D:hdim",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.42857142857142,
+          "duration": 37.71428571428572,
+          "value": "D:maj7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 292.2857142857142,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Un Poco Loco",
+    "artist": [
+      "Bud Powell"
+    ],
+    "release": "",
+    "duration": 292,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

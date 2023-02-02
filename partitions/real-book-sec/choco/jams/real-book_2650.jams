@@ -1,0 +1,181 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.0666666666666669,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.0666666666666669,
+          "duration": 2.1333333333333333,
+          "value": "B:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.1333333333333333,
+          "duration": 3.2,
+          "value": "E:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.2,
+          "duration": 4.266666666666667,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.266666666666667,
+          "duration": 10.666666666666666,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 11.733333333333333,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.733333333333333,
+          "duration": 12.8,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.8,
+          "duration": 19.73333333333333,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.73333333333333,
+          "duration": 20.266666666666666,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.266666666666666,
+          "duration": 21.33333333333333,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 23.466666666666665,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.466666666666665,
+          "duration": 27.73333333333333,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.73333333333333,
+          "duration": 28.8,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.8,
+          "duration": 29.866666666666667,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.866666666666667,
+          "duration": 32.0,
+          "value": "G:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 36.8,
+          "value": "D:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.8,
+          "duration": 37.333333333333336,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 38.4,
+          "value": "D:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 361.59999999999997,
+          "value": "D",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Around Her Neck She Wore A Yellow Ribbon",
+    "artist": "",
+    "release": "",
+    "duration": 361,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

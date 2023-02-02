@@ -1,0 +1,277 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.7777777777777777,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7777777777777777,
+          "duration": 2.6666666666666665,
+          "value": "F:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.6666666666666665,
+          "duration": 3.555555555555556,
+          "value": "Ab:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.555555555555556,
+          "duration": 7.111111111111111,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.111111111111111,
+          "duration": 8.88888888888889,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.88888888888889,
+          "duration": 10.666666666666666,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 11.555555555555555,
+          "value": "F:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.555555555555555,
+          "duration": 12.444444444444445,
+          "value": "Db:7/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.444444444444445,
+          "duration": 13.333333333333334,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.333333333333334,
+          "duration": 14.22222222222222,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.22222222222222,
+          "duration": 16.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.77777777777778,
+          "value": "A:min/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.77777777777778,
+          "duration": 19.55555555555556,
+          "value": "Eb:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.55555555555556,
+          "duration": 21.33333333333333,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 24.88888888888889,
+          "value": "G:min9",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.88888888888889,
+          "duration": 28.444444444444443,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.444444444444443,
+          "duration": 30.22222222222222,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.22222222222222,
+          "duration": 31.11111111111111,
+          "value": "F:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.11111111111111,
+          "duration": 32.0,
+          "value": "Ab:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 35.55555555555556,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.55555555555556,
+          "duration": 37.333333333333336,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.333333333333336,
+          "duration": 39.11111111111112,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.11111111111112,
+          "duration": 40.0,
+          "value": "F:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.0,
+          "duration": 40.888888888888886,
+          "value": "Db:maj/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.888888888888886,
+          "duration": 41.77777777777778,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.77777777777778,
+          "duration": 42.66666666666666,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.66666666666666,
+          "duration": 43.11111111111112,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.11111111111112,
+          "duration": 43.55555555555556,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.55555555555556,
+          "duration": 44.44444444444444,
+          "value": "F:7/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.44444444444444,
+          "duration": 46.22222222222222,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.22222222222222,
+          "duration": 48.0,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 48.0,
+          "duration": 49.77777777777778,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.77777777777778,
+          "duration": 53.333333333333336,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.333333333333336,
+          "duration": 56.888888888888886,
+          "value": "F:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 970.2222222222223,
+          "value": "F",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "I'll Be Your Sweetheart",
+    "artist": "",
+    "release": "",
+    "duration": 970,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

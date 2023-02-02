@@ -1,0 +1,199 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.571428571428571,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.571428571428571,
+          "duration": 3.4285714285714284,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.4285714285714284,
+          "duration": 6.857142857142857,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.857142857142857,
+          "duration": 10.285714285714285,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.285714285714285,
+          "duration": 11.142857142857142,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 11.142857142857142,
+          "duration": 12.0,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.0,
+          "duration": 12.857142857142856,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.857142857142856,
+          "duration": 13.285714285714285,
+          "value": "G:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.285714285714285,
+          "duration": 13.714285714285714,
+          "value": "C:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.714285714285714,
+          "duration": 16.285714285714285,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.285714285714285,
+          "duration": 17.142857142857142,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.142857142857142,
+          "duration": 19.71428571428571,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.71428571428571,
+          "duration": 20.57142857142857,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.57142857142857,
+          "duration": 24.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 27.428571428571427,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.428571428571427,
+          "duration": 28.285714285714285,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.285714285714285,
+          "duration": 29.142857142857142,
+          "value": "A:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 29.142857142857142,
+          "duration": 30.85714285714285,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.85714285714285,
+          "duration": 31.71428571428571,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.71428571428571,
+          "duration": 32.57142857142857,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.57142857142857,
+          "duration": 39.42857142857142,
+          "value": "F:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 403.2857142857142,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Doll",
+    "artist": "",
+    "release": "",
+    "duration": 403,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

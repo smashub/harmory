@@ -1,0 +1,181 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 0.4444444444444444,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 0.4444444444444444,
+          "duration": 1.7777777777777777,
+          "value": "Bb:maj7",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.7777777777777777,
+          "duration": 2.2222222222222223,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.2222222222222223,
+          "duration": 3.555555555555556,
+          "value": "Bb:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.555555555555556,
+          "duration": 5.333333333333333,
+          "value": "Bb:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.333333333333333,
+          "duration": 7.111111111111111,
+          "value": "Bb:min6",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.111111111111111,
+          "duration": 10.666666666666666,
+          "value": "B:maj6",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.666666666666666,
+          "duration": 12.444444444444445,
+          "value": "Bb:maj9(#11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.444444444444445,
+          "duration": 14.22222222222222,
+          "value": "A:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.22222222222222,
+          "duration": 16.0,
+          "value": "Ab:aug(7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.333333333333332,
+          "value": "Bb:7(s11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.333333333333332,
+          "duration": 17.77777777777778,
+          "value": "Bb:7/b5",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.77777777777778,
+          "duration": 19.55555555555556,
+          "value": "Bb:sus4(b7)",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.55555555555556,
+          "duration": 21.33333333333333,
+          "value": "Ab:maj/2",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 23.11111111111111,
+          "value": "Gb:maj/b5",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.11111111111111,
+          "duration": 24.88888888888889,
+          "value": "F:7(b9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.88888888888889,
+          "duration": 26.666666666666668,
+          "value": "Eb:7(s11)",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.666666666666668,
+          "duration": 28.444444444444443,
+          "value": "A:7(s5,*5)",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 252.88888888888886,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "MODES",
+    "artist": "",
+    "release": "",
+    "duration": 252,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

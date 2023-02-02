@@ -1,0 +1,211 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 6.193548387096774,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.193548387096774,
+          "duration": 9.29032258064516,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.29032258064516,
+          "duration": 12.387096774193548,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.387096774193548,
+          "duration": 18.58064516129032,
+          "value": "B:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.58064516129032,
+          "duration": 21.677419354838708,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.677419354838708,
+          "duration": 27.870967741935484,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.870967741935484,
+          "duration": 30.96774193548387,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.96774193548387,
+          "duration": 34.064516129032256,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.064516129032256,
+          "duration": 40.25806451612903,
+          "value": "B:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.25806451612903,
+          "duration": 43.354838709677416,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 43.354838709677416,
+          "duration": 46.4516129032258,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.4516129032258,
+          "duration": 49.54838709677419,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.54838709677419,
+          "duration": 52.64516129032258,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 52.64516129032258,
+          "duration": 55.74193548387097,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 55.74193548387097,
+          "duration": 58.83870967741935,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.83870967741935,
+          "duration": 61.93548387096774,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 61.93548387096774,
+          "duration": 65.03225806451613,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 65.03225806451613,
+          "duration": 68.12903225806451,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 68.12903225806451,
+          "duration": 69.6774193548387,
+          "value": "B:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 69.6774193548387,
+          "duration": 71.2258064516129,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 71.2258064516129,
+          "duration": 72.77419354838709,
+          "value": "E:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.77419354838709,
+          "duration": 74.32258064516128,
+          "value": "A:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.32258064516128,
+          "duration": 78.96774193548387,
+          "value": "E:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1069.9354838709676,
+          "value": "E",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Boot Scootin' Boogie",
+    "artist": "",
+    "release": "",
+    "duration": 1069,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

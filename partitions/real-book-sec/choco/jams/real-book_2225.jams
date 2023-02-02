@@ -1,0 +1,273 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.0869565217391304,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.0869565217391304,
+          "duration": 4.173913043478261,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.173913043478261,
+          "duration": 6.260869565217391,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.260869565217391,
+          "duration": 8.347826086956522,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.347826086956522,
+          "duration": 10.434782608695652,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.434782608695652,
+          "duration": 12.52173913043478,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.52173913043478,
+          "duration": 14.608695652173912,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.608695652173912,
+          "duration": 16.695652173913043,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.695652173913043,
+          "duration": 17.73913043478261,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.73913043478261,
+          "duration": 18.26086956521739,
+          "value": "Eb:maj/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.26086956521739,
+          "duration": 19.82608695652174,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.82608695652174,
+          "duration": 20.34782608695652,
+          "value": "Eb:maj/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.34782608695652,
+          "duration": 21.913043478260867,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.913043478260867,
+          "duration": 22.43478260869565,
+          "value": "Eb:maj/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.43478260869565,
+          "duration": 24.0,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.0,
+          "duration": 24.52173913043478,
+          "value": "Eb:maj/5",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.52173913043478,
+          "duration": 25.043478260869563,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.043478260869563,
+          "duration": 26.08695652173913,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.08695652173913,
+          "duration": 26.60869565217391,
+          "value": "Bb:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.60869565217391,
+          "duration": 27.130434782608692,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.130434782608692,
+          "duration": 27.65217391304348,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.65217391304348,
+          "duration": 28.695652173913043,
+          "value": "F:sus4(b7,9)",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.695652173913043,
+          "duration": 30.26086956521739,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.26086956521739,
+          "duration": 30.78260869565217,
+          "value": "Bb:maj/3",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.78260869565217,
+          "duration": 31.30434782608696,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 31.30434782608696,
+          "duration": 33.391304347826086,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.391304347826086,
+          "duration": 35.47826086956522,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.47826086956522,
+          "duration": 37.56521739130434,
+          "value": "D:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.56521739130434,
+          "duration": 38.086956521739125,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.086956521739125,
+          "duration": 38.60869565217392,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.60869565217392,
+          "duration": 39.130434782608695,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.130434782608695,
+          "duration": 39.65217391304348,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.65217391304348,
+          "duration": 41.73913043478261,
+          "value": "G:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 801.3913043478262,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Mercy, Mercy, Mercy",
+    "artist": [
+      "Joe Zawinul"
+    ],
+    "release": "",
+    "duration": 801,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

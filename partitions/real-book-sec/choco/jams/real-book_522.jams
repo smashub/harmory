@@ -1,0 +1,195 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.142857142857143,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.142857142857143,
+          "duration": 4.285714285714286,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.285714285714286,
+          "duration": 6.428571428571429,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.428571428571429,
+          "duration": 8.571428571428571,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.571428571428571,
+          "duration": 10.714285714285714,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.714285714285714,
+          "duration": 12.857142857142858,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.857142857142858,
+          "duration": 15.0,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.0,
+          "duration": 17.142857142857142,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.142857142857142,
+          "duration": 19.285714285714285,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 19.285714285714285,
+          "duration": 21.428571428571427,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.428571428571427,
+          "duration": 23.57142857142857,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.57142857142857,
+          "duration": 25.714285714285715,
+          "value": "Db:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 25.714285714285715,
+          "duration": 27.857142857142858,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 27.857142857142858,
+          "duration": 30.0,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 30.0,
+          "duration": 32.14285714285714,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.14285714285714,
+          "duration": 34.285714285714285,
+          "value": "D:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 34.285714285714285,
+          "duration": 36.42857142857143,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.42857142857143,
+          "duration": 38.57142857142857,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 38.57142857142857,
+          "duration": 40.71428571428572,
+          "value": "F:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.71428571428572,
+          "duration": 42.85714285714285,
+          "value": "F:min",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 449.99999999999994,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Cantaloupe Island",
+    "artist": [
+      "Herbie Hancock"
+    ],
+    "release": "",
+    "duration": 449,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

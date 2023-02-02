@@ -1,0 +1,205 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1.5483870967741935,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 1.5483870967741935,
+          "duration": 2.32258064516129,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.32258064516129,
+          "duration": 3.096774193548387,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 3.096774193548387,
+          "duration": 4.64516129032258,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 4.64516129032258,
+          "duration": 6.193548387096774,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 6.193548387096774,
+          "duration": 7.741935483870967,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.741935483870967,
+          "duration": 8.516129032258064,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 8.516129032258064,
+          "duration": 9.29032258064516,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 9.29032258064516,
+          "duration": 10.064516129032258,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.064516129032258,
+          "duration": 10.838709677419354,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.838709677419354,
+          "duration": 12.387096774193548,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.387096774193548,
+          "duration": 13.935483870967742,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.935483870967742,
+          "duration": 14.709677419354838,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.709677419354838,
+          "duration": 15.483870967741934,
+          "value": "Bb:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 15.483870967741934,
+          "duration": 17.032258064516128,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.032258064516128,
+          "duration": 18.58064516129032,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.58064516129032,
+          "duration": 20.12903225806452,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.12903225806452,
+          "duration": 20.90322580645161,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 20.90322580645161,
+          "duration": 21.677419354838708,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.677419354838708,
+          "duration": 22.451612903225804,
+          "value": "C:min7",
+          "confidence": 1.0
+        },
+        {
+          "time": 22.451612903225804,
+          "duration": 23.2258064516129,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 23.2258064516129,
+          "duration": 24.774193548387096,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 289.54838709677415,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Battle Hymn Of The Republic",
+    "artist": "",
+    "release": "",
+    "duration": 289,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

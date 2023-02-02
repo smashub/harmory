@@ -1,0 +1,241 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 7.111111111111111,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 7.111111111111111,
+          "duration": 14.22222222222222,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.22222222222222,
+          "duration": 16.0,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.0,
+          "duration": 17.77777777777778,
+          "value": "F#:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 17.77777777777778,
+          "duration": 21.33333333333333,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.33333333333333,
+          "duration": 24.88888888888889,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.88888888888889,
+          "duration": 28.444444444444443,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 28.444444444444443,
+          "duration": 32.0,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.0,
+          "duration": 35.55555555555556,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.55555555555556,
+          "duration": 42.66666666666666,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 42.66666666666666,
+          "duration": 44.44444444444444,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 44.44444444444444,
+          "duration": 46.22222222222222,
+          "value": "F#:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 46.22222222222222,
+          "duration": 49.77777777777778,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 49.77777777777778,
+          "duration": 53.333333333333336,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 53.333333333333336,
+          "duration": 58.66666666666666,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 58.66666666666666,
+          "duration": 60.44444444444444,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 60.44444444444444,
+          "duration": 64.0,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 64.0,
+          "duration": 71.11111111111111,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 71.11111111111111,
+          "duration": 72.88888888888889,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 72.88888888888889,
+          "duration": 74.66666666666667,
+          "value": "F#:dim",
+          "confidence": 1.0
+        },
+        {
+          "time": 74.66666666666667,
+          "duration": 78.22222222222223,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 78.22222222222223,
+          "duration": 81.77777777777777,
+          "value": "F:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 81.77777777777777,
+          "duration": 82.66666666666667,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 82.66666666666667,
+          "duration": 83.55555555555556,
+          "value": "E:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 83.55555555555556,
+          "duration": 85.33333333333333,
+          "value": "A:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 85.33333333333333,
+          "duration": 87.11111111111111,
+          "value": "C:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 87.11111111111111,
+          "duration": 88.88888888888889,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 88.88888888888889,
+          "duration": 94.22222222222224,
+          "value": "C:maj",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 1517.3333333333333,
+          "value": "C",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "A Daisy A Day",
+    "artist": "",
+    "release": "",
+    "duration": 1517,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}

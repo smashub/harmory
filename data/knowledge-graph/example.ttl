@@ -1,0 +1,1064 @@
+@prefix core: <http://w3id.org/polifonia/core/> .
+@prefix har: <http://w3id.org/polifonia/harmory/> .
+@prefix ns1: <http://w3id.org/polifonia/musical-features/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+har:billboard_5 a core:MusicalWork ;
+    core:hasArtist "None" ;
+    core:hasTitle "After The Love Has Gone" ;
+    har:containsSegmentPattern har:0.0_7.5_7.5_9.0_9.0_7.0_7.0_6.5_6.5_8.5_7.5_6.5_6.5_7.0_4.0,
+        har:10.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0,
+        har:10.0_11.0_11.0_8.0_8.0_9.0_9.0_7.5_7.5_5.5_5.5_7.5_7.5_10.0_11.0_7.0_7.0_7.0,
+        har:10.5_6.5_6.5_6.5_0.0_5.5_5.5_9.0_9.0_9.0,
+        har:11.0_11.0_11.0_11.0_8.0_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_6.5_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_6.5_6.5_8.0,
+        har:11.0_11.0_11.0_8.0_8.0_6.5_6.5,
+        har:11.0_11.0_8.0_8.0_6.5_6.5_8.0,
+        har:3.5_3.5_9.0_9.0_1.5_1.5_11.0_11.5_11.0_11.0_11.0_11.0_8.0_8.0_6.5_6.5,
+        har:4.5_4.5_8.0_8.0_5.5_5.5_8.0_9.5_11.0_11.0_5.0_6.5_6.5_7.0,
+        har:6.0_6.0_8.0_8.0_6.0_6.0_7.5_5.5_5.5_5.5,
+        har:6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0,
+        har:7.0_5.5_5.5_6.5_6.5_5.5_5.5_7.5_8.0_7.0_1.5_1.5_1.5_1.5_7.0_7.0,
+        har:8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0,
+        har:8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0_10.0,
+        har:8.0_3.5_3.5_9.5_9.5_1.5_10.0,
+        har:9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0,
+        har:9.5_9.5_0.5_0.5_7.5_7.5_5.5_5.5_7.5_7.5_10.0_11.0_7.0_7.0_7.0,
+        har:9.5_9.5_7.5_7.5_8.0_8.0_7.5_7.5_3.5_9.0_9.0_1.5_1.5_10.0_11.0_11.0_11.0_7.5_8.0_8.0_7.5_7.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&10.5_10.5_10.5_9.0_9.0_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.86"^^xsd:float ;
+    har:involvesSegmentPattern har:10.5_10.5_10.5_9.0_9.0_6.5,
+        har:11.0_11.0_11.0_11.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&11.0_11.0_11.0_11.0_8.0_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.26"^^xsd:float,
+        "0.52"^^xsd:float,
+        "1.8"^^xsd:float,
+        "1.86"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_11.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&11.0_11.0_11.0_8.0_6.5_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.26"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_11.0_8.0_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_6.5_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&11.0_11.0_11.0_8.0_8.0_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.52"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_11.0_8.0_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.8"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_11.0_8.0_6.5_6.5,
+        har:8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&10.5_10.5_10.5_9.0_9.0_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.48"^^xsd:float ;
+    har:involvesSegmentPattern har:10.5_10.5_10.5_9.0_9.0_6.5,
+        har:11.0_11.0_11.0_8.0_6.5_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&11.0_11.0_11.0_11.0_8.0_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.26"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_11.0_8.0_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_6.5_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&11.0_11.0_11.0_8.0_6.5_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.26"^^xsd:float,
+        "0.37"^^xsd:float,
+        "1.46"^^xsd:float,
+        "1.48"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&11.0_11.0_11.0_8.0_8.0_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.37"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.46"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_6.5,
+        har:8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_8.0&11.0_11.0_11.0_8.0_6.5_6.5_8.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.48"^^xsd:float,
+        "1.85"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_8.0 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_8.0&11.0_11.0_8.0_8.0_6.5_6.5_8.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.48"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_8.0,
+        har:11.0_11.0_8.0_8.0_6.5_6.5_8.0 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_8.0&8.5_10.5_7.0_7.0_7.0_6.5_6.5_6.5_6.5_6.5_8.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.85"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_8.0,
+        har:8.5_10.5_7.0_7.0_7.0_6.5_6.5_6.5_6.5_6.5_8.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&10.5_10.5_10.5_9.0_9.0_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.55"^^xsd:float ;
+    har:involvesSegmentPattern har:10.5_10.5_10.5_9.0_9.0_6.5,
+        har:11.0_11.0_11.0_8.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&11.0_11.0_11.0_11.0_8.0_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.52"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_11.0_8.0_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&11.0_11.0_11.0_8.0_6.5_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.37"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&11.0_11.0_11.0_8.0_8.0_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.0"^^xsd:float,
+        "0.37"^^xsd:float,
+        "0.52"^^xsd:float,
+        "1.51"^^xsd:float,
+        "1.55"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.51"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_8.0_6.5_6.5,
+        har:8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_8.0_8.0_6.5_6.5_8.0&11.0_11.0_11.0_8.0_6.5_6.5_8.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.48"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_8.0,
+        har:11.0_11.0_8.0_8.0_6.5_6.5_8.0 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_8.0_8.0_6.5_6.5_8.0&11.0_11.0_8.0_8.0_6.5_6.5_8.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.0"^^xsd:float,
+        "0.48"^^xsd:float,
+        "1.31"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_8.0_8.0_6.5_6.5_8.0 .
+
+<http://w3id.org/polifonia/harmory/11.0_11.0_8.0_8.0_6.5_6.5_8.0&8.5_10.5_7.0_7.0_7.0_6.5_6.5_6.5_6.5_6.5_8.5> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.31"^^xsd:float ;
+    har:involvesSegmentPattern har:11.0_11.0_8.0_8.0_6.5_6.5_8.0,
+        har:8.5_10.5_7.0_7.0_7.0_6.5_6.5_6.5_6.5_6.5_8.5 .
+
+<http://w3id.org/polifonia/harmory/6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0&6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.0"^^xsd:float ;
+    har:involvesSegmentPattern har:6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0 .
+
+<http://w3id.org/polifonia/harmory/8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0&6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.0"^^xsd:float ;
+    har:involvesSegmentPattern har:6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0,
+        har:8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0 .
+
+<http://w3id.org/polifonia/harmory/8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0&8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.0"^^xsd:float ;
+    har:involvesSegmentPattern har:8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0 .
+
+<http://w3id.org/polifonia/harmory/8.0_3.5_3.5_9.5_9.5_1.5_10.0&8.0_3.5_3.5_9.5_9.5_1.5_10.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "0.0"^^xsd:float ;
+    har:involvesSegmentPattern har:8.0_3.5_3.5_9.5_9.5_1.5_10.0 .
+
+<http://w3id.org/polifonia/harmory/9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0&7.0_7.0_0.0_0.0_0.0_5.0_7.0_7.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.46"^^xsd:float ;
+    har:involvesSegmentPattern har:7.0_7.0_0.0_0.0_0.0_5.0_7.0_7.0,
+        har:9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0 .
+
+<http://w3id.org/polifonia/harmory/9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0&7.0_7.0_7.0_7.0_0.5_0.5_0.5_5.5_5.5_8.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.61"^^xsd:float ;
+    har:involvesSegmentPattern har:7.0_7.0_7.0_7.0_0.5_0.5_0.5_5.5_5.5_8.0,
+        har:9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0 .
+
+<http://w3id.org/polifonia/harmory/9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0&9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0> a har:SegmentPatternSimilarity ;
+    har:hasSimilarityValue "1.46"^^xsd:float,
+        "1.61"^^xsd:float ;
+    har:involvesSegmentPattern har:9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$A:min7_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "A:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "67"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$A:min7_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "A:min7" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "1"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$A:min7_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "A:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "66"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$A:min7_6> a ns1:ChordAnnotation ;
+    ns1:hasChord "A:min7" ;
+    ns1:hasDuration "0"^^xsd:float ;
+    ns1:hasStartTime "93"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$A:min7_9> a ns1:ChordAnnotation ;
+    ns1:hasChord "A:min7" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "81"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:maj6/5_12> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:maj6/5" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "127"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:maj6/5_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:maj6/5" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "113"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:maj7/3_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:maj7/3" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "28"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:maj7/3_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:maj7/3" ;
+    ns1:hasDuration "0"^^xsd:float ;
+    ns1:hasStartTime "30"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:min7/5_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:min7/5" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "100"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:min7_7> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "120"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:min9_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "129"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:min9_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:min9" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "115"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:7(#11)" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "25"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_6> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:7(#11)" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "53"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_9> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:7(#11)" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "38"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:aug_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:aug" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "90"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:maj/bb6_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:maj/bb6" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "148"^^xsd:float,
+        "163"^^xsd:float,
+        "177"^^xsd:float,
+        "192"^^xsd:float,
+        "221"^^xsd:float,
+        "235"^^xsd:float,
+        "250"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:maj/bb6_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:maj/bb6" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "206"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:maj7_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:maj7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "136"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:maj9_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:maj9" ;
+    ns1:hasDuration "1"^^xsd:float,
+        "2"^^xsd:float ;
+    ns1:hasStartTime "150"^^xsd:float,
+        "165"^^xsd:float,
+        "179"^^xsd:float,
+        "194"^^xsd:float,
+        "223"^^xsd:float,
+        "237"^^xsd:float,
+        "252"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:maj9_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:maj9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "208"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:maj9_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:maj9" ;
+    ns1:hasDuration "3"^^xsd:float ;
+    ns1:hasStartTime "104"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:sus4(b7,9)_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "B:sus4(b7,9)" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "97"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:maj(9)_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:maj(9)" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "3"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:maj/2_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:maj/2" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "74"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:maj7_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:maj7" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "70"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:maj7_7> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:maj7" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "11"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:maj9_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:maj9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "91"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min6" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "47"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min6" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "21"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min6" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "51"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min6" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "32"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_7> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min6" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "36"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min7(11)_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min7(11)" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "26"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min7(11)_10> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min7(11)" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "39"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min7(11)_7> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min7(11)" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "54"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min7_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "135"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min7_8> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "121"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_11> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "125"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "170"^^xsd:float,
+        "228"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_9> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "141"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "17"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:sus2_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:sus2" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "85"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$C:7_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "C:7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "75"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$C:min9_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "C:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "107"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$C:min9_9> a ns1:ChordAnnotation ;
+    ns1:hasChord "C:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "122"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$C:sus4(b7)_9> a ns1:ChordAnnotation ;
+    ns1:hasChord "C:sus4(b7)" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "14"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$D:min7_7> a ns1:ChordAnnotation ;
+    ns1:hasChord "D:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "93"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$D:min9_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "D:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "83"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$D:min_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "D:min" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "68"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:maj6/5" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "145"^^xsd:float,
+        "160"^^xsd:float,
+        "174"^^xsd:float,
+        "189"^^xsd:float,
+        "218"^^xsd:float,
+        "232"^^xsd:float,
+        "247"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:maj6/5" ;
+    ns1:hasDuration "0"^^xsd:float ;
+    ns1:hasStartTime "204"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:maj6/5" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "159"^^xsd:float,
+        "188"^^xsd:float,
+        "246"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:maj9_11> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:maj9" ;
+    ns1:hasDuration "3"^^xsd:float ;
+    ns1:hasStartTime "40"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:maj9_8> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:maj9" ;
+    ns1:hasDuration "3"^^xsd:float ;
+    ns1:hasStartTime "55"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:min7_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "256"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:min7_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:min7" ;
+    ns1:hasDuration "1"^^xsd:float,
+        "2"^^xsd:float ;
+    ns1:hasStartTime "152"^^xsd:float,
+        "166"^^xsd:float,
+        "181"^^xsd:float,
+        "195"^^xsd:float,
+        "224"^^xsd:float,
+        "239"^^xsd:float,
+        "254"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:min7_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "210"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:min7_6> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "137"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:min9_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "146"^^xsd:float,
+        "161"^^xsd:float,
+        "175"^^xsd:float,
+        "190"^^xsd:float,
+        "219"^^xsd:float,
+        "233"^^xsd:float,
+        "248"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:min9_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "204"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:min9_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "Db:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "102"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$E:maj9_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "E:maj9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "98"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:maj7_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:maj7" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "72"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:maj9_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:maj9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "87"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_7> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "138"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:min9" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "203"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_10> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "143"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "172"^^xsd:float,
+        "230"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:aug(9)_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:aug(9)" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "62"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:aug(9)_7> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:aug(9)" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "77"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj(9)" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "15"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj(9)" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "19"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj(9)" ;
+    ns1:hasDuration "0"^^xsd:float ;
+    ns1:hasStartTime "53"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj/3_6> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj/3" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "10"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_A:min7_Bb:maj(9)_C:sus4(b7)_F:maj_G:min7_F:maj/3_Bb:maj7_G:min7_C:sus4(b7)> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$A:min7_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:maj(9)_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:maj7_7>,
+        <http://w3id.org/polifonia/harmory/billboard_5$C:sus4(b7)_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$C:sus4(b7)_9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj/3_6>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$G:min7_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$G:min7_8> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_Bb:min_F:maj(9)_Bb:min6_F:maj(9)> ;
+    har:hasOrder 0 ;
+    har:hasSegmentPattern har:0.0_7.5_7.5_9.0_9.0_7.0_7.0_6.5_6.5_8.5_7.5_6.5_6.5_7.0_4.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj9_9> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj9" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "96"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "7"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:min9_10> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:min9" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "124"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:min9_8> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "139"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$G:min7_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "G:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "9"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$G:min7_8> a ns1:ChordAnnotation ;
+    ns1:hasChord "G:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "13"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$G:min9_8> a ns1:ChordAnnotation ;
+    ns1:hasChord "G:min9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "94"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Gb:maj/5_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "Gb:maj/5" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "131"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Gb:maj/5_5> a ns1:ChordAnnotation ;
+    ns1:hasChord "Gb:maj/5" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "116"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Gb:maj9_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Gb:maj9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "133"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Gb:maj9_6> a ns1:ChordAnnotation ;
+    ns1:hasChord "Gb:maj9" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "118"^^xsd:float .
+
+har:0.0_7.5_7.5_9.0_9.0_7.0_7.0_6.5_6.5_8.5_7.5_6.5_6.5_7.0_4.0 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_A:min7_Bb:maj(9)_C:sus4(b7)_F:maj_G:min7_F:maj/3_Bb:maj7_G:min7_C:sus4(b7)> .
+
+har:10.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:min7_Eb:min7_F:min9> .
+
+har:10.0_11.0_11.0_8.0_8.0_9.0_9.0_7.5_7.5_5.5_5.5_7.5_7.5_10.0_11.0_7.0_7.0_7.0 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_Bb:min7(11)_Ab:maj7/3_Ab:maj7/3_F:maj(9)_Bb:min6_F:maj(9)_Bb:min6_F:maj(9)_B:7(#11)_Bb:min7(11)_Db:maj9> .
+
+har:10.5_6.5_6.5_6.5_0.0_5.5_5.5_9.0_9.0_9.0 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$B:sus4(b7,9)_E:maj9_Ab:min7/5_Ab:min7_Db:min9_B:maj9> .
+
+har:3.5_3.5_9.0_9.0_1.5_1.5_11.0_11.5_11.0_11.0_11.0_11.0_8.0_8.0_6.5_6.5 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Ab:min9_Gb:maj/5_Gb:maj9_Ab:min7_Bb:min7_B:maj7_Db:min7_Eb:min7_F:min9_Bb:min9_Eb:min9> .
+
+har:4.5_4.5_8.0_8.0_5.5_5.5_8.0_9.5_11.0_11.0_5.0_6.5_6.5_7.0 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$D:min9_Bb:sus2_Eb:maj9_C:sus4(b7)_B:aug_Bb:maj9_A:min7_D:min7_G:min9_F:maj9> .
+
+har:6.0_6.0_8.0_8.0_6.0_6.0_7.5_5.5_5.5_5.5 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_Bb:min_F:maj(9)_Bb:min6_F:maj(9)> .
+
+har:7.0_5.5_5.5_6.5_6.5_5.5_5.5_7.5_8.0_7.0_1.5_1.5_1.5_1.5_7.0_7.0 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$A:min7_D:min_Bb:maj7_Eb:maj7_Bb:maj/2_C:7_F:maj(9)_F:aug(9)_F:maj(9)_A:min7> .
+
+har:8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0_10.0 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> .
+
+har:9.5_9.5_0.5_0.5_7.5_7.5_5.5_5.5_7.5_7.5_10.0_11.0_7.0_7.0_7.0 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_F:maj(9)_Bb:min6_F:maj(9)_Bb:min6_F:maj(9)_B:7(#11)_Bb:min7(11)_Db:maj9> .
+
+har:9.5_9.5_7.5_7.5_8.0_8.0_7.5_7.5_3.5_9.0_9.0_1.5_1.5_10.0_11.0_11.0_11.0_7.5_8.0_8.0_7.5_7.5 a har:SegmentPattern ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$C:min9_F:min9_Bb:min9_Ab:maj6/5_Ab:min9_Gb:maj/5_Gb:maj9_Ab:min7_Bb:min7_C:min9_F:min9_Bb:min9_Ab:maj6/5> .
+
+<http://w3id.org/polifonia/harmory/billboard_5$A:min7_D:min_Bb:maj7_Eb:maj7_Bb:maj/2_C:7_F:maj(9)_F:aug(9)_F:maj(9)_A:min7> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$A:min7_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$A:min7_9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:maj/2_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:maj7_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$C:7_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$D:min_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:maj7_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:aug(9)_7>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_6>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_8> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$D:min9_Bb:sus2_Eb:maj9_C:sus4(b7)_B:aug_Bb:maj9_A:min7_D:min7_G:min9_F:maj9> ;
+    har:hasOrder 5 ;
+    har:hasSegmentPattern har:7.0_5.5_5.5_6.5_6.5_5.5_5.5_7.5_8.0_7.0_1.5_1.5_1.5_1.5_7.0_7.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:min7_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "Ab:min7" ;
+    ns1:hasDuration "0"^^xsd:float,
+        "1"^^xsd:float ;
+    ns1:hasStartTime "101"^^xsd:float,
+        "135"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Ab:min9_Gb:maj/5_Gb:maj9_Ab:min7_Bb:min7_B:maj7_Db:min7_Eb:min7_F:min9_Bb:min9_Eb:min9> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Ab:min7_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Ab:min9_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$B:maj7_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min7_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:min7_6>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_7>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_10>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:min9_8>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Gb:maj/5_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Gb:maj9_2> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> ;
+    har:hasOrder 9 ;
+    har:hasSegmentPattern har:3.5_3.5_9.0_9.0_1.5_1.5_11.0_11.5_11.0_11.0_11.0_11.0_8.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_Bb:min7(11)_Ab:maj7/3_Ab:maj7/3_F:maj(9)_Bb:min6_F:maj(9)_Bb:min6_F:maj(9)_B:7(#11)_Bb:min7(11)_Db:maj9> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Ab:maj7/3_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Ab:maj7/3_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_7>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min7(11)_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min7(11)_10>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:maj9_11>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_6>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_8> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_F:maj(9)_Bb:min6_F:maj(9)_Bb:min6_F:maj(9)_B:7(#11)_Bb:min7(11)_Db:maj9> ;
+    har:hasOrder 2 ;
+    har:hasSegmentPattern har:10.0_11.0_11.0_8.0_8.0_9.0_9.0_7.5_7.5_5.5_5.5_7.5_7.5_10.0_11.0_7.0_7.0_7.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$B:sus4(b7,9)_E:maj9_Ab:min7/5_Ab:min7_Db:min9_B:maj9> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Ab:min7/5_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Ab:min7_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$B:maj9_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$B:sus4(b7,9)_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:min9_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$E:maj9_1> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$C:min9_F:min9_Bb:min9_Ab:maj6/5_Ab:min9_Gb:maj/5_Gb:maj9_Ab:min7_Bb:min7_C:min9_F:min9_Bb:min9_Ab:maj6/5> ;
+    har:hasOrder 7 ;
+    har:hasSegmentPattern har:10.5_6.5_6.5_6.5_0.0_5.5_5.5_9.0_9.0_9.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$C:min9_F:min9_Bb:min9_Ab:maj6/5_Ab:min9_Gb:maj/5_Gb:maj9_Ab:min7_Bb:min7_C:min9_F:min9_Bb:min9_Ab:maj6/5> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Ab:maj6/5_12>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Ab:maj6/5_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Ab:min7_7>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Ab:min9_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min7_8>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_11>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$C:min9_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$C:min9_9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:min9_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:min9_10>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Gb:maj/5_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Gb:maj9_6> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$Ab:min9_Gb:maj/5_Gb:maj9_Ab:min7_Bb:min7_B:maj7_Db:min7_Eb:min7_F:min9_Bb:min9_Eb:min9> ;
+    har:hasOrder 8 ;
+    har:hasSegmentPattern har:9.5_9.5_7.5_7.5_8.0_8.0_7.5_7.5_3.5_9.0_9.0_1.5_1.5_10.0_11.0_11.0_11.0_7.5_8.0_8.0_7.5_7.5 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$C:sus4(b7)_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "C:sus4(b7)" ;
+    ns1:hasDuration "1"^^xsd:float,
+        "2"^^xsd:float ;
+    ns1:hasStartTime "5"^^xsd:float,
+        "89"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$D:min9_Bb:sus2_Eb:maj9_C:sus4(b7)_B:aug_Bb:maj9_A:min7_D:min7_G:min9_F:maj9> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$A:min7_6>,
+        <http://w3id.org/polifonia/harmory/billboard_5$B:aug_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:maj9_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:sus2_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$C:sus4(b7)_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$D:min7_7>,
+        <http://w3id.org/polifonia/harmory/billboard_5$D:min9_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:maj9_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj9_9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$G:min9_8> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$B:sus4(b7,9)_E:maj9_Ab:min7/5_Ab:min7_Db:min9_B:maj9> ;
+    har:hasOrder 6 ;
+    har:hasSegmentPattern har:4.5_4.5_8.0_8.0_5.5_5.5_8.0_9.5_11.0_11.0_5.0_6.5_6.5_7.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:min7_Eb:min7_F:min9> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Db:min7_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:min9_2> ;
+    har:hasOrder 25 ;
+    har:hasSegmentPattern har:10.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0_11.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:min7" ;
+    ns1:hasDuration "0"^^xsd:float,
+        "6"^^xsd:float ;
+    ns1:hasStartTime "168"^^xsd:float,
+        "226"^^xsd:float,
+        "257"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_Eb:min7_F:min9_Bb:min9_Eb:min9> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:min9_2> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> ;
+    har:hasOrder 13,
+        21 ;
+    har:hasSegmentPattern har:11.0_11.0_11.0_8.0_8.0_6.5_6.5 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:min9" ;
+    ns1:hasDuration "2"^^xsd:float,
+        "3"^^xsd:float ;
+    ns1:hasStartTime "157"^^xsd:float,
+        "186"^^xsd:float,
+        "201"^^xsd:float,
+        "215"^^xsd:float,
+        "244"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$B:maj/bb6_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$B:maj9_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:min7_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:min9_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_0> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9> ;
+    har:hasOrder 18 ;
+    har:hasSegmentPattern har:6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj(9)" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "45"^^xsd:float,
+        "60"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_3> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj(9)" ;
+    ns1:hasDuration "2"^^xsd:float ;
+    ns1:hasStartTime "49"^^xsd:float,
+        "64"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_4> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj(9)" ;
+    ns1:hasDuration "2"^^xsd:float,
+        "3"^^xsd:float ;
+    ns1:hasStartTime "22"^^xsd:float,
+        "30"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_6> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj(9)" ;
+    ns1:hasDuration "1"^^xsd:float,
+        "2"^^xsd:float ;
+    ns1:hasStartTime "34"^^xsd:float,
+        "76"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_8> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj(9)" ;
+    ns1:hasDuration "0"^^xsd:float,
+        "2"^^xsd:float ;
+    ns1:hasStartTime "38"^^xsd:float,
+        "79"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_Bb:min_F:maj(9)_Bb:min6_F:maj(9)> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_4> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_Bb:min7(11)_Ab:maj7/3_Ab:maj7/3_F:maj(9)_Bb:min6_F:maj(9)_Bb:min6_F:maj(9)_B:7(#11)_Bb:min7(11)_Db:maj9> ;
+    har:hasOrder 1 ;
+    har:hasSegmentPattern har:6.0_6.0_8.0_8.0_6.0_6.0_7.5_5.5_5.5_5.5 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_F:maj(9)_Bb:min6_F:maj(9)_Bb:min6_F:maj(9)_B:7(#11)_Bb:min7(11)_Db:maj9> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$B:7(#11)_6>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min6_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Bb:min7(11)_7>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:maj9_8>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_5>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_0> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_F:maj(9)_F:aug(9)_F:maj(9)_A:min7> ;
+    har:hasOrder 3 ;
+    har:hasSegmentPattern har:9.5_9.5_0.5_0.5_7.5_7.5_5.5_5.5_7.5_7.5_10.0_11.0_7.0_7.0_7.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_F:maj(9)_F:aug(9)_F:maj(9)_A:min7> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$A:min7_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:aug(9)_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_1>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj(9)_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_0> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$A:min7_D:min_Bb:maj7_Eb:maj7_Bb:maj/2_C:7_F:maj(9)_F:aug(9)_F:maj(9)_A:min7> ;
+    har:hasOrder 4 ;
+    har:hasSegmentPattern har:9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:min9_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:min9" ;
+    ns1:hasDuration "2"^^xsd:float,
+        "5"^^xsd:float ;
+    ns1:hasStartTime "168"^^xsd:float,
+        "226"^^xsd:float,
+        "263"^^xsd:float .
+
+har:8.0_3.5_3.5_9.5_9.5_1.5_10.0 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/8.0_3.5_3.5_9.5_9.5_1.5_10.0&8.0_3.5_3.5_9.5_9.5_1.5_10.0> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_2> a ns1:ChordAnnotation ;
+    ns1:hasChord "Bb:min9" ;
+    ns1:hasDuration "1"^^xsd:float,
+        "2"^^xsd:float ;
+    ns1:hasStartTime "111"^^xsd:float,
+        "155"^^xsd:float,
+        "184"^^xsd:float,
+        "200"^^xsd:float,
+        "214"^^xsd:float,
+        "243"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "Eb:min7" ;
+    ns1:hasDuration "1"^^xsd:float ;
+    ns1:hasStartTime "153"^^xsd:float,
+        "167"^^xsd:float,
+        "182"^^xsd:float,
+        "196"^^xsd:float,
+        "211"^^xsd:float,
+        "225"^^xsd:float,
+        "240"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9_Db:maj6/5> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:min9_1> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> ;
+    har:hasOrder 11,
+        15,
+        23 ;
+    har:hasSegmentPattern har:11.0_11.0_11.0_8.0_6.5_6.5_8.0,
+        har:11.0_11.0_8.0_8.0_6.5_6.5_8.0 .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_0> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:maj/5" ;
+    ns1:hasDuration "1"^^xsd:float,
+        "2"^^xsd:float ;
+    ns1:hasStartTime "0"^^xsd:float,
+        "43"^^xsd:float,
+        "58"^^xsd:float .
+
+<http://w3id.org/polifonia/harmory/billboard_5$F:min9_1> a ns1:ChordAnnotation ;
+    ns1:hasChord "F:min9" ;
+    ns1:hasDuration "1"^^xsd:float,
+        "2"^^xsd:float,
+        "3"^^xsd:float ;
+    ns1:hasStartTime "109"^^xsd:float,
+        "154"^^xsd:float,
+        "183"^^xsd:float,
+        "197"^^xsd:float,
+        "212"^^xsd:float,
+        "241"^^xsd:float .
+
+har:6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0&6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> .
+
+har:8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0&6.5_3.5_3.5_9.5_9.5_1.5_1.5_10.0>,
+        <http://w3id.org/polifonia/harmory/8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0&8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$Bb:min9_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$F:min9_1> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min9_Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> ;
+    har:hasOrder 17,
+        19 ;
+    har:hasSegmentPattern har:11.0_11.0_11.0_11.0_8.0_6.5_6.5,
+        har:11.0_11.0_11.0_8.0_6.5_6.5_6.5 .
+
+har:9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0&7.0_7.0_0.0_0.0_0.0_5.0_7.0_7.0>,
+        <http://w3id.org/polifonia/harmory/9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0&7.0_7.0_7.0_7.0_0.5_0.5_0.5_5.5_5.5_8.0>,
+        <http://w3id.org/polifonia/harmory/9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0&9.5_9.5_0.5_0.5_1.5_1.5_1.5_1.5_7.0> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$F:maj/5_F:maj(9)_F:aug(9)_F:maj(9)_A:min7> .
+
+har:11.0_11.0_11.0_8.0_6.5_6.5_8.0 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_8.0&11.0_11.0_11.0_8.0_6.5_6.5_8.0>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_8.0&11.0_11.0_8.0_8.0_6.5_6.5_8.0>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_8.0&8.5_10.5_7.0_7.0_7.0_6.5_6.5_6.5_6.5_6.5_8.5> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9_Db:maj6/5> .
+
+har:11.0_11.0_8.0_8.0_6.5_6.5_8.0 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/11.0_11.0_8.0_8.0_6.5_6.5_8.0&11.0_11.0_11.0_8.0_6.5_6.5_8.0>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_8.0_8.0_6.5_6.5_8.0&11.0_11.0_8.0_8.0_6.5_6.5_8.0>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_8.0_8.0_6.5_6.5_8.0&8.5_10.5_7.0_7.0_7.0_6.5_6.5_6.5_6.5_6.5_8.5> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9_Db:maj6/5> .
+
+<http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_Db:min9_B:maj/bb6_B:maj9_Db:min7> a har:Segment ;
+    har:containsChordAnnotation <http://w3id.org/polifonia/harmory/billboard_5$B:maj/bb6_2>,
+        <http://w3id.org/polifonia/harmory/billboard_5$B:maj9_3>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:maj6/5_0>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:min7_4>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Db:min9_1> ;
+    har:hasNextSegment <http://w3id.org/polifonia/harmory/billboard_5$Db:min7_Eb:min7_F:min9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_Eb:min7_F:min9_Bb:min9_Eb:min9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9>,
+        <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9_Db:maj6/5> ;
+    har:hasOrder 10,
+        12,
+        14,
+        16,
+        20,
+        22,
+        24 ;
+    har:hasSegmentPattern har:8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0,
+        har:8.0_3.5_3.5_9.5_9.5_1.5_1.5_10.0_10.0,
+        har:8.0_3.5_3.5_9.5_9.5_1.5_10.0 .
+
+har:11.0_11.0_11.0_11.0_8.0_6.5_6.5 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&10.5_10.5_10.5_9.0_9.0_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&11.0_11.0_11.0_11.0_8.0_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&11.0_11.0_11.0_8.0_6.5_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&11.0_11.0_11.0_8.0_8.0_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_11.0_8.0_6.5_6.5&8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9> .
+
+har:11.0_11.0_11.0_8.0_6.5_6.5_6.5 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&10.5_10.5_10.5_9.0_9.0_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&11.0_11.0_11.0_11.0_8.0_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&11.0_11.0_11.0_8.0_6.5_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&11.0_11.0_11.0_8.0_8.0_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_6.5_6.5_6.5&8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_F:min9_Bb:min9_Eb:min9> .
+
+har:11.0_11.0_11.0_8.0_8.0_6.5_6.5 a har:SegmentPattern ;
+    har:isInvolvedInSimilarity <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&10.5_10.5_10.5_9.0_9.0_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&11.0_11.0_11.0_11.0_8.0_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&11.0_11.0_11.0_8.0_6.5_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&11.0_11.0_11.0_8.0_8.0_6.5_6.5>,
+        <http://w3id.org/polifonia/harmory/11.0_11.0_11.0_8.0_8.0_6.5_6.5&8.5_10.5_10.5_7.0_7.0_6.5_6.5_6.5_6.5_6.5_6.5> ;
+    har:refersToSegment <http://w3id.org/polifonia/harmory/billboard_5$Eb:min7_Eb:min7_F:min9_Bb:min9_Eb:min9> .
+

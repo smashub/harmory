@@ -1,0 +1,193 @@
+{
+  "annotations": [
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "chord",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 2.696629213483146,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 2.696629213483146,
+          "duration": 5.393258426966292,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 5.393258426966292,
+          "duration": 10.786516853932584,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 10.786516853932584,
+          "duration": 12.134831460674157,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 12.134831460674157,
+          "duration": 13.48314606741573,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 13.48314606741573,
+          "duration": 14.831460674157302,
+          "value": "D:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 14.831460674157302,
+          "duration": 16.179775280898877,
+          "value": "G:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 16.179775280898877,
+          "duration": 18.876404494382022,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 18.876404494382022,
+          "duration": 21.573033707865168,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 21.573033707865168,
+          "duration": 24.269662921348317,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 24.269662921348317,
+          "duration": 26.96629213483146,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 26.96629213483146,
+          "duration": 32.359550561797754,
+          "value": "C:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 32.359550561797754,
+          "duration": 33.70786516853932,
+          "value": "Eb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 33.70786516853932,
+          "duration": 35.056179775280896,
+          "value": "Eb:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 35.056179775280896,
+          "duration": 36.40449438202247,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 36.40449438202247,
+          "duration": 37.752808988764045,
+          "value": "G:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 37.752808988764045,
+          "duration": 39.10112359550562,
+          "value": "C:min",
+          "confidence": 1.0
+        },
+        {
+          "time": 39.10112359550562,
+          "duration": 40.44943820224719,
+          "value": "F:7",
+          "confidence": 1.0
+        },
+        {
+          "time": 40.44943820224719,
+          "duration": 41.79775280898876,
+          "value": "Bb:maj",
+          "confidence": 1.0
+        },
+        {
+          "time": 41.79775280898876,
+          "duration": 43.146067415730336,
+          "value": "F:7",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    },
+    {
+      "annotation_metadata": {
+        "curator": {
+          "name": "",
+          "email": ""
+        },
+        "annotator": {
+          "name": ""
+        },
+        "version": 1.0,
+        "corpus": "Real Book",
+        "annotation_tools": "Band-in-a-Box",
+        "annotation_rules": "",
+        "validation": "",
+        "data_source": "crowdsource"
+      },
+      "namespace": "key_mode",
+      "data": [
+        {
+          "time": 0.0,
+          "duration": 506.9662921348314,
+          "value": "Bb",
+          "confidence": 1.0
+        }
+      ],
+      "sandbox": {},
+      "time": 0,
+      "duration": null
+    }
+  ],
+  "file_metadata": {
+    "title": "Powder Your Face With Sunshine",
+    "artist": "",
+    "release": "",
+    "duration": 506,
+    "identifiers": {},
+    "jams_version": "0.3.4"
+  },
+  "sandbox": {
+    "type": "score",
+    "genre": "jazz",
+    "composers": [],
+    "performers": [],
+    "expanded": null,
+    "release_year": null,
+    "track_number": null
+  }
+}
