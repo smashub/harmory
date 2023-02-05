@@ -1,6 +1,7 @@
 """
 Main script for creating the KG from the file produces in Harmory.
 """
+import argparse
 import logging
 from pathlib import Path
 
@@ -41,7 +42,7 @@ def instantiate_track(graph: rdflib.Graph,
     assert dataset_path.exists(), f"Path {dataset_path} does not exist"
     assert dataset_path.is_dir(), f"Path {dataset_path} is not a directory"
 
-    track = PreprocessTrack(dataset_path / f'{track_name}.pickle')
+    track = PreprocessTrack(dataset_path / f'{track_name}.pkl')
     track_uri = HARMORY[track_name]
     title, artist, genre = track.get_metadata(METADATA_PATH)
 
@@ -148,6 +149,7 @@ def instantiate_similarities(graph: rdflib.Graph,
                     graph.add((similarity_situation,
                                HARMORY.involvesSegmentPattern, sequence_uri))
 
+
 def main():
     """
     Main function to create the KG.
@@ -161,35 +163,42 @@ def main():
     g.bind('core', CORE)
     g.bind('mf', MF)
 
+    # parser arguments
+    parser = argparse.ArgumentParser(
+        description='Converter for the greation of the harmonic memory Knowledge Graph (KG)')
+
+    parser.add_argument('dataset_path', type=str,
+                        help='Path to the directory containing the track data')
+    parser.add_argument('map_id_path', type=str,
+                        help='Path to the file containing the mapping from track to track id')
+    parser.add_argument('similarity_path', type=str,
+                        help='Path to the directory containing the similarity data')
+    parser.add_argument('output_path', type=str, help='Path to the output file')
+    parser.add_argument('--serialization', type=str, default='turtle',
+                        help='Serialization format (default: turtle)')
+    parser.add_argument('--verbose', action='store_true',
+                        help='Verbose mode (default: False)')
+
+    args = parser.parse_args()
+
     # get all files in the dataset directory
-    dataset_path = Path('../../data/structures/small-billboard')
+    dataset_path = Path(args.dataset_path)
     files = [f for f in dataset_path.iterdir() if f.is_file()]
     # instantiate the tracks
     for file in files:
+        if args.verbose:
+            print(f'Instantiating track {file.stem}')
         instantiate_track(g, dataset_path, file.stem)
 
     # instantiate the similarities
     instantiate_similarities(g,
-                             '../../data/structures/small-billboard',
-                             '../../data/similarities/pattern2id.pkl',
-                             '../../data/similarities/similarities.csv')
+                             args.dataset_path,
+                             args.map_id_path,
+                             args.similarity_path)
 
-    g.serialize(format='turtle', destination='example_complete.ttl')
+    output_path = Path(args.output_path)
+    g.serialize(format='turtle', destination=output_path)
 
 
 if __name__ == '__main__':
-    g = Graph()
-    g.bind('har', HARMORY)
-    g.bind('core', CORE)
-    instantiate_track(g,
-                      '../../data/structures/small-billboard',
-                      'billboard_5')
-
-    instantiate_similarities(g,
-                             '../../data/structures/small-billboard',
-                             '../../data/similarities/pattern2id.pkl',
-                             '../../data/similarities/similarities.csv')
-
-    print(g.serialize(format='turtle', destination='example.ttl'))
-
     main()

@@ -205,7 +205,7 @@ class PreprocessSimilarity:
             file_name, sequence_idx = '_'.join(file[:-1]), int(file[-1])
             assert file_name in self._file_names, \
                 f"File name {file_name} not in file names"
-            track_data = joblib.load(self._dataset_path / f'{file_name}.pickle')
+            track_data = joblib.load(self._dataset_path / f'{file_name}.pkl')
         except AssertionError:
             return None
 
