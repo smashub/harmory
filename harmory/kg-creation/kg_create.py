@@ -5,9 +5,11 @@ import argparse
 import logging
 from pathlib import Path
 
+import joblib
 import rdflib
 from rdflib import Graph, Literal, Namespace, RDF, RDFS
 from rdflib.namespace import XSD
+from tqdm import tqdm
 
 from preprocess_kg import PreprocessTrack, PreprocessSimilarity
 
@@ -59,6 +61,7 @@ def instantiate_track(graph: rdflib.Graph,
         segment_string = track_name + '$' + '_'.join(chords)
         segment_uri = HARMORY[segment_string]
         durations = track.get_durations(idx)
+        keys = track.get_keys(idx)
         graph.add((segment_uri, RDF.type, HARMORY.Segment))
         graph.add((segment_uri, HARMORY.belongsToMusicalWork, track_uri))
         graph.add(
@@ -71,6 +74,7 @@ def instantiate_track(graph: rdflib.Graph,
                 (segment_uri, HARMORY.hasNextSegment, HARMORY[next_segment]))
         for chord_idx, chord in enumerate(chords):
             chord_uri = HARMORY[track_name + '$' + chord + '_' + str(chord_idx)]
+            key = list(keys)[chord_idx]
             start = list(durations)[chord_idx]
             duration = list(durations)[chord_idx + 1] - list(durations)[
                 chord_idx]
@@ -83,6 +87,7 @@ def instantiate_track(graph: rdflib.Graph,
             graph.add((chord_uri, MF.hasChord, Literal(chord)))
             graph.add((chord_uri, MF.hasIndex,
                        Literal(chord_idx, datatype=XSD.integer)))
+            graph.add((chord_uri, MF.hasKey, Literal(key)))
 
         pattern_string = track.get_sequence_string(idx)
         pattern_uri = HARMORY[str(pattern_string)]
@@ -95,6 +100,46 @@ def instantiate_track(graph: rdflib.Graph,
         graph.add((pattern_uri, RDFS.label,
                    Literal(pattern_string, datatype=XSD.string)))
         graph.add((segment_uri, HARMORY.hasSegmentPattern, pattern_uri))
+
+
+def parallel_similarities(graph: rdflib.Graph,
+                          similarity_data: PreprocessSimilarity,
+                          track_identifier: int):
+    """
+    Add similarity data to the KG.
+    Parameters
+    ----------
+    graph
+    similarity_data
+    track_identifier
+
+    Returns
+    -------
+
+    """
+    sequence = similarity_data.get_sequence_string(track_identifier)
+    sequence_uri = HARMORY[sequence]
+    # if sequence in graph.subjects() complement triples
+    if sequence_uri in graph.subjects():
+
+        similarities = similarity_data.get_similarities(track_identifier)
+        for similar_sequence in similarities:
+            # validate similar_sequence
+            if similar_sequence is not None:
+                similar_sequence, similarity_value = similar_sequence
+                similarity_situation = HARMORY[
+                    f'{sequence}&{similar_sequence}']
+                graph.add((sequence_uri, HARMORY.isInvolvedInSimilarity,
+                           similarity_situation))
+                graph.add((similarity_situation, RDF.type,
+                           HARMORY.SegmentPatternSimilarity))
+                graph.add((similarity_situation, HARMORY.hasSimilarityValue,
+                           Literal(similarity_value, datatype=XSD.float)))
+                graph.add((similarity_situation,
+                           HARMORY.involvesSegmentPattern,
+                           HARMORY[similar_sequence]))
+                graph.add((similarity_situation,
+                           HARMORY.involvesSegmentPattern, sequence_uri))
 
 
 def instantiate_similarities(graph: rdflib.Graph,
@@ -132,30 +177,9 @@ def instantiate_similarities(graph: rdflib.Graph,
 
     sim = PreprocessSimilarity(dataset_path, map_id_path, similarity_path)
 
-    for identifier in sim.id_map_data:
-        sequence = sim.get_sequence_string(identifier)
-        sequence_uri = HARMORY[sequence]
-        # if sequence in graph.subjects() complement triples
-        if sequence_uri in graph.subjects():
-
-            similarities = sim.get_similarities(identifier)
-            for similar_sequence in similarities:
-                # validate similar_sequence
-                if similar_sequence is not None:
-                    similar_sequence, similarity_value = similar_sequence
-                    similarity_situation = HARMORY[
-                        f'{sequence}&{similar_sequence}']
-                    graph.add((sequence_uri, HARMORY.isInvolvedInSimilarity,
-                               similarity_situation))
-                    graph.add((similarity_situation, RDF.type,
-                               HARMORY.SegmentPatternSimilarity))
-                    graph.add((similarity_situation, HARMORY.hasSimilarityValue,
-                               Literal(similarity_value, datatype=XSD.float)))
-                    graph.add((similarity_situation,
-                               HARMORY.involvesSegmentPattern,
-                               HARMORY[similar_sequence]))
-                    graph.add((similarity_situation,
-                               HARMORY.involvesSegmentPattern, sequence_uri))
+    joblib.Parallel(n_jobs=-1, verbose=10)(
+        joblib.delayed(parallel_similarities)(graph, sim, identifier) for
+        identifier in tqdm(sim.id_map_data))
 
 
 def main():

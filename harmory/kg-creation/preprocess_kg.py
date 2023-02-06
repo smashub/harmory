@@ -142,6 +142,22 @@ class PreprocessTrack:
             raise ValueError(f"Index {sequence_idx} out of range")
         return self.track_data[sequence_idx].times
 
+    def get_keys(self, sequence_idx: int) -> list:
+        """
+        Get the keys for a given track.
+        Parameters
+        ----------
+        sequence_idx : int
+            Index of the sequence
+        Returns
+        -------
+        list
+            List of keys
+        """
+        if sequence_idx < 0 or sequence_idx >= len(self.track_data):
+            raise ValueError(f"Index {sequence_idx} out of range")
+        return self.track_data[sequence_idx].keys
+
 
 class PreprocessSimilarity:
     """
