@@ -6,7 +6,7 @@ import logging
 from pathlib import Path
 
 import rdflib
-from rdflib import Graph, Literal, Namespace, RDF
+from rdflib import Graph, Literal, Namespace, RDF, RDFS
 from rdflib.namespace import XSD
 
 from preprocess_kg import PreprocessTrack, PreprocessSimilarity
@@ -60,6 +60,7 @@ def instantiate_track(graph: rdflib.Graph,
         segment_uri = HARMORY[segment_string]
         durations = track.get_durations(idx)
         graph.add((segment_uri, RDF.type, HARMORY.Segment))
+        graph.add((segment_uri, HARMORY.belongsToMusicalWork, track_uri))
         graph.add(
             (segment_uri, HARMORY.hasOrder, Literal(idx, datatype=XSD.integer)))
         # add next segment
@@ -80,12 +81,19 @@ def instantiate_track(graph: rdflib.Graph,
             graph.add((chord_uri, MF.hasStartTime,
                        Literal(start, datatype=XSD.float)))
             graph.add((chord_uri, MF.hasChord, Literal(chord)))
+            graph.add((chord_uri, MF.hasIndex,
+                       Literal(chord_idx, datatype=XSD.integer)))
 
         pattern_string = track.get_sequence_string(idx)
         pattern_uri = HARMORY[str(pattern_string)]
         graph.add((track_uri, HARMORY.containsSegmentPattern, pattern_uri))
+        graph.add((track_uri, HARMORY.containsSegment, segment_uri))
         graph.add((pattern_uri, RDF.type, HARMORY.SegmentPattern))
         graph.add((pattern_uri, HARMORY.refersToSegment, segment_uri))
+        graph.add((pattern_uri, HARMORY.hasPatternString,
+                   Literal(pattern_string, datatype=XSD.string)))
+        graph.add((pattern_uri, RDFS.label,
+                   Literal(pattern_string, datatype=XSD.string)))
         graph.add((segment_uri, HARMORY.hasSegmentPattern, pattern_uri))
 
 
