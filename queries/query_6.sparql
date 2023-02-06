@@ -1,0 +1,59 @@
+# to define
+# temporary query
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?track1 ?track2 ?pattern1 ?pattern2 ?similarityValue ?concatStr
+(COUNT(?concatStr) as ?pCount)
+WHERE {
+  ?track1 a core:MusicalWork ;
+         har:containsSegmentPattern ?pattern1 ;
+         core:hasTitle ?title1 .
+  ?pattern1 har:isInvolvedInSimilarity ?similarityTo1 .
+  ?similarityTo1 har:hasSimilarityValue ?similarityValue ;
+         har:involvesSegmentPattern ?pattern2 .
+  ?track2 har:containsSegmentPattern ?pattern2 .
+  ?segment1 har:hasOrder ?order1 .
+
+  BIND(CONCAT(STR(?track1),STR(?track2)) AS ?concatStr)
+
+  FILTER (?similarityValue < 0.2)
+  FILTER (?track1 != ?track2)
+}
+GROUP BY ?track1 ?track2 ?pattern1 ?pattern2 ?similarityValue ?concatStr
+ORDER BY DESC (?pCount)
+LIMIT 30
+
+
+###########
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?track1 ?track2 ?pattern1 ?pattern2 ?similarityValue ?concatStr
+(COUNT(?concatStr) as ?pCount)
+WHERE {
+  ?track1 a core:MusicalWork ;
+         har:containsSegmentPattern ?pattern1 ;
+         core:hasTitle ?title1 .
+  ?pattern1 har:isInvolvedInSimilarity ?segmentPatternSimilarity .
+  ?segmentPatternSimilarity har:hasSimilarityValue ?similarityValue ;
+         har:involvesSegmentPattern ?pattern2 .
+  ?track2 har:containsSegmentPattern ?pattern2 .
+  ?segment1 har:hasOrder ?order1 .
+
+  BIND(CONCAT(STR(?track1),STR(?track2)) AS ?concatStr)
+
+  FILTER (?similarityValue < 0.2)
+  FILTER (?track1 != ?track2)
+  FILTER (?pattern1 != ?pattern2)
+}
+GROUP BY ?track1 ?track2 ?pattern1 ?pattern2 ?similarityValue ?concatStr
+ORDER BY DESC (?pCount)
+LIMIT 30

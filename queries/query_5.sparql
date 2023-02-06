@@ -1,0 +1,33 @@
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?track1 ?track2 ?pattern1
+(COUNT(?track1) as ?commonCount)
+(COUNT(?allSegment1) as ?allSegment1Count)
+(COUNT(?allSegment2) as ?allSegment2Count)
+WHERE {
+  ?track1 a core:MusicalWork ;
+         har:containsSegmentPattern ?pattern1 ;
+         core:hasTitle ?title1 .
+  ?track2 a core:MusicalWork ;
+          har:containsSegmentPattern ?pattern2 ;
+          core:hasTitle ?title2 .
+  ?pattern1 har:refersToSegment ?segment1 .
+  ?pattern2 har:refersToSegment ?segment2 .
+  ?segment1 har:hasOrder ?order1 .
+  ?segment2 har:hasOrder ?order2 .
+
+  ?track1 har:containsSegmentPattern ?allPattern1 .
+  ?track har:containsSegmentPattern ?allPattern2 .
+  ?allPattern1 har:refersToSegment ?allSegment1 .
+  ?allPattern2 har:refersToSegment ?allSegment2 .
+
+  FILTER (?pattern1 = ?pattern2)
+  FILTER (?order1 = ?order2)
+  FILTER (?track1 != ?track2)
+}
+GROUP BY ?track1 ?track2 ?pattern1 ?pattern2
+LIMIT 100

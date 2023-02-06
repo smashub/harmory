@@ -1,0 +1,17 @@
+# find tracks that share a common pattern
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?track1 ?track2 ?pattern
+WHERE {
+  ?track1 a core:MusicalWork ;
+         har:containsSegmentPattern ?pattern .
+  ?track2 a core:MusicalWork ;
+          har:containsSegmentPattern ?pattern .
+  FILTER (?track1 != ?track2)
+}
+LIMIT 30

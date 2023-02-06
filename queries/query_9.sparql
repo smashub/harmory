@@ -1,0 +1,24 @@
+# pattern performed by The Beatles in Michelle but not in Hey Jude having containing at least a C major chord
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?artist ?genre ?title
+WHERE {
+  ?pattern1 har:refersToSegment ?segment1 .
+  ?segment1 har:belongsToMusicalWork ?track1 ;
+            har:refersToSegment ?segment1 .
+  ?segment1 har:containsChordAnnotation ?chord .
+  ?chord mf:hasChord ?chordLabel .
+  ?track1 har:hasArtist ?artist ;
+          har:hasGenre ?genre ;
+          har:hasTitle ?title .
+  FILTER (?title = "Michelle")
+  FILTER (?title != "Hey Jude")
+  FILTER (?artist = "The Beatles")
+  FILTER (?chordLabel = "C:maj")
+}
+LIMIT 30

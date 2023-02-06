@@ -1,0 +1,19 @@
+# for a given pattern, where does this pattern occour?
+# given a pattern return artist, genre and title of the track where the pattern is found
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?artist ?genre ?title
+WHERE {
+  ?pattern1 rdfs:label "0_0_0" ;
+  			har:refersToSegment ?segment1 .
+  ?segment1 har:belongsToMusicalWork ?track1 .
+  ?track1 har:hasArtist ?artist ;
+          har:hasGenre ?genre ;
+          har:hasTitle ?title .
+}
+LIMIT 30

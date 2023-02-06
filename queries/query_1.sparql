@@ -1,0 +1,16 @@
+# find the most common segment patterns
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf: <http://w3id.org/polifonia/musical-features/>
+PREFIX core: <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?pattern (count(distinct ?segment) as ?count)
+WHERE {
+  ?track har:containsSegmentPattern ?pattern .
+  ?track core:hasTitle ?trackName .
+  ?pattern har:refersToSegment ?segment .
+}
+GROUP BY ?pattern
+ORDER BY DESC (?count)
+LIMIT 30
