@@ -1,0 +1,16 @@
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?segment ?chordAnnotation ?startTime ?chordLabel
+WHERE {
+  ?track har:containsSegment ?segment .
+  ?segment har:containsChordAnnotation ?chordAnnotation .
+  ?chordAnnotation mf:hasStartTime ?startTime ;
+                   mf:hasChord ?chordLabel .
+  FILTER (?chordLabel = "B:min" && ?startTime = 4.0)
+}
+LIMIT 30
