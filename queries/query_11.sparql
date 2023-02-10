@@ -77,3 +77,40 @@ WHERE {
   FILTER (?pattern4_sim != ?pattern4)
   #FILTER (?title4 = "Do You Want To Know A Secret")
 }
+
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?segment1 ?simval1_2 ?similarity1_2 ?title2 ?simval3_4 ?segment3order ?title4 ?segment5
+WHERE {
+  ?track core:hasTitle "Come Together" ;
+         har:containsSegmentPattern ?pattern1 .
+  ?pattern1 har:refersToSegment ?segment1 .
+  ?segment1 har:hasOrder ?segment1order ;
+            har:hasNextSegment ?segment2 .
+  ?pattern2 har:refersToSegment ?segment2 ;
+            har:isInvolvedInSimilarity ?similarity1_2 .
+  ?similarity1_2 har:involvesSegmentPattern ?pattern2_sim ;
+                 har:hasSimilarityValue ?simval1_2 .
+  ?track2 har:containsSegmentPattern ?pattern2_sim ;
+          core:hasTitle ?title2.
+  ?pattern2_sim har:refersToSegment ?segment3 .
+  ?segment3  har:hasOrder ?segment3order ;
+             har:hasNextSegment ?segment4 .
+  ?pattern4 har:refersToSegment ?segment4 ;
+            har:isInvolvedInSimilarity ?similarity3_4 .
+  ?similarity3_4 har:involvesSegmentPattern ?pattern4_sim ;
+                 har:hasSimilarityValue ?simval3_4 .
+  ?track4 har:containsSegmentPattern ?pattern4_sim ;
+          core:hasTitle ?title4 .
+  ?pattern4_sim har:refersToSegment ?segment5 .
+
+
+  FILTER (?segment1order = 4)
+  FILTER (?pattern2_sim != ?pattern2)
+  FILTER (?pattern4_sim != ?pattern4)
+}
