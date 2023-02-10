@@ -1,0 +1,21 @@
+# PROMPT 3
+# Which harmonic patterns are used in “Michelle” by The
+# Beatles, but also in a classical composition?
+############################################################
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?pattern
+WHERE {
+    ?pattern har:refersToSegment ?segmen .
+    ?segment har:belongsToMusicalWork ?track .
+        ?track har:hasArtist ?artist ;
+        har:hasGenre ?genre ;
+        har:hasTitle ?title .
+    FILTER (?title = "Michelle")
+    FILTER (?genre = "classical")
+}
+LIMIT 30

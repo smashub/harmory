@@ -1,0 +1,25 @@
+# PROMPT 4
+# Which patterns used by The Beatles in “Michelle” but not
+# in “Hey Jude” contain at least a B flat major seventh chord?
+############################################################
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?pattern
+WHERE {
+    ?pattern har:refersToSegment ?segment .
+    ?segment har:belongsToMusicalWork ?track ;
+        har:containsChordAnnotation ?chordAnnotation .
+    ?chordAnnotation har:hasChord ?chord .
+    ?chord rdfs:label ?chordLabel .
+    ?track har:hasArtist ?artist ;
+        har:hasGenre ?genre ;
+        har:hasTitle ?title .
+    FILTER (?title = "Michelle")
+    FILTER (?title != "Hey Jude")
+    FILTER (?chordLabel = "Bb:maj7")
+}
+LIMIT 30

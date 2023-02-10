@@ -1,0 +1,37 @@
+# PROMPT 6
+# Given a chord sequence, which are its most similar chord
+# sequences, sorted by similarity?
+############################################################
+# Example for the sequence Eb:min, Eb:min, Bb:maj
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?title ?relatedSegment
+WHERE {
+    ?segment har:belongsToMusicalWork ?track ;
+        har:containsChordAnnotation ?chordAnnotation .
+    ?chordAnnotation har:hasChord ?chord1 ;
+        har:hasNextChord ?chordAnnotation2 .
+    ?chordAnnotation2 har:hasChord ?chord2 ;
+        har:hasNextChord ?chordAnnotation3 .
+    ?chordAnnotation3 har:hasChord ?chord3 .
+    ?chord1 rdfs:label "Eb:min" .
+    ?chord2 rdfs:label "Eb:min" .
+    ?chord3 rdfs:label "Bb:maj" .
+    ?segment har:hasSegmentPattern ?pattern .
+    ?pattern har:isInvolvedInSimilarity ?similarity .
+    ?similarity har:involvesSegmentPattern ?similarPattern ;
+        har:hasSimilarityValue ?similarityValue .
+    ?similarPattern har:isSegmentPatternOf ?track ;
+        har:refersToSegment ?relatedSegment .
+    ?track har:hasArtist ?artist ;
+        har:hasGenre ?genre ;
+        har:hasTitle ?title .
+
+    FILTER (?similarPattern != ?pattern)
+}
+ORDER BY DESC (?similarityValue)
+LIMIT 30

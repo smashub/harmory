@@ -1,0 +1,29 @@
+# PROMPT 9
+# Given a track, which tracks contain patterns with a dis-
+# tance of less than 0.5, regardless of their order?
+############################################################
+# Example for the track "Michelle"
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT DISTINCT ?track1 ?track2 ?pattern1 ?pattern2 ?similarityValue
+WHERE {
+  ?track1 a core:MusicalWork ;
+         har:containsSegmentPattern ?pattern1 ;
+         core:hasTitle ?title1 .
+  ?pattern1 har:isInvolvedInSimilarity ?similarityTo1 ;
+         har:refersToSegment ?segment1 .
+  ?similarityTo1 har:hasSimilarityValue ?similarityValue ;
+         har:involvesSegmentPattern ?pattern2 .
+  ?track2 har:containsSegmentPattern ?pattern2 .
+  ?pattern2 har:refersToSegment ?segment2 .
+
+  FILTER (?title1 = "Michelle")
+  FILTER (?similarityValue < 0.5)
+  FILTER (?track1 != ?track2)
+}
+LIMIT 30

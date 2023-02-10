@@ -1,0 +1,40 @@
+# PROMPT 7
+# Create a progression starting with “Michelle” by The Bea-
+# tles, continuing with a segment found in a classical piece of
+# music, and then continuing with another by Chet Baker.
+############################################################
+
+PREFIX har: <http://w3id.org/polifonia/harmory/>
+PREFIX mf:  <http://w3id.org/polifonia/musical-features/>
+PREFIX core:  <http://w3id.org/polifonia/core/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?segment1Track1 ?segment1Track2 ?segment1Track3
+WHERE {
+  ?track1 core:hasTitle "Michelle" ;
+         core:hasArtist "The Beatles" ;
+         har:containsSegmentPattern ?pattern1 .
+  ?pattern1 har:refersToSegment ?segment1Track1 .
+  ?segment1Track1 har:hasNextSegment ?segment2Track1 .
+  ?pattern2Track1 har:refersToSegment ?segment2Track1 ;
+            har:isInvolvedInSimilarity ?similarity1_2 .
+  ?similarity1_2 har:involvesSegmentPattern ?pattern2 .
+  ?track2 har:containsSegmentPattern ?pattern2 ;
+          core:hasTitle ?title2 ;
+          core:hasGenre ?genre2 .
+  ?pattern2 har:refersToSegment ?segment1Track2 .
+  ?segment1Track2 har:hasNextSegment ?segment2Track2 .
+  ?pattern3 har:refersToSegment ?segment2Track2 ;
+            har:isInvolvedInSimilarity ?similarity3_4 .
+  ?similarity3_4 har:involvesSegmentPattern ?pattern3 .
+  ?track3 har:containsSegmentPattern ?pattern3_sim ;
+          core:hasTitle ?title3 ;
+          core:hasArtist ?artist3 .
+  ?pattern3_sim har:refersToSegment ?segment1Track3 .
+
+  FILTER (?segment1order = 0)
+  FILTER (?genre2 = "classical")
+  FILTER (?artist3 = "Chet Baker")
+  FILTER (?pattern1 != ?pattern2)
+  FILTER (?pattern2 != ?pattern3)
+}
