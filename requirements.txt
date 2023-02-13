@@ -1,0 +1,24 @@
+# Needed for Jupyter
+ipykernel
+
+# Libraries for plotting
+tqdm == 4.64.1
+seaborn == 0.11.2
+matplotlib == 3.5.0
+
+# Data/vector processing
+numpy == 1.21.*
+pandas == 1.4.*
+joblib == 1.1.0
+tslearn == 0.5.3.2
+scipy == 1.7.*
+
+# Network data libraries
+networkx
+rdflib == 6.1.*
+
+# Music libraries
+jams == 0.3.4
+music-21 == 8.1.0
+note-seq == 0.0.5
+harte-library == 0.3.*
