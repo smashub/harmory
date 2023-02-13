@@ -1,12 +1,16 @@
 # Harmory: the Harmonic Memory
-Harmroy is a Knowledge Graph of interconnected harmonic patterns aimed to support creative applications in a fully transparent, accountable, and musically plausible way.
+Harmory is a Knowledge Graph of interconnected harmonic patterns aimed to support creative applications in a fully transparent, accountable, and musically plausible way.
+
+<p align="center">
+<img src="assets/harmory_wide.png" width="800">
+</p>
 
 ## Harmory in a nutshell
-We leverage the [Tonal Pitch Space](https://www.jstor.org/stable/40285402) - a cognitive model of Western tonal harmony to **project** chord progressions into a musically meaningful space. Then, we use signal processing methods to **segment** chord sequences into meaningful harmonic structures. The latter are then compared with each other, across all progressions and via harmonic similarity, to reveal common/recurring **harmonic patterns**.
+We leverage the [Tonal Pitch Space](https://www.jstor.org/stable/40285402) - a cognitive model of Western tonal harmony to **project** chord progressions into a musically meaningful space. Then, we use novelty-based methods for structural analysis to **segment** chord sequences into meaningful harmonic structures. The latter are then compared with each other, across all progressions and via harmonic similarity, to reveal common/recurring **harmonic patterns**.
 
-A KG is created to semantically establish relationships between patterns, based on: (i) *temporal links*, connecting two patterns if they are observed consecutively in the same progression; and (ii) *similarity links* among highly-similar patterns.
+A KG is created to semantically establish relationships between patterns, based on: (i) *temporal links*, connecting two patterns if they are observed consecutively in the same progression; and (ii) *similarity links* among highly-similar patterns. By traversing the KG, and moving across patterns via temporal and similarity links, new progressions can be created in a combinational settings; but also, unexpected and surprising relationships can be found among pieces and composers of different genre, style, and historical period. This is also enabled by the scale and diversity of Harmory, which is built from [ChoCo](https://github.com/smashub/choco), the largest existing collection of harmonic annotations.
 
-By traversing the KG, and moving across patterns via temporal and similarity links, new progressions can be created in a combinational settings; but also, unexpected and surprising relationships can be found among pieces and composers of different genre, style, and historical period. This is also enabled by the scale and diversity of Harmory, which is built from [ChoCo](https://github.com/smashub/choco), the largest existing collection of harmonic annotations.
+Currently, Harmory contains ~26K harmonic segments from 1800 harmonic (~10% of ChoCo, corresponding to all the audio partitions). Out of all segments: 13667 (17%) belong to 4089 pattern families, 66175 (83%) are pattern-friendly (they share non-trivial similarities with other segments), whereas 8176 (32%) are inherently unique (they are found in other songs). More statistics are available at [this link](https://github.com/smashub/harmory/blob/main/harmory/analysis.ipynb).
 
 ## How to re-create Harmory
 
@@ -23,7 +27,7 @@ pip install -r requirements.txt
 Your environment should now be ready to create Harmory.
 
 ### Step 2: Novelty-based harmonic segmentation
-
+This step will perform harmonic segmentation on each track indexed in `choco_audio.txt` (a selection of ChoCo). The output of the segmentation will be written for each piece in a separate file in `data/structures/v1` in order to facilitate parallel access. Before running this command, please make sure to download a release of ChoCo (from [this link](https://github.com/smashub/choco/releases)), so that you can point to the corresponding JAMS folder (by replacing `../../choco/choco-jams/jams` with your local path).
 ```bash
 python create.py segment ../../choco/choco-jams/jams \
     --selection ../data/samples/choco_audio.txt \
@@ -32,6 +36,7 @@ python create.py segment ../../choco/choco-jams/jams \
 ```
 
 ### Step 3: Linking harmonic segments via similarity
+You can now compute segment-wise similarities to discover harmonic patterns. This is done by running the command below, which will save three important objects: the `similarities.csv` file (containing an edge list of similarity links); an instance of `HarmonicPatternFinder`(to find similarities from given segments/patterns); and a `pattern2id` dictionary mapping pattern IDs to (ChoCo-alike) segment IDs. This provides full tractability of the music material in the memory. 
 
 ```bash
 python create.py similarities ../data/structures/v1 \
@@ -40,7 +45,7 @@ python create.py similarities ../data/structures/v1 \
 ```
 
 ### Step 4: Knowledge Graph creation
-TODO
+>TODO
 
 ## Experiments
 To validate Harmory, we carried out experiments to test the efficacy of the two central components underpinning its creation: the *harmonic similarity* method, and the *harmonic segmentation*. This section provides instructions to reproduce our experiments.
