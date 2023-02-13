@@ -84,5 +84,5 @@ python analysis.py segwrite ../exps/segmentation/small-audio/
 # SIMILARITIES
 # ############################################################################ #
 
-python create.py similarities ../data/structures \
-    --out_dir ../data/similarities --n_workers 4
+python create.py similarities ../data/structures/v1 \
+    --out_dir ../data/similarities/v1 --n_workers 6
