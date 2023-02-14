@@ -10,7 +10,7 @@ We leverage the [Tonal Pitch Space](https://www.jstor.org/stable/40285402) - a c
 
 A KG is created to semantically establish relationships between patterns, based on: (i) *temporal links*, connecting two patterns if they are observed consecutively in the same progression; and (ii) *similarity links* among highly-similar patterns. By traversing the KG, and moving across patterns via temporal and similarity links, new progressions can be created in a combinational settings; but also, unexpected and surprising relationships can be found among pieces and composers of different genre, style, and historical period. This is also enabled by the scale and diversity of Harmory, which is built from [ChoCo](https://github.com/smashub/choco), the largest existing collection of harmonic annotations.
 
-Currently, Harmory contains ~26K harmonic segments from 1800 harmonic (~10% of ChoCo, corresponding to all the audio partitions). Out of all segments: 13667 (17%) belong to 4089 pattern families, 66175 (83%) are pattern-friendly (they share non-trivial similarities with other segments), whereas 8176 (32%) are inherently unique (they are found in other songs). More statistics are available at [this link](https://github.com/smashub/harmory/blob/main/harmory/analysis.ipynb).
+Currently, Harmory contains ~26K harmonic segments from 1800 harmonic (~10% of ChoCo, corresponding to all the audio partitions). Out of all segments: 13667 (16%) correspond to the same pattern families, 66175 (53%) are pattern-friendly (they share non-trivial similarities with other segments), whereas 8176 (32%) are inherently unique (they are found in other songs). More statistics are available at [this link](https://github.com/smashub/harmory/blob/main/harmory/analysis.ipynb).
 
 ## How to re-create Harmory
 
@@ -150,10 +150,7 @@ Results will be saved in the given output folder as a CSV file, where each row c
 We thank all the annotators for contributing to the project. This project is an output of [Polifonia](https://polifonia-project.eu), and has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101004746.
 
 <a href="https://polifonia-project.eu"><img src="assets/polifonia_logo.png" style="width:200px;"></a>
-
+-->
 ## License
 
-![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
-
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
--- >
+The code in this repository is distributed under the MIT license. All data follows the dual licensing scheme of [ChoCo](https://github.com/smashub/choco), meaning that  CC-BY 4.0 is the reference license, unless data is derived from CASD, JAAH, and Mozart Piano Sonata (CC-BY-NC-SA).
