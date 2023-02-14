@@ -3,6 +3,7 @@ Script to detect cover songs in a dataset of songs.
 """
 import argparse
 import logging
+from typing import List
 
 import numpy as np
 import pandas as pd
@@ -68,11 +69,12 @@ class CoverSongDetection:
         self._sakoe_chiba_band = None
         self._itakura_max_slope = None
 
-    def preprocess(self, experiment: tuple) -> None:
+    def preprocess(self, configuration: List,
+                   experiment: tuple) -> None:
         """
         Runs the cover song detection process.
         """
-        assert experiment in EXPERIMENTS, f'Invalid experiment: {experiment}'
+        assert experiment in configuration, f'Invalid experiment: {experiment}'
 
         logger.info(f'Preprocessing {self._dataset_name} ')
 
@@ -112,7 +114,7 @@ class CoverSongDetection:
         else:
             pass
 
-    def compute_similarity(self) -> list[tuple]:
+    def compute_similarity(self) -> List:
         """
         Computes the similarity between two time series.
         :param ts1: the first time series
@@ -175,7 +177,7 @@ class CoverSongDetection:
         return evaluate(covers, ranking)
 
 
-def save_results(results: list[list], output_path: str) -> None:
+def save_results(results: List, output_path: str) -> None:
     """
     Saves the results of the cover song detection process.
     :param results: the results of the cover song detection process
@@ -205,6 +207,7 @@ def main():
     parser.add_argument('dataset_path', type=str, help='Path to the dataset')
     parser.add_argument('output_path', type=str,
                         help='Path to the output directory')
+    parser.add_argument('--configuration', type=list, default=EXPERIMENTS)
     parser.add_argument('--n_jobs', type=int, default=1,
                         help='Number of jobs to be used')
 
@@ -216,35 +219,6 @@ def main():
         csd.preprocess(experiment)
         csd.compute_similarity()
         evaluation = csd.evaluate()
-        if len(experiment) == 2:
-            distance, tps_mode = experiment
-            stretch = None
-            constraint = None
-        elif len(experiment) == 3:
-            distance, tps_mode, stretch = experiment
-            constraint = None
-        elif len(experiment) == 4:
-            distance, tps_mode, stretch, constraint = experiment
-        evaluations.append([(args.dataset_path.split('/')[-1],
-                             distance,
-                             tps_mode,
-                             stretch,
-                             constraint,
-                             evaluation[0],
-                             evaluation[1])])
-    save_results(evaluations, args.output_path)
-
-    return evaluations
-
-
-if __name__ == '__main__':
-    csd = CoverSongDetection('../../exps/datasets/merge',
-                             n_jobs=1)
-    evaluations = []
-    for experiment in EXPERIMENTS:
-        csd.preprocess(experiment)
-        similarity = csd.compute_similarity()
-        evaluation = csd.evaluate()
         stretch, constraint, normalize = None, None, False
         print(evaluation)
         if len(experiment) == 2:
@@ -255,7 +229,8 @@ if __name__ == '__main__':
             distance, tps_mode, stretch, constraint = experiment
         elif len(experiment) == 5:
             distance, tps_mode, stretch, constraint, normalize = experiment
-        evaluations.append(['merge',
+
+        evaluations.append([args.dataset_path.split('/')[-1],
                             distance,
                             tps_mode,
                             stretch,
@@ -263,26 +238,9 @@ if __name__ == '__main__':
                             normalize,
                             evaluation[0],
                             evaluation[1]])
-    print(evaluations)
-    save_results(evaluations, '../../exps/results/results_merge_final.csv')
+    save_results(evaluations, args.output_path)
+    return evaluations
 
-# (0.13713369963369962, 0.23778998778998778)
-# (0.7866300366300364, 0.829594017094017)
-# (0.7714438339438338, 0.8165445665445664)
-# (0.6287393162393162, 0.6891025641025641)
-# (0.4791666666666667, 0.5438034188034188)
-# (0.71741452991453, 0.7820512820512819)
-# (0.6752136752136753, 0.753205128205128)
-# (0.7738095238095237, 0.8386752136752136)
-# (0.7217643467643465, 0.7914377289377288)
-# (0.6602564102564104, 0.7222222222222223)
-# (0.5678418803418804, 0.6436965811965809)
-# (0.7126068376068376, 0.778846153846154)
-# (0.6575854700854701, 0.7628205128205128)
-##
-# (0.13072344322344323, 0.23084554334554339)
-# (0.13713369963369962, 0.23778998778998778)
-# (0.6672008547008547, 0.7740384615384613)
-# (0.7302350427350429, 0.8103632478632478)
-# (0.6672008547008547, 0.7740384615384613)
-#
+
+if __name__ == '__main__':
+    main()
