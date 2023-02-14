@@ -4,6 +4,7 @@ Main script for creating the KG from the file produces in Harmory.
 import argparse
 import logging
 from pathlib import Path
+from typing import Union
 
 import joblib
 import rdflib
@@ -23,7 +24,7 @@ MF = Namespace('http://w3id.org/polifonia/musical-features/')
 
 
 def instantiate_track(graph: rdflib.Graph,
-                      dataset_path: str | Path,
+                      dataset_path: Union[str, Path],
                       track_name: str):
     """
     Instantiate a track in the KG.
@@ -104,18 +105,21 @@ def instantiate_track(graph: rdflib.Graph,
 
 def parallel_similarities(graph: rdflib.Graph,
                           similarity_data: PreprocessSimilarity,
-                          track_identifier: int):
+                          track_identifier: int) -> None:
     """
     Add similarity data to the KG.
     Parameters
     ----------
-    graph
-    similarity_data
-    track_identifier
+    graph : rdflib.Graph
+        The KG graph to add the similarity data to
+    similarity_data : PreprocessSimilarity
+        The similarity data to add to the KG
+    track_identifier : int
+        The track identifier to add the similarity data for
 
     Returns
     -------
-
+    None
     """
     sequence = similarity_data.get_sequence_string(track_identifier)
     sequence_uri = HARMORY[sequence]
@@ -143,9 +147,10 @@ def parallel_similarities(graph: rdflib.Graph,
 
 
 def instantiate_similarities(graph: rdflib.Graph,
-                             dataset_path: str | Path,
-                             map_id_path: str | Path,
-                             similarity_path: str | Path):
+                             dataset_path:  Union[str, Path],
+                             map_id_path:  Union[str, Path],
+                             similarity_path:  Union[str, Path],
+                             n_workers: int) -> None:
     """
     Instantiate the similarities in the KG.
     Parameters
@@ -160,7 +165,7 @@ def instantiate_similarities(graph: rdflib.Graph,
         Path to the directory containing the similarity data
     Returns
     -------
-
+    None
     """
     if isinstance(dataset_path, str):
         dataset_path = Path(dataset_path)
@@ -177,7 +182,7 @@ def instantiate_similarities(graph: rdflib.Graph,
 
     sim = PreprocessSimilarity(dataset_path, map_id_path, similarity_path)
 
-    joblib.Parallel(n_jobs=-1, verbose=10)(
+    joblib.Parallel(n_jobs=n_workers, verbose=10)(
         joblib.delayed(parallel_similarities)(graph, sim, identifier) for
         identifier in tqdm(sim.id_map_data))
 
@@ -197,19 +202,24 @@ def main():
 
     # parser arguments
     parser = argparse.ArgumentParser(
-        description='Converter for the greation of the harmonic memory Knowledge Graph (KG)')
+        description='Converter for the greation of the harmonic '
+                    'memory Knowledge Graph (KG)')
 
     parser.add_argument('dataset_path', type=str,
                         help='Path to the directory containing the track data')
     parser.add_argument('map_id_path', type=str,
-                        help='Path to the file containing the mapping from track to track id')
+                        help='Path to the file containing the mapping from '
+                             'track to track id')
     parser.add_argument('similarity_path', type=str,
-                        help='Path to the directory containing the similarity data')
+                        help='Path to the directory containing the similarity '
+                             'data')
     parser.add_argument('output_path', type=str, help='Path to the output file')
     parser.add_argument('--serialization', type=str, default='turtle',
                         help='Serialization format (default: turtle)')
     parser.add_argument('--verbose', action='store_true',
                         help='Verbose mode (default: False)')
+    parser.add_argument('--n_workers', type=int, default=1,
+                        help='Number of workers to use (default: 1)')
 
     args = parser.parse_args()
 
