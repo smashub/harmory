@@ -45,15 +45,56 @@ python create.py similarities ../data/structures/v1 \
 ```
 
 ### Step 4: Knowledge Graph creation
->TODO
+
+The Knowledge Graph is created from the data generated in [Step 2](#step-2--novelty-based-harmonic-segmentation) and [Step 3](#step-3--linking-harmonic-segments-via-similarity).
+The generation of the KG consists of two main steps:
+* **Instantiate Tracks**: tracks are instantiated and added to the knowledge graph, together with their metadata and segments;
+* **Instantiate Similarity**: SegmentPatterns are instantiated and added to the knowledge graph and linked to the segments to which they refer to.
+
+The creation of the KG is based on [RDFLib](https://rdflib.readthedocs.io/en/stable/), which allows the graph to be saved in the most common RDF serialisations.
+
+```bash
+python kg_create.py '../../data/structures/v1/' \
+'../../data/similarities/v1/pattern2id.pkl' \
+'../../data/similarities/similarities.csv' \
+'../../data/knowledge-graph/v1/knowledge_graph.ttl' \
+--serialization turtle \
+--n_workers 6 --verbose
+```
 
 ## Experiments
 To validate Harmory, we carried out experiments to test the efficacy of the two central components underpinning its creation: the *harmonic similarity* method, and the *harmonic segmentation*. This section provides instructions to reproduce our experiments.
 
 ### Evaluating our harmonic similarity
-Our method for harmonic similarity is compared to other state-of-the-art algorithms on the **cover song detection** task - a common benchmark for similarity algorithms in the symbolic music domain.
+Our method for harmonic similarity is compared to other state-of-the-art algorithms on the **cover song detection** 
+task - a common benchmark for similarity algorithms in the symbolic music domain.
 
->TODO
+It is possible to compare performance in the cover song detection task using the following algorithms:
+* **Dynamic Time Warping** (DTW) - a well-known algorithm for time series alignment;
+* **TPSD** - a method based on the Tonal Pitch Space (TPS) model of Western tonal harmony;
+* **SoftDTW** - a variant of DTW that allows for local warping of the time series;
+* **LCSS** - a method based on the Longest Common Subsequence (LCS) algorithm.
+
+It is possible to preprocess the chord data using two different variants of the _TPS_ distance:
+* **Profile** - the TPS distance is computed between the chord and the local key of the piece;
+* **Offset** - the TPS distance is computed between the chord and its preceding chord.
+
+Moreover, the timeseries produced using both mode of the _TPS_ distance can be normalised both temporally and in terms 
+of the values contained in the series.
+Finally, you can test different constraint settings for the cover song detection task for the _DTW_, _SoftDTW_ and 
+_LCSS_ algorithms, namely the **Sakoe Chiba** and the **Itakura** constraints.
+
+For recreating the experiments, you can run the following command:
+
+```bash
+python cover_detection.py '../../exps/datasets/merge/' \
+'../../exps/results/results.csv' 
+```
+
+You can also run different experiments by passing to the script the `--configuration` argument, which is composed by a 
+list of tuples parameters comma-separated. Each tuple is consists of a sparate experiment, and it is composed by the 
+following parameters:
+`(<algorithm>, <tps_mode>, <temporal_normalisation>, <constraint>, <value_normalization>)`.
 
 ### Structural coverage of known patterns
 Our harmonic segmentation, we measure the overlap between the resulting structures with a collection of well-known chordal patterns. This exemplifies the hypothesis that a good segmentation would maximise the "reuse" of harmonic patterns - as building blocks that can be found in other pieces.
