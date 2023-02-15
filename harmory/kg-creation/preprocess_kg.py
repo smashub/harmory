@@ -222,10 +222,9 @@ class PreprocessSimilarity:
             assert file_name in self._file_names, \
                 f"File name {file_name} not in file names"
             track_data = joblib.load(self._dataset_path / f'{file_name}.pkl')
+            return track_data[sequence_idx].time_series
         except AssertionError:
             return None
-
-        return track_data[sequence_idx].time_series
 
     def get_sequence_string(self, pattern_id: int) -> str:
         """
@@ -279,21 +278,16 @@ class PreprocessSimilarity:
 
 
 if __name__ == '__main__':
-    # abc = joblib.load('../../data/structures/small-audio/billboard_12.pkl')
-    # print(abc[0].time_series)
-    #
-    # cde = joblib.load('../../data/similarities/pattern2id.pkl')
-    # print(cde)
+    # test utilities
+    # pre = PreprocessTrack(
+    #     '../../data/structures/small-billboard/billboard_5.pickle')
+    # pre.get_metadata('../../data/metadata/meta.csv')
+    # print(len(pre.track_data))
+    # print(pre.get_sequence_string(3))
+    # print(pre.get_chords(3))
+    # print(pre.get_durations(3))
 
-    pre = PreprocessTrack(
-        '../../data/structures/small-billboard/billboard_5.pickle')
-    pre.get_metadata('../../data/metadata/meta.csv')
-    print(len(pre.track_data))
-    print(pre.get_sequence_string(3))
-    print(pre.get_chords(3))
-    print(pre.get_durations(3))
-
-    sim = PreprocessSimilarity('../../data/structures/small-billboard',
-                               '../../data/similarities/pattern2id.pkl',
-                               '../../data/similarities/similarities.csv')
-    # print(sim.get_similarities(1457))
+    sim = PreprocessSimilarity('../../data/structures/v1',
+                               '../../data/similarities/v1/pattern2id.pkl',
+                               '../../data/similarities/v1/similarities.csv')
+    print(sim.get_similarities(1585))
