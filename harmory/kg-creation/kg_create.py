@@ -163,6 +163,9 @@ def instantiate_similarities(graph: rdflib.Graph,
         Path to the file containing the mapping from track to track id
     similarity_path : str | Path
         Path to the directory containing the similarity data
+    n_workers : int
+        The number of workers to use for parallel processing
+
     Returns
     -------
     None
@@ -236,7 +239,8 @@ def main():
     instantiate_similarities(g,
                              args.dataset_path,
                              args.map_id_path,
-                             args.similarity_path)
+                             args.similarity_path,
+                             args.n_workers)
 
     output_path = Path(args.output_path)
     g.serialize(format='turtle', destination=output_path)
