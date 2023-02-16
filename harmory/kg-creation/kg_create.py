@@ -185,9 +185,34 @@ def instantiate_similarities(graph: rdflib.Graph,
 
     sim = PreprocessSimilarity(dataset_path, map_id_path, similarity_path)
 
-    joblib.Parallel(n_jobs=n_workers, verbose=10)(
-        joblib.delayed(parallel_similarities)(graph, sim, identifier) for
-        identifier in tqdm(sim.id_map_data))
+    # joblib.Parallel(n_jobs=n_workers, verbose=10)(
+    #     joblib.delayed(parallel_similarities)(graph, sim, identifier) for
+    #     identifier in tqdm(sim.id_map_data))
+
+    for track_identifier in tqdm(sim.id_map_data):
+        sequence = sim.get_sequence_string(track_identifier)
+        sequence_uri = HARMORY[sequence]
+        # if sequence in graph.subjects() complement triples
+        if sequence_uri in graph.subjects():
+
+            similarities = sim.get_similarities(track_identifier)
+            for similar_sequence in similarities:
+                # validate similar_sequence
+                if similar_sequence is not None:
+                    similar_sequence, similarity_value = similar_sequence
+                    similarity_situation = HARMORY[
+                        f'{sequence}&{similar_sequence}']
+                    graph.add((sequence_uri, HARMORY.isInvolvedInSimilarity,
+                               similarity_situation))
+                    graph.add((similarity_situation, RDF.type,
+                               HARMORY.SegmentPatternSimilarity))
+                    graph.add((similarity_situation, HARMORY.hasSimilarityValue,
+                               Literal(similarity_value, datatype=XSD.float)))
+                    graph.add((similarity_situation,
+                               HARMORY.involvesSegmentPattern,
+                               HARMORY[similar_sequence]))
+                    graph.add((similarity_situation,
+                               HARMORY.involvesSegmentPattern, sequence_uri))
 
 
 def main():
