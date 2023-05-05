@@ -126,21 +126,16 @@ bash segval.sh
 ```
 Results will be saved in the given output folder as a CSV file, where each row contains the structural coverage of a segmentation method, using a specific parameter set, and with respect to all known harmonic patterns of a specific length (ranging from 4 to 10).
 
----
-<!--
+
 ## Authors and attribution
 *Zenodo DOI coming soon*
 
-* **Jacopo de Berardinis** - [King's College London](https://jonnybluesman.github.io)
-* **Andrea Poltronieri** - [Università degli Studi di Bologna](https://andreapoltronieri.org)
-* **Albert Meroño-Peñuela** - [King's College London](https://www.albertmeronyo.org)
-* **Valentina Presutti** - [Università degli Studi di Bologna](https://www.unibo.it/sitoweb/valentina.presutti)
-
 ```
-@inproceedings{deberardinis2023harmory,
+@inproceedings{de2023harmonic,
   title={The Harmonic Memory: a Knowledge Graph of harmonic patterns as a trustworthy framework for computational creativity},
-  author={de Berardinis, Jacopo and Meroño-Peñuela, Albert and Poltronieri, Andrea and Presutti, Valentina},
-  booktitle={Manuscript under review},
+  author={de Berardinis, Jacopo and Mero{\~n}o-Pe{\~n}uela, Albert and Poltronieri, Andrea and Presutti, Valentina},
+  booktitle={Proceedings of the ACM Web Conference 2023},
+  pages={3873--3882},
   year={2023}
 }
 ```
@@ -150,7 +145,7 @@ Results will be saved in the given output folder as a CSV file, where each row c
 We thank all the annotators for contributing to the project. This project is an output of [Polifonia](https://polifonia-project.eu), and has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101004746.
 
 <a href="https://polifonia-project.eu"><img src="assets/polifonia_logo.png" style="width:200px;"></a>
--->
+
 ## License
 
 The code in this repository is distributed under the MIT license. All data follows the dual licensing scheme of [ChoCo](https://github.com/smashub/choco), meaning that  CC-BY 4.0 is the reference license, unless data is derived from CASD, JAAH, and Mozart Piano Sonata (CC-BY-NC-SA).
