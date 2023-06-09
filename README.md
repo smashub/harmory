@@ -128,7 +128,7 @@ Results will be saved in the given output folder as a CSV file, where each row c
 
 
 ## Authors and attribution
-*Zenodo DOI coming soon*
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8021211.svg)](https://doi.org/10.5281/zenodo.8021211)
 
 ```
 @inproceedings{de2023harmonic,

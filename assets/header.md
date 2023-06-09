@@ -12,7 +12,7 @@ project: polifonia-project
 release-date: 01-02-2023
 release-number: v1.0
 release-link: https://github.com/smashub/harmory
-# doi: 10.5281/zenodo.7706751
+doi: 10.5281/zenodo.8021211
 licence:
   - CC-BY_v4
   - CC-BY-NC_v4
